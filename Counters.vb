@@ -1,0 +1,112 @@
+﻿Module Counters
+    Public ComCheck As String
+    Public CounterP1MC1 As String
+    Public CounterP1MC2 As String
+    Public CounterP1MC3 As String
+    Public CounterP1MC4 As String
+    Public CounterP1MC5 As String
+    Public CounterP1MC6 As String
+    Public CounterP1MC7 As String
+    Public CounterP1MC8 As String
+    Public CounterP1MC9 As String
+    Public CounterP1MC10 As String
+    Public CounterP1MC11 As String
+    Public CounterP1MC12 As String
+    Public CounterP1MC13 As String
+    Public CounterP1MC14 As String
+    Public CounterP1MC15 As String
+    Public CounterP1MC16 As String
+    Public CounterP1MC17 As String
+    Public CounterP1MC18 As String
+    Public CounterP1MC19 As String
+
+    Public CounterP2MC1 As String
+    Public CounterP2MC2 As String
+    Public CounterP2MC3 As String
+    Public CounterP2MC4 As String
+    Public CounterP2MC5 As String
+    Public CounterP2MC6 As String
+    Public CounterP2MC7 As String
+    Public CounterP2MC8 As String
+    Public CounterP2MC9 As String
+    Public CounterP2MC10 As String
+    Public CounterP2MC11 As String
+    Public CounterP2MC12 As String
+    Public CounterP2MC13 As String
+    Public CounterP2MC14 As String
+    Public CounterP2MC15 As String
+    Public CounterP2MC16 As String
+    Public CounterP2MC17 As String
+    Public CounterP2MC18 As String
+    Public CounterP2MC19 As String
+
+    Public TotalCountMC1 As String
+    Public TotalCountMC2 As String
+    Public TotalCountMC3 As String
+    Public TotalCountMC4 As String
+    Public TotalCountMC5 As String
+    Public TotalCountMC6 As String
+    Public TotalCountMC7 As String
+    Public TotalCountMC8 As String
+    Public TotalCountMC9 As String
+    Public TotalCountMC10 As String
+    Public TotalCountMC11 As String
+    Public TotalCountMC12 As String
+    Public TotalCountMC13 As String
+    Public TotalCountMC14 As String
+    Public TotalCountMC15 As String
+    Public TotalCountMC16 As String
+    Public TotalCountMC17 As String
+    Public TotalCountMC18 As String
+    Public TotalCountMC19 As String
+
+    Public StartStopMC1 As Boolean
+    Public StartStopMC2 As Boolean
+    Public StartStopMC3 As Boolean
+    Public StartStopMC4 As Boolean
+    Public StartStopMC5 As Boolean
+    Public StartStopMC6 As Boolean
+    Public StartStopMC7 As Boolean
+    Public StartStopMC8 As Boolean
+    Public StartStopMC9 As Boolean
+    Public StartStopMC10 As Boolean
+    Public StartStopMC11 As Boolean
+    Public StartStopMC12 As Boolean
+    Public StartStopMC13 As Boolean
+    Public StartStopMC14 As Boolean
+    Public StartStopMC15 As Boolean
+    Public StartStopMC16 As Boolean
+    Public StartStopMC17 As Boolean
+    Public StartStopMC18 As Boolean
+    Public StartStopMC19 As Boolean
+
+    Public runtimeMC1 As Decimal
+    Public runtimeMC2 As Decimal
+    Public runtimeMC3 As Decimal
+    Public runtimeMC4 As Decimal
+    Public runtimeMC5 As Decimal
+    Public runtimeMC6 As Decimal
+    Public runtimeMC7 As Decimal
+    Public runtimeMC8 As Decimal
+    Public runtimeMC9 As Decimal
+    Public runtimeMC10 As Decimal
+    Public runtimeMC11 As Decimal
+    Public runtimeMC12 As Decimal
+    Public runtimeMC13 As Decimal
+    Public runtimeMC14 As Decimal
+    Public runtimeMC15 As Decimal
+    Public runtimeMC16 As Decimal
+    Public runtimeMC17 As Decimal
+    Public runtimeMC18 As Decimal
+    Public runtimeMC19 As Decimal
+
+
+    Public modloginConfirmToHome As Integer
+    Public modlogoutConfirmToHome As Integer
+    Public modLoginTabToHOme As Integer
+    Public modLogoutTabToHome As Integer
+    Public modJOTabToHome As Integer
+    Public modSettingTabToHome As Integer
+
+
+End Module
