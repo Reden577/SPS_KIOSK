@@ -1373,28 +1373,29 @@ Public Class frmHome
         Return decMold45
     End Function
     Public Sub PPT()
-        Try
-            iPlanProdTimeMC1 = ((CInt(stJOCycleTimeMC1) / ((CInt(stJOMoldCavP1MC1) + CInt(stJOMoldCavP2MC1))) * CInt(stJOQuantityMC1)) / 60)
+        'Try
+        iPlanProdTimeMC1 = ((CInt(stJOCycleTimeMC1) / ((CInt(stJOMoldCavP1MC1) + CInt(stJOMoldCavP2MC1))) * CInt(stJOQuantityMC1)) / 60)
             iPlanProdTimeMC2 = ((CInt(stJOCycleTimeMC2) / ((CInt(stJOMoldCavP1MC2) + CInt(stJOMoldCavP2MC2))) * CInt(stJOQuantityMC2)) / 60)
-            iPlanProdTimeMC3 = ((CInt(stJOCycleTimeMC3) / ((CInt(stJOMoldCavP1MC3) + CInt(stJOMoldCavP2MC3))) * CInt(stJOQuantityMC3)) / 60)
-            iPlanProdTimeMC4 = ((CInt(stJOCycleTimeMC4) / ((CInt(stJOMoldCavP1MC4) + CInt(stJOMoldCavP2MC4))) * CInt(stJOQuantityMC4)) / 60)
-            iPlanProdTimeMC5 = ((CInt(stJOCycleTimeMC5) / ((CInt(stJOMoldCavP1MC5) + CInt(stJOMoldCavP2MC5))) * CInt(stJOQuantityMC5)) / 60)
-            iPlanProdTimeMC6 = ((CInt(stJOCycleTimeMC6) / ((CInt(stJOMoldCavP1MC6) + CInt(stJOMoldCavP2MC6))) * CInt(stJOQuantityMC6)) / 60)
-            iPlanProdTimeMC7 = ((CInt(stJOCycleTimeMC7) / ((CInt(stJOMoldCavP1MC7) + CInt(stJOMoldCavP2MC7))) * CInt(stJOQuantityMC7)) / 60)
-            iPlanProdTimeMC8 = ((CInt(stJOCycleTimeMC8) / ((CInt(stJOMoldCavP1MC8) + CInt(stJOMoldCavP2MC8))) * CInt(stJOQuantityMC8)) / 60)
-            iPlanProdTimeMC9 = ((CInt(stJOCycleTimeMC9) / ((CInt(stJOMoldCavP1MC9) + CInt(stJOMoldCavP2MC9))) * CInt(stJOQuantityMC9)) / 60)
-            iPlanProdTimeMC10 = ((CInt(stJOCycleTimeMC10) / ((CInt(stJOMoldCavP1MC10) + CInt(stJOMoldCavP2MC10))) * CInt(stJOQuantityMC10)) / 60)
-            iPlanProdTimeMC11 = ((CInt(stJOCycleTimeMC11) / ((CInt(stJOMoldCavP1MC11) + CInt(stJOMoldCavP2MC11))) * CInt(stJOQuantityMC11)) / 60)
-            iPlanProdTimeMC12 = ((CInt(stJOCycleTimeMC12) / ((CInt(stJOMoldCavP1MC12) + CInt(stJOMoldCavP2MC12))) * CInt(stJOQuantityMC12)) / 60)
-            iPlanProdTimeMC13 = ((CInt(stJOCycleTimeMC13) / ((CInt(stJOMoldCavP1MC13) + CInt(stJOMoldCavP2MC13))) * CInt(stJOQuantityMC13)) / 60)
-            iPlanProdTimeMC14 = ((CInt(stJOCycleTimeMC14) / ((CInt(stJOMoldCavP1MC14) + CInt(stJOMoldCavP2MC14))) * CInt(stJOQuantityMC14)) / 60)
-            iPlanProdTimeMC15 = ((CInt(stJOCycleTimeMC15) / ((CInt(stJOMoldCavP1MC15) + CInt(stJOMoldCavP2MC15))) * CInt(stJOQuantityMC15)) / 60)
-            iPlanProdTimeMC16 = ((CInt(stJOCycleTimeMC16) / ((CInt(stJOMoldCavP1MC16) + CInt(stJOMoldCavP2MC16))) * CInt(stJOQuantityMC16)) / 60)
-            iPlanProdTimeMC17 = ((CInt(stJOCycleTimeMC17) / ((CInt(stJOMoldCavP1MC17) + CInt(stJOMoldCavP2MC17))) * CInt(stJOQuantityMC17)) / 60)
-            iPlanProdTimeMC18 = ((CInt(stJOCycleTimeMC18) / ((CInt(stJOMoldCavP1MC18) + CInt(stJOMoldCavP2MC18))) * CInt(stJOQuantityMC18)) / 60)
-            iPlanProdTimeMC19 = ((CInt(stJOCycleTimeMC19) / ((CInt(stJOMoldCavP1MC19) + CInt(stJOMoldCavP2MC19))) * CInt(stJOQuantityMC19)) / 60)
-        Catch ex As Exception
-        End Try
+        'iPlanProdTimeMC3 = ((CInt(stJOCycleTimeMC3) / ((CInt(stJOMoldCavP1MC3) + CInt(stJOMoldCavP2MC3))) * CInt(stJOQuantityMC3)) / 60)
+        'iPlanProdTimeMC4 = ((CInt(stJOCycleTimeMC4) / ((CInt(stJOMoldCavP1MC4) + CInt(stJOMoldCavP2MC4))) * CInt(stJOQuantityMC4)) / 60)
+        'iPlanProdTimeMC5 = ((CInt(stJOCycleTimeMC5) / ((CInt(stJOMoldCavP1MC5) + CInt(stJOMoldCavP2MC5))) * CInt(stJOQuantityMC5)) / 60)
+        'iPlanProdTimeMC6 = ((CInt(stJOCycleTimeMC6) / ((CInt(stJOMoldCavP1MC6) + CInt(stJOMoldCavP2MC6))) * CInt(stJOQuantityMC6)) / 60)
+        'iPlanProdTimeMC7 = ((CInt(stJOCycleTimeMC7) / ((CInt(stJOMoldCavP1MC7) + CInt(stJOMoldCavP2MC7))) * CInt(stJOQuantityMC7)) / 60)
+        'iPlanProdTimeMC8 = ((CInt(stJOCycleTimeMC8) / ((CInt(stJOMoldCavP1MC8) + CInt(stJOMoldCavP2MC8))) * CInt(stJOQuantityMC8)) / 60)
+        'iPlanProdTimeMC9 = ((CInt(stJOCycleTimeMC9) / ((CInt(stJOMoldCavP1MC9) + CInt(stJOMoldCavP2MC9))) * CInt(stJOQuantityMC9)) / 60)
+        'iPlanProdTimeMC10 = ((CInt(stJOCycleTimeMC10) / ((CInt(stJOMoldCavP1MC10) + CInt(stJOMoldCavP2MC10))) * CInt(stJOQuantityMC10)) / 60)
+        'iPlanProdTimeMC11 = ((CInt(stJOCycleTimeMC11) / ((CInt(stJOMoldCavP1MC11) + CInt(stJOMoldCavP2MC11))) * CInt(stJOQuantityMC11)) / 60)
+        'iPlanProdTimeMC12 = ((CInt(stJOCycleTimeMC12) / ((CInt(stJOMoldCavP1MC12) + CInt(stJOMoldCavP2MC12))) * CInt(stJOQuantityMC12)) / 60)
+        'iPlanProdTimeMC13 = ((CInt(stJOCycleTimeMC13) / ((CInt(stJOMoldCavP1MC13) + CInt(stJOMoldCavP2MC13))) * CInt(stJOQuantityMC13)) / 60)
+        'iPlanProdTimeMC14 = ((CInt(stJOCycleTimeMC14) / ((CInt(stJOMoldCavP1MC14) + CInt(stJOMoldCavP2MC14))) * CInt(stJOQuantityMC14)) / 60)
+        'iPlanProdTimeMC15 = ((CInt(stJOCycleTimeMC15) / ((CInt(stJOMoldCavP1MC15) + CInt(stJOMoldCavP2MC15))) * CInt(stJOQuantityMC15)) / 60)
+        'iPlanProdTimeMC16 = ((CInt(stJOCycleTimeMC16) / ((CInt(stJOMoldCavP1MC16) + CInt(stJOMoldCavP2MC16))) * CInt(stJOQuantityMC16)) / 60)
+        'iPlanProdTimeMC17 = ((CInt(stJOCycleTimeMC17) / ((CInt(stJOMoldCavP1MC17) + CInt(stJOMoldCavP2MC17))) * CInt(stJOQuantityMC17)) / 60)
+        'iPlanProdTimeMC18 = ((CInt(stJOCycleTimeMC18) / ((CInt(stJOMoldCavP1MC18) + CInt(stJOMoldCavP2MC18))) * CInt(stJOQuantityMC18)) / 60)
+        'iPlanProdTimeMC19 = ((CInt(stJOCycleTimeMC19) / ((CInt(stJOMoldCavP1MC19) + CInt(stJOMoldCavP2MC19))) * CInt(stJOQuantityMC19)) / 60)
+        'Catch ex As Exception
+        '    MsgBox(ex.Message & " This the the one !")
+        'End Try
     End Sub
     '//
 
@@ -1412,23 +1413,23 @@ Public Class frmHome
         Try
             TotalCountMC1 = CInt(CounterP1MC1) + CInt(CounterP2MC1)
             TotalCountMC2 = CInt(CounterP1MC2) + CInt(CounterP2MC2)
-            TotalCountMC3 = CInt(CounterP1MC3) + CInt(CounterP2MC3)
-            TotalCountMC4 = CInt(CounterP1MC4) + CInt(CounterP2MC4)
-            TotalCountMC5 = CInt(CounterP1MC5) + CInt(CounterP2MC5)
-            TotalCountMC6 = CInt(CounterP1MC6) + CInt(CounterP2MC6)
-            TotalCountMC7 = CInt(CounterP1MC7) + CInt(CounterP2MC7)
-            TotalCountMC8 = CInt(CounterP1MC8) + CInt(CounterP2MC8)
-            TotalCountMC9 = CInt(CounterP1MC9) + CInt(CounterP2MC9)
-            TotalCountMC10 = CInt(CounterP1MC10) + CInt(CounterP2MC10)
-            TotalCountMC11 = CInt(CounterP1MC11) + CInt(CounterP2MC11)
-            TotalCountMC12 = CInt(CounterP1MC12) + CInt(CounterP2MC12)
-            TotalCountMC13 = CInt(CounterP1MC13) + CInt(CounterP2MC13)
-            TotalCountMC14 = CInt(CounterP1MC14) + CInt(CounterP2MC14)
-            TotalCountMC15 = CInt(CounterP1MC15) + CInt(CounterP2MC15)
-            TotalCountMC16 = CInt(CounterP1MC16) + CInt(CounterP2MC16)
-            TotalCountMC17 = CInt(CounterP1MC17) + CInt(CounterP2MC17)
-            TotalCountMC18 = CInt(CounterP1MC18) + CInt(CounterP2MC18)
-            TotalCountMC19 = CInt(CounterP1MC19) + CInt(CounterP2MC19)
+            'TotalCountMC3 = CInt(CounterP1MC3) + CInt(CounterP2MC3)
+            'TotalCountMC4 = CInt(CounterP1MC4) + CInt(CounterP2MC4)
+            'TotalCountMC5 = CInt(CounterP1MC5) + CInt(CounterP2MC5)
+            'TotalCountMC6 = CInt(CounterP1MC6) + CInt(CounterP2MC6)
+            'TotalCountMC7 = CInt(CounterP1MC7) + CInt(CounterP2MC7)
+            'TotalCountMC8 = CInt(CounterP1MC8) + CInt(CounterP2MC8)
+            'TotalCountMC9 = CInt(CounterP1MC9) + CInt(CounterP2MC9)
+            'TotalCountMC10 = CInt(CounterP1MC10) + CInt(CounterP2MC10)
+            'TotalCountMC11 = CInt(CounterP1MC11) + CInt(CounterP2MC11)
+            'TotalCountMC12 = CInt(CounterP1MC12) + CInt(CounterP2MC12)
+            'TotalCountMC13 = CInt(CounterP1MC13) + CInt(CounterP2MC13)
+            'TotalCountMC14 = CInt(CounterP1MC14) + CInt(CounterP2MC14)
+            'TotalCountMC15 = CInt(CounterP1MC15) + CInt(CounterP2MC15)
+            'TotalCountMC16 = CInt(CounterP1MC16) + CInt(CounterP2MC16)
+            'TotalCountMC17 = CInt(CounterP1MC17) + CInt(CounterP2MC17)
+            'TotalCountMC18 = CInt(CounterP1MC18) + CInt(CounterP2MC18)
+            'TotalCountMC19 = CInt(CounterP1MC19) + CInt(CounterP2MC19)
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
@@ -1891,79 +1892,79 @@ Public Class frmHome
     End Sub
     Public Sub CheckAndUpdateMachineLog_AtLogOut()
         If modUserLoginFlagMC1 = False Then
-            modMCUnNow = "NULL"
-            modMCUNIdNow = "NULL"
-            modMCAcLvlNow = "NULL"
+            modMCUnNow = "none"
+            modMCUNIdNow = "none"
+            modMCAcLvlNow = "none"
             modMCIdNow = "Machine 1"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC2 = False Then
-            modMCUnNow = "NULL"
-            modMCUNIdNow = "NULL"
-            modMCAcLvlNow = "NULL"
+            modMCUnNow = "none"
+            modMCUNIdNow = "none"
+            modMCAcLvlNow = "none"
             modMCIdNow = "Machine 2"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC3 = False Then
-            modMCUnNow = "NULL"
-            modMCUNIdNow = "NULL"
-            modMCAcLvlNow = "NULL"
+            modMCUnNow = "none"
+            modMCUNIdNow = "none"
+            modMCAcLvlNow = "none"
             modMCIdNow = "Machine 3"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC4 = False Then
-            modMCUnNow = "NULL"
-            modMCUNIdNow = "NULL"
-            modMCAcLvlNow = "NULL"
+            modMCUnNow = "none"
+            modMCUNIdNow = "none"
+            modMCAcLvlNow = "none"
             modMCIdNow = "Machine 4"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC5 = False Then
-            modMCUnNow = "NULL"
-            modMCUNIdNow = "NULL"
-            modMCAcLvlNow = "NULL"
+            modMCUnNow = "none"
+            modMCUNIdNow = "none"
+            modMCAcLvlNow = "none"
             modMCIdNow = "Machine 5"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC6 = False Then
-            modMCUnNow = "NULL"
-            modMCUNIdNow = "NULL"
-            modMCAcLvlNow = "NULL"
+            modMCUnNow = "none"
+            modMCUNIdNow = "none"
+            modMCAcLvlNow = "none"
             modMCIdNow = "Machine 6"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC7 = False Then
-            modMCUnNow = "NULL"
-            modMCUNIdNow = "NULL"
-            modMCAcLvlNow = "NULL"
+            modMCUnNow = "none"
+            modMCUNIdNow = "none"
+            modMCAcLvlNow = "none"
             modMCIdNow = "Machine 7"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC8 = False Then
-            modMCUnNow = "NULL"
-            modMCUNIdNow = "NULL"
-            modMCAcLvlNow = "NULL"
+            modMCUnNow = "none"
+            modMCUNIdNow = "none"
+            modMCAcLvlNow = "none"
             modMCIdNow = "Machine 8"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC9 = False Then
-            modMCUnNow = "NULL"
-            modMCUNIdNow = "NULL"
-            modMCAcLvlNow = "NULL"
+            modMCUnNow = "none"
+            modMCUNIdNow = "none"
+            modMCAcLvlNow = "none"
             modMCIdNow = "Machine 9"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC10 = False Then
-            modMCUnNow = "NULL"
-            modMCUNIdNow = "NULL"
-            modMCAcLvlNow = "NULL"
+            modMCUnNow = "none"
+            modMCUNIdNow = "none"
+            modMCAcLvlNow = "none"
             modMCIdNow = "Machine 10"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC11 = False Then
-            modMCUnNow = "NULL"
-            modMCUNIdNow = "NULL"
-            modMCAcLvlNow = "NULL"
+            modMCUnNow = "none"
+            modMCUNIdNow = "none"
+            modMCAcLvlNow = "none"
             modMCIdNow = "Machine 11"
             UpdateUserLogin()
         End If

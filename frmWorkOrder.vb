@@ -228,6 +228,7 @@
 
     '// REALTIME CHECK TIMER (100ms)
     Private Sub JOSelectRTCheck_Tick(sender As Object, e As EventArgs) Handles JOSelectRTCheck.Tick
+        lblChecking.Text = bolUpdateAndUnload
         EnableDisableUnloadBtn()
         DGVCellFormating_Loaded_Inprogress()
         DGVCellFormating_Unloaded_Incomplete()
@@ -250,9 +251,9 @@
         If preUnloadDetails_Confirmed = True Then
             JobOrderUnloadDetails()
             RefreshDGV()
-
-            preUnloadDetails_Confirmed = False
             bolJOUnloadConfirm = False
+            bolUpdateAndUnload = False
+            preUnloadDetails_Confirmed = False
             ClearDGVSelection()
         End If
     End Sub
@@ -528,7 +529,7 @@
     '// UNLOAD BUTTON FUNCTION
     Private Sub btnUnload_Click(sender As Object, e As EventArgs) Handles btnUnload.Click
         LoadingPreUnloadDetails()
-        JOUnloadBtnClick = True
+        'bolUpdateAndUnload = True
         'stJOMachineID_Unloading = lblDGVMachineId.Text
         frmJOUnload.ShowDialog()
     End Sub

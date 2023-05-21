@@ -4,13 +4,17 @@ Imports System.IO
 Imports System.Web.Script.Serialization
 Imports System.Windows.Media.Imaging
 Imports System.Windows.Controls
+Imports System.Data.SqlClient
 
 Public Class frmJOLoading
+
+    Dim LoggedAndLoaded As Boolean
+    Dim McLogged As String
+    Dim McSelected As Boolean
+
     Private Sub frmLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: This line of code loads data into the 'PartNoMasterList.MListPartNumber' table. You can move, or remove it, as needed.
-        'Me.MListPartNumberTableAdapter.Fill(Me.PartNoMasterList.MListPartNumber)
-        'TODO: This line of code loads data into the 'NewJOMasterList.MListNewJobOrder' table. You can move, or remove it, as needed.
-        Me.MListNewJobOrderTableAdapter.Fill(Me.NewJOMasterList.MListNewJobOrder)
+        'TODO: This line of code loads data into the 'MListNewJobOrder_1.MListNewJobOrder' table. You can move, or remove it, as needed.
+        Me.MListNewJobOrderTableAdapter1.FillByLoadStat(Me.MListNewJobOrder_1.MListNewJobOrder, "Not Loaded")
         dgvJO.ClearSelection()
 
         lblDGVMoldID.Text = "-"
@@ -43,14 +47,18 @@ Public Class frmJOLoading
         lblDGVMoldID.Text = dgvJO.CurrentRow.Cells(3).Value.ToString
         lblDGVJOPlanQty.Text = dgvJO.CurrentRow.Cells(4).Value.ToString
         lblDGVMachineId.Text = dgvJO.CurrentRow.Cells(5).Value.ToString
+        LoggedAndLoaded = False
+        'CompareJOCode_Vs_JOCodeLoadedDetails()
+        compareMCLogged_VS_MCSelected()
     End Sub
     Private Sub lblDGVMachineId_TextChanged(sender As Object, e As EventArgs) Handles lblDGVMachineId.TextChanged
-        If (lblDGVMoldID.Text <> "-" And lblDGVMoldID.Text <> "") _
-            And (lblDGVMachineId.Text <> "-" And lblDGVMachineId.Text <> "") Then
-            btnJOLoadBtn2Click.Enabled = True
-        Else
-            btnJOLoadBtn2Click.Enabled = False
-        End If
+        'If (lblDGVMoldID.Text <> "-" And lblDGVMoldID.Text <> "") _
+        '    And (lblDGVMachineId.Text <> "-" And lblDGVMachineId.Text <> "") Then
+        '    btnJOLoadBtn2Click.Enabled = True
+        'Else
+        '    btnJOLoadBtn2Click.Enabled = False
+        'End If
+
     End Sub
 
     '// SAMPLE WORKABLE FETCHING OG API DATA TO DATAGRIDVIEW DISPLAY (DESERIALIZED JSON)
@@ -108,16 +116,25 @@ Public Class frmJOLoading
     '// PRE LOADED DATA CONFIRMATION
     Public Sub JOLoadConfirm()
         If bolJOLoadConfirm = True Then
+            updatedMListNewJobOrder()
             PreLoadedJobOrderDetails()
             preLDJODetail_Confirm = True
+            refreshDGV()
         End If
-
     End Sub
     '//
+
+    '// REFRESH DGV DATA
+    Public Sub refreshDGV()
+        Me.MListNewJobOrderTableAdapter1.FillByLoadStat(Me.MListNewJobOrder_1.MListNewJobOrder, "Not Loaded")
+    End Sub
+    '//
+
+    '// REAL TIME STATUS CHECK TIMER
     Private Sub tmrRealTimeCheck_Tick(sender As Object, e As EventArgs) Handles tmrRealTimeCheck.Tick
         JOLoadConfirm()
     End Sub
-
+    '//
 
     Private Sub dgvJO_CellValueChanged(sender As Object, e As DataGridViewCellEventArgs) Handles dgvJO.CellValueChanged
         If e.RowIndex < 0 Then Return
@@ -133,9 +150,59 @@ Public Class frmJOLoading
 
     End Sub
 
-    Public Sub SelectJOCode_At_JOLoadedDetails()
+    'Public Sub CompareJOCode_Vs_JOCodeLoadedDetails()
+    '    Dim compareJO As New clsSelectAllJODetails_byJOcode
+    '    compareJO.JOCode = lblDGVJOCode.Text
+    '    compareJO.MachineID = ""
+    '    compareJO.CompareIFJoCodeAlreadyLogged()
+    '    If compareJO.isLogged = True And compareJO.LoadStat = "Loaded" Then
+    '        btnJOLoadBtn2Click.Enabled = False
+    '        MessageBox.Show("This Job Order was already loaded to " & compareJO.getMachineID & "!" _
+    '                        & vbNewLine & "PLease choose another Job Order!", "Checking Job Order Loaded Status..." _
+    '                                                                          , MessageBoxButtons.OK, MessageBoxIcon.Information)
+    '        LoggedAndLoaded = True
+    '    ElseIf compareJO.isLogged = True And compareJO.LoadStat = "Unloaded" Then
+    '        btnJOLoadBtn2Click.Enabled = False
+    '        MessageBox.Show("This Job Order has been " & compareJO.LoadStat & " with " & compareJO.ProdnStat & " Production Status!" _
+    '                        & vbNewLine & "PLease choose another Job Order!", "Checking Job Order Loaded Status..." _
+    '                                                                          , MessageBoxButtons.OK, MessageBoxIcon.Information)
+    '    Else
+    '        btnJOLoadBtn2Click.Enabled = True
+    '    End If
+    'End Sub
+
+    Public Sub compareMCLogged_VS_MCSelected()
+        Try
+            Dim sqlPath As String = "Data Source=DESKTOP-4OGTIB2\DIAVIEWSQL;Initial Catalog=SPS;Persist Security Info=True;User ID=sa;Password=doc577isin"
+            Dim sqlcmd As String = "Select [Machine_ID] from [Production].[JOLoadedDetails] where [Machine_ID] = '" + lblDGVMachineId.Text + "' AND [Load_Stats] = 'Loaded' "
+            Dim con As New SqlConnection(sqlPath)
+            Using cmd As SqlCommand = New SqlCommand(sqlcmd, con)
+                con.Open()
+                McLogged = cmd.ExecuteScalar()
+                con.Close()
+            End Using
+
+            If McLogged = lblDGVMachineId.Text Then
+                btnJOLoadBtn2Click.Enabled = False
+                MessageBox.Show("This " & McLogged & " is Busy Processing Loaded Job Order!" _
+                                & vbNewLine & "PLease choose different Job Order with different Machine ID!", "Checking Machine Availability..." _
+                                                                                   , MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Else
+                btnJOLoadBtn2Click.Enabled = True
+            End If
+        Catch ex As Exception
+            If ex.Message IsNot Nothing Then
+                Exit Sub
+            End If
+        End Try
 
     End Sub
 
+    Public Sub updatedMListNewJobOrder()
+        Dim upd8 As New clsUpdateMListNewJobOrder
+        upd8.JOCode = lblDGVJOCode.Text
+        upd8.LoadStat = "Loaded"
+        upd8.updateLoadStat()
+    End Sub
 
 End Class

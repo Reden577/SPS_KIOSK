@@ -8,16 +8,18 @@ Public Class frmJOUnload
         Me.CenterToScreen()
         LoadingDataToUNLOAD()
         If bolUpdateAndUnload = False Then
-            Reject1 = Nothing
-            Reject2 = Nothing
+            Reject1 = 0
+            Reject2 = 0
             txtRejectP1.Text = "0"
             TxtRejectP2.Text = "0"
             lblP1Reject.Text = "0"
             lblP2Reject.Text = "0"
+            stJORejectQTyP1MC1 = 0
+            stJORejectQTyP2MC1 = 0
         End If
     End Sub
     Private Sub frmJOUnload_Closed(sender As Object, e As EventArgs) Handles Me.Closed
-
+        ClearingLoadingPreUnloadDetails()
     End Sub
     Private Sub frmJOUnload_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         ClearingLoadingPreUnloadDetails()
@@ -79,7 +81,7 @@ Public Class frmJOUnload
         End If
     End Sub
 
-    Private Sub btnLoad_Click(sender As Object, e As EventArgs) Handles btnLoad.Click
+    Private Sub btnLoad_Click(sender As Object, e As EventArgs) Handles btnSaveReject.Click
         If IsNumeric(txtRejectP1.Text) And IsNumeric(TxtRejectP2.Text) Then
             Reject1 = txtRejectP1.Text
             Reject2 = TxtRejectP2.Text
@@ -107,14 +109,14 @@ Public Class frmJOUnload
     End Sub
 
     Public Sub RejectLoadedConfirm()
-        If stJOMachineID_Unloading = "Machine 1" Then
-            stJORejectQTyP1MC1 = Reject1
+        'If preUnloadDetails_MCId = "Machine 1" Then
+        stJORejectQTyP1MC1 = Reject1
             stJORejectQTyP2MC1 = Reject2
-        End If
-        If stJOMachineID_Unloading = "Machine 2" Then
-            stJORejectQTyP1MC2 = Reject1
-            stJORejectQTyP2MC2 = Reject2
-        End If
+        'End If
+        'If preUnloadDetails_MCId = "Machine 2" Then
+        '    stJORejectQTyP1MC2 = Reject1
+        '    stJORejectQTyP2MC2 = Reject2
+        'End If
     End Sub
 
     '// UNLOADING CONDITION RETURN RESULTS IF PLAN DID NOT MEET THE TARGET
@@ -165,6 +167,11 @@ Public Class frmJOUnload
         preUnloadDetails_ProdnStat = Nothing
         preUnloadDetails_LoadedBy = Nothing
         preUnloadDetails_UnloadedBy = Nothing
+        stJORejectQTyP1MC1 = 0
+        stJORejectQTyP2MC1 = 0
+        Reject1 = 0
+        Reject2 = 0
+
     End Sub
     '//
 
@@ -181,10 +188,10 @@ Public Class frmJOUnload
         upd8JOUnLD.TotalShots = D2002
         upd8JOUnLD.PN1OUtput = D2002 * CInt(preUnloadDetails_CavP1)
         upd8JOUnLD.PN2Output = D2002 * CInt(preUnloadDetails_CavP2)
-        upd8JOUnLD.PN1Reject = stJORejectQTyP1MC1
-        upd8JOUnLD.Pn2Reject = stJORejectQTyP2MC1
-        upd8JOUnLD.ActualPN1Output = (D2002 * CInt(preUnloadDetails_CavP1)) - stJORejectQTyP1MC1
-        upd8JOUnLD.ActualPN2Output = (D2002 * CInt(preUnloadDetails_CavP2)) - stJORejectQTyP2MC1
+        upd8JOUnLD.PN1Reject = lblP1Reject.Text
+        upd8JOUnLD.Pn2Reject = lblP2Reject.Text
+        upd8JOUnLD.ActualPN1Output = (D2002 * CInt(preUnloadDetails_CavP1)) - upd8JOUnLD.PN1Reject
+        upd8JOUnLD.ActualPN2Output = (D2002 * CInt(preUnloadDetails_CavP2)) - upd8JOUnLD.Pn2Reject
         upd8JOUnLD.UpdateJOLoadedDetailsAtUnloading()
     End Sub
 

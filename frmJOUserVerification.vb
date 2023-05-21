@@ -5,6 +5,9 @@ Public Class frmJOUserVerification
     Private Sub frmJOUserVerification_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.CenterToScreen()
     End Sub
+    Private Sub frmJOUserVerification_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+        txtJOVerification.Text = ""
+    End Sub
 
     Private Sub btnConfirm_Click(sender As Object, e As EventArgs) Handles btnConfirm.Click
         LoadUserDetails_ViaOTS()
@@ -31,14 +34,14 @@ Public Class frmJOUserVerification
                     modLogOTS = Nothing
                     Me.Close()
                 End If
-                If JOUnloadBtnClick = True Then
-                    stJOUnloadedBy = modLogUserName
-                    bolJOUnloadConfirm = True
-                    JOUnloadBtnClick = False
-                    frmJOUnload.Close()
-                    modLogOTS = Nothing
-                    Me.Close()
-                End If
+                'If JOUnloadBtnClick = True Then
+                '    stJOUnloadedBy = modLogUserName
+                '    bolJOUnloadConfirm = True
+                '    JOUnloadBtnClick = False
+                '    frmJOUnload.Close()
+                '    modLogOTS = Nothing
+                '    Me.Close()
+                'End If
                 If JOLoadBtn2Click = True Then
                     stJOLoadedBy = modLogUserName
                     bolJOLoadConfirm = True
@@ -63,6 +66,8 @@ Public Class frmJOUserVerification
             MessageBox.Show(ex.Message, "Get User Details", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
+
+
     '//
 
 End Class

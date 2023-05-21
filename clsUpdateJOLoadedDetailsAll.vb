@@ -28,6 +28,12 @@ Public Class clsUpdateJOLoadedDetailsAll
     Public Pn2Reject As Integer
     Public ActualPN1Output As Integer
     Public ActualPN2Output As Integer
+    Public MSStartTime As String
+    Public MSStopTime As String
+    Public FPBStartTime As String
+    Public FPBStopTime As String
+    Public TtlMSTime As String
+    Public TtlFPBTime As String
     Public TotalRunTime As Decimal
 
     Public Sub UpdateJOLoadedDetailsAll()

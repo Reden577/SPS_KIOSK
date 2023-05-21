@@ -27,6 +27,15 @@ Partial Class frmJOLoading
         Me.btnClear = New FontAwesome.Sharp.IconButton()
         Me.btnJOLoadBtn2Click = New FontAwesome.Sharp.IconButton()
         Me.dgvJO = New System.Windows.Forms.DataGridView()
+        Me.colCkBox = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.IDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.JOBORDERDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MoldIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.JOBORDERQTYDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MachineIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.LoadStatDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MListNewJobOrderBindingSource5 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.MListNewJobOrder_1 = New SPSApp1.MListNewJobOrder_1()
         Me.MListNewJobOrderBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.NewJOMasterListBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.NewJOMasterList = New SPSApp1.NewJOMasterList()
@@ -44,9 +53,6 @@ Partial Class frmJOLoading
         Me.lblDGVJOCode = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.lblDGVLoadStat = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.lblDGVMachineId = New System.Windows.Forms.Label()
         Me.dgvAPI = New System.Windows.Forms.DataGridView()
         Me.coluserID = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -54,15 +60,15 @@ Partial Class frmJOLoading
         Me.colTitle = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colBody = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.colCkBox = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.IDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.JOBORDERDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MoldIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.JOBORDERQTYDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MachineIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.tmrRealTimeCheck = New System.Windows.Forms.Timer(Me.components)
+        Me.MListNewJobOrderBindingSource4 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.MListNewJobOrderBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.MListNewJobOrderTableAdapter1 = New SPSApp1.MListNewJobOrder_1TableAdapters.MListNewJobOrderTableAdapter()
+        Me.MListNewJobOrderBindingSource3 = New System.Windows.Forms.BindingSource(Me.components)
         CType(Me.dgvJO, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MListNewJobOrderBindingSource5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MListNewJobOrder_1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MListNewJobOrderBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NewJOMasterListBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NewJOMasterList, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -71,8 +77,10 @@ Partial Class frmJOLoading
         CType(Me.MListPartNumberBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PartNoMasterList, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
-        Me.Panel1.SuspendLayout()
         CType(Me.dgvAPI, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MListNewJobOrderBindingSource4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MListNewJobOrderBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MListNewJobOrderBindingSource3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnClear
@@ -84,9 +92,9 @@ Partial Class frmJOLoading
         Me.btnClear.IconColor = System.Drawing.Color.Black
         Me.btnClear.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnClear.IconSize = 30
-        Me.btnClear.Location = New System.Drawing.Point(672, 307)
+        Me.btnClear.Location = New System.Drawing.Point(674, 286)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(159, 53)
+        Me.btnClear.Size = New System.Drawing.Size(159, 71)
         Me.btnClear.TabIndex = 1
         Me.btnClear.Text = "CLEAR"
         Me.btnClear.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -101,9 +109,9 @@ Partial Class frmJOLoading
         Me.btnJOLoadBtn2Click.IconColor = System.Drawing.Color.Black
         Me.btnJOLoadBtn2Click.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnJOLoadBtn2Click.IconSize = 30
-        Me.btnJOLoadBtn2Click.Location = New System.Drawing.Point(672, 249)
+        Me.btnJOLoadBtn2Click.Location = New System.Drawing.Point(674, 199)
         Me.btnJOLoadBtn2Click.Name = "btnJOLoadBtn2Click"
-        Me.btnJOLoadBtn2Click.Size = New System.Drawing.Size(159, 53)
+        Me.btnJOLoadBtn2Click.Size = New System.Drawing.Size(159, 71)
         Me.btnJOLoadBtn2Click.TabIndex = 1
         Me.btnJOLoadBtn2Click.Text = "LOAD"
         Me.btnJOLoadBtn2Click.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -116,8 +124,8 @@ Partial Class frmJOLoading
         Me.dgvJO.AllowUserToDeleteRows = False
         Me.dgvJO.AutoGenerateColumns = False
         Me.dgvJO.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvJO.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colCkBox, Me.IDDataGridViewTextBoxColumn, Me.JOBORDERDataGridViewTextBoxColumn, Me.MoldIDDataGridViewTextBoxColumn, Me.JOBORDERQTYDataGridViewTextBoxColumn, Me.MachineIDDataGridViewTextBoxColumn})
-        Me.dgvJO.DataSource = Me.MListNewJobOrderBindingSource1
+        Me.dgvJO.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colCkBox, Me.IDDataGridViewTextBoxColumn, Me.JOBORDERDataGridViewTextBoxColumn, Me.MoldIDDataGridViewTextBoxColumn, Me.JOBORDERQTYDataGridViewTextBoxColumn, Me.MachineIDDataGridViewTextBoxColumn, Me.LoadStatDataGridViewTextBoxColumn})
+        Me.dgvJO.DataSource = Me.MListNewJobOrderBindingSource5
         Me.dgvJO.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgvJO.Location = New System.Drawing.Point(3, 22)
         Me.dgvJO.Name = "dgvJO"
@@ -125,6 +133,69 @@ Partial Class frmJOLoading
         Me.dgvJO.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvJO.Size = New System.Drawing.Size(552, 311)
         Me.dgvJO.TabIndex = 2
+        '
+        'colCkBox
+        '
+        Me.colCkBox.DataPropertyName = "colCkBox"
+        Me.colCkBox.HeaderText = "Sel"
+        Me.colCkBox.Name = "colCkBox"
+        Me.colCkBox.ReadOnly = True
+        Me.colCkBox.Width = 40
+        '
+        'IDDataGridViewTextBoxColumn
+        '
+        Me.IDDataGridViewTextBoxColumn.DataPropertyName = "ID"
+        Me.IDDataGridViewTextBoxColumn.HeaderText = "ID"
+        Me.IDDataGridViewTextBoxColumn.Name = "IDDataGridViewTextBoxColumn"
+        Me.IDDataGridViewTextBoxColumn.ReadOnly = True
+        Me.IDDataGridViewTextBoxColumn.Width = 50
+        '
+        'JOBORDERDataGridViewTextBoxColumn
+        '
+        Me.JOBORDERDataGridViewTextBoxColumn.DataPropertyName = "JOB_ORDER"
+        Me.JOBORDERDataGridViewTextBoxColumn.HeaderText = "JO Code"
+        Me.JOBORDERDataGridViewTextBoxColumn.Name = "JOBORDERDataGridViewTextBoxColumn"
+        Me.JOBORDERDataGridViewTextBoxColumn.ReadOnly = True
+        Me.JOBORDERDataGridViewTextBoxColumn.Width = 140
+        '
+        'MoldIDDataGridViewTextBoxColumn
+        '
+        Me.MoldIDDataGridViewTextBoxColumn.DataPropertyName = "Mold_ID"
+        Me.MoldIDDataGridViewTextBoxColumn.HeaderText = "Mold ID"
+        Me.MoldIDDataGridViewTextBoxColumn.Name = "MoldIDDataGridViewTextBoxColumn"
+        Me.MoldIDDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'JOBORDERQTYDataGridViewTextBoxColumn
+        '
+        Me.JOBORDERQTYDataGridViewTextBoxColumn.DataPropertyName = "JOB_ORDER_QTY"
+        Me.JOBORDERQTYDataGridViewTextBoxColumn.HeaderText = "Plan Qty"
+        Me.JOBORDERQTYDataGridViewTextBoxColumn.Name = "JOBORDERQTYDataGridViewTextBoxColumn"
+        Me.JOBORDERQTYDataGridViewTextBoxColumn.ReadOnly = True
+        Me.JOBORDERQTYDataGridViewTextBoxColumn.Width = 80
+        '
+        'MachineIDDataGridViewTextBoxColumn
+        '
+        Me.MachineIDDataGridViewTextBoxColumn.DataPropertyName = "Machine_ID"
+        Me.MachineIDDataGridViewTextBoxColumn.HeaderText = "MC ID"
+        Me.MachineIDDataGridViewTextBoxColumn.Name = "MachineIDDataGridViewTextBoxColumn"
+        Me.MachineIDDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'LoadStatDataGridViewTextBoxColumn
+        '
+        Me.LoadStatDataGridViewTextBoxColumn.DataPropertyName = "Load_Stat"
+        Me.LoadStatDataGridViewTextBoxColumn.HeaderText = "Load Stat"
+        Me.LoadStatDataGridViewTextBoxColumn.Name = "LoadStatDataGridViewTextBoxColumn"
+        Me.LoadStatDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'MListNewJobOrderBindingSource5
+        '
+        Me.MListNewJobOrderBindingSource5.DataMember = "MListNewJobOrder"
+        Me.MListNewJobOrderBindingSource5.DataSource = Me.MListNewJobOrder_1
+        '
+        'MListNewJobOrder_1
+        '
+        Me.MListNewJobOrder_1.DataSetName = "MListNewJobOrder_1"
+        Me.MListNewJobOrder_1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'MListNewJobOrderBindingSource1
         '
@@ -247,8 +318,6 @@ Partial Class frmJOLoading
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.Panel1)
-        Me.GroupBox2.Controls.Add(Me.Label3)
         Me.GroupBox2.Controls.Add(Me.Label1)
         Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Controls.Add(Me.lblDGVJOCode)
@@ -260,40 +329,10 @@ Partial Class frmJOLoading
         Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.Location = New System.Drawing.Point(576, 24)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(255, 217)
+        Me.GroupBox2.Size = New System.Drawing.Size(255, 155)
         Me.GroupBox2.TabIndex = 6
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "JO Summary Load To:"
-        '
-        'Panel1
-        '
-        Me.Panel1.Controls.Add(Me.lblDGVLoadStat)
-        Me.Panel1.Location = New System.Drawing.Point(17, 173)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(222, 38)
-        Me.Panel1.TabIndex = 6
-        '
-        'lblDGVLoadStat
-        '
-        Me.lblDGVLoadStat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblDGVLoadStat.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblDGVLoadStat.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDGVLoadStat.Location = New System.Drawing.Point(0, 0)
-        Me.lblDGVLoadStat.Name = "lblDGVLoadStat"
-        Me.lblDGVLoadStat.Size = New System.Drawing.Size(222, 38)
-        Me.lblDGVLoadStat.TabIndex = 4
-        Me.lblDGVLoadStat.Text = "Not Loaded"
-        Me.lblDGVLoadStat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(15, 150)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(60, 20)
-        Me.Label3.TabIndex = 4
-        Me.Label3.Text = "Status:"
         '
         'lblDGVMachineId
         '
@@ -350,51 +389,6 @@ Partial Class frmJOLoading
         Me.ListBox1.Size = New System.Drawing.Size(125, 43)
         Me.ListBox1.TabIndex = 9
         '
-        'colCkBox
-        '
-        Me.colCkBox.DataPropertyName = "colCkBox"
-        Me.colCkBox.HeaderText = "Sel"
-        Me.colCkBox.Name = "colCkBox"
-        Me.colCkBox.ReadOnly = True
-        Me.colCkBox.Width = 40
-        '
-        'IDDataGridViewTextBoxColumn
-        '
-        Me.IDDataGridViewTextBoxColumn.DataPropertyName = "ID"
-        Me.IDDataGridViewTextBoxColumn.HeaderText = "ID"
-        Me.IDDataGridViewTextBoxColumn.Name = "IDDataGridViewTextBoxColumn"
-        Me.IDDataGridViewTextBoxColumn.ReadOnly = True
-        Me.IDDataGridViewTextBoxColumn.Width = 50
-        '
-        'JOBORDERDataGridViewTextBoxColumn
-        '
-        Me.JOBORDERDataGridViewTextBoxColumn.DataPropertyName = "JOB_ORDER"
-        Me.JOBORDERDataGridViewTextBoxColumn.HeaderText = "JOCode"
-        Me.JOBORDERDataGridViewTextBoxColumn.Name = "JOBORDERDataGridViewTextBoxColumn"
-        Me.JOBORDERDataGridViewTextBoxColumn.ReadOnly = True
-        Me.JOBORDERDataGridViewTextBoxColumn.Width = 160
-        '
-        'MoldIDDataGridViewTextBoxColumn
-        '
-        Me.MoldIDDataGridViewTextBoxColumn.DataPropertyName = "Mold_ID"
-        Me.MoldIDDataGridViewTextBoxColumn.HeaderText = "MoldID"
-        Me.MoldIDDataGridViewTextBoxColumn.Name = "MoldIDDataGridViewTextBoxColumn"
-        Me.MoldIDDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'JOBORDERQTYDataGridViewTextBoxColumn
-        '
-        Me.JOBORDERQTYDataGridViewTextBoxColumn.DataPropertyName = "JOB_ORDER_QTY"
-        Me.JOBORDERQTYDataGridViewTextBoxColumn.HeaderText = "JOPlanQty"
-        Me.JOBORDERQTYDataGridViewTextBoxColumn.Name = "JOBORDERQTYDataGridViewTextBoxColumn"
-        Me.JOBORDERQTYDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'MachineIDDataGridViewTextBoxColumn
-        '
-        Me.MachineIDDataGridViewTextBoxColumn.DataPropertyName = "Machine_ID"
-        Me.MachineIDDataGridViewTextBoxColumn.HeaderText = "MachId"
-        Me.MachineIDDataGridViewTextBoxColumn.Name = "MachineIDDataGridViewTextBoxColumn"
-        Me.MachineIDDataGridViewTextBoxColumn.ReadOnly = True
-        '
         'Label5
         '
         Me.Label5.AutoSize = True
@@ -407,6 +401,25 @@ Partial Class frmJOLoading
         'tmrRealTimeCheck
         '
         Me.tmrRealTimeCheck.Enabled = True
+        '
+        'MListNewJobOrderBindingSource4
+        '
+        Me.MListNewJobOrderBindingSource4.DataMember = "MListNewJobOrder"
+        Me.MListNewJobOrderBindingSource4.DataSource = Me.NewJOMasterListBindingSource
+        '
+        'MListNewJobOrderBindingSource2
+        '
+        Me.MListNewJobOrderBindingSource2.DataMember = "MListNewJobOrder"
+        Me.MListNewJobOrderBindingSource2.DataSource = Me.MListNewJobOrder_1
+        '
+        'MListNewJobOrderTableAdapter1
+        '
+        Me.MListNewJobOrderTableAdapter1.ClearBeforeFill = True
+        '
+        'MListNewJobOrderBindingSource3
+        '
+        Me.MListNewJobOrderBindingSource3.DataMember = "MListNewJobOrder"
+        Me.MListNewJobOrderBindingSource3.DataSource = Me.MListNewJobOrder_1
         '
         'frmJOLoading
         '
@@ -427,6 +440,8 @@ Partial Class frmJOLoading
         Me.Name = "frmJOLoading"
         Me.Text = "Job Order Loading!"
         CType(Me.dgvJO, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MListNewJobOrderBindingSource5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MListNewJobOrder_1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MListNewJobOrderBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NewJOMasterListBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NewJOMasterList, System.ComponentModel.ISupportInitialize).EndInit()
@@ -436,8 +451,10 @@ Partial Class frmJOLoading
         CType(Me.PartNoMasterList, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
         CType(Me.dgvAPI, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MListNewJobOrderBindingSource4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MListNewJobOrderBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MListNewJobOrderBindingSource3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -465,19 +482,23 @@ Partial Class frmJOLoading
     Friend WithEvents colID As DataGridViewTextBoxColumn
     Friend WithEvents colTitle As DataGridViewTextBoxColumn
     Friend WithEvents colBody As DataGridViewTextBoxColumn
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents lblDGVLoadStat As Label
-    Friend WithEvents Label3 As Label
     Friend WithEvents MListNewJobOrderBindingSource1 As BindingSource
     Friend WithEvents NewJOMasterListBindingSource As BindingSource
     Friend WithEvents lblDGVMachineId As Label
     Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents tmrRealTimeCheck As Timer
+    Friend WithEvents MListNewJobOrder_1 As MListNewJobOrder_1
+    Friend WithEvents MListNewJobOrderBindingSource2 As BindingSource
+    Friend WithEvents MListNewJobOrderTableAdapter1 As MListNewJobOrder_1TableAdapters.MListNewJobOrderTableAdapter
+    Friend WithEvents MListNewJobOrderBindingSource5 As BindingSource
+    Friend WithEvents MListNewJobOrderBindingSource3 As BindingSource
+    Friend WithEvents MListNewJobOrderBindingSource4 As BindingSource
     Friend WithEvents colCkBox As DataGridViewCheckBoxColumn
     Friend WithEvents IDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents JOBORDERDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents MoldIDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents JOBORDERQTYDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents MachineIDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents Label5 As Label
-    Friend WithEvents tmrRealTimeCheck As Timer
+    Friend WithEvents LoadStatDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
 End Class

@@ -157,6 +157,7 @@ Partial Class frmWorkOrder
         Me.JOLoadedDetailsTableAdapter = New SPSApp1.JOLodedDetails_3TableAdapters.JOLoadedDetailsTableAdapter()
         Me.JOLoadedDetailsBindingSource15 = New System.Windows.Forms.BindingSource(Me.components)
         Me.JOLoadedDetailsTableAdapter2 = New SPSApp1.JOLoadedDetails_MachineIDOnlyTableAdapters.JOLoadedDetailsTableAdapter()
+        Me.lblChecking = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.dgvJobOrder, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.JOLoadedDetailsBindingSource16, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -502,6 +503,7 @@ Partial Class frmWorkOrder
         Me.btnLoad.Text = "Load"
         Me.btnLoad.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnLoad.UseVisualStyleBackColor = True
+        Me.btnLoad.Visible = False
         '
         'btnUnload
         '
@@ -1255,11 +1257,21 @@ Partial Class frmWorkOrder
         '
         Me.JOLoadedDetailsTableAdapter2.ClearBeforeFill = True
         '
+        'lblChecking
+        '
+        Me.lblChecking.AutoSize = True
+        Me.lblChecking.Location = New System.Drawing.Point(414, 30)
+        Me.lblChecking.Name = "lblChecking"
+        Me.lblChecking.Size = New System.Drawing.Size(39, 13)
+        Me.lblChecking.TabIndex = 16
+        Me.lblChecking.Text = "Label9"
+        '
         'frmWorkOrder
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1857, 992)
+        Me.Controls.Add(Me.lblChecking)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.btnOpenJO)
         Me.Controls.Add(Me.GroupBox3)
@@ -1464,4 +1476,5 @@ Partial Class frmWorkOrder
     Friend WithEvents JOLoadedDetails_MachineIDOnly As JOLoadedDetails_MachineIDOnly
     Friend WithEvents JOLoadedDetailsBindingSource17 As BindingSource
     Friend WithEvents JOLoadedDetailsTableAdapter2 As JOLoadedDetails_MachineIDOnlyTableAdapters.JOLoadedDetailsTableAdapter
+    Friend WithEvents lblChecking As Label
 End Class

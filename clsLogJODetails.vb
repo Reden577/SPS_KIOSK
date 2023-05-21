@@ -4,7 +4,6 @@ Public Class clsLogJODetails
     Inherits clsUpdateJOLoadedDetailsAll
     Public getMIdProc As String = "SelectProMoldIdDetailsAll"
     Public logJOProc As String = "InsertProLogJODetails"
-    Public BuildingNo As String
     Public Customer As String
     Public ProcessType As String
     Public PartNoDetails As String

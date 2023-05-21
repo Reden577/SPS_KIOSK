@@ -68,7 +68,7 @@ Partial Class frmJOUnload
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label29 = New System.Windows.Forms.Label()
         Me.btnClear = New FontAwesome.Sharp.IconButton()
-        Me.btnLoad = New FontAwesome.Sharp.IconButton()
+        Me.btnSaveReject = New FontAwesome.Sharp.IconButton()
         Me.btnUpdateUnload = New FontAwesome.Sharp.IconButton()
         Me.IconSplitButton1 = New FontAwesome.Sharp.IconSplitButton()
         Me.tmrRealTimeCheck = New System.Windows.Forms.Timer(Me.components)
@@ -566,22 +566,22 @@ Partial Class frmJOUnload
         Me.btnClear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnClear.UseVisualStyleBackColor = True
         '
-        'btnLoad
+        'btnSaveReject
         '
-        Me.btnLoad.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnLoad.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLoad.IconChar = FontAwesome.Sharp.IconChar.Database
-        Me.btnLoad.IconColor = System.Drawing.Color.Black
-        Me.btnLoad.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnLoad.IconSize = 25
-        Me.btnLoad.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnLoad.Location = New System.Drawing.Point(680, 320)
-        Me.btnLoad.Name = "btnLoad"
-        Me.btnLoad.Size = New System.Drawing.Size(144, 40)
-        Me.btnLoad.TabIndex = 5
-        Me.btnLoad.Text = "Save"
-        Me.btnLoad.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnLoad.UseVisualStyleBackColor = True
+        Me.btnSaveReject.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnSaveReject.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSaveReject.IconChar = FontAwesome.Sharp.IconChar.Database
+        Me.btnSaveReject.IconColor = System.Drawing.Color.Black
+        Me.btnSaveReject.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnSaveReject.IconSize = 25
+        Me.btnSaveReject.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnSaveReject.Location = New System.Drawing.Point(680, 320)
+        Me.btnSaveReject.Name = "btnSaveReject"
+        Me.btnSaveReject.Size = New System.Drawing.Size(144, 40)
+        Me.btnSaveReject.TabIndex = 5
+        Me.btnSaveReject.Text = "Save"
+        Me.btnSaveReject.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnSaveReject.UseVisualStyleBackColor = True
         '
         'btnUpdateUnload
         '
@@ -646,7 +646,7 @@ Partial Class frmJOUnload
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(878, 551)
         Me.Controls.Add(Me.btnClear)
-        Me.Controls.Add(Me.btnLoad)
+        Me.Controls.Add(Me.btnSaveReject)
         Me.Controls.Add(Me.btnUpdateUnload)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
@@ -695,7 +695,7 @@ Partial Class frmJOUnload
     Friend WithEvents Label27 As Label
     Friend WithEvents Label29 As Label
     Friend WithEvents btnClear As FontAwesome.Sharp.IconButton
-    Friend WithEvents btnLoad As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnSaveReject As FontAwesome.Sharp.IconButton
     Friend WithEvents lblActualRuntime As Label
     Friend WithEvents lblP2Reject As Label
     Friend WithEvents Label6 As Label
