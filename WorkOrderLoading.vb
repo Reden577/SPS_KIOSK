@@ -363,25 +363,25 @@
     Public ckbMachine18 As Boolean
     Public ckbMachine19 As Boolean
 
-    Public iPlanProdTimeMC1 As Decimal
-    Public iPlanProdTimeMC2 As Decimal
-    Public iPlanProdTimeMC3 As Decimal
-    Public iPlanProdTimeMC4 As Decimal
-    Public iPlanProdTimeMC5 As Decimal
-    Public iPlanProdTimeMC6 As Decimal
-    Public iPlanProdTimeMC7 As Decimal
-    Public iPlanProdTimeMC8 As Decimal
-    Public iPlanProdTimeMC9 As Decimal
-    Public iPlanProdTimeMC10 As Decimal
-    Public iPlanProdTimeMC11 As Decimal
-    Public iPlanProdTimeMC12 As Decimal
-    Public iPlanProdTimeMC13 As Decimal
-    Public iPlanProdTimeMC14 As Decimal
-    Public iPlanProdTimeMC15 As Decimal
-    Public iPlanProdTimeMC16 As Decimal
-    Public iPlanProdTimeMC17 As Decimal
-    Public iPlanProdTimeMC18 As Decimal
-    Public iPlanProdTimeMC19 As Decimal
+    Public iPlanProdTimeMC1 As Double
+    Public iPlanProdTimeMC2 As Double
+    Public iPlanProdTimeMC3 As Double
+    Public iPlanProdTimeMC4 As Double
+    Public iPlanProdTimeMC5 As Double
+    Public iPlanProdTimeMC6 As Double
+    Public iPlanProdTimeMC7 As Double
+    Public iPlanProdTimeMC8 As Double
+    Public iPlanProdTimeMC9 As Double
+    Public iPlanProdTimeMC10 As Double
+    Public iPlanProdTimeMC11 As Double
+    Public iPlanProdTimeMC12 As Double
+    Public iPlanProdTimeMC13 As Double
+    Public iPlanProdTimeMC14 As Double
+    Public iPlanProdTimeMC15 As Double
+    Public iPlanProdTimeMC16 As Double
+    Public iPlanProdTimeMC17 As Double
+    Public iPlanProdTimeMC18 As Double
+    Public iPlanProdTimeMC19 As Double
 
     'JO PROGRESS STATS
     Public PlanCompleteMC1 As Boolean

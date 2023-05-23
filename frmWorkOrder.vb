@@ -277,8 +277,8 @@
             stJOPartNo2MC1 = Nothing
             stJOMoldCavP1MC1 = 0
             stJOMoldCavP2MC1 = 0
-            stJOQuantityMC1 = Nothing
-            stJOCycleTimeMC1 = Nothing
+            stJOQuantityMC1 = 0
+            stJOCycleTimeMC1 = 0
             stJOMoldIDMC1 = Nothing
             stJOMachineIDMC1 = Nothing
             stJOStartTimeMC1 = Nothing
@@ -295,8 +295,8 @@
             stJOPartNo2MC2 = Nothing
             stJOMoldCavP1MC2 = 0
             stJOMoldCavP2MC2 = 0
-            stJOQuantityMC2 = Nothing
-            stJOCycleTimeMC2 = Nothing
+            stJOQuantityMC2 = 0
+            stJOCycleTimeMC2 = 0
             stJOMoldIDMC2 = Nothing
             stJOMachineIDMC2 = Nothing
             stJOStartTimeMC2 = Nothing
@@ -313,8 +313,8 @@
         '        stJOPartNo2MC3 = Nothing
         '        stJOMoldCavP1MC3 = 0
         '        stJOMoldCavP2MC3 = 0
-        '        stJOQuantityMC3 = Nothing
-        '        stJOCycleTimeMC3 = Nothing
+        '        stJOQuantityMC3 = 0
+        '        stJOCycleTimeMC3 = 0
         '        stJOMoldIDMC3 = Nothing
         '        stJOMachineIDMC3 = Nothing
         '        stJOStartTimeMC3 = Nothing
@@ -331,8 +331,8 @@
         '        stJOPartNo2MC4 = Nothing
         '        stJOMoldCavP1MC4 = 0
         '        stJOMoldCavP2MC4 = 0
-        '        stJOQuantityMC4 = Nothing
-        '        stJOCycleTimeMC4 = Nothing
+        '        stJOQuantityMC4 = 0
+        '        stJOCycleTimeMC4 = 0
         '        stJOMoldIDMC4 = Nothing
         '        stJOMachineIDMC4 = Nothing
         '        stJOStartTimeMC4 = Nothing
@@ -349,8 +349,8 @@
         '        stJOPartNo2MC5 = Nothing
         '        stJOMoldCavP1MC5 = 0
         '        stJOMoldCavP2MC5 = 0
-        '        stJOQuantityMC5 = Nothing
-        '        stJOCycleTimeMC5 = Nothing
+        '        stJOQuantityMC5 = 0
+        '        stJOCycleTimeMC5 = 0
         '        stJOMoldIDMC5 = Nothing
         '        stJOMachineIDMC5 = Nothing
         '        stJOStartTimeMC5 = Nothing
@@ -367,8 +367,8 @@
         '        stJOPartNo2MC6 = Nothing
         '        stJOMoldCavP1MC6 = 0
         '        stJOMoldCavP2MC6 = 0
-        '        stJOQuantityMC6 = Nothing
-        '        stJOCycleTimeMC6 = Nothing
+        '        stJOQuantityMC6 = 0
+        '        stJOCycleTimeMC6 = 0
         '        stJOMoldIDMC6 = Nothing
         '        stJOMachineIDMC6 = Nothing
         '        stJOStartTimeMC6 = Nothing
@@ -385,8 +385,8 @@
         '        stJOPartNo2MC7 = Nothing
         '        stJOMoldCavP1MC7 = 0
         '        stJOMoldCavP2MC7 = 0
-        '        stJOQuantityMC7 = Nothing
-        '        stJOCycleTimeMC7 = Nothing
+        '        stJOQuantityMC7 = 0
+        '        stJOCycleTimeMC7 = 0
         '        stJOMoldIDMC7 = Nothing
         '        stJOMachineIDMC7 = Nothing
         '        stJOStartTimeMC7 = Nothing
@@ -403,8 +403,8 @@
         '        stJOPartNo2MC8 = Nothing
         '        stJOMoldCavP1MC8 = 0
         '        stJOMoldCavP2MC8 = 0
-        '        stJOQuantityMC8 = Nothing
-        '        stJOCycleTimeMC8 = Nothing
+        '        stJOQuantityMC8 = 0
+        '        stJOCycleTimeMC8 = 0
         '        stJOMoldIDMC8 = Nothing
         '        stJOMachineIDMC8 = Nothing
         '        stJOStartTimeMC8 = Nothing
@@ -421,8 +421,8 @@
         '        stJOPartNo2MC9 = Nothing
         '        stJOMoldCavP1MC9 = 0
         '        stJOMoldCavP2MC9 = 0
-        '        stJOQuantityMC9 = Nothing
-        '        stJOCycleTimeMC9 = Nothing
+        '        stJOQuantityMC9 = 0
+        '        stJOCycleTimeMC9 = 0
         '        stJOMoldIDMC9 = Nothing
         '        stJOMachineIDMC9 = Nothing
         '        stJOStartTimeMC9 = Nothing
@@ -439,8 +439,8 @@
         '        stJOPartNo2MC10 = Nothing
         '        stJOMoldCavP1MC10 = 0
         '        stJOMoldCavP2MC10 = 0
-        '        stJOQuantityMC10 = Nothing
-        '        stJOCycleTimeMC10 = Nothing
+        '        stJOQuantityMC10 = 0
+        '        stJOCycleTimeMC10 = 0
         '        stJOMoldIDMC10 = Nothing
         '        stJOMachineIDMC10 = Nothing
         '        stJOStartTimeMC10 = Nothing
@@ -457,8 +457,8 @@
         '        stJOPartNo2MC11 = Nothing
         '        stJOMoldCavP1MC11 = 0
         '        stJOMoldCavP2MC11 = 0
-        '        stJOQuantityMC11 = Nothing
-        '        stJOCycleTimeMC11 = Nothing
+        '        stJOQuantityMC11 = 0
+        '        stJOCycleTimeMC11 = 0
         '        stJOMoldIDMC11 = Nothing
         '        stJOMachineIDMC11 = Nothing
         '        stJOStartTimeMC11 = Nothing
@@ -475,8 +475,8 @@
         '        stJOPartNo2MC12 = Nothing
         '        stJOMoldCavP1MC12 = 0
         '        stJOMoldCavP2MC12 = 0
-        '        stJOQuantityMC12 = Nothing
-        '        stJOCycleTimeMC12 = Nothing
+        '        stJOQuantityMC12 = 0
+        '        stJOCycleTimeMC12 = 0
         '        stJOMoldIDMC12 = Nothing
         '        stJOMachineIDMC12 = Nothing
         '        stJOStartTimeMC12 = Nothing
@@ -493,8 +493,8 @@
         '        stJOPartNo2MC13 = Nothing
         '        stJOMoldCavP1MC13 = 0
         '        stJOMoldCavP2MC13 = 0
-        '        stJOQuantityMC13 = Nothing
-        '        stJOCycleTimeMC13 = Nothing
+        '        stJOQuantityMC13 = 0
+        '        stJOCycleTimeMC13 = 0
         '        stJOMoldIDMC13 = Nothing
         '        stJOMachineIDMC13 = Nothing
         '        stJOStartTimeMC13 = Nothing
@@ -511,8 +511,8 @@
         '        stJOPartNo2MC14 = Nothing
         '        stJOMoldCavP1MC14 = 0
         '        stJOMoldCavP2MC14 = 0
-        '        stJOQuantityMC14 = Nothing
-        '        stJOCycleTimeMC14 = Nothing
+        '        stJOQuantityMC14 = 0
+        '        stJOCycleTimeMC14 = 0
         '        stJOMoldIDMC14 = Nothing
         '        stJOMachineIDMC14 = Nothing
         '        stJOStartTimeMC14 = Nothing
@@ -664,9 +664,27 @@
         insert.JOQty = preLDJODetail_PlanQty
         insert.CycleTime = preLDJODetail_CycleTime
         insert.StartTime = Now()
+        insert.EndTime = "none"
         insert.LoadStat = "Loaded"
         insert.ProdnStat = "In Progress"
         insert.LoadedBy = preLDJODetail_LoadedBy
+        insert.UnloadedBy = "none"
+        insert.UnloadTime = "none"
+        insert.TotalShots = 0
+        insert.PN1OUtput = 0
+        insert.PN2Output = 0
+        insert.PN1Reject = 0
+        insert.Pn2Reject = 0
+        insert.ActualPN1Output = 0
+        insert.ActualPN2Output = 0
+        insert.MSStartTime = "none"
+        insert.MSStopTime = "none"
+        insert.FPBStartTime = "none"
+        insert.FPBStopTime = "none"
+        insert.TtlMSTime = 0
+        insert.TtlFPBTime = 0
+        insert.TotalRunTime = 0
+        insert.BuildingNo = "Building A"
         insert.logJODetails()
     End Sub
     '//

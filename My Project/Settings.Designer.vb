@@ -728,7 +728,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CycleTimeMC1() As String
             Get
                 Return CType(Me("CycleTimeMC1"),String)
@@ -740,7 +740,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CycleTimeMC2() As String
             Get
                 Return CType(Me("CycleTimeMC2"),String)
@@ -752,7 +752,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CycleTimeMC3() As String
             Get
                 Return CType(Me("CycleTimeMC3"),String)
@@ -764,7 +764,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CycleTimeMC4() As String
             Get
                 Return CType(Me("CycleTimeMC4"),String)
@@ -776,7 +776,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CycleTimeMC5() As String
             Get
                 Return CType(Me("CycleTimeMC5"),String)
@@ -788,7 +788,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CycleTimeMC6() As String
             Get
                 Return CType(Me("CycleTimeMC6"),String)
@@ -800,7 +800,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CycleTimeMC7() As String
             Get
                 Return CType(Me("CycleTimeMC7"),String)
@@ -812,7 +812,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CycleTimeMC8() As String
             Get
                 Return CType(Me("CycleTimeMC8"),String)
@@ -824,7 +824,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CycleTimeMC9() As String
             Get
                 Return CType(Me("CycleTimeMC9"),String)
@@ -836,7 +836,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CycleTimeMC10() As String
             Get
                 Return CType(Me("CycleTimeMC10"),String)
@@ -848,7 +848,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CycleTimeMC11() As String
             Get
                 Return CType(Me("CycleTimeMC11"),String)
@@ -860,7 +860,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CycleTimeMC12() As String
             Get
                 Return CType(Me("CycleTimeMC12"),String)
@@ -872,7 +872,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CycleTimeMC13() As String
             Get
                 Return CType(Me("CycleTimeMC13"),String)
@@ -884,7 +884,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CycleTimeMC14() As String
             Get
                 Return CType(Me("CycleTimeMC14"),String)
@@ -1412,7 +1412,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CavQtyPn1MC2() As String
             Get
                 Return CType(Me("CavQtyPn1MC2"),String)
@@ -1424,7 +1424,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CavQtyPn1MC3() As String
             Get
                 Return CType(Me("CavQtyPn1MC3"),String)
@@ -1436,7 +1436,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CavQtyPn1MC4() As String
             Get
                 Return CType(Me("CavQtyPn1MC4"),String)
@@ -1448,7 +1448,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CavQtyPn1MC5() As String
             Get
                 Return CType(Me("CavQtyPn1MC5"),String)
@@ -1460,7 +1460,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CavQtyPn1MC6() As String
             Get
                 Return CType(Me("CavQtyPn1MC6"),String)
@@ -1472,7 +1472,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CavQtyPn1MC7() As String
             Get
                 Return CType(Me("CavQtyPn1MC7"),String)
@@ -1484,7 +1484,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CavQtyPn1MC8() As String
             Get
                 Return CType(Me("CavQtyPn1MC8"),String)
@@ -1496,7 +1496,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CavQtyPn1MC9() As String
             Get
                 Return CType(Me("CavQtyPn1MC9"),String)
@@ -1508,7 +1508,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CavQtyPn1MC10() As String
             Get
                 Return CType(Me("CavQtyPn1MC10"),String)
@@ -1520,7 +1520,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CavQtyPn1MC11() As String
             Get
                 Return CType(Me("CavQtyPn1MC11"),String)
@@ -1532,7 +1532,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CavQtyPn1MC12() As String
             Get
                 Return CType(Me("CavQtyPn1MC12"),String)
@@ -1544,7 +1544,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CavQtyPn1MC13() As String
             Get
                 Return CType(Me("CavQtyPn1MC13"),String)
@@ -1556,7 +1556,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CavQtyPn1MC14() As String
             Get
                 Return CType(Me("CavQtyPn1MC14"),String)
@@ -1568,7 +1568,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CavQtyPn2MC1() As String
             Get
                 Return CType(Me("CavQtyPn2MC1"),String)
@@ -1580,7 +1580,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CavQtyPn2MC2() As String
             Get
                 Return CType(Me("CavQtyPn2MC2"),String)
@@ -1592,7 +1592,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CavQtyPn2MC3() As String
             Get
                 Return CType(Me("CavQtyPn2MC3"),String)
@@ -1604,7 +1604,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CavQtyPn2MC4() As String
             Get
                 Return CType(Me("CavQtyPn2MC4"),String)
@@ -1616,7 +1616,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CavQtyPn2MC5() As String
             Get
                 Return CType(Me("CavQtyPn2MC5"),String)
@@ -1628,7 +1628,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CavQtyPn2MC6() As String
             Get
                 Return CType(Me("CavQtyPn2MC6"),String)
@@ -1640,7 +1640,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CavQtyPn2MC7() As String
             Get
                 Return CType(Me("CavQtyPn2MC7"),String)
@@ -1652,7 +1652,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CavQtyPn2MC8() As String
             Get
                 Return CType(Me("CavQtyPn2MC8"),String)
@@ -1664,7 +1664,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CavQtyPn2MC9() As String
             Get
                 Return CType(Me("CavQtyPn2MC9"),String)
@@ -1676,7 +1676,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CavQtyPn2MC10() As String
             Get
                 Return CType(Me("CavQtyPn2MC10"),String)
@@ -1688,7 +1688,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CavQtyPn2MC11() As String
             Get
                 Return CType(Me("CavQtyPn2MC11"),String)
@@ -1700,7 +1700,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CavQtyPn2MC12() As String
             Get
                 Return CType(Me("CavQtyPn2MC12"),String)
@@ -1712,7 +1712,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CavQtyPn2MC13() As String
             Get
                 Return CType(Me("CavQtyPn2MC13"),String)
@@ -1724,7 +1724,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CavQtyPn2MC14() As String
             Get
                 Return CType(Me("CavQtyPn2MC14"),String)
@@ -1736,7 +1736,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property OuputPn1MC1() As String
             Get
                 Return CType(Me("OuputPn1MC1"),String)
@@ -1748,7 +1748,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property OuputPn1MC2() As String
             Get
                 Return CType(Me("OuputPn1MC2"),String)
@@ -1760,7 +1760,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property OuputPn1MC3() As String
             Get
                 Return CType(Me("OuputPn1MC3"),String)
@@ -1772,7 +1772,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property OuputPn1MC4() As String
             Get
                 Return CType(Me("OuputPn1MC4"),String)
@@ -1784,7 +1784,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property OuputPn1MC5() As String
             Get
                 Return CType(Me("OuputPn1MC5"),String)
@@ -1796,7 +1796,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property OuputPn1MC6() As String
             Get
                 Return CType(Me("OuputPn1MC6"),String)
@@ -1808,7 +1808,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property OuputPn1MC7() As String
             Get
                 Return CType(Me("OuputPn1MC7"),String)
@@ -1820,7 +1820,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property OuputPn1MC8() As String
             Get
                 Return CType(Me("OuputPn1MC8"),String)
@@ -1832,7 +1832,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property OuputPn1MC9() As String
             Get
                 Return CType(Me("OuputPn1MC9"),String)
@@ -1844,7 +1844,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property OuputPn1MC10() As String
             Get
                 Return CType(Me("OuputPn1MC10"),String)
@@ -1856,7 +1856,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property OuputPn1MC11() As String
             Get
                 Return CType(Me("OuputPn1MC11"),String)
@@ -1868,7 +1868,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property OuputPn1MC12() As String
             Get
                 Return CType(Me("OuputPn1MC12"),String)
@@ -1880,7 +1880,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property OuputPn1MC13() As String
             Get
                 Return CType(Me("OuputPn1MC13"),String)
@@ -1892,7 +1892,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property OuputPn1MC14() As String
             Get
                 Return CType(Me("OuputPn1MC14"),String)
@@ -1904,7 +1904,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property OuputPn2MC1() As String
             Get
                 Return CType(Me("OuputPn2MC1"),String)
@@ -1916,7 +1916,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property OuputPn2MC2() As String
             Get
                 Return CType(Me("OuputPn2MC2"),String)
@@ -1928,7 +1928,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property OuputPn2MC3() As String
             Get
                 Return CType(Me("OuputPn2MC3"),String)
@@ -1940,7 +1940,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property OuputPn2MC4() As String
             Get
                 Return CType(Me("OuputPn2MC4"),String)
@@ -1952,7 +1952,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property OuputPn2MC5() As String
             Get
                 Return CType(Me("OuputPn2MC5"),String)
@@ -1964,7 +1964,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property OuputPn2MC6() As String
             Get
                 Return CType(Me("OuputPn2MC6"),String)
@@ -1976,7 +1976,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property OuputPn2MC7() As String
             Get
                 Return CType(Me("OuputPn2MC7"),String)
@@ -1988,7 +1988,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property OuputPn2MC8() As String
             Get
                 Return CType(Me("OuputPn2MC8"),String)
@@ -2000,7 +2000,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property OuputPn2MC9() As String
             Get
                 Return CType(Me("OuputPn2MC9"),String)
@@ -2012,7 +2012,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property OuputPn2MC10() As String
             Get
                 Return CType(Me("OuputPn2MC10"),String)
@@ -2024,7 +2024,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property OuputPn2MC11() As String
             Get
                 Return CType(Me("OuputPn2MC11"),String)
@@ -2036,7 +2036,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property OuputPn2MC12() As String
             Get
                 Return CType(Me("OuputPn2MC12"),String)
@@ -2048,7 +2048,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property OuputPn2MC13() As String
             Get
                 Return CType(Me("OuputPn2MC13"),String)
@@ -2060,7 +2060,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property OuputPn2MC14() As String
             Get
                 Return CType(Me("OuputPn2MC14"),String)
@@ -2072,7 +2072,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property PlanPrdTimeMC1() As String
             Get
                 Return CType(Me("PlanPrdTimeMC1"),String)
@@ -2084,7 +2084,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property PlanPrdTimeMC2() As String
             Get
                 Return CType(Me("PlanPrdTimeMC2"),String)
@@ -2096,7 +2096,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property PlanPrdTimeMC3() As String
             Get
                 Return CType(Me("PlanPrdTimeMC3"),String)
@@ -2108,7 +2108,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property PlanPrdTimeMC4() As String
             Get
                 Return CType(Me("PlanPrdTimeMC4"),String)
@@ -2120,7 +2120,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property PlanPrdTimeMC5() As String
             Get
                 Return CType(Me("PlanPrdTimeMC5"),String)
@@ -2132,7 +2132,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property PlanPrdTimeMC6() As String
             Get
                 Return CType(Me("PlanPrdTimeMC6"),String)
@@ -2144,7 +2144,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property PlanPrdTimeMC7() As String
             Get
                 Return CType(Me("PlanPrdTimeMC7"),String)
@@ -2156,7 +2156,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property PlanPrdTimeMC8() As String
             Get
                 Return CType(Me("PlanPrdTimeMC8"),String)
@@ -2168,7 +2168,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property PlanPrdTimeMC9() As String
             Get
                 Return CType(Me("PlanPrdTimeMC9"),String)
@@ -2180,7 +2180,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property PlanPrdTimeMC10() As String
             Get
                 Return CType(Me("PlanPrdTimeMC10"),String)
@@ -2192,7 +2192,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property PlanPrdTimeMC11() As String
             Get
                 Return CType(Me("PlanPrdTimeMC11"),String)
@@ -2204,7 +2204,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property PlanPrdTimeMC12() As String
             Get
                 Return CType(Me("PlanPrdTimeMC12"),String)
@@ -2216,7 +2216,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property PlanPrdTimeMC13() As String
             Get
                 Return CType(Me("PlanPrdTimeMC13"),String)
@@ -2228,7 +2228,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property PlanPrdTimeMC14() As String
             Get
                 Return CType(Me("PlanPrdTimeMC14"),String)
@@ -3331,7 +3331,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CycleTimeMC15() As String
             Get
                 Return CType(Me("CycleTimeMC15"),String)
@@ -3343,7 +3343,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CycleTimeMC16() As String
             Get
                 Return CType(Me("CycleTimeMC16"),String)
@@ -3355,7 +3355,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CycleTimeMC17() As String
             Get
                 Return CType(Me("CycleTimeMC17"),String)
@@ -3367,7 +3367,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CycleTimeMC18() As String
             Get
                 Return CType(Me("CycleTimeMC18"),String)
@@ -3379,7 +3379,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CycleTimeMC19() As String
             Get
                 Return CType(Me("CycleTimeMC19"),String)

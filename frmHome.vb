@@ -1375,7 +1375,7 @@ Public Class frmHome
     Public Sub PPT()
         'Try
         iPlanProdTimeMC1 = ((CInt(stJOCycleTimeMC1) / ((CInt(stJOMoldCavP1MC1) + CInt(stJOMoldCavP2MC1))) * CInt(stJOQuantityMC1)) / 60)
-            iPlanProdTimeMC2 = ((CInt(stJOCycleTimeMC2) / ((CInt(stJOMoldCavP1MC2) + CInt(stJOMoldCavP2MC2))) * CInt(stJOQuantityMC2)) / 60)
+        iPlanProdTimeMC2 = ((CInt(stJOCycleTimeMC2) / ((CInt(stJOMoldCavP1MC2) + CInt(stJOMoldCavP2MC2))) * CInt(stJOQuantityMC2)) / 60)
         'iPlanProdTimeMC3 = ((CInt(stJOCycleTimeMC3) / ((CInt(stJOMoldCavP1MC3) + CInt(stJOMoldCavP2MC3))) * CInt(stJOQuantityMC3)) / 60)
         'iPlanProdTimeMC4 = ((CInt(stJOCycleTimeMC4) / ((CInt(stJOMoldCavP1MC4) + CInt(stJOMoldCavP2MC4))) * CInt(stJOQuantityMC4)) / 60)
         'iPlanProdTimeMC5 = ((CInt(stJOCycleTimeMC5) / ((CInt(stJOMoldCavP1MC5) + CInt(stJOMoldCavP2MC5))) * CInt(stJOQuantityMC5)) / 60)

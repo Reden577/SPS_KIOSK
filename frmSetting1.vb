@@ -92,15 +92,21 @@ Public Class frmSetting1
             dwD2012(1) = ReadValue(13) '6109
             D2012 = ModbusClient.ConvertRegistersToInt(dwD2012, 0)
 
-            Dim dwD2014(2) As Integer 'MC1 Actual Qty
-            dwD2014(0) = ReadValue(14) '6110
-            dwD2014(1) = ReadValue(15) '6111
-            D2014 = ModbusClient.ConvertRegistersToInt(dwD2014, 0)
+            'Dim dwD2014(2) As Integer 'MC1 Actual Qty
+            'dwD2014(0) = ReadValue(14) '6110
+            'dwD2014(1) = ReadValue(15) '6111
+            'D2014 = ModbusClient.ConvertRegistersToInt(dwD2014, 0)
 
-            Dim dwD2016(2) As Integer 'MC2 Actual Qty
-            dwD2016(0) = ReadValue(16) '6112
-            dwD2016(1) = ReadValue(17) '6113
-            D2016 = ModbusClient.ConvertRegistersToInt(dwD2016, 0)
+            D2014 = ReadValue(14) '6110 MC1 P1CavQty
+            D2015 = ReadValue(15) '6111 MC1 P2CavQty
+
+            'Dim dwD2016(2) As Integer 'MC2 Actual Qty
+            'dwD2016(0) = ReadValue(16) '6112
+            'dwD2016(1) = ReadValue(17) '6113
+            'D2016 = ModbusClient.ConvertRegistersToInt(dwD2016, 0)
+
+            D2016 = ReadValue(16) '6112 MC2 P1CavQty
+            D2017 = ReadValue(17) '6113 MC2 P2CavQty
 
             D2018 = ReadValue(18) '6114 MC1JOCode1
             D2019 = ReadValue(19) '6115 MC1JOCode2
@@ -173,8 +179,8 @@ Public Class frmSetting1
             RxPLCM11 = rxCoil(11) '2059
             RxPLCM12 = rxCoil(12) '2060 MC1 Test Auto Mode Flag (Machine HMI)
             RxPLCM13 = rxCoil(13) '2061 MC2 Test Auto Mode Flag (Machine HMI)
-            RxPLCM14 = rxCoil(14) '2062
-            RxPLCM15 = rxCoil(15) '2063
+            RxPLCM14 = rxCoil(14) '2062 MC1 Plan Complete
+            RxPLCM15 = rxCoil(15) '2063 MC2 Plan Complete
             RxPLCM16 = rxCoil(16) '2064
             RxPLCM17 = rxCoil(17) '2065
             RxPLCM18 = rxCoil(18) '2066
@@ -234,9 +240,11 @@ Public Class frmSetting1
             UserIDLoadMC2()
             PlanQuantityLoadMC1()
             PlanQuantityLoadMC2()
-            TotalQuantityLoadMC1()
-            TotalQuantityLoadMC2()
+            'TotalQuantityLoadMC1()
+            'TotalQuantityLoadMC2()
             UnloadJO_PLCCountersTo_0()
+            MC1LoadedJOCavQty()
+            MC2LoadedJOCavQty()
         End If
     End Sub
 
@@ -429,35 +437,65 @@ Public Class frmSetting1
         End If
     End Sub
 
-    Public Sub TotalQuantityLoadMC1()
+    'Public Sub TotalQuantityLoadMC1()
+    '    If ModCLient.Connected = True Then
+    '        If Not TotalCountMC1 = Nothing Then
+    '            Dim wrValue As Integer
+    '            wrValue = CInt(TotalCountMC1)
+
+    '            Dim x As Integer()
+    '            x = ModbusClient.ConvertIntToRegisters(wrValue)
+    '            ModCLient.WriteSingleRegister(6128, x(0))
+    '            ModCLient.WriteSingleRegister(6129, x(1))
+    '        End If
+    '    End If
+    'End Sub
+
+    'Public Sub TotalQuantityLoadMC2()
+    '    If ModCLient.Connected = True Then
+    '        If Not TotalCountMC2 = Nothing Then
+    '            Dim wrValue As Integer
+    '            wrValue = CInt(TotalCountMC2)
+
+    '            Dim x As Integer()
+    '            x = ModbusClient.ConvertIntToRegisters(wrValue)
+    '            ModCLient.WriteSingleRegister(6130, x(0))
+    '            ModCLient.WriteSingleRegister(6131, x(1))
+    '        End If
+    '    End If
+    'End Sub
+    '//
+
+
+    '// LOADING THE CAVITY QTY FOR MACHINE 1 JOB ORDER
+    Public Sub MC1LoadedJOCavQty()
         If ModCLient.Connected = True Then
-            If Not TotalCountMC1 = Nothing Then
-                Dim wrValue As Integer
-                wrValue = CInt(TotalCountMC1)
-
-                Dim x As Integer()
-                x = ModbusClient.ConvertIntToRegisters(wrValue)
-                ModCLient.WriteSingleRegister(6128, x(0))
-                ModCLient.WriteSingleRegister(6129, x(1))
-            End If
-        End If
-    End Sub
-
-    Public Sub TotalQuantityLoadMC2()
-        If ModCLient.Connected = True Then
-            If Not TotalCountMC2 = Nothing Then
-                Dim wrValue As Integer
-                wrValue = CInt(TotalCountMC2)
-
-                Dim x As Integer()
-                x = ModbusClient.ConvertIntToRegisters(wrValue)
-                ModCLient.WriteSingleRegister(6130, x(0))
-                ModCLient.WriteSingleRegister(6131, x(1))
+            If stJOMC1 IsNot Nothing Then
+                Dim wrValue1 As Integer
+                Dim wrValue2 As Integer
+                wrValue1 = CInt(stJOMoldCavP1MC1)
+                wrValue2 = CInt(stJOMoldCavP2MC1)
+                ModCLient.WriteSingleRegister(6110, wrValue1) 'D2014
+                ModCLient.WriteSingleRegister(6111, wrValue2) 'D2015
             End If
         End If
     End Sub
     '//
 
+    '// LOADING THE CAVITY QTY FOR MACHINE 2 JOB ORDER
+    Public Sub MC2LoadedJOCavQty()
+        If ModCLient.Connected = True Then
+            If stJOMC1 IsNot Nothing Then
+                Dim wrValue1 As Integer
+                Dim wrValue2 As Integer
+                wrValue1 = CInt(stJOMoldCavP1MC2)
+                wrValue2 = CInt(stJOMoldCavP2MC2)
+                ModCLient.WriteSingleRegister(6112, wrValue1) 'D2016
+                ModCLient.WriteSingleRegister(6113, wrValue2) 'D2017
+            End If
+        End If
+    End Sub
+    '//
 
     '// UNLOADING JO....WRITING ZERO VALUE TO PLC COUNTERS
     Public Sub UnloadJO_PLCCountersTo_0()

@@ -121,7 +121,7 @@ Public Class frmJOUnload
 
     '// UNLOADING CONDITION RETURN RESULTS IF PLAN DID NOT MEET THE TARGET
     Public Sub UnloadingConditions()
-        If preUnloadDetails_EndTime <> "-" And preUnloadDetails_EndTime <> "" Then
+        If preUnloadDetails_EndTime <> "none" And preUnloadDetails_EndTime <> "" Then
             preUnloadDetails_EndTime = preUnloadDetails_EndTime
             preUnloadDetails_ProdnStat = "Complete"
             preUnloadDetails_LoadStat = "Unloaded"
