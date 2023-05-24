@@ -1380,8 +1380,13 @@ Public Class frmHome
     End Function
     Public Sub PPT()
         'Try
-        iPlanProdTimeMC1 = ((CInt(stJOCycleTimeMC1) / ((CInt(stJOMoldCavP1MC1) + CInt(stJOMoldCavP2MC1))) * CInt(stJOQuantityMC1)) / 60)
-        iPlanProdTimeMC2 = ((CInt(stJOCycleTimeMC2) / ((CInt(stJOMoldCavP1MC2) + CInt(stJOMoldCavP2MC2))) * CInt(stJOQuantityMC2)) / 60)
+        If stJOCycleTimeMC1 <> "" And stJOMoldCavP1MC1 <> "" And stJOMoldCavP2MC1 <> "" And stJOQuantityMC1 <> "" Then
+            iPlanProdTimeMC1 = ((CInt(stJOCycleTimeMC1) / ((CInt(stJOMoldCavP1MC1) + CInt(stJOMoldCavP2MC1))) * CInt(stJOQuantityMC1)) / 60)
+        End If
+        If stJOCycleTimeMC2 <> "" And stJOMoldCavP1MC2 <> "" And stJOMoldCavP2MC2 <> "" And stJOQuantityMC2 <> "" Then
+            iPlanProdTimeMC2 = ((CInt(stJOCycleTimeMC2) / ((CInt(stJOMoldCavP1MC2) + CInt(stJOMoldCavP2MC2))) * CInt(stJOQuantityMC2)) / 60)
+        End If
+
         'iPlanProdTimeMC3 = ((CInt(stJOCycleTimeMC3) / ((CInt(stJOMoldCavP1MC3) + CInt(stJOMoldCavP2MC3))) * CInt(stJOQuantityMC3)) / 60)
         'iPlanProdTimeMC4 = ((CInt(stJOCycleTimeMC4) / ((CInt(stJOMoldCavP1MC4) + CInt(stJOMoldCavP2MC4))) * CInt(stJOQuantityMC4)) / 60)
         'iPlanProdTimeMC5 = ((CInt(stJOCycleTimeMC5) / ((CInt(stJOMoldCavP1MC5) + CInt(stJOMoldCavP2MC5))) * CInt(stJOQuantityMC5)) / 60)
@@ -1407,18 +1412,20 @@ Public Class frmHome
 
     '// READ PLC COUNTERS
     Public Sub readPLCcounters()
-        CounterP1MC1 = D2002 * CInt(stJOMoldCavP1MC1)
-        CounterP2MC1 = D2002 * CInt(stJOMoldCavP2MC1)
-        CounterP1MC2 = D2004 * CInt(stJOMoldCavP1MC2)
-        CounterP2MC2 = D2004 * CInt(stJOMoldCavP2MC2)
+
+        If stJOMoldCavP1MC1 <> "" Then CounterP1MC1 = D2002 * CInt(stJOMoldCavP1MC1)
+        If stJOMoldCavP2MC1 <> "" Then CounterP2MC1 = D2002 * CInt(stJOMoldCavP2MC1)
+        If stJOMoldCavP1MC2 <> "" Then CounterP1MC2 = D2004 * CInt(stJOMoldCavP1MC2)
+        If stJOMoldCavP2MC2 <> "" Then CounterP2MC2 = D2004 * CInt(stJOMoldCavP2MC2)
+
     End Sub
     '//
 
     '// ACTUAL TOTAL RUNNING QUANTITY
     Public Sub ART_actualRunningQuantity()
         Try
-            TotalCountMC1 = CInt(CounterP1MC1) + CInt(CounterP2MC1)
-            TotalCountMC2 = CInt(CounterP1MC2) + CInt(CounterP2MC2)
+            If CounterP1MC1 <> "" And CounterP2MC1 <> "" Then TotalCountMC1 = CInt(CounterP1MC1) + CInt(CounterP2MC1)
+            If CounterP1MC2 <> "" And CounterP2MC2 <> "" Then TotalCountMC2 = CInt(CounterP1MC2) + CInt(CounterP2MC2)
             'TotalCountMC3 = CInt(CounterP1MC3) + CInt(CounterP2MC3)
             'TotalCountMC4 = CInt(CounterP1MC4) + CInt(CounterP2MC4)
             'TotalCountMC5 = CInt(CounterP1MC5) + CInt(CounterP2MC5)
