@@ -82,6 +82,8 @@ Public Class frmHome
         My.Settings.MoldNoMC18 = stJOMoldIDMC18
         My.Settings.MoldNoMC18 = stJOMoldIDMC19
 
+
+
         My.Settings.CycleTimeMC1 = stJOCycleTimeMC1
         My.Settings.CycleTimeMC2 = stJOCycleTimeMC2
         My.Settings.CycleTimeMC3 = stJOCycleTimeMC3
@@ -579,6 +581,10 @@ Public Class frmHome
         TotalCountMC17 = My.Settings.ActualQtyMC17
         TotalCountMC18 = My.Settings.ActualQtyMC18
         TotalCountMC19 = My.Settings.ActualQtyMC19
+
+        modSetVal_imageRun = My.Settings.ImageRun
+        modSetVal_imageStop = My.Settings.ImageStop
+        modSetVal_SqlPath = My.Settings.SPSConnectionString
     End Sub
     '//
 
@@ -1038,8 +1044,8 @@ Public Class frmHome
 
     '// INDICATOR IMAGES DURING MACHINE RUN AND MACHINE STOP
     Private Sub MachineStatusImage(bol As Boolean, pic As PictureBox)
-        Dim STimageRun As New Bitmap("E:\0000 VBProjects\SPSApp1Updated\Resources\LineRun.png")
-        Dim STimageStop As New Bitmap("E:\0000 VBProjects\SPSApp1Updated\Resources\LineStop.png")
+        Dim STimageRun As New Bitmap(modSetVal_imageRun) 'Strings set in My.Settings
+        Dim STimageStop As New Bitmap(modSetVal_imageStop) 'Strings set in My.Settings
         If bol = True Then
             pic.Image = STimageRun
         Else
@@ -1705,9 +1711,9 @@ Public Class frmHome
 
     '// LOGING DETAILS SQL TABLE UPGDATE COMMAND
     Public Sub UpdateUserLogin()
-        Dim sqlPath As String = "Data Source=DESKTOP-4OGTIB2\DIAVIEWSQL;Initial Catalog=SPS;Persist Security Info=True;User ID=sa;Password=doc577isin"
+        'Dim sqlPath As String = "Data Source=DESKTOP-4OGTIB2\DIAVIEWSQL;Initial Catalog=SPS;Persist Security Info=True;User ID=sa;Password=doc577isin"
         Dim sqlProc As String = "UpdateProLoginDetails"
-        Dim con As New SqlConnection(sqlPath)
+        Dim con As New SqlConnection(modSetVal_SqlPath) 'Strings set in  My.Setting
         Using cmd As SqlCommand = New SqlCommand(sqlProc, con)
             cmd.Parameters.AddWithValue("@UserName", modMCUnNow)
             cmd.Parameters.AddWithValue("@UserID", modMCUNIdNow)
@@ -1724,9 +1730,9 @@ Public Class frmHome
 
     '// CLEAR ALL LOGIN DETAILS IN SQL LOGIN DETAILS TABLE
     Public Sub UpdateUserLogin_ClearLoginDetails()
-        Dim sqlPath As String = "Data Source=DESKTOP-4OGTIB2\DIAVIEWSQL;Initial Catalog=SPS;Persist Security Info=True;User ID=sa;Password=doc577isin"
+        'Dim sqlPath As String = "Data Source=DESKTOP-4OGTIB2\DIAVIEWSQL;Initial Catalog=SPS;Persist Security Info=True;User ID=sa;Password=doc577isin"
         Dim sqlProc As String = "UpdateProLoginDetailsClear"
-        Dim con As New SqlConnection(sqlPath)
+        Dim con As New SqlConnection(modSetVal_SqlPath) 'Strings set in  My.Setting
         Using cmd As SqlCommand = New SqlCommand(sqlProc, con)
             cmd.Parameters.AddWithValue("@UserName", "NULL")
             cmd.Parameters.AddWithValue("@UserID", "NULL")
@@ -2040,7 +2046,7 @@ Public Class frmHome
 
     '//
     Private Sub Button1_Click(sender As Object, e As EventArgs)
-        logDowntimeToTextFile()
+        'logDowntimeToTextFile()
 
         'Dim DTtx As MCDowntime
         'DTtx = New MCDowntime
@@ -2074,40 +2080,40 @@ Public Class frmHome
         'MsgBox(DTrx)
     End Sub
 
-    Public Sub logDowntimeToTextFile()
-        Dim dtx As MCDowntime
-        dtx = New MCDowntime
-        dtx.mcName = "Mc1"
-        dtx.mcShiftCode = sfShiftCodeMod & dtx.mcName
-        dtx.ackUserName = "tba"
-        dtx.ackUNID = "tba"
-        dtx.mcDTtype = "Operator"
-        dtx.mcDTStart = Now()
-        dtx.mcDowntimeDetail = "Downtime 2"
-        dtx.mcDTCountermeasure = "Countermeasure 2"
-        dtx.ackDate = Now()
-        dtx.mcDTEnd = "tba"
+    'Public Sub logDowntimeToTextFile()
+    '    Dim dtx As MCDowntime
+    '    dtx = New MCDowntime
+    '    dtx.mcName = "Mc1"
+    '    dtx.mcShiftCode = sfShiftCodeMod & dtx.mcName
+    '    dtx.ackUserName = "tba"
+    '    dtx.ackUNID = "tba"
+    '    dtx.mcDTtype = "Operator"
+    '    dtx.mcDTStart = Now()
+    '    dtx.mcDowntimeDetail = "Downtime 2"
+    '    dtx.mcDTCountermeasure = "Countermeasure 2"
+    '    dtx.ackDate = Now()
+    '    dtx.mcDTEnd = "tba"
 
-        Dim details As String
-        details = dtx.mcName & " ," &
-            dtx.mcShiftCode & " ," &
-            dtx.ackUserName & " ," &
-            dtx.ackUNID & " ," &
-            dtx.mcDTtype & " ," &
-            dtx.mcDTStart & " ," &
-            dtx.mcDowntimeDetail & " ," &
-            dtx.mcDTCountermeasure & " ," &
-            dtx.ackDate & " ," &
-            dtx.mcDTEnd
+    '    Dim details As String
+    '    details = dtx.mcName & " ," &
+    '        dtx.mcShiftCode & " ," &
+    '        dtx.ackUserName & " ," &
+    '        dtx.ackUNID & " ," &
+    '        dtx.mcDTtype & " ," &
+    '        dtx.mcDTStart & " ," &
+    '        dtx.mcDowntimeDetail & " ," &
+    '        dtx.mcDTCountermeasure & " ," &
+    '        dtx.ackDate & " ," &
+    '        dtx.mcDTEnd
 
-        Dim filePath As String
-        filePath = "C:\Users\TuF GaminG\Documents\000 projects\001VB.Net\DemoTextfiles\mc1downtime.txt"
+    '    Dim filePath As String
+    '    filePath = "C:\Users\TuF GaminG\Documents\000 projects\001VB.Net\DemoTextfiles\mc1downtime.txt"
 
-        Dim swDowntime As StreamWriter
-        swDowntime = New StreamWriter(filePath, True)
+    '    Dim swDowntime As StreamWriter
+    '    swDowntime = New StreamWriter(filePath, True)
 
-        swDowntime.WriteLine(details)
-        swDowntime.Close()
-    End Sub
+    '    swDowntime.WriteLine(details)
+    '    swDowntime.Close()
+    'End Sub
 
 End Class

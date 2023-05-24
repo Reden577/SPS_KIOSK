@@ -1036,5 +1036,11 @@
     <Setting Name="RejecQtyMC19" Type="System.String" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
+    <Setting Name="ImageRun" Type="System.String" Scope="User">
+      <Value Profile="(Default)">E:\0000 VBProjects\SPSApp1Updated\Resources\LineRun.png</Value>
+    </Setting>
+    <Setting Name="ImageStop" Type="System.String" Scope="User">
+      <Value Profile="(Default)">E:\0000 VBProjects\SPSApp1Updated\Resources\LineRun.png</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

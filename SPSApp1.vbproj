@@ -192,6 +192,7 @@
     </Compile>
     <Compile Include="ModbusModule.vb" />
     <Compile Include="modLoginDetails.vb" />
+    <Compile Include="modMySettingsValues.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
