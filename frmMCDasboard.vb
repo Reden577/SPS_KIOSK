@@ -52,6 +52,7 @@ Public Class frmMCDasboard
         ElseIf bolMCDashboard19 = True Then
             lblMCDasboard.Text = "Machine 19"
         End If
+
     End Sub
 
     Private Sub frmMCDasboard_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
@@ -77,10 +78,10 @@ Public Class frmMCDasboard
     End Sub
 
     Public Sub MachineStatusImage()
-        Dim mcStopImage As New Bitmap("C:\Users\TuF GaminG\Documents\000 projects\001VB.Net\SPSApp1\Resources\STOPSIGN (1).png")
-        Dim mcRunImage As New Bitmap("C:\Users\TuF GaminG\Documents\000 projects\001VB.Net\SPSApp1\Resources\RUNSIGN (1).png")
-        Dim mcQAImage As New Bitmap("C:\Users\TuF GaminG\Documents\000 projects\001VB.Net\SPSApp1\Resources\QASIGN (1).png")
-        Dim mcNOPlanImage As New Bitmap("C:\Users\TuF GaminG\Documents\000 projects\001VB.Net\SPSApp1\Resources\NOPLAN SIGN (1).png")
+        Dim mcStopImage As New Bitmap(My.Resources.STOPSIGN_1)
+        Dim mcRunImage As New Bitmap(My.Resources.RUNSIGN_1)
+        Dim mcQAImage As New Bitmap(My.Resources.QASIGN__1)
+        Dim mcNOPlanImage As New Bitmap(My.Resources.NOPLAN_SIGN_1)
 
 
         If bolMCDashboard1 = True And StartStopMC1 = True Then

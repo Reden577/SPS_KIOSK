@@ -13,9 +13,17 @@ Public Class frmSetting1
         ConnectToModbus()
         readCoilsRegisters()
         Connect_Disconnect_Btn_EnableDisable()
+
+        txtSQLPath.Text = My.Settings.SQLPath
+
+        modSetVal_DashB_RunSign = My.Settings.MCDashRunImage
+        modSetVal_DashB_StopSign = My.Settings.MCDashStopImage
+        modSetVal_DashB_QASign = My.Settings.MCDashQAImage
+        modSetVal_DashB_NoPlanSign = My.Settings.MCDashNOPlanImage
+
     End Sub
     Private Sub frmSetting1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-
+        My.Settings.SQLPath = txtSQLPath.Text
     End Sub
 
     Public Sub ConnectToModbus()

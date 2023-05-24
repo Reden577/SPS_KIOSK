@@ -373,9 +373,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property NOPLAN_SIGN__1_() As System.Drawing.Bitmap
+        Friend ReadOnly Property NOPLAN_SIGN_1() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("NOPLAN SIGN (1)", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("NOPLAN_SIGN_1", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -413,9 +413,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property QASIGN__1_() As System.Drawing.Bitmap
+        Friend ReadOnly Property QASIGN__1() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("QASIGN (1)", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("QASIGN__1", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -423,9 +423,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property RUNSIGN__1_() As System.Drawing.Bitmap
+        Friend ReadOnly Property RUNSIGN_1() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("RUNSIGN (1)", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("RUNSIGN_1", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -443,9 +443,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property STOPSIGN__1_() As System.Drawing.Bitmap
+        Friend ReadOnly Property STOPSIGN_1() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("STOPSIGN (1)", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("STOPSIGN_1", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

@@ -25,8 +25,6 @@ Partial Class frmSetting1
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmSetting1))
         Me.lblRx0 = New System.Windows.Forms.Label()
-        Me.btnDisconnect = New FontAwesome.Sharp.IconButton()
-        Me.btnConnect = New FontAwesome.Sharp.IconButton()
         Me.txtPort = New System.Windows.Forms.TextBox()
         Me.txtIP = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -37,7 +35,6 @@ Partial Class frmSetting1
         Me.tmrRealtimeCheck = New System.Windows.Forms.Timer(Me.components)
         Me.tmrComCheck = New System.Windows.Forms.Timer(Me.components)
         Me.Label34 = New System.Windows.Forms.Label()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.lblJOProgressMC1 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -79,6 +76,13 @@ Partial Class frmSetting1
         Me.Label43 = New System.Windows.Forms.Label()
         Me.lblJOProgressMC19 = New System.Windows.Forms.Label()
         Me.lblJOProgressMC20 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.txtSQLPath = New System.Windows.Forms.TextBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.btnDisconnect = New FontAwesome.Sharp.IconButton()
+        Me.btnConnect = New FontAwesome.Sharp.IconButton()
+        Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -91,32 +95,6 @@ Partial Class frmSetting1
         Me.lblRx0.Size = New System.Drawing.Size(24, 25)
         Me.lblRx0.TabIndex = 0
         Me.lblRx0.Text = "0"
-        '
-        'btnDisconnect
-        '
-        Me.btnDisconnect.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDisconnect.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.btnDisconnect.IconColor = System.Drawing.Color.Black
-        Me.btnDisconnect.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnDisconnect.Location = New System.Drawing.Point(186, 160)
-        Me.btnDisconnect.Name = "btnDisconnect"
-        Me.btnDisconnect.Size = New System.Drawing.Size(135, 54)
-        Me.btnDisconnect.TabIndex = 2
-        Me.btnDisconnect.Text = "Disconnect"
-        Me.btnDisconnect.UseVisualStyleBackColor = True
-        '
-        'btnConnect
-        '
-        Me.btnConnect.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnConnect.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.btnConnect.IconColor = System.Drawing.Color.Black
-        Me.btnConnect.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnConnect.Location = New System.Drawing.Point(39, 160)
-        Me.btnConnect.Name = "btnConnect"
-        Me.btnConnect.Size = New System.Drawing.Size(135, 54)
-        Me.btnConnect.TabIndex = 2
-        Me.btnConnect.Text = "Connect"
-        Me.btnConnect.UseVisualStyleBackColor = True
         '
         'txtPort
         '
@@ -205,6 +183,447 @@ Partial Class frmSetting1
         Me.Label34.TabIndex = 0
         Me.Label34.Text = "MODBUS COMMUNICATION SETTINGS"
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(947, 28)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(86, 13)
+        Me.Label4.TabIndex = 4
+        Me.Label4.Text = "JOProgressMC1:"
+        Me.Label4.Visible = False
+        '
+        'lblJOProgressMC1
+        '
+        Me.lblJOProgressMC1.AutoSize = True
+        Me.lblJOProgressMC1.Location = New System.Drawing.Point(1038, 28)
+        Me.lblJOProgressMC1.Name = "lblJOProgressMC1"
+        Me.lblJOProgressMC1.Size = New System.Drawing.Size(32, 13)
+        Me.lblJOProgressMC1.TabIndex = 4
+        Me.lblJOProgressMC1.Text = "False"
+        Me.lblJOProgressMC1.Visible = False
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(947, 9)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(133, 16)
+        Me.Label5.TabIndex = 4
+        Me.Label5.Text = "JO Prog Complete"
+        Me.Label5.Visible = False
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(947, 41)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(86, 13)
+        Me.Label6.TabIndex = 4
+        Me.Label6.Text = "JOProgressMC2:"
+        Me.Label6.Visible = False
+        '
+        'lblJOProgressMC2
+        '
+        Me.lblJOProgressMC2.AutoSize = True
+        Me.lblJOProgressMC2.Location = New System.Drawing.Point(1038, 41)
+        Me.lblJOProgressMC2.Name = "lblJOProgressMC2"
+        Me.lblJOProgressMC2.Size = New System.Drawing.Size(32, 13)
+        Me.lblJOProgressMC2.TabIndex = 4
+        Me.lblJOProgressMC2.Text = "False"
+        Me.lblJOProgressMC2.Visible = False
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(947, 54)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(86, 13)
+        Me.Label8.TabIndex = 4
+        Me.Label8.Text = "JOProgressMC3:"
+        Me.Label8.Visible = False
+        '
+        'lblJOProgressMC3
+        '
+        Me.lblJOProgressMC3.AutoSize = True
+        Me.lblJOProgressMC3.Location = New System.Drawing.Point(1038, 54)
+        Me.lblJOProgressMC3.Name = "lblJOProgressMC3"
+        Me.lblJOProgressMC3.Size = New System.Drawing.Size(32, 13)
+        Me.lblJOProgressMC3.TabIndex = 4
+        Me.lblJOProgressMC3.Text = "False"
+        Me.lblJOProgressMC3.Visible = False
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(947, 67)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(86, 13)
+        Me.Label10.TabIndex = 4
+        Me.Label10.Text = "JOProgressMC4:"
+        Me.Label10.Visible = False
+        '
+        'lblJOProgressMC4
+        '
+        Me.lblJOProgressMC4.AutoSize = True
+        Me.lblJOProgressMC4.Location = New System.Drawing.Point(1038, 67)
+        Me.lblJOProgressMC4.Name = "lblJOProgressMC4"
+        Me.lblJOProgressMC4.Size = New System.Drawing.Size(32, 13)
+        Me.lblJOProgressMC4.TabIndex = 4
+        Me.lblJOProgressMC4.Text = "False"
+        Me.lblJOProgressMC4.Visible = False
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(947, 80)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(86, 13)
+        Me.Label13.TabIndex = 4
+        Me.Label13.Text = "JOProgressMC5:"
+        Me.Label13.Visible = False
+        '
+        'lblJOProgressMC5
+        '
+        Me.lblJOProgressMC5.AutoSize = True
+        Me.lblJOProgressMC5.Location = New System.Drawing.Point(1038, 80)
+        Me.lblJOProgressMC5.Name = "lblJOProgressMC5"
+        Me.lblJOProgressMC5.Size = New System.Drawing.Size(32, 13)
+        Me.lblJOProgressMC5.TabIndex = 4
+        Me.lblJOProgressMC5.Text = "False"
+        Me.lblJOProgressMC5.Visible = False
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(947, 93)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(86, 13)
+        Me.Label15.TabIndex = 4
+        Me.Label15.Text = "JOProgressMC6:"
+        Me.Label15.Visible = False
+        '
+        'lblJOProgressMC6
+        '
+        Me.lblJOProgressMC6.AutoSize = True
+        Me.lblJOProgressMC6.Location = New System.Drawing.Point(1038, 93)
+        Me.lblJOProgressMC6.Name = "lblJOProgressMC6"
+        Me.lblJOProgressMC6.Size = New System.Drawing.Size(32, 13)
+        Me.lblJOProgressMC6.TabIndex = 4
+        Me.lblJOProgressMC6.Text = "False"
+        Me.lblJOProgressMC6.Visible = False
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(947, 106)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(86, 13)
+        Me.Label17.TabIndex = 4
+        Me.Label17.Text = "JOProgressMC7:"
+        Me.Label17.Visible = False
+        '
+        'lblJOProgressMC7
+        '
+        Me.lblJOProgressMC7.AutoSize = True
+        Me.lblJOProgressMC7.Location = New System.Drawing.Point(1038, 106)
+        Me.lblJOProgressMC7.Name = "lblJOProgressMC7"
+        Me.lblJOProgressMC7.Size = New System.Drawing.Size(32, 13)
+        Me.lblJOProgressMC7.TabIndex = 4
+        Me.lblJOProgressMC7.Text = "False"
+        Me.lblJOProgressMC7.Visible = False
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(947, 119)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(86, 13)
+        Me.Label19.TabIndex = 4
+        Me.Label19.Text = "JOProgressMC8:"
+        Me.Label19.Visible = False
+        '
+        'lblJOProgressMC8
+        '
+        Me.lblJOProgressMC8.AutoSize = True
+        Me.lblJOProgressMC8.Location = New System.Drawing.Point(1038, 119)
+        Me.lblJOProgressMC8.Name = "lblJOProgressMC8"
+        Me.lblJOProgressMC8.Size = New System.Drawing.Size(32, 13)
+        Me.lblJOProgressMC8.TabIndex = 4
+        Me.lblJOProgressMC8.Text = "False"
+        Me.lblJOProgressMC8.Visible = False
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Location = New System.Drawing.Point(947, 132)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(86, 13)
+        Me.Label21.TabIndex = 4
+        Me.Label21.Text = "JOProgressMC9:"
+        Me.Label21.Visible = False
+        '
+        'lblJOProgressMC9
+        '
+        Me.lblJOProgressMC9.AutoSize = True
+        Me.lblJOProgressMC9.Location = New System.Drawing.Point(1038, 132)
+        Me.lblJOProgressMC9.Name = "lblJOProgressMC9"
+        Me.lblJOProgressMC9.Size = New System.Drawing.Size(32, 13)
+        Me.lblJOProgressMC9.TabIndex = 4
+        Me.lblJOProgressMC9.Text = "False"
+        Me.lblJOProgressMC9.Visible = False
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Location = New System.Drawing.Point(947, 145)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(92, 13)
+        Me.Label23.TabIndex = 4
+        Me.Label23.Text = "JOProgressMC10:"
+        Me.Label23.Visible = False
+        '
+        'lblJOProgressMC10
+        '
+        Me.lblJOProgressMC10.AutoSize = True
+        Me.lblJOProgressMC10.Location = New System.Drawing.Point(1038, 145)
+        Me.lblJOProgressMC10.Name = "lblJOProgressMC10"
+        Me.lblJOProgressMC10.Size = New System.Drawing.Size(32, 13)
+        Me.lblJOProgressMC10.TabIndex = 4
+        Me.lblJOProgressMC10.Text = "False"
+        Me.lblJOProgressMC10.Visible = False
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Location = New System.Drawing.Point(947, 158)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(92, 13)
+        Me.Label25.TabIndex = 4
+        Me.Label25.Text = "JOProgressMC11:"
+        Me.Label25.Visible = False
+        '
+        'lblJOProgressMC11
+        '
+        Me.lblJOProgressMC11.AutoSize = True
+        Me.lblJOProgressMC11.Location = New System.Drawing.Point(1038, 158)
+        Me.lblJOProgressMC11.Name = "lblJOProgressMC11"
+        Me.lblJOProgressMC11.Size = New System.Drawing.Size(32, 13)
+        Me.lblJOProgressMC11.TabIndex = 4
+        Me.lblJOProgressMC11.Text = "False"
+        Me.lblJOProgressMC11.Visible = False
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Location = New System.Drawing.Point(947, 171)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(92, 13)
+        Me.Label27.TabIndex = 4
+        Me.Label27.Text = "JOProgressMC12:"
+        Me.Label27.Visible = False
+        '
+        'Label28
+        '
+        Me.Label28.AutoSize = True
+        Me.Label28.Location = New System.Drawing.Point(947, 184)
+        Me.Label28.Name = "Label28"
+        Me.Label28.Size = New System.Drawing.Size(92, 13)
+        Me.Label28.TabIndex = 4
+        Me.Label28.Text = "JOProgressMC13:"
+        Me.Label28.Visible = False
+        '
+        'lblJOProgressMC12
+        '
+        Me.lblJOProgressMC12.AutoSize = True
+        Me.lblJOProgressMC12.Location = New System.Drawing.Point(1038, 171)
+        Me.lblJOProgressMC12.Name = "lblJOProgressMC12"
+        Me.lblJOProgressMC12.Size = New System.Drawing.Size(32, 13)
+        Me.lblJOProgressMC12.TabIndex = 4
+        Me.lblJOProgressMC12.Text = "False"
+        Me.lblJOProgressMC12.Visible = False
+        '
+        'Label30
+        '
+        Me.Label30.AutoSize = True
+        Me.Label30.Location = New System.Drawing.Point(947, 197)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(92, 13)
+        Me.Label30.TabIndex = 4
+        Me.Label30.Text = "JOProgressMC14:"
+        Me.Label30.Visible = False
+        '
+        'lblJOProgressMC13
+        '
+        Me.lblJOProgressMC13.AutoSize = True
+        Me.lblJOProgressMC13.Location = New System.Drawing.Point(1038, 184)
+        Me.lblJOProgressMC13.Name = "lblJOProgressMC13"
+        Me.lblJOProgressMC13.Size = New System.Drawing.Size(32, 13)
+        Me.lblJOProgressMC13.TabIndex = 4
+        Me.lblJOProgressMC13.Text = "False"
+        Me.lblJOProgressMC13.Visible = False
+        '
+        'Label32
+        '
+        Me.Label32.AutoSize = True
+        Me.Label32.Location = New System.Drawing.Point(947, 210)
+        Me.Label32.Name = "Label32"
+        Me.Label32.Size = New System.Drawing.Size(92, 13)
+        Me.Label32.TabIndex = 4
+        Me.Label32.Text = "JOProgressMC15:"
+        Me.Label32.Visible = False
+        '
+        'lblJOProgressMC14
+        '
+        Me.lblJOProgressMC14.AutoSize = True
+        Me.lblJOProgressMC14.Location = New System.Drawing.Point(1038, 197)
+        Me.lblJOProgressMC14.Name = "lblJOProgressMC14"
+        Me.lblJOProgressMC14.Size = New System.Drawing.Size(32, 13)
+        Me.lblJOProgressMC14.TabIndex = 4
+        Me.lblJOProgressMC14.Text = "False"
+        Me.lblJOProgressMC14.Visible = False
+        '
+        'Label35
+        '
+        Me.Label35.AutoSize = True
+        Me.Label35.Location = New System.Drawing.Point(947, 223)
+        Me.Label35.Name = "Label35"
+        Me.Label35.Size = New System.Drawing.Size(92, 13)
+        Me.Label35.TabIndex = 4
+        Me.Label35.Text = "JOProgressMC16:"
+        Me.Label35.Visible = False
+        '
+        'lblJOProgressMC15
+        '
+        Me.lblJOProgressMC15.AutoSize = True
+        Me.lblJOProgressMC15.Location = New System.Drawing.Point(1038, 210)
+        Me.lblJOProgressMC15.Name = "lblJOProgressMC15"
+        Me.lblJOProgressMC15.Size = New System.Drawing.Size(32, 13)
+        Me.lblJOProgressMC15.TabIndex = 4
+        Me.lblJOProgressMC15.Text = "False"
+        Me.lblJOProgressMC15.Visible = False
+        '
+        'Label37
+        '
+        Me.Label37.AutoSize = True
+        Me.Label37.Location = New System.Drawing.Point(947, 236)
+        Me.Label37.Name = "Label37"
+        Me.Label37.Size = New System.Drawing.Size(92, 13)
+        Me.Label37.TabIndex = 4
+        Me.Label37.Text = "JOProgressMC17:"
+        Me.Label37.Visible = False
+        '
+        'lblJOProgressMC16
+        '
+        Me.lblJOProgressMC16.AutoSize = True
+        Me.lblJOProgressMC16.Location = New System.Drawing.Point(1038, 223)
+        Me.lblJOProgressMC16.Name = "lblJOProgressMC16"
+        Me.lblJOProgressMC16.Size = New System.Drawing.Size(32, 13)
+        Me.lblJOProgressMC16.TabIndex = 4
+        Me.lblJOProgressMC16.Text = "False"
+        Me.lblJOProgressMC16.Visible = False
+        '
+        'Label39
+        '
+        Me.Label39.AutoSize = True
+        Me.Label39.Location = New System.Drawing.Point(947, 249)
+        Me.Label39.Name = "Label39"
+        Me.Label39.Size = New System.Drawing.Size(92, 13)
+        Me.Label39.TabIndex = 4
+        Me.Label39.Text = "JOProgressMC18:"
+        Me.Label39.Visible = False
+        '
+        'lblJOProgressMC17
+        '
+        Me.lblJOProgressMC17.AutoSize = True
+        Me.lblJOProgressMC17.Location = New System.Drawing.Point(1038, 236)
+        Me.lblJOProgressMC17.Name = "lblJOProgressMC17"
+        Me.lblJOProgressMC17.Size = New System.Drawing.Size(32, 13)
+        Me.lblJOProgressMC17.TabIndex = 4
+        Me.lblJOProgressMC17.Text = "False"
+        Me.lblJOProgressMC17.Visible = False
+        '
+        'Label41
+        '
+        Me.Label41.AutoSize = True
+        Me.Label41.Location = New System.Drawing.Point(947, 262)
+        Me.Label41.Name = "Label41"
+        Me.Label41.Size = New System.Drawing.Size(92, 13)
+        Me.Label41.TabIndex = 4
+        Me.Label41.Text = "JOProgressMC19:"
+        Me.Label41.Visible = False
+        '
+        'lblJOProgressMC18
+        '
+        Me.lblJOProgressMC18.AutoSize = True
+        Me.lblJOProgressMC18.Location = New System.Drawing.Point(1038, 249)
+        Me.lblJOProgressMC18.Name = "lblJOProgressMC18"
+        Me.lblJOProgressMC18.Size = New System.Drawing.Size(32, 13)
+        Me.lblJOProgressMC18.TabIndex = 4
+        Me.lblJOProgressMC18.Text = "False"
+        Me.lblJOProgressMC18.Visible = False
+        '
+        'Label43
+        '
+        Me.Label43.AutoSize = True
+        Me.Label43.Location = New System.Drawing.Point(947, 275)
+        Me.Label43.Name = "Label43"
+        Me.Label43.Size = New System.Drawing.Size(92, 13)
+        Me.Label43.TabIndex = 4
+        Me.Label43.Text = "JOProgressMC20:"
+        Me.Label43.Visible = False
+        '
+        'lblJOProgressMC19
+        '
+        Me.lblJOProgressMC19.AutoSize = True
+        Me.lblJOProgressMC19.Location = New System.Drawing.Point(1038, 262)
+        Me.lblJOProgressMC19.Name = "lblJOProgressMC19"
+        Me.lblJOProgressMC19.Size = New System.Drawing.Size(32, 13)
+        Me.lblJOProgressMC19.TabIndex = 4
+        Me.lblJOProgressMC19.Text = "False"
+        Me.lblJOProgressMC19.Visible = False
+        '
+        'lblJOProgressMC20
+        '
+        Me.lblJOProgressMC20.AutoSize = True
+        Me.lblJOProgressMC20.Location = New System.Drawing.Point(1038, 275)
+        Me.lblJOProgressMC20.Name = "lblJOProgressMC20"
+        Me.lblJOProgressMC20.Size = New System.Drawing.Size(32, 13)
+        Me.lblJOProgressMC20.TabIndex = 4
+        Me.lblJOProgressMC20.Text = "False"
+        Me.lblJOProgressMC20.Visible = False
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(12, 31)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(78, 20)
+        Me.Label7.TabIndex = 5
+        Me.Label7.Text = "SQLPath:"
+        '
+        'txtSQLPath
+        '
+        Me.txtSQLPath.Location = New System.Drawing.Point(96, 28)
+        Me.txtSQLPath.Name = "txtSQLPath"
+        Me.txtSQLPath.Size = New System.Drawing.Size(717, 26)
+        Me.txtSQLPath.TabIndex = 6
+        Me.txtSQLPath.Text = "Data Source=DESKTOP-4OGTIB2\DIAVIEWSQL;Initial Catalog=SPS;Persist Security Info=" &
+    "True;User ID=sa;Password=doc577isin"
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.txtSQLPath)
+        Me.GroupBox1.Controls.Add(Me.Label7)
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Location = New System.Drawing.Point(23, 246)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(819, 304)
+        Me.GroupBox1.TabIndex = 7
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Settings"
+        '
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.SPSApp1.My.Resources.Resources.Powered_by_SPS
@@ -215,381 +634,38 @@ Partial Class frmSetting1
         Me.PictureBox2.TabIndex = 1
         Me.PictureBox2.TabStop = False
         '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(733, 28)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(86, 13)
-        Me.Label4.TabIndex = 4
-        Me.Label4.Text = "JOProgressMC1:"
-        '
-        'lblJOProgressMC1
-        '
-        Me.lblJOProgressMC1.AutoSize = True
-        Me.lblJOProgressMC1.Location = New System.Drawing.Point(824, 28)
-        Me.lblJOProgressMC1.Name = "lblJOProgressMC1"
-        Me.lblJOProgressMC1.Size = New System.Drawing.Size(32, 13)
-        Me.lblJOProgressMC1.TabIndex = 4
-        Me.lblJOProgressMC1.Text = "False"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(733, 9)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(139, 16)
-        Me.Label5.TabIndex = 4
-        Me.Label5.Text = "JO Prog Complete"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(733, 41)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(86, 13)
-        Me.Label6.TabIndex = 4
-        Me.Label6.Text = "JOProgressMC2:"
-        '
-        'lblJOProgressMC2
-        '
-        Me.lblJOProgressMC2.AutoSize = True
-        Me.lblJOProgressMC2.Location = New System.Drawing.Point(824, 41)
-        Me.lblJOProgressMC2.Name = "lblJOProgressMC2"
-        Me.lblJOProgressMC2.Size = New System.Drawing.Size(32, 13)
-        Me.lblJOProgressMC2.TabIndex = 4
-        Me.lblJOProgressMC2.Text = "False"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(733, 54)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(86, 13)
-        Me.Label8.TabIndex = 4
-        Me.Label8.Text = "JOProgressMC3:"
-        '
-        'lblJOProgressMC3
-        '
-        Me.lblJOProgressMC3.AutoSize = True
-        Me.lblJOProgressMC3.Location = New System.Drawing.Point(824, 54)
-        Me.lblJOProgressMC3.Name = "lblJOProgressMC3"
-        Me.lblJOProgressMC3.Size = New System.Drawing.Size(32, 13)
-        Me.lblJOProgressMC3.TabIndex = 4
-        Me.lblJOProgressMC3.Text = "False"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(733, 67)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(86, 13)
-        Me.Label10.TabIndex = 4
-        Me.Label10.Text = "JOProgressMC4:"
-        '
-        'lblJOProgressMC4
-        '
-        Me.lblJOProgressMC4.AutoSize = True
-        Me.lblJOProgressMC4.Location = New System.Drawing.Point(824, 67)
-        Me.lblJOProgressMC4.Name = "lblJOProgressMC4"
-        Me.lblJOProgressMC4.Size = New System.Drawing.Size(32, 13)
-        Me.lblJOProgressMC4.TabIndex = 4
-        Me.lblJOProgressMC4.Text = "False"
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(733, 80)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(86, 13)
-        Me.Label13.TabIndex = 4
-        Me.Label13.Text = "JOProgressMC5:"
-        '
-        'lblJOProgressMC5
-        '
-        Me.lblJOProgressMC5.AutoSize = True
-        Me.lblJOProgressMC5.Location = New System.Drawing.Point(824, 80)
-        Me.lblJOProgressMC5.Name = "lblJOProgressMC5"
-        Me.lblJOProgressMC5.Size = New System.Drawing.Size(32, 13)
-        Me.lblJOProgressMC5.TabIndex = 4
-        Me.lblJOProgressMC5.Text = "False"
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(733, 93)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(86, 13)
-        Me.Label15.TabIndex = 4
-        Me.Label15.Text = "JOProgressMC6:"
-        '
-        'lblJOProgressMC6
-        '
-        Me.lblJOProgressMC6.AutoSize = True
-        Me.lblJOProgressMC6.Location = New System.Drawing.Point(824, 93)
-        Me.lblJOProgressMC6.Name = "lblJOProgressMC6"
-        Me.lblJOProgressMC6.Size = New System.Drawing.Size(32, 13)
-        Me.lblJOProgressMC6.TabIndex = 4
-        Me.lblJOProgressMC6.Text = "False"
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(733, 106)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(86, 13)
-        Me.Label17.TabIndex = 4
-        Me.Label17.Text = "JOProgressMC7:"
-        '
-        'lblJOProgressMC7
-        '
-        Me.lblJOProgressMC7.AutoSize = True
-        Me.lblJOProgressMC7.Location = New System.Drawing.Point(824, 106)
-        Me.lblJOProgressMC7.Name = "lblJOProgressMC7"
-        Me.lblJOProgressMC7.Size = New System.Drawing.Size(32, 13)
-        Me.lblJOProgressMC7.TabIndex = 4
-        Me.lblJOProgressMC7.Text = "False"
-        '
-        'Label19
-        '
-        Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(733, 119)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(86, 13)
-        Me.Label19.TabIndex = 4
-        Me.Label19.Text = "JOProgressMC8:"
-        '
-        'lblJOProgressMC8
-        '
-        Me.lblJOProgressMC8.AutoSize = True
-        Me.lblJOProgressMC8.Location = New System.Drawing.Point(824, 119)
-        Me.lblJOProgressMC8.Name = "lblJOProgressMC8"
-        Me.lblJOProgressMC8.Size = New System.Drawing.Size(32, 13)
-        Me.lblJOProgressMC8.TabIndex = 4
-        Me.lblJOProgressMC8.Text = "False"
-        '
-        'Label21
-        '
-        Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(733, 132)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(86, 13)
-        Me.Label21.TabIndex = 4
-        Me.Label21.Text = "JOProgressMC9:"
-        '
-        'lblJOProgressMC9
-        '
-        Me.lblJOProgressMC9.AutoSize = True
-        Me.lblJOProgressMC9.Location = New System.Drawing.Point(824, 132)
-        Me.lblJOProgressMC9.Name = "lblJOProgressMC9"
-        Me.lblJOProgressMC9.Size = New System.Drawing.Size(32, 13)
-        Me.lblJOProgressMC9.TabIndex = 4
-        Me.lblJOProgressMC9.Text = "False"
-        '
-        'Label23
-        '
-        Me.Label23.AutoSize = True
-        Me.Label23.Location = New System.Drawing.Point(733, 145)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(92, 13)
-        Me.Label23.TabIndex = 4
-        Me.Label23.Text = "JOProgressMC10:"
-        '
-        'lblJOProgressMC10
-        '
-        Me.lblJOProgressMC10.AutoSize = True
-        Me.lblJOProgressMC10.Location = New System.Drawing.Point(824, 145)
-        Me.lblJOProgressMC10.Name = "lblJOProgressMC10"
-        Me.lblJOProgressMC10.Size = New System.Drawing.Size(32, 13)
-        Me.lblJOProgressMC10.TabIndex = 4
-        Me.lblJOProgressMC10.Text = "False"
-        '
-        'Label25
-        '
-        Me.Label25.AutoSize = True
-        Me.Label25.Location = New System.Drawing.Point(733, 158)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(92, 13)
-        Me.Label25.TabIndex = 4
-        Me.Label25.Text = "JOProgressMC11:"
-        '
-        'lblJOProgressMC11
-        '
-        Me.lblJOProgressMC11.AutoSize = True
-        Me.lblJOProgressMC11.Location = New System.Drawing.Point(824, 158)
-        Me.lblJOProgressMC11.Name = "lblJOProgressMC11"
-        Me.lblJOProgressMC11.Size = New System.Drawing.Size(32, 13)
-        Me.lblJOProgressMC11.TabIndex = 4
-        Me.lblJOProgressMC11.Text = "False"
-        '
-        'Label27
-        '
-        Me.Label27.AutoSize = True
-        Me.Label27.Location = New System.Drawing.Point(733, 171)
-        Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(92, 13)
-        Me.Label27.TabIndex = 4
-        Me.Label27.Text = "JOProgressMC12:"
-        '
-        'Label28
-        '
-        Me.Label28.AutoSize = True
-        Me.Label28.Location = New System.Drawing.Point(733, 184)
-        Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(92, 13)
-        Me.Label28.TabIndex = 4
-        Me.Label28.Text = "JOProgressMC13:"
-        '
-        'lblJOProgressMC12
-        '
-        Me.lblJOProgressMC12.AutoSize = True
-        Me.lblJOProgressMC12.Location = New System.Drawing.Point(824, 171)
-        Me.lblJOProgressMC12.Name = "lblJOProgressMC12"
-        Me.lblJOProgressMC12.Size = New System.Drawing.Size(32, 13)
-        Me.lblJOProgressMC12.TabIndex = 4
-        Me.lblJOProgressMC12.Text = "False"
-        '
-        'Label30
-        '
-        Me.Label30.AutoSize = True
-        Me.Label30.Location = New System.Drawing.Point(733, 197)
-        Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(92, 13)
-        Me.Label30.TabIndex = 4
-        Me.Label30.Text = "JOProgressMC14:"
-        '
-        'lblJOProgressMC13
-        '
-        Me.lblJOProgressMC13.AutoSize = True
-        Me.lblJOProgressMC13.Location = New System.Drawing.Point(824, 184)
-        Me.lblJOProgressMC13.Name = "lblJOProgressMC13"
-        Me.lblJOProgressMC13.Size = New System.Drawing.Size(32, 13)
-        Me.lblJOProgressMC13.TabIndex = 4
-        Me.lblJOProgressMC13.Text = "False"
-        '
-        'Label32
-        '
-        Me.Label32.AutoSize = True
-        Me.Label32.Location = New System.Drawing.Point(733, 210)
-        Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(92, 13)
-        Me.Label32.TabIndex = 4
-        Me.Label32.Text = "JOProgressMC15:"
-        '
-        'lblJOProgressMC14
-        '
-        Me.lblJOProgressMC14.AutoSize = True
-        Me.lblJOProgressMC14.Location = New System.Drawing.Point(824, 197)
-        Me.lblJOProgressMC14.Name = "lblJOProgressMC14"
-        Me.lblJOProgressMC14.Size = New System.Drawing.Size(32, 13)
-        Me.lblJOProgressMC14.TabIndex = 4
-        Me.lblJOProgressMC14.Text = "False"
-        '
-        'Label35
-        '
-        Me.Label35.AutoSize = True
-        Me.Label35.Location = New System.Drawing.Point(733, 223)
-        Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(92, 13)
-        Me.Label35.TabIndex = 4
-        Me.Label35.Text = "JOProgressMC16:"
-        '
-        'lblJOProgressMC15
-        '
-        Me.lblJOProgressMC15.AutoSize = True
-        Me.lblJOProgressMC15.Location = New System.Drawing.Point(824, 210)
-        Me.lblJOProgressMC15.Name = "lblJOProgressMC15"
-        Me.lblJOProgressMC15.Size = New System.Drawing.Size(32, 13)
-        Me.lblJOProgressMC15.TabIndex = 4
-        Me.lblJOProgressMC15.Text = "False"
-        '
-        'Label37
-        '
-        Me.Label37.AutoSize = True
-        Me.Label37.Location = New System.Drawing.Point(733, 236)
-        Me.Label37.Name = "Label37"
-        Me.Label37.Size = New System.Drawing.Size(92, 13)
-        Me.Label37.TabIndex = 4
-        Me.Label37.Text = "JOProgressMC17:"
-        '
-        'lblJOProgressMC16
-        '
-        Me.lblJOProgressMC16.AutoSize = True
-        Me.lblJOProgressMC16.Location = New System.Drawing.Point(824, 223)
-        Me.lblJOProgressMC16.Name = "lblJOProgressMC16"
-        Me.lblJOProgressMC16.Size = New System.Drawing.Size(32, 13)
-        Me.lblJOProgressMC16.TabIndex = 4
-        Me.lblJOProgressMC16.Text = "False"
-        '
-        'Label39
-        '
-        Me.Label39.AutoSize = True
-        Me.Label39.Location = New System.Drawing.Point(733, 249)
-        Me.Label39.Name = "Label39"
-        Me.Label39.Size = New System.Drawing.Size(92, 13)
-        Me.Label39.TabIndex = 4
-        Me.Label39.Text = "JOProgressMC18:"
-        '
-        'lblJOProgressMC17
-        '
-        Me.lblJOProgressMC17.AutoSize = True
-        Me.lblJOProgressMC17.Location = New System.Drawing.Point(824, 236)
-        Me.lblJOProgressMC17.Name = "lblJOProgressMC17"
-        Me.lblJOProgressMC17.Size = New System.Drawing.Size(32, 13)
-        Me.lblJOProgressMC17.TabIndex = 4
-        Me.lblJOProgressMC17.Text = "False"
-        '
-        'Label41
-        '
-        Me.Label41.AutoSize = True
-        Me.Label41.Location = New System.Drawing.Point(733, 262)
-        Me.Label41.Name = "Label41"
-        Me.Label41.Size = New System.Drawing.Size(92, 13)
-        Me.Label41.TabIndex = 4
-        Me.Label41.Text = "JOProgressMC19:"
-        '
-        'lblJOProgressMC18
-        '
-        Me.lblJOProgressMC18.AutoSize = True
-        Me.lblJOProgressMC18.Location = New System.Drawing.Point(824, 249)
-        Me.lblJOProgressMC18.Name = "lblJOProgressMC18"
-        Me.lblJOProgressMC18.Size = New System.Drawing.Size(32, 13)
-        Me.lblJOProgressMC18.TabIndex = 4
-        Me.lblJOProgressMC18.Text = "False"
-        '
-        'Label43
-        '
-        Me.Label43.AutoSize = True
-        Me.Label43.Location = New System.Drawing.Point(733, 275)
-        Me.Label43.Name = "Label43"
-        Me.Label43.Size = New System.Drawing.Size(92, 13)
-        Me.Label43.TabIndex = 4
-        Me.Label43.Text = "JOProgressMC20:"
-        '
-        'lblJOProgressMC19
-        '
-        Me.lblJOProgressMC19.AutoSize = True
-        Me.lblJOProgressMC19.Location = New System.Drawing.Point(824, 262)
-        Me.lblJOProgressMC19.Name = "lblJOProgressMC19"
-        Me.lblJOProgressMC19.Size = New System.Drawing.Size(32, 13)
-        Me.lblJOProgressMC19.TabIndex = 4
-        Me.lblJOProgressMC19.Text = "False"
-        '
-        'lblJOProgressMC20
-        '
-        Me.lblJOProgressMC20.AutoSize = True
-        Me.lblJOProgressMC20.Location = New System.Drawing.Point(824, 275)
-        Me.lblJOProgressMC20.Name = "lblJOProgressMC20"
-        Me.lblJOProgressMC20.Size = New System.Drawing.Size(32, 13)
-        Me.lblJOProgressMC20.TabIndex = 4
-        Me.lblJOProgressMC20.Text = "False"
+        'btnDisconnect
+        '
+        Me.btnDisconnect.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDisconnect.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.btnDisconnect.IconColor = System.Drawing.Color.Black
+        Me.btnDisconnect.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnDisconnect.Location = New System.Drawing.Point(186, 160)
+        Me.btnDisconnect.Name = "btnDisconnect"
+        Me.btnDisconnect.Size = New System.Drawing.Size(135, 54)
+        Me.btnDisconnect.TabIndex = 2
+        Me.btnDisconnect.Text = "Disconnect"
+        Me.btnDisconnect.UseVisualStyleBackColor = True
+        '
+        'btnConnect
+        '
+        Me.btnConnect.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnConnect.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.btnConnect.IconColor = System.Drawing.Color.Black
+        Me.btnConnect.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnConnect.Location = New System.Drawing.Point(39, 160)
+        Me.btnConnect.Name = "btnConnect"
+        Me.btnConnect.Size = New System.Drawing.Size(135, 54)
+        Me.btnConnect.TabIndex = 2
+        Me.btnConnect.Text = "Connect"
+        Me.btnConnect.UseVisualStyleBackColor = True
         '
         'frmSetting1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1857, 992)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.lblJOProgressMC11)
         Me.Controls.Add(Me.lblJOProgressMC10)
@@ -649,6 +725,8 @@ Partial Class frmSetting1
         Me.MinimizeBox = False
         Me.Name = "frmSetting1"
         Me.Text = "Setting"
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -709,4 +787,7 @@ Partial Class frmSetting1
     Friend WithEvents Label43 As Label
     Friend WithEvents lblJOProgressMC19 As Label
     Friend WithEvents lblJOProgressMC20 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents txtSQLPath As TextBox
+    Friend WithEvents GroupBox1 As GroupBox
 End Class

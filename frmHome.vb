@@ -584,7 +584,7 @@ Public Class frmHome
 
         modSetVal_imageRun = My.Settings.ImageRun
         modSetVal_imageStop = My.Settings.ImageStop
-        modSetVal_SqlPath = My.Settings.SPSConnectionString
+        modSetVal_SqlPath = My.Settings.SQLPath
     End Sub
     '//
 
@@ -1044,8 +1044,8 @@ Public Class frmHome
 
     '// INDICATOR IMAGES DURING MACHINE RUN AND MACHINE STOP
     Private Sub MachineStatusImage(bol As Boolean, pic As PictureBox)
-        Dim STimageRun As New Bitmap(modSetVal_imageRun) 'Strings set in My.Settings
-        Dim STimageStop As New Bitmap(modSetVal_imageStop) 'Strings set in My.Settings
+        Dim STimageRun As New Bitmap(My.Resources.LineRun) 'Strings set in My.Settings
+        Dim STimageStop As New Bitmap(My.Resources.LineStop) 'Strings set in My.Settings
         If bol = True Then
             pic.Image = STimageRun
         Else
@@ -1748,7 +1748,10 @@ Public Class frmHome
 
     '// UPDATING LOGIN DETAILS DURING LAOGIN (TEXT CHNAGE PROPERTIES)
     Private Sub lblLoginInProgress_TextChanged(sender As Object, e As EventArgs) Handles lblLoginInProgress.TextChanged
-        CheckAndUpdateMachineLog_AtLogin()
+        If modSetVal_SqlPath IsNot Nothing Then
+            CheckAndUpdateMachineLog_AtLogin()
+        End If
+
         ClearUserDetailInputs()
         ClearTempCheckbox()
         modLogiInProgress = False
@@ -1893,7 +1896,10 @@ Public Class frmHome
     '// UPDATING LOGING DETAILS TABLE DURING LOGOUT (TEXT CHANGE PROPERTIES)
     Private Sub lblLogoutInProgress_TextChanged(sender As Object, e As EventArgs) Handles lblLogoutInProgress.TextChanged
         ckbBtnConfirmed() 'Confirmed checked
-        CheckAndUpdateMachineLog_AtLogOut()
+        If modSetVal_SqlPath IsNot Nothing Then
+            CheckAndUpdateMachineLog_AtLogOut()
+        End If
+
         modLogOutInProgress = False
     End Sub
     Public Sub CheckAndUpdateMachineLog_AtLogOut()

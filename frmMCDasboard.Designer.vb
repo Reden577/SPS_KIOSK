@@ -718,12 +718,12 @@ Partial Class frmMCDasboard
         '
         'picMCStatus
         '
-        Me.picMCStatus.Image = Global.SPSApp1.My.Resources.Resources.STOPSIGN__1_
-        Me.picMCStatus.Location = New System.Drawing.Point(22, 75)
+        Me.picMCStatus.Image = Global.SPSApp1.My.Resources.Resources.STOPSIGN_1
+        Me.picMCStatus.Location = New System.Drawing.Point(21, 77)
         Me.picMCStatus.Name = "picMCStatus"
-        Me.picMCStatus.Size = New System.Drawing.Size(253, 56)
+        Me.picMCStatus.Size = New System.Drawing.Size(260, 50)
         Me.picMCStatus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picMCStatus.TabIndex = 2
+        Me.picMCStatus.TabIndex = 9
         Me.picMCStatus.TabStop = False
         '
         'PictureBox1
