@@ -15,6 +15,7 @@ Public Class frmSetting1
         Connect_Disconnect_Btn_EnableDisable()
 
         txtSQLPath.Text = My.Settings.SQLPath
+        modSetVal_SqlPath = My.Settings.SQLPath
 
         modSetVal_DashB_RunSign = My.Settings.MCDashRunImage
         modSetVal_DashB_StopSign = My.Settings.MCDashStopImage

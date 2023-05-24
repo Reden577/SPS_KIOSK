@@ -6,7 +6,7 @@ Public Class clsUpdateJODetailsAtUnloading
     Public proc As String = "UpdateProJOUnloaded"
 
     Public Sub UpdateJOLoadedDetailsAtUnloading()
-        Dim con As New SqlConnection(sqlPath)
+        Dim con As New SqlConnection(modSetVal_SqlPath)
         Using cmd As SqlCommand = New SqlCommand(proc, con)
             cmd.Parameters.AddWithValue("@JOCode", JOCode)
             cmd.Parameters.AddWithValue("@EndTime", EndTime)

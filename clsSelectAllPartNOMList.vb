@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class clsSelectAllPartNOMList
-    Public sqlPath As String = "Data Source=DESKTOP-4OGTIB2\DIAVIEWSQL;Initial Catalog=SPS;Persist Security Info=True;User ID=sa;Password=doc577isin"
+    'Public sqlPath As String = "Data Source=DESKTOP-4OGTIB2\DIAVIEWSQL;Initial Catalog=SPS;Persist Security Info=True;User ID=sa;Password=doc577isin"
     Public selAll As String = "SelectProPartNoMListAll"
     Public BuildingNo As String
     Public MldId As String
@@ -17,7 +17,7 @@ Public Class clsSelectAllPartNOMList
     Public PartNoDetailsP2 As String
 
     Public Sub SelectMoldIdDetails(mldID As String)
-        Dim con As New SqlConnection(sqlPath)
+        Dim con As New SqlConnection(modSetVal_SqlPath)
         Using cmd As SqlCommand = New SqlCommand(selAll, con)
             cmd.Parameters.AddWithValue("@MoldID", mldID)
             cmd.CommandType = CommandType.StoredProcedure

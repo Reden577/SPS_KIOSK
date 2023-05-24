@@ -173,9 +173,9 @@ Public Class frmJOLoading
 
     Public Sub compareMCLogged_VS_MCSelected()
         Try
-            Dim sqlPath As String = "Data Source=DESKTOP-4OGTIB2\DIAVIEWSQL;Initial Catalog=SPS;Persist Security Info=True;User ID=sa;Password=doc577isin"
+            'Dim sqlPath As String = "Data Source=DESKTOP-4OGTIB2\DIAVIEWSQL;Initial Catalog=SPS;Persist Security Info=True;User ID=sa;Password=doc577isin"
             Dim sqlcmd As String = "Select [Machine_ID] from [Production].[JOLoadedDetails] where [Machine_ID] = '" + lblDGVMachineId.Text + "' AND [Load_Stats] = 'Loaded' "
-            Dim con As New SqlConnection(sqlPath)
+            Dim con As New SqlConnection(modSetVal_SqlPath)
             Using cmd As SqlCommand = New SqlCommand(sqlcmd, con)
                 con.Open()
                 McLogged = cmd.ExecuteScalar()

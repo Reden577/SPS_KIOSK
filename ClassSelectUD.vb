@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class ClassSelectALLUD
-    Public sqlPath As String = "Data Source=DESKTOP-4OGTIB2\DIAVIEWSQL;Initial Catalog=SPS;Persist Security Info=True;User ID=sa;Password=doc577isin"
+    'Public sqlPath As String = "Data Source=DESKTOP-4OGTIB2\DIAVIEWSQL;Initial Catalog=SPS;Persist Security Info=True;User ID=sa;Password=doc577isin"
     Public sqlProc As String = "SelectProAllUserDetails"
     Public BuildingNo As String
     Public UserName As String
@@ -14,7 +14,7 @@ Public Class ClassSelectALLUD
     Public OTS As String
 
     Public Sub selectDB(w1 As String, w2 As String)
-        Dim con As New SqlConnection(sqlPath)
+        Dim con As New SqlConnection(modSetVal_SqlPath)
         Using cmd As SqlCommand = New SqlCommand(sqlProc, con)
             cmd.Parameters.AddWithValue("@UserID", w1)
             cmd.Parameters.AddWithValue("@OTS", w2)

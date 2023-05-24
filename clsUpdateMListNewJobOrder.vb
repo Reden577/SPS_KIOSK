@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class clsUpdateMListNewJobOrder
-    Public sqlPath As String = "Data Source=DESKTOP-4OGTIB2\DIAVIEWSQL;Initial Catalog=SPS;Persist Security Info=True;User ID=sa;Password=doc577isin"
+    'Public sqlPath As String = "Data Source=DESKTOP-4OGTIB2\DIAVIEWSQL;Initial Catalog=SPS;Persist Security Info=True;User ID=sa;Password=doc577isin"
     Public sqlProc1 As String = "UpdProMListNewJobOrder_LoadStat"
     Public JOCode As String
     Public MoldID As String
@@ -10,7 +10,7 @@ Public Class clsUpdateMListNewJobOrder
     Public LoadStat As String
 
     Public Sub updateLoadStat()
-        Dim con As New SqlConnection(sqlPath)
+        Dim con As New SqlConnection(modSetVal_SqlPath)
         Using cmd As SqlCommand = New SqlCommand(sqlProc1, con)
             cmd.Parameters.AddWithValue("@JOCode", JOCode)
             cmd.Parameters.AddWithValue("@LoadStat", LoadStat)

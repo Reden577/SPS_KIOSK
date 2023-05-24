@@ -11,7 +11,7 @@ Public Class clsSelectAllJODetails_byJOcode
 
     Public Sub CompareIFJoCodeAlreadyLogged()
         Try
-            Dim con As New SqlConnection(sqlPath)
+            Dim con As New SqlConnection(modSetVal_SqlPath)
             Using cmd As SqlCommand = New SqlCommand(selProc1, con)
                 cmd.Parameters.AddWithValue("@JoCode", JOCode)
                 cmd.Parameters.AddWithValue("@MachineID", MachineID)

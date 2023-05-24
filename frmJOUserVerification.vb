@@ -1,6 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Public Class frmJOUserVerification
-    Dim sqlPath As String = "Data Source=DESKTOP-4OGTIB2\DIAVIEWSQL;Initial Catalog=SPS;Persist Security Info=True;User ID=sa;Password=doc577isin"
+    'Dim sqlPath As String = "Data Source=DESKTOP-4OGTIB2\DIAVIEWSQL;Initial Catalog=SPS;Persist Security Info=True;User ID=sa;Password=doc577isin"
 
     Private Sub frmJOUserVerification_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.CenterToScreen()

@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 Public Class frmSelToLogin
 
-    Dim sqlPath As String = "Data Source=DESKTOP-4OGTIB2\DIAVIEWSQL;Initial Catalog=SPS;Persist Security Info=True;User ID=sa;Password=doc577isin"
+    'Dim sqlPath As String = "Data Source=DESKTOP-4OGTIB2\DIAVIEWSQL;Initial Catalog=SPS;Persist Security Info=True;User ID=sa;Password=doc577isin"
     Dim procedure1 As String = "SelectUser"
     Dim proc1Para As String = "@UNID"
     Dim procedure2 As String = "SelectOTS"
@@ -51,7 +51,7 @@ Public Class frmSelToLogin
     Public Sub LoadUserDetails_ViaUserIDandPassword()
         Try
             If txtUserID.Text <> "" And txtPassword.Text <> "" Then
-                Dim con As New SqlConnection(sqlPath)
+                Dim con As New SqlConnection(modSetVal_SqlPath)
                 con.Open()
                 Dim cmd As New SqlCommand(procedure1, con)
                 cmd.Parameters.AddWithValue(proc1Para, txtUserID.Text)
@@ -110,7 +110,7 @@ Public Class frmSelToLogin
     Public Sub LoadUserDetails_ViaOTS()
         Try
             If txtOTS.Text <> "" Then
-                Dim con As New SqlConnection(sqlPath)
+                Dim con As New SqlConnection(modSetVal_SqlPath)
                 con.Open()
                 Dim cmd As New SqlCommand(procedure2, con)
                 cmd.Parameters.AddWithValue(proc2Para, txtOTS.Text)

@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class clsUpdateJOLoadedDetailsAll
-    Public sqlPath As String = "Data Source=DESKTOP-4OGTIB2\DIAVIEWSQL;Initial Catalog=SPS;Persist Security Info=True;User ID=sa;Password=doc577isin"
+    'Public sqlPath As String = "Data Source=DESKTOP-4OGTIB2\DIAVIEWSQL;Initial Catalog=SPS;Persist Security Info=True;User ID=sa;Password=doc577isin"
     Public sqlProc As String = "UpdateProJOLoadedDetails"
     Public BuildingNo As String
     Public MachineID As String
@@ -37,7 +37,7 @@ Public Class clsUpdateJOLoadedDetailsAll
     Public TotalRunTime As Decimal
 
     Public Sub UpdateJOLoadedDetailsAll()
-        Dim con As New SqlConnection(sqlPath)
+        Dim con As New SqlConnection(modSetVal_SqlPath)
         Using cmd As SqlCommand = New SqlCommand(sqlProc, con)
             cmd.Parameters.AddWithValue("@MachineID", MachineID)
             cmd.Parameters.AddWithValue("@ShiftCode", ShiftCode)

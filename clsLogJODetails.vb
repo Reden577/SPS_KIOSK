@@ -10,7 +10,7 @@ Public Class clsLogJODetails
     Public AllowedMachine As String
 
     Public Sub getPartNoDetails(mldId As String)
-        Dim con As New SqlConnection(sqlPath)
+        Dim con As New SqlConnection(modSetVal_SqlPath)
         Using cmd As SqlCommand = New SqlCommand(getMIdProc, con)
             cmd.Parameters.AddWithValue("@MoldId", mldId)
             cmd.CommandType = CommandType.StoredProcedure
@@ -30,7 +30,7 @@ Public Class clsLogJODetails
     End Sub
 
     Public Sub logJODetails()
-        Dim con As New SqlConnection(sqlPath)
+        Dim con As New SqlConnection(modSetVal_SqlPath)
         Using cmd As SqlCommand = New SqlCommand(logJOProc, con)
             cmd.Parameters.AddWithValue("@MachineID", AllowedMachine)
             cmd.Parameters.AddWithValue("@ShiftCode", ShiftCode)
