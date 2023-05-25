@@ -520,9 +520,9 @@ Public Class frmMCDasboard
 
     '// 
     Public Sub DropdownShiftCodeDistinctValue()
-        Dim sqlPath As String = "Data Source=DESKTOP-4OGTIB2\DIAVIEWSQL;Initial Catalog=SPS;Persist Security Info=True;User ID=sa;Password=doc577isin"
+        'Dim sqlPath As String = "Data Source=DESKTOP-4OGTIB2\DIAVIEWSQL;Initial Catalog=SPS;Persist Security Info=True;User ID=sa;Password=doc577isin"
         Dim sqlSelect As String = "SELECT DISTINCT [Shift_CodeFK] FROM [Maintenance].[Downtime] "
-        Dim con As New SqlConnection(sqlPath)
+        Dim con As New SqlConnection(modSetVal_SqlPath)
         Dim adapter As New SqlDataAdapter(sqlSelect, con)
         Dim ds As New DataSet()
         con.Open()

@@ -103,7 +103,7 @@ Partial Class frmSetting1
         Me.txtPort.Name = "txtPort"
         Me.txtPort.Size = New System.Drawing.Size(197, 31)
         Me.txtPort.TabIndex = 1
-        Me.txtPort.Text = "502"
+        Me.txtPort.Text = "0"
         '
         'txtIP
         '
@@ -112,7 +112,6 @@ Partial Class frmSetting1
         Me.txtIP.Name = "txtIP"
         Me.txtIP.Size = New System.Drawing.Size(197, 31)
         Me.txtIP.TabIndex = 1
-        Me.txtIP.Text = "169.254.190.100"
         '
         'Label11
         '

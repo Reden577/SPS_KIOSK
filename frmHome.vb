@@ -34,7 +34,7 @@ Public Class frmHome
         MCStatusPIC()
         PPT()
         ckbBtnVisibleFalse()
-        UpdateUserLogin_ClearLoginDetails()
+        'UpdateUserLogin_ClearLoginDetails()
         lblLogiLogNote.Text = ""
     End Sub
     '//
@@ -42,6 +42,7 @@ Public Class frmHome
 
     '// SAVING DATA TO MY.SETTING WHEN FORM CLOSING (FROM CLOSING SUB)
     Private Sub frmHome_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        UpdateUserLogin_ClearLoginDetails()
         My.Settings.JOCodeMC1 = stJOMC1
         My.Settings.JOCodeMC2 = stJOMC2
         My.Settings.JOCodeMC3 = stJOMC4
@@ -1741,9 +1742,9 @@ Public Class frmHome
         Dim sqlProc As String = "UpdateProLoginDetailsClear"
         Dim con As New SqlConnection(modSetVal_SqlPath) 'Strings set in  My.Setting
         Using cmd As SqlCommand = New SqlCommand(sqlProc, con)
-            cmd.Parameters.AddWithValue("@UserName", "NULL")
-            cmd.Parameters.AddWithValue("@UserID", "NULL")
-            cmd.Parameters.AddWithValue("@AccessLvl", "NULL")
+            cmd.Parameters.AddWithValue("@UserName", "none")
+            cmd.Parameters.AddWithValue("@UserID", "none")
+            cmd.Parameters.AddWithValue("@AccessLvl", "none")
             cmd.CommandType = CommandType.StoredProcedure
 
             con.Open()

@@ -22,9 +22,14 @@ Public Class frmSetting1
         modSetVal_DashB_QASign = My.Settings.MCDashQAImage
         modSetVal_DashB_NoPlanSign = My.Settings.MCDashNOPlanImage
 
+        txtIP.Text = My.Settings.IPAddress
+        txtPort.Text = My.Settings.Port
+
     End Sub
     Private Sub frmSetting1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         My.Settings.SQLPath = txtSQLPath.Text
+        My.Settings.IPAddress = txtIP.Text
+        My.Settings.Port = txtPort.Text
     End Sub
 
     Public Sub ConnectToModbus()
@@ -479,7 +484,7 @@ Public Class frmSetting1
     '// LOADING THE CAVITY QTY FOR MACHINE 1 JOB ORDER
     Public Sub MC1LoadedJOCavQty()
         If ModCLient.Connected = True Then
-            If stJOMC1 IsNot Nothing Then
+            If stJOMC1 <> "" Then
                 Dim wrValue1 As Integer
                 Dim wrValue2 As Integer
                 wrValue1 = CInt(stJOMoldCavP1MC1)
@@ -494,7 +499,7 @@ Public Class frmSetting1
     '// LOADING THE CAVITY QTY FOR MACHINE 2 JOB ORDER
     Public Sub MC2LoadedJOCavQty()
         If ModCLient.Connected = True Then
-            If stJOMC1 IsNot Nothing Then
+            If stJOMC1 <> "" Then
                 Dim wrValue1 As Integer
                 Dim wrValue2 As Integer
                 wrValue1 = CInt(stJOMoldCavP1MC2)
