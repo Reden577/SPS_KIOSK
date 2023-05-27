@@ -14,7 +14,7 @@
         If preLDJODetail_MachineId = "Machine 1" Then
             stJOMC1 = preLDJODetail_JOCode
             stJOPartNo1MC1 = preLDJODetail_PN1
-            stJOPartNo2MC1 = preLDJODetail_PN1
+            stJOPartNo2MC1 = preLDJODetail_PN2
             stJOMoldCavP1MC1 = preLDJODetail_CavPN1
             stJOMoldCavP2MC1 = preLDJODetail_CavPN2
             stJOQuantityMC1 = preLDJODetail_PlanQty
@@ -27,7 +27,7 @@
         If preLDJODetail_MachineId = "Machine 2" Then
             stJOMC2 = preLDJODetail_JOCode
             stJOPartNo1MC2 = preLDJODetail_PN1
-            stJOPartNo2MC2 = preLDJODetail_PN1
+            stJOPartNo2MC2 = preLDJODetail_PN2
             stJOMoldCavP1MC2 = preLDJODetail_CavPN1
             stJOMoldCavP2MC2 = preLDJODetail_CavPN2
             stJOQuantityMC2 = preLDJODetail_PlanQty
@@ -228,10 +228,11 @@
 
     '// REALTIME CHECK TIMER (100ms)
     Private Sub JOSelectRTCheck_Tick(sender As Object, e As EventArgs) Handles JOSelectRTCheck.Tick
-        lblChecking.Text = bolUpdateAndUnload
+        lblMenuTabWorkOrder.Text = menuTabWorkOrder
         EnableDisableUnloadBtn()
-        DGVCellFormating_Loaded_Inprogress()
-        DGVCellFormating_Unloaded_Incomplete()
+        'DGVCellFormating_Loaded_Inprogress()
+        'DGVCellFormating_Unloaded_Incomplete()
+        'DGVCellFormating_PlanComplete_Loaded()
         'lblJOLoadedBy.Text = modLogUserName
         If Not menuTabWorkOrder = True Then
         End If
@@ -562,6 +563,7 @@
         lblDGVPN2Reject.Text = dgvJobOrder.CurrentRow.Cells(22).Value.ToString
         lblDGVActualPN1OUt.Text = dgvJobOrder.CurrentRow.Cells(23).Value.ToString
         lblDGVAvtualP2Out.Text = dgvJobOrder.CurrentRow.Cells(24).Value.ToString
+        lblDGVTtlRunTime.Text = dgvJobOrder.CurrentRow.Cells(31).Value.ToString
     End Sub
     '//
 
@@ -589,6 +591,10 @@
     '// REFRESH BUTTON , DGV BACK TO DEFAULT STATE
     Public Sub RefreshDGV()
         Me.JOLoadedDetailsTableAdapter.Fill(Me.JOLodedDetails_3.JOLoadedDetails)
+        DGVCellFormating_Loaded_Inprogress()
+        DGVCellFormating_Unloaded_Incomplete()
+        DGVCellFormating_PlanComplete_Loaded()
+        DGVCellFormating_PlanComplete_Unloaded()
     End Sub
     Private Sub btnRefresh_Click(sender As Object, e As EventArgs) Handles btnRefresh.Click
         RefreshDGV()
@@ -599,6 +605,10 @@
     '// FILTER BY MACHINE BUTTON
     Private Sub btnByMachine_Click(sender As Object, e As EventArgs) Handles btnByMachine.Click
         Me.JOLoadedDetailsTableAdapter.FillByMachineID(Me.JOLodedDetails_3.JOLoadedDetails, cboByMachine.Text)
+        DGVCellFormating_Loaded_Inprogress()
+        DGVCellFormating_Unloaded_Incomplete()
+        DGVCellFormating_PlanComplete_Loaded()
+        DGVCellFormating_PlanComplete_Unloaded()
     End Sub
     '// 
 
@@ -623,10 +633,10 @@
     End Sub
     '//
 
-    '// CHANGING THE DGV ROW BACK AND FORE COLOR IF JO IS ALREADY LOADED
-    Public Sub DGVCellFormating_Loaded_Complete()
+    '// CHANGING THE DGV ROW BACK AND FORE COLOR IF PLAN COMPLETE
+    Public Sub DGVCellFormating_PlanComplete_Unloaded()
         For Each row As DataGridViewRow In dgvJobOrder.Rows
-            If row.Cells(13).Value = "Loaded" Then
+            If row.Cells(13).Value = "Unloaded" And row.Cells(14).Value = "Plan Complete" Then
                 row.DefaultCellStyle.BackColor = Color.Green
                 row.DefaultCellStyle.ForeColor = Color.White
             End If
@@ -637,9 +647,22 @@
     '// CHANGING THE DGV ROW BACK AND FORE COLOR WHEN JO WAS UNLOADED WITH INCOMPLETE DATA
     Public Sub DGVCellFormating_Unloaded_Incomplete()
         For Each row As DataGridViewRow In dgvJobOrder.Rows
-            If row.Cells(13).Value = "Unloaded" Then
+            If row.Cells(13).Value = "Unloaded" And row.DefaultCellStyle.BackColor <> Color.DarkRed _
+                And row.Cells(14).Value = "Incomplete" Then
                 row.DefaultCellStyle.BackColor = Color.DarkRed
                 row.DefaultCellStyle.ForeColor = Color.White
+            End If
+        Next
+    End Sub
+    '//
+
+    '// CHANGING THE DGV ROW BACK AND FORE COLOR WHEN JO WAS UNLOADED WITH INCOMPLETE DATA
+    Public Sub DGVCellFormating_PlanComplete_Loaded()
+        For Each row As DataGridViewRow In dgvJobOrder.Rows
+            If row.Cells(13).Value = "Loaded" And row.Cells(14).Value = "Plan Complete" _
+                And row.DefaultCellStyle.BackColor <> Color.GreenYellow Then
+                row.DefaultCellStyle.BackColor = Color.GreenYellow
+                row.DefaultCellStyle.ForeColor = Color.Black
             End If
         Next
     End Sub
@@ -753,6 +776,12 @@
 
         ClearDGVSelection()
         frmJOLoading.ShowDialog()
+    End Sub
+
+    Private Sub lblMenuTabWorkOrder_TextChanged(sender As Object, e As EventArgs) Handles lblMenuTabWorkOrder.TextChanged
+        If menuTabWorkOrder = True Then
+            RefreshDGV()
+        End If
     End Sub
 
 

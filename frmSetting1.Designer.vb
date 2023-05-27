@@ -82,8 +82,26 @@ Partial Class frmSetting1
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.btnDisconnect = New FontAwesome.Sharp.IconButton()
         Me.btnConnect = New FontAwesome.Sharp.IconButton()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.NameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Leve1DataGridViewCheckBoxColumn = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.Level2DataGridViewCheckBoxColumn = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.Level3DataGridViewCheckBoxColumn = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.SampleBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.SPSDataSet2 = New SPSApp1.SPSDataSet2()
+        Me.SampleTableAdapter = New SPSApp1.SPSDataSet2TableAdapters.SampleTableAdapter()
+        Me.TreeView1 = New System.Windows.Forms.TreeView()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.NewJOMasterList = New SPSApp1.NewJOMasterList()
+        Me.MListNewJobOrderBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.MListNewJobOrderTableAdapter = New SPSApp1.NewJOMasterListTableAdapters.MListNewJobOrderTableAdapter()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SampleBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SPSDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NewJOMasterList, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MListNewJobOrderBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblRx0
@@ -659,11 +677,96 @@ Partial Class frmSetting1
         Me.btnConnect.Text = "Connect"
         Me.btnConnect.UseVisualStyleBackColor = True
         '
+        'DataGridView1
+        '
+        Me.DataGridView1.AutoGenerateColumns = False
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NameDataGridViewTextBoxColumn, Me.Leve1DataGridViewCheckBoxColumn, Me.Level2DataGridViewCheckBoxColumn, Me.Level3DataGridViewCheckBoxColumn})
+        Me.DataGridView1.DataSource = Me.SampleBindingSource
+        Me.DataGridView1.Location = New System.Drawing.Point(877, 306)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(295, 190)
+        Me.DataGridView1.TabIndex = 8
+        '
+        'NameDataGridViewTextBoxColumn
+        '
+        Me.NameDataGridViewTextBoxColumn.DataPropertyName = "Name"
+        Me.NameDataGridViewTextBoxColumn.HeaderText = "Name"
+        Me.NameDataGridViewTextBoxColumn.Name = "NameDataGridViewTextBoxColumn"
+        '
+        'Leve1DataGridViewCheckBoxColumn
+        '
+        Me.Leve1DataGridViewCheckBoxColumn.DataPropertyName = "Leve1"
+        Me.Leve1DataGridViewCheckBoxColumn.HeaderText = "Leve1"
+        Me.Leve1DataGridViewCheckBoxColumn.Name = "Leve1DataGridViewCheckBoxColumn"
+        Me.Leve1DataGridViewCheckBoxColumn.Width = 50
+        '
+        'Level2DataGridViewCheckBoxColumn
+        '
+        Me.Level2DataGridViewCheckBoxColumn.DataPropertyName = "Level2"
+        Me.Level2DataGridViewCheckBoxColumn.HeaderText = "Level2"
+        Me.Level2DataGridViewCheckBoxColumn.Name = "Level2DataGridViewCheckBoxColumn"
+        Me.Level2DataGridViewCheckBoxColumn.Width = 50
+        '
+        'Level3DataGridViewCheckBoxColumn
+        '
+        Me.Level3DataGridViewCheckBoxColumn.DataPropertyName = "Level3"
+        Me.Level3DataGridViewCheckBoxColumn.HeaderText = "Level3"
+        Me.Level3DataGridViewCheckBoxColumn.Name = "Level3DataGridViewCheckBoxColumn"
+        Me.Level3DataGridViewCheckBoxColumn.Width = 50
+        '
+        'SampleBindingSource
+        '
+        Me.SampleBindingSource.DataMember = "Sample"
+        Me.SampleBindingSource.DataSource = Me.SPSDataSet2
+        '
+        'SPSDataSet2
+        '
+        Me.SPSDataSet2.DataSetName = "SPSDataSet2"
+        Me.SPSDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'SampleTableAdapter
+        '
+        Me.SampleTableAdapter.ClearBeforeFill = True
+        '
+        'TreeView1
+        '
+        Me.TreeView1.CheckBoxes = True
+        Me.TreeView1.Location = New System.Drawing.Point(1245, 171)
+        Me.TreeView1.Name = "TreeView1"
+        Me.TreeView1.Size = New System.Drawing.Size(196, 325)
+        Me.TreeView1.TabIndex = 9
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(1245, 144)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(196, 21)
+        Me.ComboBox1.TabIndex = 10
+        '
+        'NewJOMasterList
+        '
+        Me.NewJOMasterList.DataSetName = "NewJOMasterList"
+        Me.NewJOMasterList.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'MListNewJobOrderBindingSource
+        '
+        Me.MListNewJobOrderBindingSource.DataMember = "MListNewJobOrder"
+        Me.MListNewJobOrderBindingSource.DataSource = Me.NewJOMasterList
+        '
+        'MListNewJobOrderTableAdapter
+        '
+        Me.MListNewJobOrderTableAdapter.ClearBeforeFill = True
+        '
         'frmSetting1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1857, 992)
+        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.TreeView1)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.lblJOProgressMC11)
@@ -727,6 +830,11 @@ Partial Class frmSetting1
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SampleBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SPSDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NewJOMasterList, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MListNewJobOrderBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -789,4 +897,17 @@ Partial Class frmSetting1
     Friend WithEvents Label7 As Label
     Friend WithEvents txtSQLPath As TextBox
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents SPSDataSet2 As SPSDataSet2
+    Friend WithEvents SampleBindingSource As BindingSource
+    Friend WithEvents SampleTableAdapter As SPSDataSet2TableAdapters.SampleTableAdapter
+    Friend WithEvents NameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents Leve1DataGridViewCheckBoxColumn As DataGridViewCheckBoxColumn
+    Friend WithEvents Level2DataGridViewCheckBoxColumn As DataGridViewCheckBoxColumn
+    Friend WithEvents Level3DataGridViewCheckBoxColumn As DataGridViewCheckBoxColumn
+    Friend WithEvents TreeView1 As TreeView
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents NewJOMasterList As NewJOMasterList
+    Friend WithEvents MListNewJobOrderBindingSource As BindingSource
+    Friend WithEvents MListNewJobOrderTableAdapter As NewJOMasterListTableAdapters.MListNewJobOrderTableAdapter
 End Class

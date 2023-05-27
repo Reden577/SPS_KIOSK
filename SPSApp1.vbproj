@@ -94,6 +94,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClassSelectUD.vb" />
+    <Compile Include="clsHomeMCStatusIndicator.vb" />
     <Compile Include="clsLogJODetails.vb" />
     <Compile Include="clsSelectAllJODetails_byJOcode.vb" />
     <Compile Include="clsSelectAllPartNOMList.vb" />
@@ -238,6 +239,11 @@
     </Compile>
     <Compile Include="SPSDataSet1.vb">
       <DependentUpon>SPSDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SPSDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SPSDataSet2.xsd</DependentUpon>
     </Compile>
     <Compile Include="WorkOrderLoading.vb" />
   </ItemGroup>
@@ -403,6 +409,17 @@
     <None Include="SPSDataSet1.xss">
       <DependentUpon>SPSDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="SPSDataSet2.xsc">
+      <DependentUpon>SPSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SPSDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SPSDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SPSDataSet2.xss">
+      <DependentUpon>SPSDataSet2.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\close %281%29.png" />
@@ -514,6 +531,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\NOPLAN SIGN_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PLANCOMPLETE_1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PLANCOMPLETE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LineNoPlan.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

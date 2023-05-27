@@ -157,7 +157,7 @@ Partial Class frmWorkOrder
         Me.JOLoadedDetailsTableAdapter = New SPSApp1.JOLodedDetails_3TableAdapters.JOLoadedDetailsTableAdapter()
         Me.JOLoadedDetailsBindingSource15 = New System.Windows.Forms.BindingSource(Me.components)
         Me.JOLoadedDetailsTableAdapter2 = New SPSApp1.JOLoadedDetails_MachineIDOnlyTableAdapters.JOLoadedDetailsTableAdapter()
-        Me.lblChecking = New System.Windows.Forms.Label()
+        Me.lblMenuTabWorkOrder = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.dgvJobOrder, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.JOLoadedDetailsBindingSource16, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -912,6 +912,7 @@ Partial Class frmWorkOrder
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.lblMenuTabWorkOrder)
         Me.GroupBox3.Controls.Add(Me.Label21)
         Me.GroupBox3.Controls.Add(Me.lblDGVJOCode)
         Me.GroupBox3.Controls.Add(Me.lblDGVid)
@@ -1257,21 +1258,21 @@ Partial Class frmWorkOrder
         '
         Me.JOLoadedDetailsTableAdapter2.ClearBeforeFill = True
         '
-        'lblChecking
+        'lblMenuTabWorkOrder
         '
-        Me.lblChecking.AutoSize = True
-        Me.lblChecking.Location = New System.Drawing.Point(414, 30)
-        Me.lblChecking.Name = "lblChecking"
-        Me.lblChecking.Size = New System.Drawing.Size(39, 13)
-        Me.lblChecking.TabIndex = 16
-        Me.lblChecking.Text = "Label9"
+        Me.lblMenuTabWorkOrder.AutoSize = True
+        Me.lblMenuTabWorkOrder.Location = New System.Drawing.Point(12, 770)
+        Me.lblMenuTabWorkOrder.Name = "lblMenuTabWorkOrder"
+        Me.lblMenuTabWorkOrder.Size = New System.Drawing.Size(153, 20)
+        Me.lblMenuTabWorkOrder.TabIndex = 16
+        Me.lblMenuTabWorkOrder.Text = "MenuTabWorkOrder"
+        Me.lblMenuTabWorkOrder.Visible = False
         '
         'frmWorkOrder
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1857, 992)
-        Me.Controls.Add(Me.lblChecking)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.btnOpenJO)
         Me.Controls.Add(Me.GroupBox3)
@@ -1476,5 +1477,5 @@ Partial Class frmWorkOrder
     Friend WithEvents JOLoadedDetails_MachineIDOnly As JOLoadedDetails_MachineIDOnly
     Friend WithEvents JOLoadedDetailsBindingSource17 As BindingSource
     Friend WithEvents JOLoadedDetailsTableAdapter2 As JOLoadedDetails_MachineIDOnlyTableAdapters.JOLoadedDetailsTableAdapter
-    Friend WithEvents lblChecking As Label
+    Friend WithEvents lblMenuTabWorkOrder As Label
 End Class

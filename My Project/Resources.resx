@@ -136,6 +136,9 @@
   <data name="PwConfirmation" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PwConfirmation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="DASHBOARD-3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DASHBOARD-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MiniDash2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MiniDash2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -145,26 +148,35 @@
   <data name="close (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="indicator red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\indicator red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MiniDash1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MiniDash1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LineStop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LineStop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DASHBOARD-4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DASHBOARD-4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="empty checkbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\empty checkbox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="NOPLAN_SIGN_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NOPLAN SIGN_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DASHBOARD-7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DASHBOARD-7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="STOPSIGN" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\STOPSIGN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="indicator red1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\indicator red1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="empty checkbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\empty checkbox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MCStop2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MCStop2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DASHBOARD-3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DASHBOARD-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DASHBOARD-10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DASHBOARD-10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DASHBOARD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DASHBOARD1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,17 +187,14 @@
   <data name="DASHBOARD-8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DASHBOARD-8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DASHBOARD-10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DASHBOARD-10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="DASHBOARD-5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DASHBOARD-5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Legend3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Legend3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="LineRun" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LineRun.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DASHBOARD-7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DASHBOARD-7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DASHBOARD-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DASHBOARD-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,11 +205,14 @@
   <data name="Powered by SPS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Powered by SPS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="indicator red" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\indicator red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="indicator red1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\indicator red1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="login design" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\login design.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="RUNSIGN_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RUNSIGN_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="STOPSIGN_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\STOPSIGN_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MCStop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MCStop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,8 +220,8 @@
   <data name="MCRun" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MCRun.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LineStop" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LineStop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="login design" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login design.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DASHBOARD-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DASHBOARD-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,22 +229,16 @@
   <data name="Legend" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Legend.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="PLANCOMPLETE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PLANCOMPLETE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="close (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Legend3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Legend3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="NOPLAN_SIGN_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NOPLAN SIGN_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="QASIGN__1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\QASIGN _1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="RUNSIGN_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RUNSIGN_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="STOPSIGN_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\STOPSIGN_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LineNoPlan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LineNoPlan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

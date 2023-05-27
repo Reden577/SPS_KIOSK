@@ -718,7 +718,7 @@ Partial Class frmMCDasboard
         '
         'picMCStatus
         '
-        Me.picMCStatus.Image = Global.SPSApp1.My.Resources.Resources.STOPSIGN_1
+        Me.picMCStatus.Image = Global.SPSApp1.My.Resources.Resources.NOPLAN_SIGN_1
         Me.picMCStatus.Location = New System.Drawing.Point(21, 77)
         Me.picMCStatus.Name = "picMCStatus"
         Me.picMCStatus.Size = New System.Drawing.Size(260, 50)

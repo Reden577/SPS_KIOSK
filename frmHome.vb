@@ -1043,36 +1043,21 @@ Public Class frmHome
     End Sub
     '//
 
-    '// INDICATOR IMAGES DURING MACHINE RUN AND MACHINE STOP
-    Private Sub MachineStatusImage(bol As Boolean, pic As PictureBox)
-        Dim STimageRun As New Bitmap(My.Resources.LineRun) 'Strings set in My.Settings
-        Dim STimageStop As New Bitmap(My.Resources.LineStop) 'Strings set in My.Settings
-        If bol = True Then
-            pic.Image = STimageRun
-        Else
-            pic.Image = STimageStop
-        End If
-    End Sub
+    '// INDICATOR IMAGES DURING MACHINE RUN, MACHINE STOP and PLAN COMPLETE
     Public Sub MCStatusPIC()
-        MachineStatusImage(StartStopMC1, picStatMC1)
-        MachineStatusImage(StartStopMC2, picStatMC2)
-        MachineStatusImage(StartStopMC3, picStatMC3)
-        MachineStatusImage(StartStopMC4, picStatMC4)
-        MachineStatusImage(StartStopMC5, picStatMC5)
-        MachineStatusImage(StartStopMC6, picStatMC6)
-        MachineStatusImage(StartStopMC7, picStatMC7)
-        MachineStatusImage(StartStopMC8, picStatMC8)
-        MachineStatusImage(StartStopMC9, picStatMC9)
-        MachineStatusImage(StartStopMC10, picStatMC10)
-        MachineStatusImage(StartStopMC11, picStatMC11)
-        MachineStatusImage(StartStopMC12, picStatMC12)
-        MachineStatusImage(StartStopMC13, picStatMC13)
-        MachineStatusImage(StartStopMC14, picStatMC14)
-        MachineStatusImage(StartStopMC15, picStatMC15)
-        MachineStatusImage(StartStopMC16, picStatMC16)
-        MachineStatusImage(StartStopMC17, picStatMC17)
-        MachineStatusImage(StartStopMC18, picStatMC18)
-        MachineStatusImage(StartStopMC19, picStatMC19)
+        Dim StatMC1 As New clsHomeMCStatusIndicator
+        StatMC1.bolStartStop = StartStopMC1
+        StatMC1.bolPlanComplete = RxPLCM14
+        StatMC1.stJOPlan = stJOMC1
+        StatMC1.McStatusIndicator()
+        picStatMC1.Image = StatMC1.iStats_Indicator
+
+        Dim StatMC2 As New clsHomeMCStatusIndicator
+        StatMC2.bolStartStop = StartStopMC2
+        StatMC2.bolPlanComplete = RxPLCM15
+        StatMC2.stJOPlan = stJOMC2
+        StatMC2.McStatusIndicator()
+        picStatMC2.Image = StatMC2.iStats_Indicator
     End Sub
     '//
 
@@ -1124,7 +1109,7 @@ Public Class frmHome
         PPT()
         ART_actualRunningQuantity()
         machineONOFFStatUpdate()
-        MachineStop_Plancomplete()
+        'MachineStop_Plancomplete()
         readPLCcounters()
         lblLoginInProgress.Text = modLogiInProgress
         lblLogoutInProgress.Text = modLogOutInProgress
@@ -1451,129 +1436,129 @@ Public Class frmHome
     '//
 
     '// PLAN COMPLETE STATUS
-    Function PlanComplete(PlanQty As Integer, ActualQty As Integer) As String
-        If ActualQty < PlanQty Then
-            Return "" '"IN PROGRESS"
-        ElseIf ActualQty >= PlanQty Then
-            Return "" '"PLAN COMPLETE"
-        Else
-            Return Nothing
-        End If
-    End Function
-    Public Sub MachineStop_Plancomplete()
-        If Not stJOQuantityMC1 = "" And Not TotalCountMC1 = "" Then
-            JOStatusMC1 = PlanComplete(CInt(stJOQuantityMC1), CInt(TotalCountMC1))
-            If JOStatusMC1 = "PLAN COMPLETE" Then
-                PlanCompleteMC1 = True
-            Else
-                PlanCompleteMC1 = False
-            End If
-        End If
-        If Not stJOQuantityMC2 = "" And Not TotalCountMC2 = "" Then
-            JOStatusMC2 = PlanComplete(CInt(stJOQuantityMC2), CInt(TotalCountMC2))
-            If JOStatusMC2 = "PLAN COMPLETE" Then
-                PlanCompleteMC2 = True
-            Else
-                PlanCompleteMC2 = False
-            End If
-        End If
-        If Not stJOQuantityMC3 = "" And Not TotalCountMC3 = "" Then
-            JOStatusMC3 = PlanComplete(CInt(stJOQuantityMC3), CInt(TotalCountMC3))
-            If JOStatusMC3 = "PLAN COMPLETE" Then
-                PlanCompleteMC3 = True
-            Else
-                PlanCompleteMC3 = False
-            End If
-        End If
-        If Not stJOQuantityMC4 = "" And Not TotalCountMC4 = "" Then
-            JOStatusMC4 = PlanComplete(CInt(stJOQuantityMC4), CInt(TotalCountMC4))
-            If JOStatusMC4 = "PLAN COMPLETE" Then
-                PlanCompleteMC4 = True
-            Else
-                PlanCompleteMC4 = False
-            End If
-        End If
-        If Not stJOQuantityMC5 = "" And Not TotalCountMC5 = "" Then
-            JOStatusMC5 = PlanComplete(CInt(stJOQuantityMC5), CInt(TotalCountMC5))
-            If JOStatusMC5 = "PLAN COMPLETE" Then
-                PlanCompleteMC5 = True
-            Else
-                PlanCompleteMC5 = False
-            End If
-        End If
-        If Not stJOQuantityMC6 = "" And Not TotalCountMC6 = "" Then
-            JOStatusMC6 = PlanComplete(CInt(stJOQuantityMC6), CInt(TotalCountMC6))
-            If JOStatusMC6 = "PLAN COMPLETE" Then
-                PlanCompleteMC6 = True
-            Else
-                PlanCompleteMC6 = False
-            End If
-        End If
-        If Not stJOQuantityMC7 = "" And Not TotalCountMC7 = "" Then
-            JOStatusMC7 = PlanComplete(CInt(stJOQuantityMC7), CInt(TotalCountMC7))
-            If JOStatusMC7 = "PLAN COMPLETE" Then
-                PlanCompleteMC7 = True
-            Else
-                PlanCompleteMC7 = False
-            End If
-        End If
-        If Not stJOQuantityMC8 = "" And Not TotalCountMC8 = "" Then
-            JOStatusMC8 = PlanComplete(CInt(stJOQuantityMC8), CInt(TotalCountMC8))
-            If JOStatusMC8 = "PLAN COMPLETE" Then
-                PlanCompleteMC8 = True
-            Else
-                PlanCompleteMC8 = False
-            End If
-        End If
-        If Not stJOQuantityMC9 = "" And Not TotalCountMC9 = "" Then
-            JOStatusMC9 = PlanComplete(CInt(stJOQuantityMC9), CInt(TotalCountMC9))
-            If JOStatusMC9 = "PLAN COMPLETE" Then
-                PlanCompleteMC9 = True
-            Else
-                PlanCompleteMC9 = False
-            End If
-        End If
-        If Not stJOQuantityMC10 = "" And Not TotalCountMC10 = "" Then
-            JOStatusMC10 = PlanComplete(CInt(stJOQuantityMC10), CInt(TotalCountMC10))
-            If JOStatusMC10 = "PLAN COMPLETE" Then
-                PlanCompleteMC10 = True
-            Else
-                PlanCompleteMC10 = False
-            End If
-        End If
-        If Not stJOQuantityMC11 = "" And Not TotalCountMC11 = "" Then
-            JOStatusMC11 = PlanComplete(CInt(stJOQuantityMC11), CInt(TotalCountMC11))
-            If JOStatusMC11 = "PLAN COMPLETE" Then
-                PlanCompleteMC11 = True
-            Else
-                PlanCompleteMC11 = False
-            End If
-        End If
-        If Not stJOQuantityMC12 = "" And Not TotalCountMC12 = "" Then
-            JOStatusMC12 = PlanComplete(CInt(stJOQuantityMC12), CInt(TotalCountMC12))
-            If JOStatusMC12 = "PLAN COMPLETE" Then
-                PlanCompleteMC12 = True
-            Else
-                PlanCompleteMC12 = False
-            End If
-        End If
-        If Not stJOQuantityMC13 = "" And Not TotalCountMC13 = "" Then
-            JOStatusMC13 = PlanComplete(CInt(stJOQuantityMC13), CInt(TotalCountMC13))
-            If JOStatusMC13 = "PLAN COMPLETE" Then
-                PlanCompleteMC13 = True
-            Else
-                PlanCompleteMC13 = False
-            End If
-        End If
-        If Not stJOQuantityMC14 = "" And Not TotalCountMC14 = "" Then
-            JOStatusMC14 = PlanComplete(CInt(stJOQuantityMC14), CInt(TotalCountMC14))
-            If JOStatusMC14 = "PLAN COMPLETE" Then
-                PlanCompleteMC14 = True
-            Else
-                PlanCompleteMC14 = False
-            End If
-        End If
-    End Sub
+    'Function PlanComplete(PlanQty As Integer, ActualQty As Integer) As String
+    '    If ActualQty < PlanQty Then
+    '        Return "" '"IN PROGRESS"
+    '    ElseIf ActualQty >= PlanQty Then
+    '        Return "" '"PLAN COMPLETE"
+    '    Else
+    '        Return Nothing
+    '    End If
+    'End Function
+    'Public Sub MachineStop_Plancomplete()
+    '    If Not stJOQuantityMC1 = "" And Not TotalCountMC1 = "" Then
+    '        JOStatusMC1 = PlanComplete(CInt(stJOQuantityMC1), CInt(TotalCountMC1))
+    '        If JOStatusMC1 = "PLAN COMPLETE" Then
+    '            PlanCompleteMC1 = True
+    '        Else
+    '            PlanCompleteMC1 = False
+    '        End If
+    '    End If
+    '    If Not stJOQuantityMC2 = "" And Not TotalCountMC2 = "" Then
+    '        JOStatusMC2 = PlanComplete(CInt(stJOQuantityMC2), CInt(TotalCountMC2))
+    '        If JOStatusMC2 = "PLAN COMPLETE" Then
+    '            PlanCompleteMC2 = True
+    '        Else
+    '            PlanCompleteMC2 = False
+    '        End If
+    '    End If
+    '    If Not stJOQuantityMC3 = "" And Not TotalCountMC3 = "" Then
+    '        JOStatusMC3 = PlanComplete(CInt(stJOQuantityMC3), CInt(TotalCountMC3))
+    '        If JOStatusMC3 = "PLAN COMPLETE" Then
+    '            PlanCompleteMC3 = True
+    '        Else
+    '            PlanCompleteMC3 = False
+    '        End If
+    '    End If
+    '    If Not stJOQuantityMC4 = "" And Not TotalCountMC4 = "" Then
+    '        JOStatusMC4 = PlanComplete(CInt(stJOQuantityMC4), CInt(TotalCountMC4))
+    '        If JOStatusMC4 = "PLAN COMPLETE" Then
+    '            PlanCompleteMC4 = True
+    '        Else
+    '            PlanCompleteMC4 = False
+    '        End If
+    '    End If
+    '    If Not stJOQuantityMC5 = "" And Not TotalCountMC5 = "" Then
+    '        JOStatusMC5 = PlanComplete(CInt(stJOQuantityMC5), CInt(TotalCountMC5))
+    '        If JOStatusMC5 = "PLAN COMPLETE" Then
+    '            PlanCompleteMC5 = True
+    '        Else
+    '            PlanCompleteMC5 = False
+    '        End If
+    '    End If
+    '    If Not stJOQuantityMC6 = "" And Not TotalCountMC6 = "" Then
+    '        JOStatusMC6 = PlanComplete(CInt(stJOQuantityMC6), CInt(TotalCountMC6))
+    '        If JOStatusMC6 = "PLAN COMPLETE" Then
+    '            PlanCompleteMC6 = True
+    '        Else
+    '            PlanCompleteMC6 = False
+    '        End If
+    '    End If
+    '    If Not stJOQuantityMC7 = "" And Not TotalCountMC7 = "" Then
+    '        JOStatusMC7 = PlanComplete(CInt(stJOQuantityMC7), CInt(TotalCountMC7))
+    '        If JOStatusMC7 = "PLAN COMPLETE" Then
+    '            PlanCompleteMC7 = True
+    '        Else
+    '            PlanCompleteMC7 = False
+    '        End If
+    '    End If
+    '    If Not stJOQuantityMC8 = "" And Not TotalCountMC8 = "" Then
+    '        JOStatusMC8 = PlanComplete(CInt(stJOQuantityMC8), CInt(TotalCountMC8))
+    '        If JOStatusMC8 = "PLAN COMPLETE" Then
+    '            PlanCompleteMC8 = True
+    '        Else
+    '            PlanCompleteMC8 = False
+    '        End If
+    '    End If
+    '    If Not stJOQuantityMC9 = "" And Not TotalCountMC9 = "" Then
+    '        JOStatusMC9 = PlanComplete(CInt(stJOQuantityMC9), CInt(TotalCountMC9))
+    '        If JOStatusMC9 = "PLAN COMPLETE" Then
+    '            PlanCompleteMC9 = True
+    '        Else
+    '            PlanCompleteMC9 = False
+    '        End If
+    '    End If
+    '    If Not stJOQuantityMC10 = "" And Not TotalCountMC10 = "" Then
+    '        JOStatusMC10 = PlanComplete(CInt(stJOQuantityMC10), CInt(TotalCountMC10))
+    '        If JOStatusMC10 = "PLAN COMPLETE" Then
+    '            PlanCompleteMC10 = True
+    '        Else
+    '            PlanCompleteMC10 = False
+    '        End If
+    '    End If
+    '    If Not stJOQuantityMC11 = "" And Not TotalCountMC11 = "" Then
+    '        JOStatusMC11 = PlanComplete(CInt(stJOQuantityMC11), CInt(TotalCountMC11))
+    '        If JOStatusMC11 = "PLAN COMPLETE" Then
+    '            PlanCompleteMC11 = True
+    '        Else
+    '            PlanCompleteMC11 = False
+    '        End If
+    '    End If
+    '    If Not stJOQuantityMC12 = "" And Not TotalCountMC12 = "" Then
+    '        JOStatusMC12 = PlanComplete(CInt(stJOQuantityMC12), CInt(TotalCountMC12))
+    '        If JOStatusMC12 = "PLAN COMPLETE" Then
+    '            PlanCompleteMC12 = True
+    '        Else
+    '            PlanCompleteMC12 = False
+    '        End If
+    '    End If
+    '    If Not stJOQuantityMC13 = "" And Not TotalCountMC13 = "" Then
+    '        JOStatusMC13 = PlanComplete(CInt(stJOQuantityMC13), CInt(TotalCountMC13))
+    '        If JOStatusMC13 = "PLAN COMPLETE" Then
+    '            PlanCompleteMC13 = True
+    '        Else
+    '            PlanCompleteMC13 = False
+    '        End If
+    '    End If
+    '    If Not stJOQuantityMC14 = "" And Not TotalCountMC14 = "" Then
+    '        JOStatusMC14 = PlanComplete(CInt(stJOQuantityMC14), CInt(TotalCountMC14))
+    '        If JOStatusMC14 = "PLAN COMPLETE" Then
+    '            PlanCompleteMC14 = True
+    '        Else
+    '            PlanCompleteMC14 = False
+    '        End If
+    '    End If
+    'End Sub
     '//
 
     '// MACHINE START/STOP STATUS UPDATE
@@ -1989,58 +1974,58 @@ Public Class frmHome
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC12 = False Then
-            modMCUnNow = "NULL"
-            modMCUNIdNow = "NULL"
-            modMCAcLvlNow = "NULL"
+            modMCUnNow = "none"
+            modMCUNIdNow = "none"
+            modMCAcLvlNow = "none"
             modMCIdNow = "Machine 12"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC13 = False Then
-            modMCUnNow = "NULL"
-            modMCUNIdNow = "NULL"
-            modMCAcLvlNow = "NULL"
+            modMCUnNow = "none"
+            modMCUNIdNow = "none"
+            modMCAcLvlNow = "none"
             modMCIdNow = "Machine 13"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC14 = False Then
-            modMCUnNow = "NULL"
-            modMCUNIdNow = "NULL"
-            modMCAcLvlNow = "NULL"
+            modMCUnNow = "none"
+            modMCUNIdNow = "none"
+            modMCAcLvlNow = "none"
             modMCIdNow = "Machine 14"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC15 = False Then
-            modMCUnNow = "NULL"
-            modMCUNIdNow = "NULL"
-            modMCAcLvlNow = "NULL"
+            modMCUnNow = "none"
+            modMCUNIdNow = "none"
+            modMCAcLvlNow = "none"
             modMCIdNow = "Machine 15"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC16 = False Then
-            modMCUnNow = "NULL"
-            modMCUNIdNow = "NULL"
-            modMCAcLvlNow = "NULL"
+            modMCUnNow = "none"
+            modMCUNIdNow = "none"
+            modMCAcLvlNow = "none"
             modMCIdNow = "Machine 16"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC17 = False Then
-            modMCUnNow = "NULL"
-            modMCUNIdNow = "NULL"
-            modMCAcLvlNow = "NULL"
+            modMCUnNow = "none"
+            modMCUNIdNow = "none"
+            modMCAcLvlNow = "none"
             modMCIdNow = "Machine 17"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC18 = False Then
-            modMCUnNow = "NULL"
-            modMCUNIdNow = "NULL"
-            modMCAcLvlNow = "NULL"
+            modMCUnNow = "none"
+            modMCUNIdNow = "none"
+            modMCAcLvlNow = "none"
             modMCIdNow = "Machine 18"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC19 = False Then
-            modMCUnNow = "NULL"
-            modMCUNIdNow = "NULL"
-            modMCAcLvlNow = "NULL"
+            modMCUnNow = "none"
+            modMCUNIdNow = "none"
+            modMCAcLvlNow = "none"
             modMCIdNow = "Machine 19"
             UpdateUserLogin()
         End If

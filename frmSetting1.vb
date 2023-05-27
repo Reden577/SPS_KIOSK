@@ -9,6 +9,10 @@ Public Class frmSetting1
 
     Dim ModCLient As New EasyModbus.ModbusClient
     Private Sub frmSetting1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'NewJOMasterList.MListNewJobOrder' table. You can move, or remove it, as needed.
+        Me.MListNewJobOrderTableAdapter.Fill(Me.NewJOMasterList.MListNewJobOrder)
+        'TODO: This line of code loads data into the 'SPSDataSet2.Sample' table. You can move, or remove it, as needed.
+        Me.SampleTableAdapter.Fill(Me.SPSDataSet2.Sample)
         Me.CenterToScreen()
         ConnectToModbus()
         readCoilsRegisters()
@@ -545,6 +549,5 @@ Public Class frmSetting1
         End Try
 
     End Sub
-
 
 End Class

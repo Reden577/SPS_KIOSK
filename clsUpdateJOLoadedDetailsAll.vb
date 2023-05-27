@@ -34,7 +34,7 @@ Public Class clsUpdateJOLoadedDetailsAll
     Public FPBStopTime As String
     Public TtlMSTime As String
     Public TtlFPBTime As String
-    Public TotalRunTime As Decimal
+    Public TotalRunTime As String
 
     Public Sub UpdateJOLoadedDetailsAll()
         Dim con As New SqlConnection(modSetVal_SqlPath)

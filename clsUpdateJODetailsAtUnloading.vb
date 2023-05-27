@@ -21,6 +21,7 @@ Public Class clsUpdateJODetailsAtUnloading
             cmd.Parameters.AddWithValue("@PN2Reject", Pn2Reject)
             cmd.Parameters.AddWithValue("@ActualPN1Out", ActualPN1Output)
             cmd.Parameters.AddWithValue("@ActualPN2Out", ActualPN2Output)
+            cmd.Parameters.AddWithValue("@TtlRunTime", TotalRunTime)
             cmd.CommandType = CommandType.StoredProcedure
             con.Open()
             cmd.ExecuteNonQuery()

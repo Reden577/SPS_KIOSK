@@ -273,6 +273,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property LineNoPlan() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("LineNoPlan", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property LineRun() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("LineRun", resourceCulture)
@@ -376,6 +386,16 @@ Namespace My.Resources
         Friend ReadOnly Property NOPLAN_SIGN_1() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("NOPLAN_SIGN_1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property PLANCOMPLETE() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("PLANCOMPLETE", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

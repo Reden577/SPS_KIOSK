@@ -4,6 +4,10 @@ Imports System.Data.SqlClient
 Public Class frmJOUnload
     Dim Reject1 As Integer
     Dim Reject2 As Integer
+    Dim JOCodeCheck As String
+    Dim EndTimeCheck As String
+
+
     Private Sub frmJOUnload_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.CenterToScreen()
         LoadingDataToUNLOAD()
@@ -26,7 +30,7 @@ Public Class frmJOUnload
     End Sub
 
     Private Sub IconButton1_Click(sender As Object, e As EventArgs) Handles btnUpdateUnload.Click
-        If (lblEndTime.Text <> "-" And lblEndTime.Text <> "") Then
+        If (lblEndTime.Text <> "none" And lblEndTime.Text <> "") Then
             If lblP1Reject.Text <> "0" And lblP2Reject.Text <> "0" Then
                 'Update database
                 bolUpdateAndUnload = True
@@ -121,9 +125,9 @@ Public Class frmJOUnload
 
     '// UNLOADING CONDITION RETURN RESULTS IF PLAN DID NOT MEET THE TARGET
     Public Sub UnloadingConditions()
-        If preUnloadDetails_EndTime <> "none" And preUnloadDetails_EndTime <> "" Then
-            preUnloadDetails_EndTime = preUnloadDetails_EndTime
-            preUnloadDetails_ProdnStat = "Complete"
+        If lblEndTime.Text <> "none" And lblEndTime.Text <> "" Then
+            'preUnloadDetails_EndTime = preUnloadDetails_EndTime
+            preUnloadDetails_ProdnStat = "Plan Complete"
             preUnloadDetails_LoadStat = "Unloaded"
         Else
             preUnloadDetails_EndTime = "none"
@@ -186,12 +190,13 @@ Public Class frmJOUnload
         upd8JOUnLD.UnloadedBy = stJOUnloadedBy
         upd8JOUnLD.UnloadTime = Now()
         upd8JOUnLD.TotalShots = D2002
-        upd8JOUnLD.PN1OUtput = D2002 * CInt(preUnloadDetails_CavP1)
-        upd8JOUnLD.PN2Output = D2002 * CInt(preUnloadDetails_CavP2)
+        upd8JOUnLD.PN1OUtput = lblP1Output.Text
+        upd8JOUnLD.PN2Output = lblP2Output.Text
         upd8JOUnLD.PN1Reject = lblP1Reject.Text
         upd8JOUnLD.Pn2Reject = lblP2Reject.Text
-        upd8JOUnLD.ActualPN1Output = (D2002 * CInt(preUnloadDetails_CavP1)) - upd8JOUnLD.PN1Reject
-        upd8JOUnLD.ActualPN2Output = (D2002 * CInt(preUnloadDetails_CavP2)) - upd8JOUnLD.Pn2Reject
+        upd8JOUnLD.ActualPN1Output = upd8JOUnLD.PN1OUtput - upd8JOUnLD.PN1Reject
+        upd8JOUnLD.ActualPN2Output = upd8JOUnLD.PN2Output - upd8JOUnLD.Pn2Reject
+        upd8JOUnLD.TotalRunTime = lblActualRuntime.Text
         upd8JOUnLD.UpdateJOLoadedDetailsAtUnloading()
     End Sub
 

@@ -82,46 +82,142 @@ Public Class frmMCDasboard
         Dim mcRunImage As New Bitmap(My.Resources.RUNSIGN_1)
         Dim mcQAImage As New Bitmap(My.Resources.QASIGN__1)
         Dim mcNOPlanImage As New Bitmap(My.Resources.NOPLAN_SIGN_1)
+        Dim mcPlanComplete As New Bitmap(My.Resources.PLANCOMPLETE)
 
 
         If bolMCDashboard1 = True And StartStopMC1 = True Then
             picMCStatus.Image = mcRunImage
+        ElseIf bolMCDashboard1 = True And lblJobOrderCode.Text = "" Then
+            picMCStatus.Image = mcNOPlanImage
+        ElseIf bolMCDashboard1 = True And RxPLCM14 = True Then
+            picMCStatus.Image = mcPlanComplete
+
         ElseIf bolMCDashboard2 = True And StartStopMC2 = True Then
             picMCStatus.Image = mcRunImage
+        ElseIf bolMCDashboard2 = True And lblJobOrderCode.Text = "" Then
+            picMCStatus.Image = mcNOPlanImage
+        ElseIf bolMCDashboard2 = True And RxPLCM15 = True Then
+            picMCStatus.Image = mcPlanComplete
+
         ElseIf bolMCDashboard3 = True And StartStopMC3 = True Then
             picMCStatus.Image = mcRunImage
+        ElseIf bolMCDashboard3 = True And lblJobOrderCode.Text = "" Then
+            picMCStatus.Image = mcNOPlanImage
+            'ElseIf bolMCDashboard3 = True And RxPLCM15 = True Then
+            '    picMCStatus.Image = mcPlanComplete
+
         ElseIf bolMCDashboard4 = True And StartStopMC4 = True Then
             picMCStatus.Image = mcRunImage
+        ElseIf bolMCDashboard4 = True And lblJobOrderCode.Text = "" Then
+            picMCStatus.Image = mcNOPlanImage
+            'ElseIf bolMCDashboard4 = True And RxPLCM15 = True Then
+            '    picMCStatus.Image = mcPlanComplete
+
         ElseIf bolMCDashboard5 = True And StartStopMC5 = True Then
             picMCStatus.Image = mcRunImage
+        ElseIf bolMCDashboard5 = True And lblJobOrderCode.Text = "" Then
+            picMCStatus.Image = mcNOPlanImage
+            'ElseIf bolMCDashboard5 = True And RxPLCM15 = True Then
+            '    picMCStatus.Image = mcPlanComplete
+
         ElseIf bolMCDashboard6 = True And StartStopMC6 = True Then
             picMCStatus.Image = mcRunImage
+        ElseIf bolMCDashboard6 = True And lblJobOrderCode.Text = "" Then
+            picMCStatus.Image = mcNOPlanImage
+            'ElseIf bolMCDashboard6 = True And RxPLCM15 = True Then
+            '    picMCStatus.Image = mcPlanComplete
+
         ElseIf bolMCDashboard7 = True And StartStopMC7 = True Then
             picMCStatus.Image = mcRunImage
+        ElseIf bolMCDashboard7 = True And lblJobOrderCode.Text = "" Then
+            picMCStatus.Image = mcNOPlanImage
+            'ElseIf bolMCDashboard7 = True And RxPLCM15 = True Then
+            '    picMCStatus.Image = mcPlanComplete
+
         ElseIf bolMCDashboard8 = True And StartStopMC8 = True Then
             picMCStatus.Image = mcRunImage
+        ElseIf bolMCDashboard8 = True And lblJobOrderCode.Text = "" Then
+            picMCStatus.Image = mcNOPlanImage
+            'ElseIf bolMCDashboard8 = True And RxPLCM15 = True Then
+            '    picMCStatus.Image = mcPlanComplete
+
         ElseIf bolMCDashboard9 = True And StartStopMC9 = True Then
             picMCStatus.Image = mcRunImage
+        ElseIf bolMCDashboard9 = True And lblJobOrderCode.Text = "" Then
+            picMCStatus.Image = mcNOPlanImage
+            'ElseIf bolMCDashboard9 = True And RxPLCM15 = True Then
+            '    picMCStatus.Image = mcPlanComplete
+
         ElseIf bolMCDashboard10 = True And StartStopMC10 = True Then
             picMCStatus.Image = mcRunImage
+        ElseIf bolMCDashboard10 = True And lblJobOrderCode.Text = "" Then
+            picMCStatus.Image = mcNOPlanImage
+            'ElseIf bolMCDashboard10 = True And RxPLCM15 = True Then
+            '    picMCStatus.Image = mcPlanComplete
+
         ElseIf bolMCDashboard11 = True And StartStopMC11 = True Then
             picMCStatus.Image = mcRunImage
+        ElseIf bolMCDashboard11 = True And lblJobOrderCode.Text = "" Then
+            picMCStatus.Image = mcNOPlanImage
+            'ElseIf bolMCDashboard11 = True And RxPLCM15 = True Then
+            '    picMCStatus.Image = mcPlanComplete
+
         ElseIf bolMCDashboard12 = True And StartStopMC12 = True Then
             picMCStatus.Image = mcRunImage
+        ElseIf bolMCDashboard12 = True And lblJobOrderCode.Text = "" Then
+            picMCStatus.Image = mcNOPlanImage
+            'ElseIf bolMCDashboard12 = True And RxPLCM15 = True Then
+            '    picMCStatus.Image = mcPlanComplete
+
         ElseIf bolMCDashboard13 = True And StartStopMC13 = True Then
             picMCStatus.Image = mcRunImage
+        ElseIf bolMCDashboard13 = True And lblJobOrderCode.Text = "" Then
+            picMCStatus.Image = mcNOPlanImage
+            'ElseIf bolMCDashboard13 = True And RxPLCM15 = True Then
+            '    picMCStatus.Image = mcPlanComplete
+
         ElseIf bolMCDashboard14 = True And StartStopMC14 = True Then
             picMCStatus.Image = mcRunImage
+        ElseIf bolMCDashboard14 = True And lblJobOrderCode.Text = "" Then
+            picMCStatus.Image = mcNOPlanImage
+            'ElseIf bolMCDashboard14 = True And RxPLCM15 = True Then
+            '    picMCStatus.Image = mcPlanComplete
+
         ElseIf bolMCDashboard15 = True And StartStopMC15 = True Then
             picMCStatus.Image = mcRunImage
+        ElseIf bolMCDashboard15 = True And lblJobOrderCode.Text = "" Then
+            picMCStatus.Image = mcNOPlanImage
+            'ElseIf bolMCDashboard15 = True And RxPLCM15 = True Then
+            '    picMCStatus.Image = mcPlanComplete
+
         ElseIf bolMCDashboard16 = True And StartStopMC16 = True Then
             picMCStatus.Image = mcRunImage
+        ElseIf bolMCDashboard16 = True And lblJobOrderCode.Text = "" Then
+            picMCStatus.Image = mcNOPlanImage
+            'ElseIf bolMCDashboard16 = True And RxPLCM15 = True Then
+            '    picMCStatus.Image = mcPlanComplete
+
         ElseIf bolMCDashboard17 = True And StartStopMC17 = True Then
             picMCStatus.Image = mcRunImage
+        ElseIf bolMCDashboard17 = True And lblJobOrderCode.Text = "" Then
+            picMCStatus.Image = mcNOPlanImage
+            'ElseIf bolMCDashboard17 = True And RxPLCM15 = True Then
+            '    picMCStatus.Image = mcPlanComplete
+
         ElseIf bolMCDashboard18 = True And StartStopMC18 = True Then
             picMCStatus.Image = mcRunImage
+        ElseIf bolMCDashboard18 = True And lblJobOrderCode.Text = "" Then
+            picMCStatus.Image = mcNOPlanImage
+            'ElseIf bolMCDashboard18 = True And RxPLCM15 = True Then
+            '    picMCStatus.Image = mcPlanComplete
+
         ElseIf bolMCDashboard19 = True And StartStopMC19 = True Then
             picMCStatus.Image = mcRunImage
+        ElseIf bolMCDashboard19 = True And lblJobOrderCode.Text = "" Then
+            picMCStatus.Image = mcNOPlanImage
+            'ElseIf bolMCDashboard19 = True And RxPLCM15 = True Then
+            '    picMCStatus.Image = mcPlanComplete
+
         Else
             picMCStatus.Image = mcStopImage
         End If
