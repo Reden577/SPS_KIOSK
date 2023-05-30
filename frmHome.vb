@@ -1335,8 +1335,8 @@ Public Class frmHome
         , timMC16.Tick, timMC17.Tick, timMC18.Tick, timMC19.Tick
 
         Dim currentTime As Timer = sender
-        If currentTime.Tag = 1 Then runtimeMC1 += 1
-        If currentTime.Tag = 2 Then runtimeMC2 += 1
+        If currentTime.Tag = 1 And RxPLCM12 = False Then runtimeMC1 += 1
+        If currentTime.Tag = 2 And RxPLCM13 = False Then runtimeMC2 += 1
         If currentTime.Tag = 3 Then runtimeMC3 += 1
         If currentTime.Tag = 4 Then runtimeMC4 += 1
         If currentTime.Tag = 5 Then runtimeMC5 += 1

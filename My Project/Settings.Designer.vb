@@ -3081,8 +3081,8 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-1HR4BP1\SQLEXPRESS;Initial Catalog=SPS;User ID=sa;Password=ad"& _ 
-            "min01")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-4OGTIB2\DIAVIEWSQL;Initial Catalog=SPS;Persist Security Info="& _ 
+            "True;User ID=sa;Password=doc577isin")>  _
         Public ReadOnly Property SPSConnectionString() As String
             Get
                 Return CType(Me("SPSConnectionString"),String)
@@ -4195,8 +4195,8 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-1HR4BP1\SQLEXPRESS;Initial Catalog=SPS;User ID=sa;Password=ad"& _ 
-            "min01")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-4OGTIB2\DIAVIEWSQL;Initial Catalog=SPS;Persist Security Info="& _ 
+            "True;User ID=sa;Password=doc577isin")>  _
         Public Property SQLPath() As String
             Get
                 Return CType(Me("SQLPath"),String)
@@ -4256,7 +4256,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("169.254.5.225")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("169.254.190.100")>  _
         Public Property IPAddress() As String
             Get
                 Return CType(Me("IPAddress"),String)
