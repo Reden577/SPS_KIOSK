@@ -425,7 +425,7 @@ Partial Class frmJOLoading
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(842, 372)
+        Me.ClientSize = New System.Drawing.Size(840, 372)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.dgvAPI)
