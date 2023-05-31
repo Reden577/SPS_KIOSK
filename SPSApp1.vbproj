@@ -95,6 +95,7 @@
   <ItemGroup>
     <Compile Include="ClassSelectUD.vb" />
     <Compile Include="clsHomeMCStatusIndicator.vb" />
+    <Compile Include="clsLoadSettings.vb" />
     <Compile Include="clsLogJODetails.vb" />
     <Compile Include="clsSelectAllJODetails_byJOcode.vb" />
     <Compile Include="clsSelectAllPartNOMList.vb" />
@@ -540,6 +541,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LineNoPlan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sps2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -24,7 +24,7 @@ Partial Class frmWorkOrder
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmWorkOrder))
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.grpJO_OrderDetails = New System.Windows.Forms.GroupBox()
         Me.dgvJobOrder = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -113,6 +113,7 @@ Partial Class frmWorkOrder
         Me.Label28 = New System.Windows.Forms.Label()
         Me.lblJOLoadedBy = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.lblMenuTabWorkOrder = New System.Windows.Forms.Label()
         Me.lblDGVTtlRunTime = New System.Windows.Forms.Label()
         Me.lblDGVAvtualP2Out = New System.Windows.Forms.Label()
         Me.lblDGVActualPN1OUt = New System.Windows.Forms.Label()
@@ -157,8 +158,7 @@ Partial Class frmWorkOrder
         Me.JOLoadedDetailsTableAdapter = New SPSApp1.JOLodedDetails_3TableAdapters.JOLoadedDetailsTableAdapter()
         Me.JOLoadedDetailsBindingSource15 = New System.Windows.Forms.BindingSource(Me.components)
         Me.JOLoadedDetailsTableAdapter2 = New SPSApp1.JOLoadedDetails_MachineIDOnlyTableAdapters.JOLoadedDetailsTableAdapter()
-        Me.lblMenuTabWorkOrder = New System.Windows.Forms.Label()
-        Me.GroupBox1.SuspendLayout()
+        Me.grpJO_OrderDetails.SuspendLayout()
         CType(Me.dgvJobOrder, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.JOLoadedDetailsBindingSource16, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.JOLodedDetails_3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -195,16 +195,16 @@ Partial Class frmWorkOrder
         CType(Me.JOLoadedDetailsBindingSource15, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'GroupBox1
+        'grpJO_OrderDetails
         '
-        Me.GroupBox1.Controls.Add(Me.dgvJobOrder)
-        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(40, 64)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(1502, 813)
-        Me.GroupBox1.TabIndex = 2
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Job Order Details:"
+        Me.grpJO_OrderDetails.Controls.Add(Me.dgvJobOrder)
+        Me.grpJO_OrderDetails.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.grpJO_OrderDetails.Location = New System.Drawing.Point(40, 64)
+        Me.grpJO_OrderDetails.Name = "grpJO_OrderDetails"
+        Me.grpJO_OrderDetails.Size = New System.Drawing.Size(1502, 813)
+        Me.grpJO_OrderDetails.TabIndex = 2
+        Me.grpJO_OrderDetails.TabStop = False
+        Me.grpJO_OrderDetails.Text = "Job Order Details:"
         '
         'dgvJobOrder
         '
@@ -973,6 +973,16 @@ Partial Class frmWorkOrder
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "JO Summary:"
         '
+        'lblMenuTabWorkOrder
+        '
+        Me.lblMenuTabWorkOrder.AutoSize = True
+        Me.lblMenuTabWorkOrder.Location = New System.Drawing.Point(12, 770)
+        Me.lblMenuTabWorkOrder.Name = "lblMenuTabWorkOrder"
+        Me.lblMenuTabWorkOrder.Size = New System.Drawing.Size(153, 20)
+        Me.lblMenuTabWorkOrder.TabIndex = 16
+        Me.lblMenuTabWorkOrder.Text = "MenuTabWorkOrder"
+        Me.lblMenuTabWorkOrder.Visible = False
+        '
         'lblDGVTtlRunTime
         '
         Me.lblDGVTtlRunTime.AutoSize = True
@@ -1258,16 +1268,6 @@ Partial Class frmWorkOrder
         '
         Me.JOLoadedDetailsTableAdapter2.ClearBeforeFill = True
         '
-        'lblMenuTabWorkOrder
-        '
-        Me.lblMenuTabWorkOrder.AutoSize = True
-        Me.lblMenuTabWorkOrder.Location = New System.Drawing.Point(12, 770)
-        Me.lblMenuTabWorkOrder.Name = "lblMenuTabWorkOrder"
-        Me.lblMenuTabWorkOrder.Size = New System.Drawing.Size(153, 20)
-        Me.lblMenuTabWorkOrder.TabIndex = 16
-        Me.lblMenuTabWorkOrder.Text = "MenuTabWorkOrder"
-        Me.lblMenuTabWorkOrder.Visible = False
-        '
         'frmWorkOrder
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1282,7 +1282,7 @@ Partial Class frmWorkOrder
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnUnload)
         Me.Controls.Add(Me.btnLoad)
-        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.grpJO_OrderDetails)
         Me.Controls.Add(Me.Label19)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -1290,7 +1290,7 @@ Partial Class frmWorkOrder
         Me.MinimizeBox = False
         Me.Name = "frmWorkOrder"
         Me.Text = "Work Order"
-        Me.GroupBox1.ResumeLayout(False)
+        Me.grpJO_OrderDetails.ResumeLayout(False)
         CType(Me.dgvJobOrder, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.JOLoadedDetailsBindingSource16, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.JOLodedDetails_3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1330,7 +1330,7 @@ Partial Class frmWorkOrder
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents grpJO_OrderDetails As GroupBox
     Friend WithEvents btnLoad As FontAwesome.Sharp.IconButton
     Friend WithEvents btnClear As FontAwesome.Sharp.IconButton
     Friend WithEvents JOSelectRTCheck As Timer

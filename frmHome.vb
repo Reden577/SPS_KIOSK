@@ -304,6 +304,10 @@ Public Class frmHome
         My.Settings.ActualQtyMC17 = TotalCountMC17
         My.Settings.ActualQtyMC18 = TotalCountMC18
         My.Settings.ActualQtyMC19 = TotalCountMC19
+
+        My.Settings.IPAddress = modSetVal_IPAdd
+        My.Settings.Port = modSetVal_Port
+        My.Settings.SQLPath = modSetVal_SqlPath
     End Sub
     '//
 
@@ -585,7 +589,10 @@ Public Class frmHome
 
         modSetVal_imageRun = My.Settings.ImageRun
         modSetVal_imageStop = My.Settings.ImageStop
+
         modSetVal_SqlPath = My.Settings.SQLPath
+        modSetVal_IPAdd = My.Settings.IPAddress
+        modSetVal_Port = My.Settings.Port
     End Sub
     '//
 

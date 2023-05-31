@@ -37,162 +37,6 @@
             stJOStartTimeMC2 = preLDJODetail_StartTime
             modJOLoadedFlagMC2 = True
         End If
-        'If lblDGVMachineId.Text = "Machine 3" Then
-        '    stJOMC3 = lblDGVJOCode.Text
-        '    stJOPartNo1MC3 = lblDGVP1.Text
-        '    stJOPartNo2MC3 = lblDGVP2.Text
-        '    stJOMoldCavP1MC3 = lblDGVCavP1.Text
-        '    stJOMoldCavP2MC3 = lblDGVCavP2.Text
-        '    stJOQuantityMC3 = lblDGVJOQty.Text
-        '    stJOCycleTimeMC3 = lblDGVCycleTime.Text
-        '    stJOMoldIDMC3 = lblDGVMoldID.Text
-        '    stJOMachineIDMC3 = lblDGVMachineId.Text
-        '    stJOStartTimeMC3 = stJOStartTime
-        '    modJOLoadedFlagMC3 = True
-        'End If
-        'If lblDGVMachineId.Text = "Machine 4" Then
-        '    stJOMC4 = lblDGVJOCode.Text
-        '    stJOPartNo1MC4 = lblDGVP1.Text
-        '    stJOPartNo2MC4 = lblDGVP2.Text
-        '    stJOMoldCavP1MC4 = lblDGVCavP1.Text
-        '    stJOMoldCavP2MC4 = lblDGVCavP2.Text
-        '    stJOQuantityMC4 = lblDGVJOQty.Text
-        '    stJOCycleTimeMC4 = lblDGVCycleTime.Text
-        '    stJOMoldIDMC4 = lblDGVMoldID.Text
-        '    stJOMachineIDMC4 = lblDGVMachineId.Text
-        '    stJOStartTimeMC4 = stJOStartTime
-        '    modJOLoadedFlagMC4 = True
-        'End If
-        'If lblDGVMachineId.Text = "Machine 5" Then
-        '    stJOMC5 = lblDGVJOCode.Text
-        '    stJOPartNo1MC5 = lblDGVP1.Text
-        '    stJOPartNo2MC5 = lblDGVP2.Text
-        '    stJOMoldCavP1MC5 = lblDGVCavP1.Text
-        '    stJOMoldCavP2MC5 = lblDGVCavP2.Text
-        '    stJOQuantityMC5 = lblDGVJOQty.Text
-        '    stJOCycleTimeMC5 = lblDGVCycleTime.Text
-        '    stJOMoldIDMC5 = lblDGVMoldID.Text
-        '    stJOMachineIDMC5 = lblDGVMachineId.Text
-        '    stJOStartTimeMC5 = stJOStartTime
-        '    modJOLoadedFlagMC5 = True
-        'End If
-        'If lblDGVMachineId.Text = "Machine 6" Then
-        '    stJOMC6 = lblDGVJOCode.Text
-        '    stJOPartNo1MC6 = lblDGVP1.Text
-        '    stJOPartNo2MC6 = lblDGVP2.Text
-        '    stJOMoldCavP1MC6 = lblDGVCavP1.Text
-        '    stJOMoldCavP2MC6 = lblDGVCavP2.Text
-        '    stJOQuantityMC6 = lblDGVJOQty.Text
-        '    stJOCycleTimeMC6 = lblDGVCycleTime.Text
-        '    stJOMoldIDMC6 = lblDGVMoldID.Text
-        '    stJOMachineIDMC6 = lblDGVMachineId.Text
-        '    stJOStartTimeMC6 = stJOStartTime
-        '    modJOLoadedFlagMC6 = True
-        'End If
-        'If lblDGVMachineId.Text = "Machine 7" Then
-        '    stJOMC7 = lblDGVJOCode.Text
-        '    stJOPartNo1MC7 = lblDGVP1.Text
-        '    stJOPartNo2MC7 = lblDGVP2.Text
-        '    stJOMoldCavP1MC7 = lblDGVCavP1.Text
-        '    stJOMoldCavP2MC7 = lblDGVCavP2.Text
-        '    stJOQuantityMC7 = lblDGVJOQty.Text
-        '    stJOCycleTimeMC7 = lblDGVCycleTime.Text
-        '    stJOMoldIDMC7 = lblDGVMoldID.Text
-        '    stJOMachineIDMC7 = lblDGVMachineId.Text
-        '    stJOStartTimeMC7 = stJOStartTime
-        '    modJOLoadedFlagMC7 = True
-        'End If
-        'If lblDGVMachineId.Text = "Machine 8" Then
-        '    stJOMC8 = lblDGVJOCode.Text
-        '    stJOPartNo1MC8 = lblDGVP1.Text
-        '    stJOPartNo2MC8 = lblDGVP2.Text
-        '    stJOMoldCavP1MC8 = lblDGVCavP1.Text
-        '    stJOMoldCavP2MC8 = lblDGVCavP2.Text
-        '    stJOQuantityMC8 = lblDGVJOQty.Text
-        '    stJOCycleTimeMC8 = lblDGVCycleTime.Text
-        '    stJOMoldIDMC8 = lblDGVMoldID.Text
-        '    stJOMachineIDMC8 = lblDGVMachineId.Text
-        '    stJOStartTimeMC8 = stJOStartTime
-        '    modJOLoadedFlagMC8 = True
-        'End If
-        'If lblDGVMachineId.Text = "Machine 9" Then
-        '    stJOMC9 = lblDGVJOCode.Text
-        '    stJOPartNo1MC9 = lblDGVP1.Text
-        '    stJOPartNo2MC9 = lblDGVP2.Text
-        '    stJOMoldCavP1MC9 = lblDGVCavP1.Text
-        '    stJOMoldCavP2MC9 = lblDGVCavP2.Text
-        '    stJOQuantityMC9 = lblDGVJOQty.Text
-        '    stJOCycleTimeMC9 = lblDGVCycleTime.Text
-        '    stJOMoldIDMC9 = lblDGVMoldID.Text
-        '    stJOMachineIDMC9 = lblDGVMachineId.Text
-        '    stJOStartTimeMC9 = stJOStartTime
-        '    modJOLoadedFlagMC9 = True
-        'End If
-        'If lblDGVMachineId.Text = "Machine 10" Then
-        '    stJOMC10 = lblDGVJOCode.Text
-        '    stJOPartNo1MC10 = lblDGVP1.Text
-        '    stJOPartNo2MC10 = lblDGVP2.Text
-        '    stJOMoldCavP1MC10 = lblDGVCavP1.Text
-        '    stJOMoldCavP2MC10 = lblDGVCavP2.Text
-        '    stJOQuantityMC10 = lblDGVJOQty.Text
-        '    stJOCycleTimeMC10 = lblDGVCycleTime.Text
-        '    stJOMoldIDMC10 = lblDGVMoldID.Text
-        '    stJOMachineIDMC10 = lblDGVMachineId.Text
-        '    stJOStartTimeMC10 = stJOStartTime
-        '    modJOLoadedFlagMC10 = True
-        'End If
-        'If lblDGVMachineId.Text = "Machine 11" Then
-        '    stJOMC11 = lblDGVJOCode.Text
-        '    stJOPartNo1MC11 = lblDGVP1.Text
-        '    stJOPartNo2MC11 = lblDGVP2.Text
-        '    stJOMoldCavP1MC11 = lblDGVCavP1.Text
-        '    stJOMoldCavP2MC11 = lblDGVCavP2.Text
-        '    stJOQuantityMC11 = lblDGVJOQty.Text
-        '    stJOCycleTimeMC11 = lblDGVCycleTime.Text
-        '    stJOMoldIDMC11 = lblDGVMoldID.Text
-        '    stJOMachineIDMC11 = lblDGVMachineId.Text
-        '    stJOStartTimeMC11 = stJOStartTime
-        '    modJOLoadedFlagMC11 = True
-        'End If
-        'If lblDGVMachineId.Text = "Machine 12" Then
-        '    stJOMC12 = lblDGVJOCode.Text
-        '    stJOPartNo1MC12 = lblDGVP1.Text
-        '    stJOPartNo2MC12 = lblDGVP2.Text
-        '    stJOMoldCavP1MC12 = lblDGVCavP1.Text
-        '    stJOMoldCavP2MC12 = lblDGVCavP2.Text
-        '    stJOQuantityMC12 = lblDGVJOQty.Text
-        '    stJOCycleTimeMC12 = lblDGVCycleTime.Text
-        '    stJOMoldIDMC12 = lblDGVMoldID.Text
-        '    stJOMachineIDMC12 = lblDGVMachineId.Text
-        '    stJOStartTimeMC12 = stJOStartTime
-        '    modJOLoadedFlagMC12 = True
-        'End If
-        'If lblDGVMachineId.Text = "Machine 13" Then
-        '    stJOMC13 = lblDGVJOCode.Text
-        '    stJOPartNo1MC13 = lblDGVP1.Text
-        '    stJOPartNo2MC13 = lblDGVP2.Text
-        '    stJOMoldCavP1MC13 = lblDGVCavP1.Text
-        '    stJOMoldCavP2MC13 = lblDGVCavP2.Text
-        '    stJOQuantityMC13 = lblDGVJOQty.Text
-        '    stJOCycleTimeMC13 = lblDGVCycleTime.Text
-        '    stJOMoldIDMC13 = lblDGVMoldID.Text
-        '    stJOMachineIDMC13 = lblDGVMachineId.Text
-        '    stJOStartTimeMC13 = stJOStartTime
-        '    modJOLoadedFlagMC13 = True
-        'End If
-        'If lblDGVMachineId.Text = "Machine 14" Then
-        '    stJOMC14 = lblDGVJOCode.Text
-        '    stJOPartNo1MC14 = lblDGVP1.Text
-        '    stJOPartNo2MC14 = lblDGVP2.Text
-        '    stJOMoldCavP1MC14 = lblDGVCavP1.Text
-        '    stJOMoldCavP2MC14 = lblDGVCavP2.Text
-        '    stJOQuantityMC14 = lblDGVJOQty.Text
-        '    stJOCycleTimeMC14 = lblDGVCycleTime.Text
-        '    stJOMoldIDMC14 = lblDGVMoldID.Text
-        '    stJOMachineIDMC14 = lblDGVMachineId.Text
-        '    stJOStartTimeMC14 = stJOStartTime
-        '    modJOLoadedFlagMC14 = True
-        'End If
     End Sub
     '//
 
@@ -230,6 +74,7 @@
     Private Sub JOSelectRTCheck_Tick(sender As Object, e As EventArgs) Handles JOSelectRTCheck.Tick
         lblMenuTabWorkOrder.Text = menuTabWorkOrder
         EnableDisableUnloadBtn()
+        FunctionsEnableDisable_At_MachineRunning()
         'DGVCellFormating_Loaded_Inprogress()
         'DGVCellFormating_Unloaded_Incomplete()
         'DGVCellFormating_PlanComplete_Loaded()
@@ -262,10 +107,12 @@
 
     '// ENABLE / DISABLE UNLOAD BUTTON
     Public Sub EnableDisableUnloadBtn()
-        If lblDGVLoadStats.Text = "Loaded" Then
-            btnUnload.Enabled = True
-        Else
-            btnUnload.Enabled = False
+        If RxPLCM0 = False Then
+            If lblDGVLoadStats.Text = "Loaded" Then
+                btnUnload.Enabled = True
+            Else
+                btnUnload.Enabled = False
+            End If
         End If
     End Sub
     '//
@@ -308,222 +155,6 @@
             CounterP2MC2 = 0
             modJOLoadedFlagMC2 = False
         End If
-        '    If ckbMC3.Checked = True Then
-        '        stJOMC3 = Nothing
-        '        stJOPartNo1MC3 = Nothing
-        '        stJOPartNo2MC3 = Nothing
-        '        stJOMoldCavP1MC3 = 0
-        '        stJOMoldCavP2MC3 = 0
-        '        stJOQuantityMC3 = 0
-        '        stJOCycleTimeMC3 = 0
-        '        stJOMoldIDMC3 = Nothing
-        '        stJOMachineIDMC3 = Nothing
-        '        stJOStartTimeMC3 = Nothing
-        '        iPlanProdTimeMC3 = 0
-        '        runtimeMC3 = 0
-        '        ckbMachine3 = True
-        '        CounterP1MC3 = 0
-        '        CounterP2MC3 = 0
-        '        modJOLoadedFlagMC3 = False
-        '    End If
-        '    If ckbMC4.Checked = True Then
-        '        stJOMC14 = Nothing
-        '        stJOPartNo1MC4 = Nothing
-        '        stJOPartNo2MC4 = Nothing
-        '        stJOMoldCavP1MC4 = 0
-        '        stJOMoldCavP2MC4 = 0
-        '        stJOQuantityMC4 = 0
-        '        stJOCycleTimeMC4 = 0
-        '        stJOMoldIDMC4 = Nothing
-        '        stJOMachineIDMC4 = Nothing
-        '        stJOStartTimeMC4 = Nothing
-        '        iPlanProdTimeMC4 = 0
-        '        runtimeMC4 = 0
-        '        ckbMachine4 = True
-        '        CounterP1MC4 = 0
-        '        CounterP2MC4 = 0
-        '        modJOLoadedFlagMC4 = False
-        '    End If
-        '    If ckbMC5.Checked = True Then
-        '        stJOMC5 = Nothing
-        '        stJOPartNo1MC5 = Nothing
-        '        stJOPartNo2MC5 = Nothing
-        '        stJOMoldCavP1MC5 = 0
-        '        stJOMoldCavP2MC5 = 0
-        '        stJOQuantityMC5 = 0
-        '        stJOCycleTimeMC5 = 0
-        '        stJOMoldIDMC5 = Nothing
-        '        stJOMachineIDMC5 = Nothing
-        '        stJOStartTimeMC5 = Nothing
-        '        iPlanProdTimeMC5 = 0
-        '        runtimeMC5 = 0
-        '        ckbMachine5 = True
-        '        CounterP1MC5 = 0
-        '        CounterP2MC5 = 0
-        '        modJOLoadedFlagMC5 = False
-        '    End If
-        '    If ckbMC6.Checked = True Then
-        '        stJOMC6 = Nothing
-        '        stJOPartNo1MC6 = Nothing
-        '        stJOPartNo2MC6 = Nothing
-        '        stJOMoldCavP1MC6 = 0
-        '        stJOMoldCavP2MC6 = 0
-        '        stJOQuantityMC6 = 0
-        '        stJOCycleTimeMC6 = 0
-        '        stJOMoldIDMC6 = Nothing
-        '        stJOMachineIDMC6 = Nothing
-        '        stJOStartTimeMC6 = Nothing
-        '        iPlanProdTimeMC6 = 0
-        '        runtimeMC6 = 0
-        '        ckbMachine6 = True
-        '        CounterP1MC6 = 0
-        '        CounterP2MC6 = 0
-        '        modJOLoadedFlagMC6 = False
-        '    End If
-        '    If ckbMC7.Checked = True Then
-        '        stJOMC7 = Nothing
-        '        stJOPartNo1MC7 = Nothing
-        '        stJOPartNo2MC7 = Nothing
-        '        stJOMoldCavP1MC7 = 0
-        '        stJOMoldCavP2MC7 = 0
-        '        stJOQuantityMC7 = 0
-        '        stJOCycleTimeMC7 = 0
-        '        stJOMoldIDMC7 = Nothing
-        '        stJOMachineIDMC7 = Nothing
-        '        stJOStartTimeMC7 = Nothing
-        '        iPlanProdTimeMC7 = 0
-        '        runtimeMC7 = 0
-        '        ckbMachine7 = True
-        '        CounterP1MC7 = 0
-        '        CounterP2MC7 = 0
-        '        modJOLoadedFlagMC7 = False
-        '    End If
-        '    If ckbMC8.Checked = True Then
-        '        stJOMC8 = Nothing
-        '        stJOPartNo1MC8 = Nothing
-        '        stJOPartNo2MC8 = Nothing
-        '        stJOMoldCavP1MC8 = 0
-        '        stJOMoldCavP2MC8 = 0
-        '        stJOQuantityMC8 = 0
-        '        stJOCycleTimeMC8 = 0
-        '        stJOMoldIDMC8 = Nothing
-        '        stJOMachineIDMC8 = Nothing
-        '        stJOStartTimeMC8 = Nothing
-        '        iPlanProdTimeMC8 = 0
-        '        runtimeMC8 = 0
-        '        ckbMachine8 = True
-        '        CounterP1MC8 = 0
-        '        CounterP2MC8 = 0
-        '        modJOLoadedFlagMC8 = False
-        '    End If
-        '    If ckbMC9.Checked = True Then
-        '        stJOMC9 = Nothing
-        '        stJOPartNo1MC9 = Nothing
-        '        stJOPartNo2MC9 = Nothing
-        '        stJOMoldCavP1MC9 = 0
-        '        stJOMoldCavP2MC9 = 0
-        '        stJOQuantityMC9 = 0
-        '        stJOCycleTimeMC9 = 0
-        '        stJOMoldIDMC9 = Nothing
-        '        stJOMachineIDMC9 = Nothing
-        '        stJOStartTimeMC9 = Nothing
-        '        iPlanProdTimeMC9 = 0
-        '        runtimeMC9 = 0
-        '        ckbMachine9 = True
-        '        CounterP1MC9 = 0
-        '        CounterP2MC9 = 0
-        '        modJOLoadedFlagMC9 = False
-        '    End If
-        '    If ckbMC10.Checked = True Then
-        '        stJOMC10 = Nothing
-        '        stJOPartNo1MC10 = Nothing
-        '        stJOPartNo2MC10 = Nothing
-        '        stJOMoldCavP1MC10 = 0
-        '        stJOMoldCavP2MC10 = 0
-        '        stJOQuantityMC10 = 0
-        '        stJOCycleTimeMC10 = 0
-        '        stJOMoldIDMC10 = Nothing
-        '        stJOMachineIDMC10 = Nothing
-        '        stJOStartTimeMC10 = Nothing
-        '        iPlanProdTimeMC10 = 0
-        '        runtimeMC10 = 0
-        '        ckbMachine10 = True
-        '        CounterP1MC10 = 0
-        '        CounterP2MC10 = 0
-        '        modJOLoadedFlagMC10 = False
-        '    End If
-        '    If ckbMC11.Checked = True Then
-        '        stJOMC11 = Nothing
-        '        stJOPartNo1MC11 = Nothing
-        '        stJOPartNo2MC11 = Nothing
-        '        stJOMoldCavP1MC11 = 0
-        '        stJOMoldCavP2MC11 = 0
-        '        stJOQuantityMC11 = 0
-        '        stJOCycleTimeMC11 = 0
-        '        stJOMoldIDMC11 = Nothing
-        '        stJOMachineIDMC11 = Nothing
-        '        stJOStartTimeMC11 = Nothing
-        '        iPlanProdTimeMC11 = 0
-        '        runtimeMC11 = 0
-        '        ckbMachine11 = True
-        '        CounterP1MC11 = 0
-        '        CounterP2MC11 = 0
-        '        modJOLoadedFlagMC11 = False
-        '    End If
-        '    If ckbMC12.Checked = True Then
-        '        stJOMC12 = Nothing
-        '        stJOPartNo1MC12 = Nothing
-        '        stJOPartNo2MC12 = Nothing
-        '        stJOMoldCavP1MC12 = 0
-        '        stJOMoldCavP2MC12 = 0
-        '        stJOQuantityMC12 = 0
-        '        stJOCycleTimeMC12 = 0
-        '        stJOMoldIDMC12 = Nothing
-        '        stJOMachineIDMC12 = Nothing
-        '        stJOStartTimeMC12 = Nothing
-        '        iPlanProdTimeMC12 = 0
-        '        runtimeMC12 = 0
-        '        ckbMachine12 = True
-        '        CounterP1MC12 = 0
-        '        CounterP2MC12 = 0
-        '        modJOLoadedFlagMC12 = False
-        '    End If
-        '    If ckbMC13.Checked = True Then
-        '        stJOMC13 = Nothing
-        '        stJOPartNo1MC13 = Nothing
-        '        stJOPartNo2MC13 = Nothing
-        '        stJOMoldCavP1MC13 = 0
-        '        stJOMoldCavP2MC13 = 0
-        '        stJOQuantityMC13 = 0
-        '        stJOCycleTimeMC13 = 0
-        '        stJOMoldIDMC13 = Nothing
-        '        stJOMachineIDMC13 = Nothing
-        '        stJOStartTimeMC13 = Nothing
-        '        iPlanProdTimeMC13 = 0
-        '        runtimeMC13 = 0
-        '        ckbMachine13 = True
-        '        CounterP1MC13 = 0
-        '        CounterP2MC13 = 0
-        '        modJOLoadedFlagMC13 = False
-        '    End If
-        '    If ckbMC14.Checked = True Then
-        '        stJOMC14 = Nothing
-        '        stJOPartNo1MC14 = Nothing
-        '        stJOPartNo2MC14 = Nothing
-        '        stJOMoldCavP1MC14 = 0
-        '        stJOMoldCavP2MC14 = 0
-        '        stJOQuantityMC14 = 0
-        '        stJOCycleTimeMC14 = 0
-        '        stJOMoldIDMC14 = Nothing
-        '        stJOMachineIDMC14 = Nothing
-        '        stJOStartTimeMC14 = Nothing
-        '        iPlanProdTimeMC14 = 0
-        '        runtimeMC14 = 0
-        '        ckbMachine14 = True
-        '        CounterP1MC14 = 0
-        '        CounterP2MC14 = 0
-        '        modJOLoadedFlagMC14 = False
-        '    End If
     End Sub
     '//
 
@@ -538,32 +169,34 @@
 
     '// PULLS THE SELECTED ROW CONTENT AND DISPLAY TO JO SUMMARY BOX
     Private Sub dgvJobOrder_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvJobOrder.CellContentClick
+
         lblDGVid.Text = dgvJobOrder.CurrentRow.Cells(0).Value.ToString
-        lblDGVMachineId.Text = dgvJobOrder.CurrentRow.Cells(1).Value.ToString
-        lblDGVShiftCode.Text = dgvJobOrder.CurrentRow.Cells(2).Value.ToString
-        lblDGVJOCode.Text = dgvJobOrder.CurrentRow.Cells(3).Value.ToString
-        lblDGVMoldID.Text = dgvJobOrder.CurrentRow.Cells(4).Value.ToString
-        lblDGVP1.Text = dgvJobOrder.CurrentRow.Cells(5).Value.ToString
-        lblDGVP2.Text = dgvJobOrder.CurrentRow.Cells(6).Value.ToString
-        lblDGVCavP1.Text = dgvJobOrder.CurrentRow.Cells(7).Value.ToString
-        lblDGVCavP2.Text = dgvJobOrder.CurrentRow.Cells(8).Value.ToString
-        lblDGVJOQty.Text = dgvJobOrder.CurrentRow.Cells(9).Value.ToString
-        lblDGVCycleTime.Text = dgvJobOrder.CurrentRow.Cells(10).Value.ToString
-        lblDGVStartTime.Text = dgvJobOrder.CurrentRow.Cells(11).Value.ToString
-        lblDGVEndtime.Text = dgvJobOrder.CurrentRow.Cells(12).Value.ToString
-        lblDGVLoadStats.Text = dgvJobOrder.CurrentRow.Cells(13).Value.ToString
-        lblDGVProdnStat.Text = dgvJobOrder.CurrentRow.Cells(14).Value.ToString
-        lblJOLoadedBy.Text = dgvJobOrder.CurrentRow.Cells(15).Value.ToString
-        lblUnloadedBY.Text = dgvJobOrder.CurrentRow.Cells(16).Value.ToString
-        lblDGVUnloadDT.Text = dgvJobOrder.CurrentRow.Cells(17).Value.ToString
-        lblDGVTotalShots.Text = dgvJobOrder.CurrentRow.Cells(18).Value.ToString
-        lblDGVPN1Output.Text = dgvJobOrder.CurrentRow.Cells(19).Value.ToString
-        lblDGVPN2Output.Text = dgvJobOrder.CurrentRow.Cells(20).Value.ToString
-        lblDGVPN1Reject.Text = dgvJobOrder.CurrentRow.Cells(21).Value.ToString
-        lblDGVPN2Reject.Text = dgvJobOrder.CurrentRow.Cells(22).Value.ToString
-        lblDGVActualPN1OUt.Text = dgvJobOrder.CurrentRow.Cells(23).Value.ToString
-        lblDGVAvtualP2Out.Text = dgvJobOrder.CurrentRow.Cells(24).Value.ToString
-        lblDGVTtlRunTime.Text = dgvJobOrder.CurrentRow.Cells(31).Value.ToString
+            lblDGVMachineId.Text = dgvJobOrder.CurrentRow.Cells(1).Value.ToString
+            lblDGVShiftCode.Text = dgvJobOrder.CurrentRow.Cells(2).Value.ToString
+            lblDGVJOCode.Text = dgvJobOrder.CurrentRow.Cells(3).Value.ToString
+            lblDGVMoldID.Text = dgvJobOrder.CurrentRow.Cells(4).Value.ToString
+            lblDGVP1.Text = dgvJobOrder.CurrentRow.Cells(5).Value.ToString
+            lblDGVP2.Text = dgvJobOrder.CurrentRow.Cells(6).Value.ToString
+            lblDGVCavP1.Text = dgvJobOrder.CurrentRow.Cells(7).Value.ToString
+            lblDGVCavP2.Text = dgvJobOrder.CurrentRow.Cells(8).Value.ToString
+            lblDGVJOQty.Text = dgvJobOrder.CurrentRow.Cells(9).Value.ToString
+            lblDGVCycleTime.Text = dgvJobOrder.CurrentRow.Cells(10).Value.ToString
+            lblDGVStartTime.Text = dgvJobOrder.CurrentRow.Cells(11).Value.ToString
+            lblDGVEndtime.Text = dgvJobOrder.CurrentRow.Cells(12).Value.ToString
+            lblDGVLoadStats.Text = dgvJobOrder.CurrentRow.Cells(13).Value.ToString
+            lblDGVProdnStat.Text = dgvJobOrder.CurrentRow.Cells(14).Value.ToString
+            lblJOLoadedBy.Text = dgvJobOrder.CurrentRow.Cells(15).Value.ToString
+            lblUnloadedBY.Text = dgvJobOrder.CurrentRow.Cells(16).Value.ToString
+            lblDGVUnloadDT.Text = dgvJobOrder.CurrentRow.Cells(17).Value.ToString
+            lblDGVTotalShots.Text = dgvJobOrder.CurrentRow.Cells(18).Value.ToString
+            lblDGVPN1Output.Text = dgvJobOrder.CurrentRow.Cells(19).Value.ToString
+            lblDGVPN2Output.Text = dgvJobOrder.CurrentRow.Cells(20).Value.ToString
+            lblDGVPN1Reject.Text = dgvJobOrder.CurrentRow.Cells(21).Value.ToString
+            lblDGVPN2Reject.Text = dgvJobOrder.CurrentRow.Cells(22).Value.ToString
+            lblDGVActualPN1OUt.Text = dgvJobOrder.CurrentRow.Cells(23).Value.ToString
+            lblDGVAvtualP2Out.Text = dgvJobOrder.CurrentRow.Cells(24).Value.ToString
+            lblDGVTtlRunTime.Text = dgvJobOrder.CurrentRow.Cells(31).Value.ToString
+
     End Sub
     '//
 
@@ -783,8 +416,17 @@
             RefreshDGV()
         End If
     End Sub
+    '//
 
-
-
+    '//
+    Public Sub FunctionsEnableDisable_At_MachineRunning()
+        If RxPLCM0 = True Then
+            'grpJO_OrderDetails.Enabled = False
+            btnOpenJO.Enabled = False
+        Else
+            'grpJO_OrderDetails.Enabled = True
+            btnOpenJO.Enabled = True
+        End If
+    End Sub
     '//
 End Class

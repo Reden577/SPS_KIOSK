@@ -306,6 +306,7 @@ Partial Class frmHome
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnMCSelect = New FontAwesome.Sharp.IconButton()
         Me.btnMCSelClear = New FontAwesome.Sharp.IconButton()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -380,6 +381,7 @@ Partial Class frmHome
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.lblLogiLogNote)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -3658,6 +3660,7 @@ Partial Class frmHome
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
+        Me.PictureBox1.Visible = False
         '
         'btnMCSelect
         '
@@ -3692,6 +3695,16 @@ Partial Class frmHome
         Me.btnMCSelClear.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnMCSelClear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnMCSelClear.UseVisualStyleBackColor = True
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(38, 11)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(294, 37)
+        Me.Label7.TabIndex = 2
+        Me.Label7.Text = "COMPANY NAME"
         '
         'frmHome
         '
@@ -3788,6 +3801,7 @@ Partial Class frmHome
         Me.Name = "frmHome"
         Me.Text = "Home"
         Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
@@ -4154,4 +4168,5 @@ Partial Class frmHome
     Friend WithEvents timMC17 As Timer
     Friend WithEvents timMC18 As Timer
     Friend WithEvents timMC19 As Timer
+    Friend WithEvents Label7 As Label
 End Class

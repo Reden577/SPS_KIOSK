@@ -148,9 +148,6 @@
   <data name="close (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="indicator red" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\indicator red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="MiniDash1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MiniDash1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -199,11 +196,17 @@
   <data name="DASHBOARD-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DASHBOARD-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="LineNoPlan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LineNoPlan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="DASHBOARD-9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DASHBOARD-9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Powered by SPS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Powered by SPS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="indicator red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\indicator red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="indicator red1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\indicator red1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -238,7 +241,7 @@
   <data name="QASIGN__1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\QASIGN _1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LineNoPlan" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LineNoPlan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sps2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sps2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

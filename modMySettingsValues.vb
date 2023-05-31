@@ -1,9 +1,14 @@
 ﻿Module modMySettingsValues
     Public modSetVal_imageRun As String
     Public modSetVal_imageStop As String
-    Public modSetVal_SqlPath As String
     Public modSetVal_DashB_StopSign As String
     Public modSetVal_DashB_RunSign As String
     Public modSetVal_DashB_QASign As String
     Public modSetVal_DashB_NoPlanSign As String
+
+    Public modSetVal_IPAdd As String = "169.254.190.100"
+    Public modSetVal_Port As Integer = 502
+    Public modSetVal_SqlPath As String = "Data Source=DESKTOP-4OGTIB2\DIAVIEWSQL;Initial Catalog=SPS;Persist Security Info=True;User ID=sa;Password=doc577isin"
+
+
 End Module

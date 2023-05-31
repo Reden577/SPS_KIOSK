@@ -687,6 +687,7 @@ Partial Class frmSetting1
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(295, 190)
         Me.DataGridView1.TabIndex = 8
+        Me.DataGridView1.Visible = False
         '
         'NameDataGridViewTextBoxColumn
         '
@@ -736,6 +737,7 @@ Partial Class frmSetting1
         Me.TreeView1.Name = "TreeView1"
         Me.TreeView1.Size = New System.Drawing.Size(196, 325)
         Me.TreeView1.TabIndex = 9
+        Me.TreeView1.Visible = False
         '
         'ComboBox1
         '
@@ -744,6 +746,7 @@ Partial Class frmSetting1
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(196, 21)
         Me.ComboBox1.TabIndex = 10
+        Me.ComboBox1.Visible = False
         '
         'NewJOMasterList
         '
