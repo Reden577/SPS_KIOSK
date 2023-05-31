@@ -1,4 +1,5 @@
-﻿Imports System.Net.Security
+﻿Imports System.ComponentModel
+Imports System.Net.Security
 Imports FontAwesome.Sharp
 
 Public Class frmMain
@@ -16,6 +17,14 @@ Public Class frmMain
         TimerDate.Enabled = True
         ActiveButton1(btnHome, rgbColors.rgb_BlueGreen)
         change_PanelContainerFrm("Home")
+
+        modSetVal_SqlPath = My.Settings.SQLPath
+        modSetVal_IPAdd = My.Settings.IPAddress
+    End Sub
+
+    Private Sub frmMain_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        My.Settings.SQLPath = modSetVal_SqlPath
+        My.Settings.IPAddress = modSetVal_IPAdd
     End Sub
 
     '// CLOSE APPLICATION
@@ -201,6 +210,8 @@ Public Class frmMain
         change_PanelContainerFrm("WorkOrder")
         'frmWorkOrder.ShowDialog()
     End Sub
+
+
     '//
 
 
