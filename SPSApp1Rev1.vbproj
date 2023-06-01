@@ -142,6 +142,12 @@
     <Compile Include="frmMCDasboard.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmQualityStoppage.Designer.vb">
+      <DependentUpon>frmQualityStoppage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQualityStoppage.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmSelToLogin.Designer.vb">
       <DependentUpon>frmSelToLogin.vb</DependentUpon>
     </Compile>
@@ -268,6 +274,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMCDasboard.resx">
       <DependentUpon>frmMCDasboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQualityStoppage.resx">
+      <DependentUpon>frmQualityStoppage.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSelToLogin.resx">
       <DependentUpon>frmSelToLogin.vb</DependentUpon>
@@ -544,6 +553,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\sps2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JOLegend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonwhite_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonwhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellowbtn.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

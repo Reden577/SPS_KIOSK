@@ -139,6 +139,9 @@
   <data name="DASHBOARD-3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DASHBOARD-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="sps2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sps2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MiniDash2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MiniDash2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -193,6 +196,9 @@
   <data name="LineRun" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LineRun.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="JOLegend" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\JOLegend.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="DASHBOARD-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DASHBOARD-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -211,6 +217,9 @@
   <data name="indicator red1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\indicator red1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="buttonwhite_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonwhite_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="RUNSIGN_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RUNSIGN_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -219,6 +228,9 @@
   </data>
   <data name="MCStop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MCStop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonwhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonwhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MCRun" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MCRun.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -241,7 +253,7 @@
   <data name="QASIGN__1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\QASIGN _1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sps2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sps2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="yellowbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yellowbtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

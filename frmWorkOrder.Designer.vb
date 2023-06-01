@@ -158,6 +158,7 @@ Partial Class frmWorkOrder
         Me.JOLoadedDetailsTableAdapter = New SPSApp1.JOLodedDetails_3TableAdapters.JOLoadedDetailsTableAdapter()
         Me.JOLoadedDetailsBindingSource15 = New System.Windows.Forms.BindingSource(Me.components)
         Me.JOLoadedDetailsTableAdapter2 = New SPSApp1.JOLoadedDetails_MachineIDOnlyTableAdapters.JOLoadedDetailsTableAdapter()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.grpJO_OrderDetails.SuspendLayout()
         CType(Me.dgvJobOrder, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.JOLoadedDetailsBindingSource16, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -193,6 +194,7 @@ Partial Class frmWorkOrder
         CType(Me.JOLoadedDetailsBindingSource6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.JOLoadedDetailsBindingSource9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.JOLoadedDetailsBindingSource15, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'grpJO_OrderDetails
@@ -1268,11 +1270,22 @@ Partial Class frmWorkOrder
         '
         Me.JOLoadedDetailsTableAdapter2.ClearBeforeFill = True
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.SPSApp1.My.Resources.Resources.JOLegend
+        Me.PictureBox1.Location = New System.Drawing.Point(40, 883)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(258, 104)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 16
+        Me.PictureBox1.TabStop = False
+        '
         'frmWorkOrder
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1857, 992)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.btnOpenJO)
         Me.Controls.Add(Me.GroupBox3)
@@ -1326,6 +1339,7 @@ Partial Class frmWorkOrder
         CType(Me.JOLoadedDetailsBindingSource6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.JOLoadedDetailsBindingSource9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.JOLoadedDetailsBindingSource15, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1478,4 +1492,5 @@ Partial Class frmWorkOrder
     Friend WithEvents JOLoadedDetailsBindingSource17 As BindingSource
     Friend WithEvents JOLoadedDetailsTableAdapter2 As JOLoadedDetails_MachineIDOnlyTableAdapters.JOLoadedDetailsTableAdapter
     Friend WithEvents lblMenuTabWorkOrder As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
