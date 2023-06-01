@@ -10,6 +10,7 @@ Public Class ClassSelectALLUD
     Public EmailAddress As String
     Public Position As String
     Public AccLvl As String
+    Public AccRights As String
     Public Password As String
     Public OTS As String
 
@@ -30,6 +31,7 @@ Public Class ClassSelectALLUD
             EmailAddress = myreader("Email_Address")
             Position = myreader("Position")
             AccLvl = myreader("Access_Level")
+            AccRights = myreader("Acess_Rights")
             Password = myreader("Password")
             OTS = myreader("OTS")
             con.Close()

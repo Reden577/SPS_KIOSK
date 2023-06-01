@@ -82,7 +82,7 @@ Partial Class frmMCDasboard
         Me.cboShiftCode = New System.Windows.Forms.ComboBox()
         Me.DowntimeTableAdapter = New SPSApp1.SPSDataSet1TableAdapters.DowntimeTableAdapter()
         Me.btnShowAll = New System.Windows.Forms.Button()
-        Me.lblQAStoppage = New FontAwesome.Sharp.IconButton()
+        Me.lblQualityBtn = New FontAwesome.Sharp.IconButton()
         Me.btnUpdate = New FontAwesome.Sharp.IconButton()
         Me.btnFilter = New FontAwesome.Sharp.IconButton()
         Me.picMCStatus = New System.Windows.Forms.PictureBox()
@@ -692,19 +692,19 @@ Partial Class frmMCDasboard
         Me.btnShowAll.Text = "Show All"
         Me.btnShowAll.UseVisualStyleBackColor = True
         '
-        'lblQAStoppage
+        'lblQualityBtn
         '
-        Me.lblQAStoppage.BackColor = System.Drawing.Color.White
-        Me.lblQAStoppage.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblQAStoppage.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.lblQAStoppage.IconColor = System.Drawing.Color.Black
-        Me.lblQAStoppage.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.lblQAStoppage.Location = New System.Drawing.Point(875, 32)
-        Me.lblQAStoppage.Name = "lblQAStoppage"
-        Me.lblQAStoppage.Size = New System.Drawing.Size(193, 58)
-        Me.lblQAStoppage.TabIndex = 10
-        Me.lblQAStoppage.Text = "QUALITY"
-        Me.lblQAStoppage.UseVisualStyleBackColor = False
+        Me.lblQualityBtn.BackColor = System.Drawing.Color.White
+        Me.lblQualityBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblQualityBtn.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.lblQualityBtn.IconColor = System.Drawing.Color.Black
+        Me.lblQualityBtn.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.lblQualityBtn.Location = New System.Drawing.Point(875, 32)
+        Me.lblQualityBtn.Name = "lblQualityBtn"
+        Me.lblQualityBtn.Size = New System.Drawing.Size(193, 58)
+        Me.lblQualityBtn.TabIndex = 10
+        Me.lblQualityBtn.Text = "QUALITY"
+        Me.lblQualityBtn.UseVisualStyleBackColor = False
         '
         'btnUpdate
         '
@@ -769,7 +769,7 @@ Partial Class frmMCDasboard
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1090, 877)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.lblQAStoppage)
+        Me.Controls.Add(Me.lblQualityBtn)
         Me.Controls.Add(Me.btnShowAll)
         Me.Controls.Add(Me.cboShiftCode)
         Me.Controls.Add(Me.btnUpdate)
@@ -888,6 +888,6 @@ Partial Class frmMCDasboard
     Friend WithEvents btnUpdate As FontAwesome.Sharp.IconButton
     Friend WithEvents cboShiftCode As ComboBox
     Friend WithEvents btnShowAll As Button
-    Friend WithEvents lblQAStoppage As FontAwesome.Sharp.IconButton
+    Friend WithEvents lblQualityBtn As FontAwesome.Sharp.IconButton
     Friend WithEvents Label1 As Label
 End Class

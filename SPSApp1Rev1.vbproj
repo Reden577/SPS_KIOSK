@@ -97,8 +97,10 @@
     <Compile Include="clsHomeMCStatusIndicator.vb" />
     <Compile Include="clsLoadSettings.vb" />
     <Compile Include="clsLogJODetails.vb" />
+    <Compile Include="clsSelAll_MCDash_AR_QAFeat.vb" />
     <Compile Include="clsSelectAllJODetails_byJOcode.vb" />
     <Compile Include="clsSelectAllPartNOMList.vb" />
+    <Compile Include="cls001_InsertDowntime_QAStoppage.vb" />
     <Compile Include="clsUpdateJODetailsAtUnloading.vb" />
     <Compile Include="clsUpdateJOLoadedDetailsAll.vb" />
     <Compile Include="clsUpdateMListNewJobOrder.vb" />
@@ -199,8 +201,10 @@
       <DependentUpon>MListNewJobOrder_1.xsd</DependentUpon>
     </Compile>
     <Compile Include="ModbusModule.vb" />
+    <Compile Include="modButtonAndClickFlags.vb" />
     <Compile Include="modLoginDetails.vb" />
     <Compile Include="modMySettingsValues.vb" />
+    <Compile Include="modQuality.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -251,6 +255,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>SPSDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SPSDataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SPSDataSet3.xsd</DependentUpon>
     </Compile>
     <Compile Include="WorkOrderLoading.vb" />
   </ItemGroup>
@@ -429,6 +438,17 @@
     </None>
     <None Include="SPSDataSet2.xss">
       <DependentUpon>SPSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SPSDataSet3.xsc">
+      <DependentUpon>SPSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SPSDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SPSDataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SPSDataSet3.xss">
+      <DependentUpon>SPSDataSet3.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

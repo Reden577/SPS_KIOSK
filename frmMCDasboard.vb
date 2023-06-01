@@ -646,4 +646,9 @@ Public Class frmMCDasboard
         Me.DowntimeTableAdapter.Fill(Me.SPSDataSet1.Downtime)
         cboShiftCode.Text = ""
     End Sub
+
+    Private Sub lblQualityBtn_Click(sender As Object, e As EventArgs) Handles lblQualityBtn.Click
+        modQualityBtn_AtMCDash_isTrue = True
+        frmJOUserVerification.Show()
+    End Sub
 End Class

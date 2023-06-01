@@ -16,22 +16,31 @@ Public Class frmJOUserVerification
     '//
     Public Sub LoadUserDetails_ViaOTS()
         Try
+            ' Getting User Name and One Time Scan pasword 
             If txtJOVerification.Text <> "" Then
                 Dim sel As New ClassSelectALLUD
                 sel.selectDB("", txtJOVerification.Text)
                 modLogUserName = sel.UserName
+                modLogUserID = sel.UserID
                 modLogOTS = sel.OTS
+                modLogAccessLevel = sel.AccRights
+
             Else
-                MessageBox.Show("You are not allowed to this transaction!!!" _
+                MessageBox.Show("You are not allowed to do this transaction!!!" _
                     & vbNewLine & "If this error persist please contact your local Admin...", "Confirmation Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
 
+            ' Compare Condidtion if login details exist 
             If txtJOVerification.Text = modLogOTS And txtJOVerification.Text <> "" Then
+
+                ' For Job Order Loading Ver.1
                 If JOloadBtnClick = True Then
                     stJOLoadedBy = modLogUserName
                     bolJOLoadConfirm = True
                     JOloadBtnClick = False
+                    modLogUserID = Nothing
                     modLogOTS = Nothing
+                    modLogAccessLevel = Nothing
                     Me.Close()
                 End If
                 'If JOUnloadBtnClick = True Then
@@ -42,24 +51,64 @@ Public Class frmJOUserVerification
                 '    modLogOTS = Nothing
                 '    Me.Close()
                 'End If
+
+                ' For Job Order Loading Ver.2
                 If JOLoadBtn2Click = True Then
                     stJOLoadedBy = modLogUserName
                     bolJOLoadConfirm = True
                     JOLoadBtn2Click = False
                     frmJOUnload.Close()
+                    modLogUserID = Nothing
                     modLogOTS = Nothing
+                    modLogAccessLevel = Nothing
                     Me.Close()
                 End If
+
+                ' For JOb Order Unloading
                 If bolUpdateAndUnload = True Then
                     stJOUnloadedBy = modLogUserName
                     bolJOUnloadConfirm = True
                     JOUnloadBtnClick = False
                     frmJOUnload.Close()
+                    modLogUserID = Nothing
                     modLogOTS = Nothing
+                    modLogAccessLevel = Nothing
                     Me.Close()
                 End If
+
+                ' For Quality Stoppage and Verification
+                If modQualityBtn_AtMCDash_isTrue = True Then
+                    modQualityBtn_AtMCDash_isTrue = False
+                    modQualityUserLogin = modLogUserName
+                    modQualityUIDLogin = modLogUserID
+                    Try
+                        Dim Result As Boolean
+                        Dim arights As New clsSelAll_MCDash_AR_QAFeat
+                        arights.checkAccess(modLogAccessLevel)
+                        Result = arights.QABtn_isTrue
+                        If Result = True Then
+                            modLogUserName = Nothing
+                            modLogUserID = Nothing
+                            modLogOTS = Nothing
+                            modLogAccessLevel = Nothing
+                            frmQualityStoppage.Show()
+                            Me.Close()
+                        Else
+                            MessageBox.Show("You are not allowed to do this transaction!!!" _
+                            & vbNewLine & "If this error persist please contact your local Admin...", "Confirmation Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                            Me.Close()
+                        End If
+                        '
+                        'modQualityUserLogin = modLogUserName
+                    Catch ex As Exception
+                        MessageBox.Show("You are not allowed to do this transaction!!!" _
+                            & vbNewLine & "If this error persist please contact your local Admin...", "Confirmation Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                        Me.Close()
+                    End Try
+
+                End If
             Else
-                MessageBox.Show("You are not allowed to this transaction!!!" _
+                MessageBox.Show("You are not allowed to do this transaction!!!" _
                     & vbNewLine & "If this error persist please contact your local Admin...", "Confirmation Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
         Catch ex As Exception
