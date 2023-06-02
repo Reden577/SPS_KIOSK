@@ -26,6 +26,7 @@ Partial Class frmHome
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmHome))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.lblLogiLogNote = New System.Windows.Forms.Label()
         Me.lblLoginInProgress = New System.Windows.Forms.Label()
         Me.lblLogoutInProgress = New System.Windows.Forms.Label()
@@ -303,10 +304,12 @@ Partial Class frmHome
         Me.btnCheckMC1 = New FontAwesome.Sharp.IconButton()
         Me.picStatMC1 = New System.Windows.Forms.PictureBox()
         Me.PicMC1 = New System.Windows.Forms.PictureBox()
+        Me.picComCheckOnOff = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnMCSelect = New FontAwesome.Sharp.IconButton()
         Me.btnMCSelClear = New FontAwesome.Sharp.IconButton()
-        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -367,6 +370,7 @@ Partial Class frmHome
         CType(Me.picMC4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picStatMC1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PicMC1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picComCheckOnOff, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -381,6 +385,9 @@ Partial Class frmHome
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.Label10)
+        Me.Panel1.Controls.Add(Me.Label9)
+        Me.Panel1.Controls.Add(Me.picComCheckOnOff)
         Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.lblLogiLogNote)
@@ -389,6 +396,17 @@ Partial Class frmHome
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1857, 56)
         Me.Panel1.TabIndex = 2
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(213, 9)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(294, 37)
+        Me.Label7.TabIndex = 2
+        Me.Label7.Text = "COMPANY NAME"
+        Me.Label7.Visible = False
         '
         'lblLogiLogNote
         '
@@ -3651,6 +3669,16 @@ Partial Class frmHome
         Me.PicMC1.TabStop = False
         Me.PicMC1.Tag = "1"
         '
+        'picComCheckOnOff
+        '
+        Me.picComCheckOnOff.Image = Global.SPSApp1.My.Resources.Resources.indicator_green
+        Me.picComCheckOnOff.Location = New System.Drawing.Point(1826, 4)
+        Me.picComCheckOnOff.Name = "picComCheckOnOff"
+        Me.picComCheckOnOff.Size = New System.Drawing.Size(28, 28)
+        Me.picComCheckOnOff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picComCheckOnOff.TabIndex = 3
+        Me.picComCheckOnOff.TabStop = False
+        '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.SPSApp1.My.Resources.Resources.proguard_logo
@@ -3660,7 +3688,6 @@ Partial Class frmHome
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
-        Me.PictureBox1.Visible = False
         '
         'btnMCSelect
         '
@@ -3696,15 +3723,25 @@ Partial Class frmHome
         Me.btnMCSelClear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnMCSelClear.UseVisualStyleBackColor = True
         '
-        'Label7
+        'Label9
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(38, 11)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(294, 37)
-        Me.Label7.TabIndex = 2
-        Me.Label7.Text = "COMPANY NAME"
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(747, 14)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(39, 13)
+        Me.Label9.TabIndex = 4
+        Me.Label9.Text = "Label9"
+        Me.Label9.Visible = False
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(747, 33)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(45, 13)
+        Me.Label10.TabIndex = 4
+        Me.Label10.Text = "Label10"
+        Me.Label10.Visible = False
         '
         'frmHome
         '
@@ -3880,6 +3917,7 @@ Partial Class frmHome
         CType(Me.picMC4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picStatMC1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PicMC1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picComCheckOnOff, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -4169,4 +4207,7 @@ Partial Class frmHome
     Friend WithEvents timMC18 As Timer
     Friend WithEvents timMC19 As Timer
     Friend WithEvents Label7 As Label
+    Friend WithEvents picComCheckOnOff As PictureBox
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label10 As Label
 End Class

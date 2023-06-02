@@ -93,6 +93,10 @@ Public Class frmJOUserVerification
                             modLogAccessLevel = Nothing
                             frmQualityStoppage.Show()
                             Me.Close()
+                        ElseIf IsDBNull(Result) Then
+                            MessageBox.Show("You are not allowed to do this transaction!!!" _
+                            & vbNewLine & "If this error persist please contact your local Admin...", "Confirmation Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                            Me.Close()
                         Else
                             MessageBox.Show("You are not allowed to do this transaction!!!" _
                             & vbNewLine & "If this error persist please contact your local Admin...", "Confirmation Error", MessageBoxButtons.OK, MessageBoxIcon.Error)

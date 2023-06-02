@@ -4171,30 +4171,6 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("E:\0000 VBProjects\SPSApp1Updated\Resources\LineRun.png")>  _
-        Public Property ImageRun() As String
-            Get
-                Return CType(Me("ImageRun"),String)
-            End Get
-            Set
-                Me("ImageRun") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("E:\0000 VBProjects\SPSApp1Updated\Resources\LineStop.png")>  _
-        Public Property ImageStop() As String
-            Get
-                Return CType(Me("ImageStop"),String)
-            End Get
-            Set
-                Me("ImageStop") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-4OGTIB2\DIAVIEWSQL;Initial Catalog=SPS;Persist Security Info="& _ 
             "True;User ID=sa;Password=doc577isin")>  _
         Public Property SQLPath() As String
@@ -4203,54 +4179,6 @@ Namespace My
             End Get
             Set
                 Me("SQLPath") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("E:\0000 VBProjects\SPSApp1Updated\Resources\RUNSIGN (1).png")>  _
-        Public Property MCDashRunImage() As String
-            Get
-                Return CType(Me("MCDashRunImage"),String)
-            End Get
-            Set
-                Me("MCDashRunImage") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("E:\0000 VBProjects\SPSApp1Updated\Resources\STOPSIGN (1).png")>  _
-        Public Property MCDashStopImage() As String
-            Get
-                Return CType(Me("MCDashStopImage"),String)
-            End Get
-            Set
-                Me("MCDashStopImage") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("E:\0000 VBProjects\SPSApp1Updated\Resources\QASIGN (1).png")>  _
-        Public Property MCDashQAImage() As String
-            Get
-                Return CType(Me("MCDashQAImage"),String)
-            End Get
-            Set
-                Me("MCDashQAImage") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("E:\0000 VBProjects\SPSApp1Updated\Resources\NOPLAN SIGN (1).png")>  _
-        Public Property MCDashNOPlanImage() As String
-            Get
-                Return CType(Me("MCDashNOPlanImage"),String)
-            End Get
-            Set
-                Me("MCDashNOPlanImage") = value
             End Set
         End Property
         

@@ -1,5 +1,6 @@
 ﻿Module Counters
     Public ComCheck As String
+    Public ComCheck_isTrue As Boolean
     Public CounterP1MC1 As String
     Public CounterP1MC2 As String
     Public CounterP1MC3 As String

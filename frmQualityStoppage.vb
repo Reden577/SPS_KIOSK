@@ -46,7 +46,7 @@ Public Class frmQualityStoppage
         insertDT.cls001_StartTime = Now()
         insertDT.cls001_DTReason = cboQAStoppage.Text
         insertDT.cls001_DTCountermeasure = "TBA"
-        insertDT.cls001_AckDate = "TBA"
+        insertDT.cls001_AckDate = "Not Yet Ack"
         insertDT.cls001_EndTime = "TBA"
         insertDT.cls001_RunTime = "TBA"
         insertDT.cls001_TtlDTmins = 0

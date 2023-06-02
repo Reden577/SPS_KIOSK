@@ -587,9 +587,6 @@ Public Class frmHome
         TotalCountMC18 = My.Settings.ActualQtyMC18
         TotalCountMC19 = My.Settings.ActualQtyMC19
 
-        modSetVal_imageRun = My.Settings.ImageRun
-        modSetVal_imageStop = My.Settings.ImageStop
-
         modSetVal_SqlPath = My.Settings.SQLPath
         modSetVal_IPAdd = My.Settings.IPAddress
         modSetVal_Port = My.Settings.Port
@@ -1106,6 +1103,16 @@ Public Class frmHome
 
     '// TIMER TICK Production Details Realtime Checking
     Private Sub ProdDetailsRealtimeCheck_Tick(sender As Object, e As EventArgs) Handles ProdDetailsRealtimeCheck.Tick
+        Label10.Text = ComCheck_isTrue
+
+        If ComCheck = "1" Then
+            picComCheckOnOff.Image = My.Resources.indicator_green
+        Else
+        picComCheckOnOff.Image = My.Resources.indicator_red
+        End If
+
+        Label9.Text = modSetVal_SqlPath
+
         MenuTabStats()
         ckbButtonStatCheck()
         shiftUpdate()

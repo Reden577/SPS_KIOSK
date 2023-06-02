@@ -1036,26 +1036,8 @@
     <Setting Name="RejecQtyMC19" Type="System.String" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="ImageRun" Type="System.String" Scope="User">
-      <Value Profile="(Default)">E:\0000 VBProjects\SPSApp1Updated\Resources\LineRun.png</Value>
-    </Setting>
-    <Setting Name="ImageStop" Type="System.String" Scope="User">
-      <Value Profile="(Default)">E:\0000 VBProjects\SPSApp1Updated\Resources\LineStop.png</Value>
-    </Setting>
     <Setting Name="SQLPath" Type="System.String" Scope="User">
       <Value Profile="(Default)">Data Source=DESKTOP-4OGTIB2\DIAVIEWSQL;Initial Catalog=SPS;Persist Security Info=True;User ID=sa;Password=doc577isin</Value>
-    </Setting>
-    <Setting Name="MCDashRunImage" Type="System.String" Scope="User">
-      <Value Profile="(Default)">E:\0000 VBProjects\SPSApp1Updated\Resources\RUNSIGN (1).png</Value>
-    </Setting>
-    <Setting Name="MCDashStopImage" Type="System.String" Scope="User">
-      <Value Profile="(Default)">E:\0000 VBProjects\SPSApp1Updated\Resources\STOPSIGN (1).png</Value>
-    </Setting>
-    <Setting Name="MCDashQAImage" Type="System.String" Scope="User">
-      <Value Profile="(Default)">E:\0000 VBProjects\SPSApp1Updated\Resources\QASIGN (1).png</Value>
-    </Setting>
-    <Setting Name="MCDashNOPlanImage" Type="System.String" Scope="User">
-      <Value Profile="(Default)">E:\0000 VBProjects\SPSApp1Updated\Resources\NOPLAN SIGN (1).png</Value>
     </Setting>
     <Setting Name="IPAddress" Type="System.String" Scope="User">
       <Value Profile="(Default)">169.254.190.100</Value>

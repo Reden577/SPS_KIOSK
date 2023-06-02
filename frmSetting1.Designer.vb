@@ -79,9 +79,6 @@ Partial Class frmSetting1
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtSQLPath = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.btnDisconnect = New FontAwesome.Sharp.IconButton()
-        Me.btnConnect = New FontAwesome.Sharp.IconButton()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.NameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Leve1DataGridViewCheckBoxColumn = New System.Windows.Forms.DataGridViewCheckBoxColumn()
@@ -95,89 +92,96 @@ Partial Class frmSetting1
         Me.NewJOMasterList = New SPSApp1.NewJOMasterList()
         Me.MListNewJobOrderBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.MListNewJobOrderTableAdapter = New SPSApp1.NewJOMasterListTableAdapters.MListNewJobOrderTableAdapter()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.btnDisconnect = New FontAwesome.Sharp.IconButton()
+        Me.btnConnect = New FontAwesome.Sharp.IconButton()
+        Me.btnSaveSettings = New FontAwesome.Sharp.IconButton()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SampleBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SPSDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NewJOMasterList, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MListNewJobOrderBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblRx0
         '
         Me.lblRx0.AutoSize = True
         Me.lblRx0.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRx0.Location = New System.Drawing.Point(487, 114)
+        Me.lblRx0.Location = New System.Drawing.Point(477, 783)
         Me.lblRx0.Name = "lblRx0"
         Me.lblRx0.Size = New System.Drawing.Size(24, 25)
         Me.lblRx0.TabIndex = 0
         Me.lblRx0.Text = "0"
+        Me.lblRx0.Visible = False
         '
         'txtPort
         '
-        Me.txtPort.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPort.Location = New System.Drawing.Point(124, 111)
+        Me.txtPort.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPort.Location = New System.Drawing.Point(96, 96)
         Me.txtPort.Name = "txtPort"
-        Me.txtPort.Size = New System.Drawing.Size(197, 31)
+        Me.txtPort.Size = New System.Drawing.Size(197, 26)
         Me.txtPort.TabIndex = 1
-        Me.txtPort.Text = "0"
         '
         'txtIP
         '
-        Me.txtIP.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtIP.Location = New System.Drawing.Point(124, 74)
+        Me.txtIP.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtIP.Location = New System.Drawing.Point(96, 62)
         Me.txtIP.Name = "txtIP"
-        Me.txtIP.Size = New System.Drawing.Size(197, 31)
+        Me.txtIP.Size = New System.Drawing.Size(197, 26)
         Me.txtIP.TabIndex = 1
         '
         'Label11
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(346, 114)
+        Me.Label11.Location = New System.Drawing.Point(336, 783)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(135, 25)
         Me.Label11.TabIndex = 0
         Me.Label11.Text = "Com Check :"
+        Me.Label11.Visible = False
         '
         'lblSatus
         '
         Me.lblSatus.AutoSize = True
         Me.lblSatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSatus.Location = New System.Drawing.Point(546, 77)
+        Me.lblSatus.Location = New System.Drawing.Point(536, 746)
         Me.lblSatus.Name = "lblSatus"
         Me.lblSatus.Size = New System.Drawing.Size(149, 25)
         Me.lblSatus.TabIndex = 0
         Me.lblSatus.Text = "Disconnected!"
+        Me.lblSatus.Visible = False
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(346, 77)
+        Me.Label3.Location = New System.Drawing.Point(336, 746)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(194, 25)
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Connection Status:"
+        Me.Label3.Visible = False
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(34, 114)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(12, 99)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(57, 25)
+        Me.Label2.Size = New System.Drawing.Size(42, 20)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Port:"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(34, 80)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(12, 65)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(84, 25)
+        Me.Label1.Size = New System.Drawing.Size(62, 20)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "PLC IP:"
         '
@@ -196,9 +200,9 @@ Partial Class frmSetting1
         Me.Label34.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label34.Location = New System.Drawing.Point(33, 21)
         Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(521, 31)
+        Me.Label34.Size = New System.Drawing.Size(395, 31)
         Me.Label34.TabIndex = 0
-        Me.Label34.Text = "MODBUS COMMUNICATION SETTINGS"
+        Me.Label34.Text = "COMMUNICATION SETTINGS"
         '
         'Label4
         '
@@ -633,49 +637,17 @@ Partial Class frmSetting1
         '
         Me.GroupBox1.Controls.Add(Me.txtSQLPath)
         Me.GroupBox1.Controls.Add(Me.Label7)
+        Me.GroupBox1.Controls.Add(Me.txtPort)
+        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.txtIP)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(23, 246)
+        Me.GroupBox1.Location = New System.Drawing.Point(29, 67)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(819, 304)
+        Me.GroupBox1.Size = New System.Drawing.Size(819, 143)
         Me.GroupBox1.TabIndex = 7
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Settings"
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.SPSApp1.My.Resources.Resources.Powered_by_SPS
-        Me.PictureBox2.Location = New System.Drawing.Point(1679, 954)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(166, 26)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 1
-        Me.PictureBox2.TabStop = False
-        '
-        'btnDisconnect
-        '
-        Me.btnDisconnect.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDisconnect.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.btnDisconnect.IconColor = System.Drawing.Color.Black
-        Me.btnDisconnect.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnDisconnect.Location = New System.Drawing.Point(186, 160)
-        Me.btnDisconnect.Name = "btnDisconnect"
-        Me.btnDisconnect.Size = New System.Drawing.Size(135, 54)
-        Me.btnDisconnect.TabIndex = 2
-        Me.btnDisconnect.Text = "Disconnect"
-        Me.btnDisconnect.UseVisualStyleBackColor = True
-        '
-        'btnConnect
-        '
-        Me.btnConnect.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnConnect.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.btnConnect.IconColor = System.Drawing.Color.Black
-        Me.btnConnect.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnConnect.Location = New System.Drawing.Point(39, 160)
-        Me.btnConnect.Name = "btnConnect"
-        Me.btnConnect.Size = New System.Drawing.Size(135, 54)
-        Me.btnConnect.TabIndex = 2
-        Me.btnConnect.Text = "Connect"
-        Me.btnConnect.UseVisualStyleBackColor = True
         '
         'DataGridView1
         '
@@ -762,11 +734,64 @@ Partial Class frmSetting1
         '
         Me.MListNewJobOrderTableAdapter.ClearBeforeFill = True
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.SPSApp1.My.Resources.Resources.Powered_by_SPS
+        Me.PictureBox2.Location = New System.Drawing.Point(1679, 954)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(166, 26)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 1
+        Me.PictureBox2.TabStop = False
+        '
+        'btnDisconnect
+        '
+        Me.btnDisconnect.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDisconnect.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.btnDisconnect.IconColor = System.Drawing.Color.Black
+        Me.btnDisconnect.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnDisconnect.Location = New System.Drawing.Point(176, 829)
+        Me.btnDisconnect.Name = "btnDisconnect"
+        Me.btnDisconnect.Size = New System.Drawing.Size(135, 54)
+        Me.btnDisconnect.TabIndex = 2
+        Me.btnDisconnect.Text = "Disconnect"
+        Me.btnDisconnect.UseVisualStyleBackColor = True
+        Me.btnDisconnect.Visible = False
+        '
+        'btnConnect
+        '
+        Me.btnConnect.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnConnect.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.btnConnect.IconColor = System.Drawing.Color.Black
+        Me.btnConnect.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnConnect.Location = New System.Drawing.Point(29, 829)
+        Me.btnConnect.Name = "btnConnect"
+        Me.btnConnect.Size = New System.Drawing.Size(135, 54)
+        Me.btnConnect.TabIndex = 2
+        Me.btnConnect.Text = "Connect"
+        Me.btnConnect.UseVisualStyleBackColor = True
+        Me.btnConnect.Visible = False
+        '
+        'btnSaveSettings
+        '
+        Me.btnSaveSettings.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSaveSettings.IconChar = FontAwesome.Sharp.IconChar.Database
+        Me.btnSaveSettings.IconColor = System.Drawing.Color.Black
+        Me.btnSaveSettings.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnSaveSettings.Location = New System.Drawing.Point(667, 223)
+        Me.btnSaveSettings.Name = "btnSaveSettings"
+        Me.btnSaveSettings.Size = New System.Drawing.Size(181, 60)
+        Me.btnSaveSettings.TabIndex = 11
+        Me.btnSaveSettings.Text = "Save"
+        Me.btnSaveSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnSaveSettings.UseVisualStyleBackColor = True
+        '
         'frmSetting1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1857, 992)
+        Me.Controls.Add(Me.btnSaveSettings)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.TreeView1)
         Me.Controls.Add(Me.DataGridView1)
@@ -815,10 +840,6 @@ Partial Class frmSetting1
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.btnDisconnect)
         Me.Controls.Add(Me.btnConnect)
-        Me.Controls.Add(Me.txtPort)
-        Me.Controls.Add(Me.txtIP)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lblSatus)
         Me.Controls.Add(Me.Label34)
         Me.Controls.Add(Me.Label3)
@@ -832,12 +853,12 @@ Partial Class frmSetting1
         Me.Text = "Setting"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SampleBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SPSDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NewJOMasterList, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MListNewJobOrderBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -913,4 +934,5 @@ Partial Class frmSetting1
     Friend WithEvents NewJOMasterList As NewJOMasterList
     Friend WithEvents MListNewJobOrderBindingSource As BindingSource
     Friend WithEvents MListNewJobOrderTableAdapter As NewJOMasterListTableAdapters.MListNewJobOrderTableAdapter
+    Friend WithEvents btnSaveSettings As FontAwesome.Sharp.IconButton
 End Class
