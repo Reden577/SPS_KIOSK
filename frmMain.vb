@@ -51,17 +51,19 @@ Public Class frmMain
 
     '//
     Private Sub tmrRealTimeCheck_Tick(sender As Object, e As EventArgs) Handles tmrRealTimeCheck.Tick
-        Label1.Text = modCurrentOpenForm 'Current Open Form inside panel
+        lblCurrentForm.Text = modCurrentOpenForm 'Current Open Form inside panel
+        lblRxPLCM0.Text = RxPLCM0
+        lblQAMCStopFlag.Text = modQualityMCStopFlag_isTrue
         If menuTabHome = True Then
-            Label2.Text = "Home"
+            lblCurrentScreen.Text = "Home"
         ElseIf menuTabLogin = True Then
-            Label2.Text = "Login"
+            lblCurrentScreen.Text = "Login"
         ElseIf menuTabLogout = True Then
-            Label2.Text = "Logout"
+            lblCurrentScreen.Text = "Logout"
         ElseIf menuTabWorkOrder = True Then
-            Label2.Text = "Job Order"
+            lblCurrentScreen.Text = "Job Order"
         ElseIf menuTabSetting = True Then
-            Label2.Text = "Setting"
+            lblCurrentScreen.Text = "Setting"
         End If
 
         ReadHoldingRegs()
@@ -281,31 +283,24 @@ Public Class frmMain
             D2016 = ReadValue(16) '6112 MC2 P1CavQty
             D2017 = ReadValue(17) '6113 MC2 P2CavQty
 
-            D2018 = ReadValue(18) '6114 MC1JOCode1
-            D2019 = ReadValue(19) '6115 MC1JOCode2
-            D2020 = ReadValue(20) '6116 MC1JOCode3
-            D2021 = ReadValue(21) '6117 MC1JOCode4
-            D2022 = ReadValue(22) '6118 MC1JOCode5
-            D2023 = ReadValue(23) '6119 MC1JOCode6
-            D2024 = ReadValue(24) '6120 EMPTY
-            D2025 = ReadValue(25) '6121 MC2JOCode1
-            D2026 = ReadValue(26) '6122 MC2JOCode2
-            D2027 = ReadValue(27) '6123 MC2JOCode3
-            D2028 = ReadValue(28) '6124 MC2JOCode4
-            D2029 = ReadValue(29) '6125 MC2JOCode5
-            D2030 = ReadValue(30) '6126 MC2JOCode6
-            D2031 = ReadValue(31) '6127 EMPTY
-
-            Dim dwD2032(2) As Integer 'MC1 Total Actual Qty
-            dwD2032(0) = ReadValue(32) '6128
-            dwD2032(1) = ReadValue(33) '6129 
-            D2032 = ModbusClient.ConvertRegistersToInt(dwD2032, 0)
-
-            Dim dwD2034(2) As Integer 'MC2 Total Actual Qty
-            dwD2034(0) = ReadValue(34) '6130
-            dwD2034(1) = ReadValue(35) '6131 
-            D2034 = ModbusClient.ConvertRegistersToInt(dwD2034, 0)
-
+            D2018 = ReadValue(18) '6114 
+            D2019 = ReadValue(19) '6115 
+            D2020 = ReadValue(20) '6116 
+            D2021 = ReadValue(21) '6117 
+            D2022 = ReadValue(22) '6118 
+            D2023 = ReadValue(23) '6119 
+            D2024 = ReadValue(24) '6120 
+            D2025 = ReadValue(25) '6121 
+            D2026 = ReadValue(26) '6122 
+            D2027 = ReadValue(27) '6123 
+            D2028 = ReadValue(28) '6124 
+            D2029 = ReadValue(29) '6125 
+            D2030 = ReadValue(30) '6126 
+            D2031 = ReadValue(31) '6127 
+            D2032 = ReadValue(32) '6128
+            D2032 = ReadValue(33) '6129 
+            D2034 = ReadValue(34) '6130
+            D2035 = ReadValue(35) '6131 
             D2036 = ReadValue(36) '6132 
             D2037 = ReadValue(37) '6133
             D2038 = ReadValue(38) '6134 
@@ -334,20 +329,20 @@ Public Class frmMain
             RxPLCM9 = rxCoil(9) '2057 MC1 KIOSK CONDITION TRIGGERED Flag
             RxPLCM10 = rxCoil(10) '2058 MC2 KIOSK CONDITION TRIGGERD Flag
             RxPLCM11 = rxCoil(11) '2059
-            RxPLCM12 = rxCoil(12) '2060 MC1 Test Auto Mode Flag (Machine HMI)
-            RxPLCM13 = rxCoil(13) '2061 MC2 Test Auto Mode Flag (Machine HMI)
+            RxPLCM12 = rxCoil(12) '2060 MC1 Test Auto Mode Flag
+            RxPLCM13 = rxCoil(13) '2061 MC2 Test Auto Mode Flag
             RxPLCM14 = rxCoil(14) '2062 MC1 Plan Complete
             RxPLCM15 = rxCoil(15) '2063 MC2 Plan Complete
-            RxPLCM16 = rxCoil(16) '2064
-            RxPLCM17 = rxCoil(17) '2065
-            RxPLCM18 = rxCoil(18) '2066
-            RxPLCM19 = rxCoil(19) '2067
-            RxPLCM20 = rxCoil(20) '2068
-            RxPLCM21 = rxCoil(21) '2069
-            RxPLCM22 = rxCoil(22) '2070
-            RxPLCM23 = rxCoil(23) '2071
-            RxPLCM24 = rxCoil(24) '2072
-            RxPLCM25 = rxCoil(25) '2073
+            RxPLCM16 = rxCoil(16) '2064 MC1 Counter InputFlag(x2)
+            RxPLCM17 = rxCoil(17) '2065 MC2 Counter InputFlag(x5)
+            RxPLCM18 = rxCoil(18) '2066 MC1 Test Auto Mode CounterReached (Machine HMI)
+            RxPLCM19 = rxCoil(19) '2067 MC2 Test Auto Mode CounterReached (Machine HMI)
+            RxPLCM20 = rxCoil(20) '2068 MC1 QA Stoppage Triggered
+            RxPLCM21 = rxCoil(21) '2069 MC2 QA Stoppage Triggered
+            RxPLCM22 = rxCoil(22) '2070 MC1 PM Stoppage Triggered
+            RxPLCM23 = rxCoil(23) '2071 MC2 PM Stoppage Triggered
+            RxPLCM24 = rxCoil(24) '2072 MC1 Tooling Stoppage Triggered
+            RxPLCM25 = rxCoil(25) '2073 MC2 Tooling Stoppage Triggered
             RxPLCM26 = rxCoil(26) '2074
             RxPLCM27 = rxCoil(27) '2075
             RxPLCM28 = rxCoil(28) '2076
@@ -378,8 +373,8 @@ Public Class frmMain
 
                 Dim x As Integer()
                 x = ModbusClient.ConvertIntToRegisters(wrValue)
-                ModClient.WriteSingleRegister(6106, x(0))
-                ModClient.WriteSingleRegister(6107, x(1))
+                ModClient.WriteSingleRegister(6106, x(0)) 'D2010 MC1 Plan Qty Double Word
+                ModClient.WriteSingleRegister(6107, x(1)) 'D2011
             End If
         End If
     End Sub
@@ -394,8 +389,8 @@ Public Class frmMain
 
                 Dim x As Integer()
                 x = ModbusClient.ConvertIntToRegisters(wrValue)
-                ModClient.WriteSingleRegister(6108, x(0))
-                ModClient.WriteSingleRegister(6109, x(1))
+                ModClient.WriteSingleRegister(6108, x(0)) 'D2012 MC2 Plan Qty Double Word
+                ModClient.WriteSingleRegister(6109, x(1)) 'D2013
             End If
         End If
     End Sub
@@ -409,8 +404,8 @@ Public Class frmMain
                 Dim wrValue2 As Integer
                 wrValue1 = CInt(stJOMoldCavP1MC1)
                 wrValue2 = CInt(stJOMoldCavP2MC1)
-                ModClient.WriteSingleRegister(6110, wrValue1) 'D2014
-                ModClient.WriteSingleRegister(6111, wrValue2) 'D2015
+                ModClient.WriteSingleRegister(6110, wrValue1) 'D2014 MC1 PN1 Cavity Qty
+                ModClient.WriteSingleRegister(6111, wrValue2) 'D2015 MC1 PN2 Cavity Qty
             End If
         End If
     End Sub
@@ -424,8 +419,8 @@ Public Class frmMain
                 Dim wrValue2 As Integer
                 wrValue1 = CInt(stJOMoldCavP1MC2)
                 wrValue2 = CInt(stJOMoldCavP2MC2)
-                ModClient.WriteSingleRegister(6112, wrValue1) 'D2016
-                ModClient.WriteSingleRegister(6113, wrValue2) 'D2017
+                ModClient.WriteSingleRegister(6112, wrValue1) 'D2016 MC2 PN1 Cavity Qty
+                ModClient.WriteSingleRegister(6113, wrValue2) 'D2017 MC2 PN2 Cavity Qty
             End If
         End If
     End Sub
@@ -441,7 +436,7 @@ Public Class frmMain
 
                     Dim x As Integer() 'Converting Integer to two separate 16bit/2bytes registers
                     x = ModbusClient.ConvertIntToRegisters(wrValue)
-                    ModClient.WriteSingleRegister(6098, x(0)) 'D2002
+                    ModClient.WriteSingleRegister(6098, x(0)) 'D2002 Machine 1 Counter Double Word
                     ModClient.WriteSingleRegister(6099, x(1)) 'D2003
                 End If
             End If
@@ -456,7 +451,7 @@ Public Class frmMain
 
                     Dim x As Integer() 'Converting Integer to two separate 16bit/2bytes registers
                     x = ModbusClient.ConvertIntToRegisters(wrValue)
-                    ModClient.WriteSingleRegister(6100, x(0)) 'D2004
+                    ModClient.WriteSingleRegister(6100, x(0)) 'D2004 Machine 2 Counter Double Word
                     ModClient.WriteSingleRegister(6101, x(1)) 'D2005
                 End If
             End If
@@ -466,5 +461,86 @@ Public Class frmMain
     End Sub
     '//
 
+    '// CALLING MACHINE TO STOP WHEN QUALITY STOPPAGE IS CREATED 
+    Public Sub MachineStop_At_QAStoppage()
+        If modQualityMCStopFlag_isTrue = True Then
+            If ModClient.Connected = True Then
+                ModClient.WriteSingleCoil(2068, True) 'M20 MC1 QA Stoppage Triggered
+            End If
+        End If
+    End Sub
+    Private Sub lblQAMCStopFlag_TextChanged(sender As Object, e As EventArgs) Handles lblQAMCStopFlag.TextChanged
+        MachineStop_At_QAStoppage()
+    End Sub
+    '//
 
+    '// RESET THE QUALITY MC STOP FLAG AT MACHINE RUN
+    Public Sub ResetQualityMCStopFlag_AtMachineRun()
+        If RxPLCM0 = True Then
+            modQualityMCStopFlag_isTrue = False
+        End If
+    End Sub
+    Private Sub lblRxPLCM0_TextChanged(sender As Object, e As EventArgs) Handles lblRxPLCM0.TextChanged
+        ResetQualityMCStopFlag_AtMachineRun()
+        CallInsertDT_KIOSKTriggered_QAStoppage()
+        DTClearStoreValue_ForInsert()
+    End Sub
+
+    Private Sub PanelFrmContainer_Paint(sender As Object, e As PaintEventArgs) Handles PanelFrmContainer.Paint
+
+    End Sub
+    '//
+
+    '// CALLING INSERTING DOWNTIME STOPPAGE 
+    Public Sub CallInsertDT_KIOSKTriggered_QAStoppage()
+        If RxPLCM20 = True And RxPLCM0 = False Then
+            InsertDowntimeRecord()
+        End If
+    End Sub
+    Public Sub InsertDowntimeRecord()
+        Dim insertDT As New cls001_InsertDowntime_QAStoppage
+        insertDT.cls001_ShiftCode = DTstoValue_ShiftCode
+        insertDT.cls001_UserName = DTstoValue_UserName
+        insertDT.cls001_UserID = DTstoValue_UserID
+        insertDT.cls001_DTType = DTstoValue_DTType
+        insertDT.cls001_StartTime = Now()
+        insertDT.cls001_DTReason = DTstoValue_DTReason
+        insertDT.cls001_DTCountermeasure = DTstoValue_CMeasure
+        insertDT.cls001_AckDate = DTstoValue_AckDate
+        insertDT.cls001_EndTime = DTstoValue_EndTime
+        insertDT.cls001_RunTime = DTstoValue_RunTime
+        insertDT.cls001_TtlDTmins = DTstoValue_TtlDTmins
+        insertDT.cls001_TtlRprtmins = DTstoValue_TtlRrpTmins
+        insertDT.cls001_ForQAVeri = DTstoValue_ForQAVeri
+        insertDT.cls001_TtlQAVeriMins = DTstoValue_TtlVeriMins
+        insertDT.cls001_TtlFailfreg = DTstoValue_TtlFailFreq
+        insertDT.cls001_DTStatus = DTstoValue_DTStatus
+        insertDT.cls001_JOCode = DTstoValue_JOCode
+        insertDT.cls001_MachineID = DTstoValue_MachineID
+        insertDT.InsertDowntime()
+    End Sub
+    '//
+
+    '// CLEAR STORED INFO FOR INSERTING DOWNTIME RECORDS
+    Public Sub DTClearStoreValue_ForInsert()
+        DTstoValue_ShiftCode = ""
+        DTstoValue_UserName = ""
+        DTstoValue_UserID = ""
+        DTstoValue_DTType = ""
+        DTstoValue_StartTime = ""
+        DTstoValue_DTReason = ""
+        DTstoValue_CMeasure = ""
+        DTstoValue_AckDate = ""
+        DTstoValue_EndTime = ""
+        DTstoValue_RunTime = ""
+        DTstoValue_TtlDTmins = 0
+        DTstoValue_TtlRrpTmins = 0
+        DTstoValue_ForQAVeri = ""
+        DTstoValue_TtlVeriMins = 0
+        DTstoValue_TtlFailFreq = 0
+        DTstoValue_DTStatus = ""
+        DTstoValue_JOCode = ""
+        DTstoValue_MachineID = ""
+    End Sub
+    '//
 End Class

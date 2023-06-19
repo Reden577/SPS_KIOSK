@@ -18,6 +18,7 @@ Public Class cls001_InsertDowntime_QAStoppage
     Public cls001_TtlFailfreg As Integer
     Public cls001_DTStatus As String
     Public cls001_JOCode As String
+    Public cls001_MachineID As String
 
     Public Sub InsertDowntime()
         Dim con As New SqlConnection(modSetVal_SqlPath)
@@ -25,12 +26,12 @@ Public Class cls001_InsertDowntime_QAStoppage
            ([Shift_CodeFK] ,[User_Name] ,[User_ID] ,[DT_Type] ,[Start_Time]
            ,[DT_Reason] ,[DT_Countermeasure] ,[Ack_Date] ,[End_Time] ,[Run_Time]
            ,[ttl_DT_mins] ,[ttl_RprT_mins] ,[ForQAVerification] ,[ttl_QAVeri_mins] ,[ttl_FailFreq]
-           ,[DTStatus] ,[JO_Code])
+           ,[DTStatus] ,[JO_Code], [Machine_ID])
            VALUES
            (@ShiftCode ,@UserName ,@UserID ,@DTType ,@StartTime
            ,@DTReason ,@DTCountermeasure ,@AckDate ,@EndTime ,@RunTime
            ,@TtlDTmins ,@TtlRprTimeMins ,@ForQAVeri ,@TtlQAVeriMins ,@TtlFailFreg
-           ,@DTStatus ,@JOCode)"
+           ,@DTStatus ,@JOCode, @MachineID)"
         Using cmd As SqlCommand = New SqlCommand(proc, con)
             cmd.Parameters.AddWithValue("@ShiftCode", cls001_ShiftCode)
             cmd.Parameters.AddWithValue("@UserName", cls001_UserName)
@@ -49,6 +50,7 @@ Public Class cls001_InsertDowntime_QAStoppage
             cmd.Parameters.AddWithValue("@TtlFailFreg", cls001_TtlFailfreg)
             cmd.Parameters.AddWithValue("@DTStatus", cls001_DTStatus)
             cmd.Parameters.AddWithValue("@JOCode", cls001_JOCode)
+            cmd.Parameters.AddWithValue("@MachineID", cls001_MachineID)
             con.Open()
             cmd.ExecuteNonQuery()
             con.Close()

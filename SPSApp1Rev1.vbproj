@@ -97,14 +97,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClassSelectUD.vb" />
+    <Compile Include="clsCountDTType_byDTStatusMCId.vb" />
     <Compile Include="clsHomeMCStatusIndicator.vb" />
     <Compile Include="clsLoadSettings.vb" />
     <Compile Include="clsLogJODetails.vb" />
     <Compile Include="cls002_ModBusConnection.vb" />
     <Compile Include="clsSelAll_MCDash_AR_QAFeat.vb" />
+    <Compile Include="clsSelDTReasonCMeasure.vb" />
     <Compile Include="clsSelectAllJODetails_byJOcode.vb" />
     <Compile Include="clsSelectAllPartNOMList.vb" />
     <Compile Include="cls001_InsertDowntime_QAStoppage.vb" />
+    <Compile Include="clsUpdateDowntime_QAFail.vb" />
+    <Compile Include="clsUpdateDTStoppage.vb" />
     <Compile Include="clsUpdateJODetailsAtUnloading.vb" />
     <Compile Include="clsUpdateJOLoadedDetailsAll.vb" />
     <Compile Include="clsUpdateMListNewJobOrder.vb" />
@@ -215,6 +219,7 @@
     <Compile Include="modLoginDetails.vb" />
     <Compile Include="modMySettingsValues.vb" />
     <Compile Include="modQuality.vb" />
+    <Compile Include="modStoredValue_DTStoppage.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -271,6 +276,14 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>SPSDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SPSDataSet4.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SPSDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SPSDataSet4.vb">
+      <DependentUpon>SPSDataSet4.xsd</DependentUpon>
     </Compile>
     <Compile Include="WorkOrderLoading.vb" />
   </ItemGroup>
@@ -463,6 +476,17 @@
     </None>
     <None Include="SPSDataSet3.xss">
       <DependentUpon>SPSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SPSDataSet4.xsc">
+      <DependentUpon>SPSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="SPSDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SPSDataSet4.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SPSDataSet4.xss">
+      <DependentUpon>SPSDataSet4.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

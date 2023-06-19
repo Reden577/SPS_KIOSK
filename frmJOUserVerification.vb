@@ -91,8 +91,10 @@ Public Class frmJOUserVerification
                             modLogUserID = Nothing
                             modLogOTS = Nothing
                             modLogAccessLevel = Nothing
-                            frmQualityStoppage.Show()
+                            Me.Hide()
+                            frmQualityStoppage.ShowDialog()
                             Me.Close()
+                            Exit Sub
                         ElseIf IsDBNull(Result) Then
                             MessageBox.Show("You are not allowed to do this transaction!!!" _
                             & vbNewLine & "If this error persist please contact your local Admin...", "Confirmation Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -105,7 +107,7 @@ Public Class frmJOUserVerification
                         '
                         'modQualityUserLogin = modLogUserName
                     Catch ex As Exception
-                        MessageBox.Show("You are not allowed to do this transaction!!!" _
+                        MessageBox.Show(ex.Message _
                             & vbNewLine & "If this error persist please contact your local Admin...", "Confirmation Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                         Me.Close()
                     End Try

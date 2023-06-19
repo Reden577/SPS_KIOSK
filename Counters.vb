@@ -101,6 +101,7 @@
     Public runtimeMC18 As Decimal
     Public runtimeMC19 As Decimal
 
+    Public QAFailCounter As Integer
 
     Public modloginConfirmToHome As Integer
     Public modlogoutConfirmToHome As Integer

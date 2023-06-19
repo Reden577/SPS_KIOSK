@@ -25,8 +25,8 @@ Partial Class frmMain
         Me.components = New System.ComponentModel.Container()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblCurrentScreen = New System.Windows.Forms.Label()
+        Me.lblCurrentForm = New System.Windows.Forms.Label()
         Me.SidePanel1 = New System.Windows.Forms.Panel()
         Me.SidePanel2 = New System.Windows.Forms.Panel()
         Me.btnWO = New FontAwesome.Sharp.IconButton()
@@ -76,7 +76,13 @@ Partial Class frmMain
         Me.lblJOProgressMC4 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.lblJOProgressMC3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.lblQAMCStopFlag = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.lblRxPLCM0 = New System.Windows.Forms.Label()
         Me.lblJOProgressMC1 = New System.Windows.Forms.Label()
         Me.TimerDate = New System.Windows.Forms.Timer(Me.components)
         Me.tmrRealTimeCheck = New System.Windows.Forms.Timer(Me.components)
@@ -112,23 +118,23 @@ Partial Class frmMain
         Me.Button1.TabIndex = 0
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Label2
+        'lblCurrentScreen
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(20, 43)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(39, 13)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Label2"
+        Me.lblCurrentScreen.AutoSize = True
+        Me.lblCurrentScreen.Location = New System.Drawing.Point(118, 46)
+        Me.lblCurrentScreen.Name = "lblCurrentScreen"
+        Me.lblCurrentScreen.Size = New System.Drawing.Size(10, 13)
+        Me.lblCurrentScreen.TabIndex = 1
+        Me.lblCurrentScreen.Text = "-"
         '
-        'Label1
+        'lblCurrentForm
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(20, 19)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Label1"
+        Me.lblCurrentForm.AutoSize = True
+        Me.lblCurrentForm.Location = New System.Drawing.Point(118, 32)
+        Me.lblCurrentForm.Name = "lblCurrentForm"
+        Me.lblCurrentForm.Size = New System.Drawing.Size(10, 13)
+        Me.lblCurrentForm.TabIndex = 1
+        Me.lblCurrentForm.Text = "-"
         '
         'SidePanel1
         '
@@ -303,7 +309,7 @@ Partial Class frmMain
         '
         'PanelFrmContainer
         '
-        Me.PanelFrmContainer.Controls.Add(Me.Label1)
+        Me.PanelFrmContainer.Controls.Add(Me.lblCurrentForm)
         Me.PanelFrmContainer.Controls.Add(Me.Label5)
         Me.PanelFrmContainer.Controls.Add(Me.lblJOProgressMC2)
         Me.PanelFrmContainer.Controls.Add(Me.Label38)
@@ -340,9 +346,15 @@ Partial Class frmMain
         Me.PanelFrmContainer.Controls.Add(Me.lblJOProgressMC4)
         Me.PanelFrmContainer.Controls.Add(Me.Label6)
         Me.PanelFrmContainer.Controls.Add(Me.lblJOProgressMC3)
-        Me.PanelFrmContainer.Controls.Add(Me.Label3)
-        Me.PanelFrmContainer.Controls.Add(Me.lblJOProgressMC1)
         Me.PanelFrmContainer.Controls.Add(Me.Label2)
+        Me.PanelFrmContainer.Controls.Add(Me.Label9)
+        Me.PanelFrmContainer.Controls.Add(Me.Label7)
+        Me.PanelFrmContainer.Controls.Add(Me.Label4)
+        Me.PanelFrmContainer.Controls.Add(Me.lblQAMCStopFlag)
+        Me.PanelFrmContainer.Controls.Add(Me.Label3)
+        Me.PanelFrmContainer.Controls.Add(Me.lblRxPLCM0)
+        Me.PanelFrmContainer.Controls.Add(Me.lblJOProgressMC1)
+        Me.PanelFrmContainer.Controls.Add(Me.lblCurrentScreen)
         Me.PanelFrmContainer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelFrmContainer.Location = New System.Drawing.Point(53, 26)
         Me.PanelFrmContainer.Name = "PanelFrmContainer"
@@ -673,6 +685,51 @@ Partial Class frmMain
         Me.lblJOProgressMC3.TabIndex = 1
         Me.lblJOProgressMC3.Text = "-"
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(45, 32)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(70, 13)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Current Form:"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(32, 350)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(83, 13)
+        Me.Label9.TabIndex = 1
+        Me.Label9.Text = "QAMCStopFlag:"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(57, 337)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(58, 13)
+        Me.Label7.TabIndex = 1
+        Me.Label7.Text = "RxPLCM0:"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(37, 46)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(78, 13)
+        Me.Label4.TabIndex = 1
+        Me.Label4.Text = "CurrentScreen:"
+        '
+        'lblQAMCStopFlag
+        '
+        Me.lblQAMCStopFlag.AutoSize = True
+        Me.lblQAMCStopFlag.Location = New System.Drawing.Point(118, 350)
+        Me.lblQAMCStopFlag.Name = "lblQAMCStopFlag"
+        Me.lblQAMCStopFlag.Size = New System.Drawing.Size(32, 13)
+        Me.lblQAMCStopFlag.TabIndex = 1
+        Me.lblQAMCStopFlag.Text = "False"
+        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -681,6 +738,15 @@ Partial Class frmMain
         Me.Label3.Size = New System.Drawing.Size(95, 13)
         Me.Label3.TabIndex = 1
         Me.Label3.Text = " JO Progress MC1:"
+        '
+        'lblRxPLCM0
+        '
+        Me.lblRxPLCM0.AutoSize = True
+        Me.lblRxPLCM0.Location = New System.Drawing.Point(118, 337)
+        Me.lblRxPLCM0.Name = "lblRxPLCM0"
+        Me.lblRxPLCM0.Size = New System.Drawing.Size(32, 13)
+        Me.lblRxPLCM0.TabIndex = 1
+        Me.lblRxPLCM0.Text = "False"
         '
         'lblJOProgressMC1
         '
@@ -717,6 +783,7 @@ Partial Class frmMain
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmMain"
         Me.Text = "Form1"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.SidePanel1.ResumeLayout(False)
         Me.SidePanel2.ResumeLayout(False)
@@ -745,9 +812,9 @@ Partial Class frmMain
     Friend WithEvents Button1 As Button
     Friend WithEvents btnWO As FontAwesome.Sharp.IconButton
     Friend WithEvents btnLogOut As FontAwesome.Sharp.IconButton
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lblCurrentForm As Label
     Friend WithEvents tmrRealTimeCheck As Timer
-    Friend WithEvents Label2 As Label
+    Friend WithEvents lblCurrentScreen As Label
     Friend WithEvents tmrLogINOUT As Timer
     Friend WithEvents lblJOProgressMC1 As Label
     Friend WithEvents Label5 As Label
@@ -787,4 +854,10 @@ Partial Class frmMain
     Friend WithEvents lblJOProgressMC4 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents lblJOProgressMC3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents lblRxPLCM0 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents lblQAMCStopFlag As Label
 End Class

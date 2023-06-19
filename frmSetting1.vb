@@ -18,11 +18,20 @@ Public Class frmSetting1
 
     End Sub
 
+    Public Sub LoadingMySettings()
+        modSetVal_SqlPath = My.Settings.SQLPath
+        modSetVal_IPAdd = My.Settings.IPAddress
+        modSetVal_Port = My.Settings.Port
+    End Sub
+
     Private Sub btnSaveSettings_Click(sender As Object, e As EventArgs) Handles btnSaveSettings.Click
         My.Settings.SQLPath = txtSQLPath.Text
         My.Settings.IPAddress = txtIP.Text
         My.Settings.Port = txtPort.Text
         My.Settings.Save()
+
+        LoadingMySettings()
         MessageBox.Show("Settings Saved to My.Settings Complete!", "Saving Settings to My.Settings", MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
+
 End Class

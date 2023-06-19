@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmQualityStoppage
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmQualityStoppage
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.btnSave = New FontAwesome.Sharp.IconButton()
@@ -31,10 +31,12 @@ Partial Class frmQualityStoppage
         Me.btnClear = New FontAwesome.Sharp.IconButton()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.lblQAStoppageCM = New System.Windows.Forms.Label()
         Me.btnFail = New FontAwesome.Sharp.IconButton()
         Me.btnPass = New FontAwesome.Sharp.IconButton()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.grpQAStoppageDetails = New System.Windows.Forms.GroupBox()
+        Me.cboCountermeasure = New System.Windows.Forms.ComboBox()
+        Me.MListQualityCountermeasureBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.SPSDataSet4 = New SPSApp1.SPSDataSet4()
         Me.grpQAVerification = New System.Windows.Forms.GroupBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblFailFreq = New System.Windows.Forms.Label()
@@ -44,9 +46,15 @@ Partial Class frmQualityStoppage
         Me.Label5 = New System.Windows.Forms.Label()
         Me.lblUserID = New System.Windows.Forms.Label()
         Me.lblJOCode = New System.Windows.Forms.Label()
+        Me.MListQualityCountermeasureTableAdapter = New SPSApp1.SPSDataSet4TableAdapters.MListQualityCountermeasureTableAdapter()
+        Me.lblQAStoppage = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.tmrRealTimeCheck = New System.Windows.Forms.Timer(Me.components)
         CType(Me.MListQualityStoppageBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SPSDataSet3, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
+        Me.grpQAStoppageDetails.SuspendLayout()
+        CType(Me.MListQualityCountermeasureBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SPSDataSet4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpQAVerification.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -57,7 +65,7 @@ Partial Class frmQualityStoppage
         Me.btnSave.IconChar = FontAwesome.Sharp.IconChar.Database
         Me.btnSave.IconColor = System.Drawing.Color.Black
         Me.btnSave.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnSave.Location = New System.Drawing.Point(239, 168)
+        Me.btnSave.Location = New System.Drawing.Point(239, 180)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(204, 77)
         Me.btnSave.TabIndex = 0
@@ -103,7 +111,7 @@ Partial Class frmQualityStoppage
         Me.btnClear.IconChar = FontAwesome.Sharp.IconChar.Eraser
         Me.btnClear.IconColor = System.Drawing.Color.Black
         Me.btnClear.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnClear.Location = New System.Drawing.Point(13, 168)
+        Me.btnClear.Location = New System.Drawing.Point(13, 180)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(204, 77)
         Me.btnClear.TabIndex = 0
@@ -128,19 +136,9 @@ Partial Class frmQualityStoppage
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(8, 100)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(284, 29)
+        Me.Label3.Size = New System.Drawing.Size(198, 29)
         Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Quality Stoppage Details:"
-        '
-        'lblQAStoppageCM
-        '
-        Me.lblQAStoppageCM.AutoSize = True
-        Me.lblQAStoppageCM.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblQAStoppageCM.Location = New System.Drawing.Point(8, 129)
-        Me.lblQAStoppageCM.Name = "lblQAStoppageCM"
-        Me.lblQAStoppageCM.Size = New System.Drawing.Size(21, 29)
-        Me.lblQAStoppageCM.TabIndex = 2
-        Me.lblQAStoppageCM.Text = "-"
+        Me.Label3.Text = "Countermeasure:"
         '
         'btnFail
         '
@@ -176,27 +174,49 @@ Partial Class frmQualityStoppage
         Me.btnPass.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnPass.UseVisualStyleBackColor = False
         '
-        'GroupBox1
+        'grpQAStoppageDetails
         '
-        Me.GroupBox1.Controls.Add(Me.lblQAStoppageCM)
-        Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.cboQAStoppage)
-        Me.GroupBox1.Controls.Add(Me.btnClear)
-        Me.GroupBox1.Controls.Add(Me.btnSave)
-        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(457, 262)
-        Me.GroupBox1.TabIndex = 12
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Quality Stoppage Entry:"
+        Me.grpQAStoppageDetails.Controls.Add(Me.Label3)
+        Me.grpQAStoppageDetails.Controls.Add(Me.Label1)
+        Me.grpQAStoppageDetails.Controls.Add(Me.cboCountermeasure)
+        Me.grpQAStoppageDetails.Controls.Add(Me.cboQAStoppage)
+        Me.grpQAStoppageDetails.Controls.Add(Me.btnClear)
+        Me.grpQAStoppageDetails.Controls.Add(Me.btnSave)
+        Me.grpQAStoppageDetails.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.grpQAStoppageDetails.Location = New System.Drawing.Point(12, 12)
+        Me.grpQAStoppageDetails.Name = "grpQAStoppageDetails"
+        Me.grpQAStoppageDetails.Size = New System.Drawing.Size(457, 289)
+        Me.grpQAStoppageDetails.TabIndex = 12
+        Me.grpQAStoppageDetails.TabStop = False
+        Me.grpQAStoppageDetails.Text = "Quality Stoppage Entry:"
+        '
+        'cboCountermeasure
+        '
+        Me.cboCountermeasure.DataSource = Me.MListQualityCountermeasureBindingSource
+        Me.cboCountermeasure.DisplayMember = "Countermeasure"
+        Me.cboCountermeasure.Enabled = False
+        Me.cboCountermeasure.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboCountermeasure.FormattingEnabled = True
+        Me.cboCountermeasure.Location = New System.Drawing.Point(13, 132)
+        Me.cboCountermeasure.Name = "cboCountermeasure"
+        Me.cboCountermeasure.Size = New System.Drawing.Size(430, 39)
+        Me.cboCountermeasure.TabIndex = 1
+        '
+        'MListQualityCountermeasureBindingSource
+        '
+        Me.MListQualityCountermeasureBindingSource.DataMember = "MListQualityCountermeasure"
+        Me.MListQualityCountermeasureBindingSource.DataSource = Me.SPSDataSet4
+        '
+        'SPSDataSet4
+        '
+        Me.SPSDataSet4.DataSetName = "SPSDataSet4"
+        Me.SPSDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'grpQAVerification
         '
         Me.grpQAVerification.Controls.Add(Me.Panel1)
         Me.grpQAVerification.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.grpQAVerification.Location = New System.Drawing.Point(12, 280)
+        Me.grpQAVerification.Location = New System.Drawing.Point(12, 307)
         Me.grpQAVerification.Name = "grpQAVerification"
         Me.grpQAVerification.Size = New System.Drawing.Size(456, 188)
         Me.grpQAVerification.TabIndex = 13
@@ -245,7 +265,7 @@ Partial Class frmQualityStoppage
         '
         Me.lblUserLog.AutoSize = True
         Me.lblUserLog.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblUserLog.Location = New System.Drawing.Point(207, 475)
+        Me.lblUserLog.Location = New System.Drawing.Point(207, 502)
         Me.lblUserLog.Name = "lblUserLog"
         Me.lblUserLog.Size = New System.Drawing.Size(70, 20)
         Me.lblUserLog.TabIndex = 14
@@ -255,7 +275,7 @@ Partial Class frmQualityStoppage
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(11, 475)
+        Me.Label5.Location = New System.Drawing.Point(11, 502)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(180, 20)
         Me.Label5.TabIndex = 15
@@ -281,17 +301,46 @@ Partial Class frmQualityStoppage
         Me.lblJOCode.TabIndex = 14
         Me.lblJOCode.Text = "JO Code"
         '
+        'MListQualityCountermeasureTableAdapter
+        '
+        Me.MListQualityCountermeasureTableAdapter.ClearBeforeFill = True
+        '
+        'lblQAStoppage
+        '
+        Me.lblQAStoppage.AutoSize = True
+        Me.lblQAStoppage.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblQAStoppage.Location = New System.Drawing.Point(656, 70)
+        Me.lblQAStoppage.Name = "lblQAStoppage"
+        Me.lblQAStoppage.Size = New System.Drawing.Size(0, 20)
+        Me.lblQAStoppage.TabIndex = 14
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(544, 70)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(106, 20)
+        Me.Label6.TabIndex = 14
+        Me.Label6.Text = "QAStoppage:"
+        '
+        'tmrRealTimeCheck
+        '
+        Me.tmrRealTimeCheck.Enabled = True
+        '
         'frmQualityStoppage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(483, 508)
+        Me.ClientSize = New System.Drawing.Size(483, 534)
         Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.lblQAStoppage)
         Me.Controls.Add(Me.lblJOCode)
         Me.Controls.Add(Me.lblUserID)
         Me.Controls.Add(Me.lblUserLog)
         Me.Controls.Add(Me.grpQAVerification)
-        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.grpQAStoppageDetails)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.MinimizeBox = False
@@ -300,8 +349,10 @@ Partial Class frmQualityStoppage
         Me.Text = "Quality Stoppage"
         CType(Me.MListQualityStoppageBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SPSDataSet3, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
+        Me.grpQAStoppageDetails.ResumeLayout(False)
+        Me.grpQAStoppageDetails.PerformLayout()
+        CType(Me.MListQualityCountermeasureBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SPSDataSet4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.grpQAVerification.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
@@ -316,10 +367,9 @@ Partial Class frmQualityStoppage
     Friend WithEvents btnClear As FontAwesome.Sharp.IconButton
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents lblQAStoppageCM As Label
     Friend WithEvents btnFail As FontAwesome.Sharp.IconButton
     Friend WithEvents btnPass As FontAwesome.Sharp.IconButton
-    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents grpQAStoppageDetails As GroupBox
     Friend WithEvents grpQAVerification As GroupBox
     Friend WithEvents lblFailFreq As Label
     Friend WithEvents Label4 As Label
@@ -331,4 +381,11 @@ Partial Class frmQualityStoppage
     Friend WithEvents Label5 As Label
     Friend WithEvents lblUserID As Label
     Friend WithEvents lblJOCode As Label
+    Friend WithEvents cboCountermeasure As ComboBox
+    Friend WithEvents SPSDataSet4 As SPSDataSet4
+    Friend WithEvents MListQualityCountermeasureBindingSource As BindingSource
+    Friend WithEvents MListQualityCountermeasureTableAdapter As SPSDataSet4TableAdapters.MListQualityCountermeasureTableAdapter
+    Friend WithEvents lblQAStoppage As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents tmrRealTimeCheck As Timer
 End Class
