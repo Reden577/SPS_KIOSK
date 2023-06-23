@@ -5,6 +5,8 @@ Imports System.Web.Script.Serialization
 Imports System.Windows.Media.Imaging
 Imports System.Windows.Controls
 Imports System.Data.SqlClient
+Imports Newtonsoft.Json
+Imports SPSApp1.clsJOAPI
 
 Public Class frmJOLoading
 
@@ -14,13 +16,14 @@ Public Class frmJOLoading
 
     Private Sub frmLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'MListNewJobOrder_1.MListNewJobOrder' table. You can move, or remove it, as needed.
-        Me.MListNewJobOrderTableAdapter1.FillByLoadStat(Me.MListNewJobOrder_1.MListNewJobOrder, "Not Loaded")
-        dgvJO.ClearSelection()
+        'Me.MListNewJobOrderTableAdapter1.FillByLoadStat(Me.MListNewJobOrder_1.MListNewJobOrder, "Not Loaded")
+        'dgvJO.ClearSelection()
 
         lblDGVMoldID.Text = "-"
         Me.CenterToScreen()
         btnJOLoadBtn2Click.Enabled = False
-        'DeserializeJSON()
+        DeserializeJSON()
+        dgvAPI.ClearSelection()
     End Sub
 
     Private Sub IconButton1_Click(sender As Object, e As EventArgs) Handles btnJOLoadBtn2Click.Click
@@ -43,10 +46,10 @@ Public Class frmJOLoading
     End Sub
 
     Private Sub dgvJO_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvJO.CellContentClick
-        lblDGVJOCode.Text = dgvJO.CurrentRow.Cells(2).Value.ToString
-        lblDGVMoldID.Text = dgvJO.CurrentRow.Cells(3).Value.ToString
-        lblDGVJOPlanQty.Text = dgvJO.CurrentRow.Cells(4).Value.ToString
-        lblDGVMachineId.Text = dgvJO.CurrentRow.Cells(5).Value.ToString
+        'lblDGVJOCode.Text = dgvJO.CurrentRow.Cells(2).Value.ToString
+        'lblDGVMoldID.Text = dgvJO.CurrentRow.Cells(3).Value.ToString
+        'lblDGVJOPlanQty.Text = dgvJO.CurrentRow.Cells(4).Value.ToString
+        'lblDGVMachineId.Text = dgvJO.CurrentRow.Cells(5).Value.ToString
         LoggedAndLoaded = False
         'CompareJOCode_Vs_JOCodeLoadedDetails()
         compareMCLogged_VS_MCSelected()
@@ -61,9 +64,9 @@ Public Class frmJOLoading
 
     End Sub
 
-    '// SAMPLE WORKABLE FETCHING OG API DATA TO DATAGRIDVIEW DISPLAY (DESERIALIZED JSON)
+    '// DESERIALIZING JSON API (JOB ORDER SOURCE FORM ARC-STONE)
     Public Sub DeserializeJSON()
-        Dim uriString As String = "https://jsonplaceholder.typicode.com/posts"
+        Dim uriString As String = "http://192.168.8.78/arc.flow.PRD/workflows/custom/sps-integration"
         Dim uri As New Uri(uriString)
 
         'make HTTP request
@@ -75,15 +78,13 @@ Public Class frmJOLoading
 
         'read HTTP response
         Dim Read = New StreamReader(Response.GetResponseStream)
+
         Dim Raw As String = Read.ReadToEnd()
+        RichTextBox1.Text = Raw
 
-        'convert the response to a dictionary
-        'Dim model As Rootobject = .Deserialize(Of Rootboject)(Raw)
-        Dim dict As Object = New JavaScriptSerializer().Deserialize(Of List(Of Object))(Raw)
-
-        For Each item As Object In dict
-            dgvAPI.Rows.Add(item("userId").ToString, item("id").ToString, item("title"), item("body").ToString)
-        Next
+        Dim json As String = RichTextBox1.Text
+        Dim data = JsonConvert.DeserializeObject(Of JSON_JobOrder)(json)
+        dgvAPI.DataSource = data.Result
     End Sub
     '//
 
@@ -205,4 +206,10 @@ Public Class frmJOLoading
         upd8.updateLoadStat()
     End Sub
 
+    Private Sub dgvAPI_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvAPI.CellContentClick
+        lblDGVJOCode.Text = dgvAPI.CurrentRow.Cells(0).Value.ToString
+        lblDGVJOPlanQty.Text = dgvAPI.CurrentRow.Cells(2).Value.ToString
+        lblDGVMoldID.Text = dgvAPI.CurrentRow.Cells(3).Value.ToString
+        lblDGVMachineId.Text = dgvAPI.CurrentRow.Cells(4).Value.ToString
+    End Sub
 End Class

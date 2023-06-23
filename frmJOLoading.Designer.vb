@@ -55,10 +55,6 @@ Partial Class frmJOLoading
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.lblDGVMachineId = New System.Windows.Forms.Label()
         Me.dgvAPI = New System.Windows.Forms.DataGridView()
-        Me.coluserID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colTitle = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colBody = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.tmrRealTimeCheck = New System.Windows.Forms.Timer(Me.components)
@@ -66,6 +62,8 @@ Partial Class frmJOLoading
         Me.MListNewJobOrderBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
         Me.MListNewJobOrderTableAdapter1 = New SPSApp1.MListNewJobOrder_1TableAdapters.MListNewJobOrderTableAdapter()
         Me.MListNewJobOrderBindingSource3 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         CType(Me.dgvJO, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MListNewJobOrderBindingSource5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MListNewJobOrder_1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -81,6 +79,7 @@ Partial Class frmJOLoading
         CType(Me.MListNewJobOrderBindingSource4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MListNewJobOrderBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MListNewJobOrderBindingSource3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnClear
@@ -92,9 +91,9 @@ Partial Class frmJOLoading
         Me.btnClear.IconColor = System.Drawing.Color.Black
         Me.btnClear.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnClear.IconSize = 30
-        Me.btnClear.Location = New System.Drawing.Point(674, 286)
+        Me.btnClear.Location = New System.Drawing.Point(641, 518)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(159, 71)
+        Me.btnClear.Size = New System.Drawing.Size(260, 71)
         Me.btnClear.TabIndex = 1
         Me.btnClear.Text = "CLEAR"
         Me.btnClear.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -109,9 +108,9 @@ Partial Class frmJOLoading
         Me.btnJOLoadBtn2Click.IconColor = System.Drawing.Color.Black
         Me.btnJOLoadBtn2Click.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnJOLoadBtn2Click.IconSize = 30
-        Me.btnJOLoadBtn2Click.Location = New System.Drawing.Point(674, 199)
+        Me.btnJOLoadBtn2Click.Location = New System.Drawing.Point(641, 441)
         Me.btnJOLoadBtn2Click.Name = "btnJOLoadBtn2Click"
-        Me.btnJOLoadBtn2Click.Size = New System.Drawing.Size(159, 71)
+        Me.btnJOLoadBtn2Click.Size = New System.Drawing.Size(260, 71)
         Me.btnJOLoadBtn2Click.TabIndex = 1
         Me.btnJOLoadBtn2Click.Text = "LOAD"
         Me.btnJOLoadBtn2Click.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -126,7 +125,6 @@ Partial Class frmJOLoading
         Me.dgvJO.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvJO.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colCkBox, Me.IDDataGridViewTextBoxColumn, Me.JOBORDERDataGridViewTextBoxColumn, Me.MoldIDDataGridViewTextBoxColumn, Me.JOBORDERQTYDataGridViewTextBoxColumn, Me.MachineIDDataGridViewTextBoxColumn, Me.LoadStatDataGridViewTextBoxColumn})
         Me.dgvJO.DataSource = Me.MListNewJobOrderBindingSource5
-        Me.dgvJO.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgvJO.Location = New System.Drawing.Point(3, 22)
         Me.dgvJO.Name = "dgvJO"
         Me.dgvJO.ReadOnly = True
@@ -220,10 +218,12 @@ Partial Class frmJOLoading
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.dgvJO)
+        Me.GroupBox1.Controls.Add(Me.Label5)
+        Me.GroupBox1.Controls.Add(Me.ListBox1)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 24)
+        Me.GroupBox1.Location = New System.Drawing.Point(996, 25)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(558, 336)
+        Me.GroupBox1.Size = New System.Drawing.Size(388, 395)
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Job Order Loading"
@@ -327,9 +327,9 @@ Partial Class frmJOLoading
         Me.GroupBox2.Controls.Add(Me.Label2)
         Me.GroupBox2.Controls.Add(Me.lblDGVMoldID)
         Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.Location = New System.Drawing.Point(576, 24)
+        Me.GroupBox2.Location = New System.Drawing.Point(18, 434)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(255, 155)
+        Me.GroupBox2.Size = New System.Drawing.Size(617, 155)
         Me.GroupBox2.TabIndex = 6
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "JO Summary Load To:"
@@ -349,52 +349,28 @@ Partial Class frmJOLoading
         Me.dgvAPI.AllowUserToAddRows = False
         Me.dgvAPI.AllowUserToDeleteRows = False
         Me.dgvAPI.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvAPI.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.coluserID, Me.colID, Me.colTitle, Me.colBody})
-        Me.dgvAPI.Location = New System.Drawing.Point(1010, 24)
+        Me.dgvAPI.Location = New System.Drawing.Point(18, 25)
         Me.dgvAPI.Name = "dgvAPI"
         Me.dgvAPI.ReadOnly = True
         Me.dgvAPI.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvAPI.Size = New System.Drawing.Size(282, 323)
+        Me.dgvAPI.Size = New System.Drawing.Size(883, 403)
         Me.dgvAPI.TabIndex = 8
-        '
-        'coluserID
-        '
-        Me.coluserID.HeaderText = "userID"
-        Me.coluserID.Name = "coluserID"
-        Me.coluserID.ReadOnly = True
-        '
-        'colID
-        '
-        Me.colID.HeaderText = "ID"
-        Me.colID.Name = "colID"
-        Me.colID.ReadOnly = True
-        '
-        'colTitle
-        '
-        Me.colTitle.HeaderText = "Title"
-        Me.colTitle.Name = "colTitle"
-        Me.colTitle.ReadOnly = True
-        '
-        'colBody
-        '
-        Me.colBody.HeaderText = "Body"
-        Me.colBody.Name = "colBody"
-        Me.colBody.ReadOnly = True
         '
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(847, 25)
+        Me.ListBox1.ItemHeight = 20
+        Me.ListBox1.Location = New System.Drawing.Point(6, 339)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(125, 43)
+        Me.ListBox1.Size = New System.Drawing.Size(125, 24)
         Me.ListBox1.TabIndex = 9
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(844, 86)
+        Me.Label5.Location = New System.Drawing.Point(150, 339)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(39, 13)
+        Me.Label5.Size = New System.Drawing.Size(57, 20)
         Me.Label5.TabIndex = 10
         Me.Label5.Text = "Label5"
         '
@@ -421,18 +397,37 @@ Partial Class frmJOLoading
         Me.MListNewJobOrderBindingSource3.DataMember = "MListNewJobOrder"
         Me.MListNewJobOrderBindingSource3.DataSource = Me.MListNewJobOrder_1
         '
+        'RichTextBox1
+        '
+        Me.RichTextBox1.Location = New System.Drawing.Point(996, 438)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.Size = New System.Drawing.Size(452, 160)
+        Me.RichTextBox1.TabIndex = 11
+        Me.RichTextBox1.Text = ""
+        Me.RichTextBox1.Visible = False
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.dgvAPI)
+        Me.GroupBox3.Controls.Add(Me.GroupBox2)
+        Me.GroupBox3.Controls.Add(Me.btnClear)
+        Me.GroupBox3.Controls.Add(Me.btnJOLoadBtn2Click)
+        Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox3.Location = New System.Drawing.Point(27, 13)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(917, 605)
+        Me.GroupBox3.TabIndex = 12
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "JOB ORDER SOURCE: ARC-STONE"
+        '
         'frmJOLoading
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(840, 372)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.ListBox1)
-        Me.Controls.Add(Me.dgvAPI)
-        Me.Controls.Add(Me.GroupBox2)
+        Me.ClientSize = New System.Drawing.Size(971, 630)
+        Me.Controls.Add(Me.GroupBox3)
+        Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.btnClear)
-        Me.Controls.Add(Me.btnJOLoadBtn2Click)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
@@ -447,6 +442,7 @@ Partial Class frmJOLoading
         CType(Me.NewJOMasterList, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MListNewJobOrderBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         CType(Me.MListPartNumberBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PartNoMasterList, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
@@ -455,8 +451,8 @@ Partial Class frmJOLoading
         CType(Me.MListNewJobOrderBindingSource4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MListNewJobOrderBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MListNewJobOrderBindingSource3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox3.ResumeLayout(False)
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents btnJOLoadBtn2Click As FontAwesome.Sharp.IconButton
@@ -478,10 +474,6 @@ Partial Class frmJOLoading
     Friend WithEvents Label6 As Label
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents dgvAPI As DataGridView
-    Friend WithEvents coluserID As DataGridViewTextBoxColumn
-    Friend WithEvents colID As DataGridViewTextBoxColumn
-    Friend WithEvents colTitle As DataGridViewTextBoxColumn
-    Friend WithEvents colBody As DataGridViewTextBoxColumn
     Friend WithEvents MListNewJobOrderBindingSource1 As BindingSource
     Friend WithEvents NewJOMasterListBindingSource As BindingSource
     Friend WithEvents lblDGVMachineId As Label
@@ -501,4 +493,6 @@ Partial Class frmJOLoading
     Friend WithEvents JOBORDERQTYDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents MachineIDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents LoadStatDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents GroupBox3 As GroupBox
 End Class

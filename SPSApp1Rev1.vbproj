@@ -99,6 +99,7 @@
     <Compile Include="ClassSelectUD.vb" />
     <Compile Include="clsCountDTType_byDTStatusMCId.vb" />
     <Compile Include="clsHomeMCStatusIndicator.vb" />
+    <Compile Include="clsJOAPI.vb" />
     <Compile Include="clsLoadSettings.vb" />
     <Compile Include="clsLogJODetails.vb" />
     <Compile Include="cls002_ModBusConnection.vb" />

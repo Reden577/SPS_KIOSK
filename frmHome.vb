@@ -2093,6 +2093,7 @@ Public Class frmHome
         'MsgBox(DTrx)
     End Sub
 
+
     'Public Sub logDowntimeToTextFile()
     '    Dim dtx As MCDowntime
     '    dtx = New MCDowntime

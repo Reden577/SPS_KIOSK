@@ -5,7 +5,7 @@ VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SPSApp1Rev1", "SPSApp1Rev1.vbproj", "{72803013-C5A5-4E45-99F3-3F3994C72964}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SPSApp1Rev1", "SPSApp1Rev1\SPSApp1Rev1.vdproj", "{D2880FF8-1D05-4305-8E45-68A20AA02365}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SPSAppSetup_1", "SPSAppSetup_1\SPSAppSetup_1.vdproj", "{5DCAB3F1-8610-47DB-A199-85C2B8EB8851}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +17,8 @@ Global
 		{72803013-C5A5-4E45-99F3-3F3994C72964}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72803013-C5A5-4E45-99F3-3F3994C72964}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72803013-C5A5-4E45-99F3-3F3994C72964}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D2880FF8-1D05-4305-8E45-68A20AA02365}.Debug|Any CPU.ActiveCfg = Debug
-		{D2880FF8-1D05-4305-8E45-68A20AA02365}.Release|Any CPU.ActiveCfg = Release
+		{5DCAB3F1-8610-47DB-A199-85C2B8EB8851}.Debug|Any CPU.ActiveCfg = Debug
+		{5DCAB3F1-8610-47DB-A199-85C2B8EB8851}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
