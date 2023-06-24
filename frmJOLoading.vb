@@ -208,8 +208,8 @@ Public Class frmJOLoading
 
     Private Sub dgvAPI_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvAPI.CellContentClick
         lblDGVJOCode.Text = dgvAPI.CurrentRow.Cells(0).Value.ToString
-        lblDGVJOPlanQty.Text = dgvAPI.CurrentRow.Cells(2).Value.ToString
-        lblDGVMoldID.Text = dgvAPI.CurrentRow.Cells(3).Value.ToString
-        lblDGVMachineId.Text = dgvAPI.CurrentRow.Cells(4).Value.ToString
+        lblDGVJOPlanQty.Text = dgvAPI.CurrentRow.Cells(1).Value.ToString
+        lblDGVMoldID.Text = dgvAPI.CurrentRow.Cells(2).Value.ToString
+        lblDGVMachineId.Text = dgvAPI.CurrentRow.Cells(3).Value.ToString
     End Sub
 End Class

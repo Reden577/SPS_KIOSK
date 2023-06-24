@@ -41,6 +41,8 @@ Partial Class frmJOLoading
         Me.NewJOMasterList = New SPSApp1.NewJOMasterList()
         Me.MListNewJobOrderBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.lblDGVMoldID = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -55,8 +57,6 @@ Partial Class frmJOLoading
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.lblDGVMachineId = New System.Windows.Forms.Label()
         Me.dgvAPI = New System.Windows.Forms.DataGridView()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.tmrRealTimeCheck = New System.Windows.Forms.Timer(Me.components)
         Me.MListNewJobOrderBindingSource4 = New System.Windows.Forms.BindingSource(Me.components)
         Me.MListNewJobOrderBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
@@ -228,6 +228,24 @@ Partial Class frmJOLoading
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Job Order Loading"
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(150, 339)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(57, 20)
+        Me.Label5.TabIndex = 10
+        Me.Label5.Text = "Label5"
+        '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.ItemHeight = 20
+        Me.ListBox1.Location = New System.Drawing.Point(6, 339)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(125, 24)
+        Me.ListBox1.TabIndex = 9
+        '
         'lblDGVMoldID
         '
         Me.lblDGVMoldID.AutoSize = True
@@ -348,6 +366,7 @@ Partial Class frmJOLoading
         '
         Me.dgvAPI.AllowUserToAddRows = False
         Me.dgvAPI.AllowUserToDeleteRows = False
+        Me.dgvAPI.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvAPI.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvAPI.Location = New System.Drawing.Point(18, 25)
         Me.dgvAPI.Name = "dgvAPI"
@@ -355,24 +374,6 @@ Partial Class frmJOLoading
         Me.dgvAPI.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvAPI.Size = New System.Drawing.Size(883, 403)
         Me.dgvAPI.TabIndex = 8
-        '
-        'ListBox1
-        '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 20
-        Me.ListBox1.Location = New System.Drawing.Point(6, 339)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(125, 24)
-        Me.ListBox1.TabIndex = 9
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(150, 339)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(57, 20)
-        Me.Label5.TabIndex = 10
-        Me.Label5.Text = "Label5"
         '
         'tmrRealTimeCheck
         '
