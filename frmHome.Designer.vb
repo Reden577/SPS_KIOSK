@@ -311,9 +311,10 @@ Partial Class frmHome
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.btnMCSelect = New FontAwesome.Sharp.IconButton()
         Me.btnMCSelClear = New FontAwesome.Sharp.IconButton()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.GroupBox20 = New System.Windows.Forms.GroupBox()
+        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.picComCheckOnOff, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -377,9 +378,10 @@ Partial Class frmHome
         CType(Me.picMC17, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel3.SuspendLayout()
-        Me.Panel4.SuspendLayout()
-        Me.Panel5.SuspendLayout()
+        Me.GroupBox20.SuspendLayout()
+        Me.TableLayoutPanel1.SuspendLayout()
+        Me.TableLayoutPanel2.SuspendLayout()
+        Me.TableLayoutPanel3.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -401,7 +403,7 @@ Partial Class frmHome
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(2375, 56)
+        Me.Panel1.Size = New System.Drawing.Size(2588, 56)
         Me.Panel1.TabIndex = 2
         '
         'Panel2
@@ -409,15 +411,16 @@ Partial Class frmHome
         Me.Panel2.Controls.Add(Me.picComCheckOnOff)
         Me.Panel2.Controls.Add(Me.lblLogiLogNote)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel2.Location = New System.Drawing.Point(1696, 0)
+        Me.Panel2.Location = New System.Drawing.Point(2127, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(679, 56)
+        Me.Panel2.Size = New System.Drawing.Size(461, 56)
         Me.Panel2.TabIndex = 5
         '
         'picComCheckOnOff
         '
+        Me.picComCheckOnOff.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.picComCheckOnOff.Image = Global.SPSApp1.My.Resources.Resources.indicator_green
-        Me.picComCheckOnOff.Location = New System.Drawing.Point(639, 9)
+        Me.picComCheckOnOff.Location = New System.Drawing.Point(430, 3)
         Me.picComCheckOnOff.Name = "picComCheckOnOff"
         Me.picComCheckOnOff.Size = New System.Drawing.Size(28, 28)
         Me.picComCheckOnOff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -428,9 +431,9 @@ Partial Class frmHome
         '
         Me.lblLogiLogNote.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLogiLogNote.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.lblLogiLogNote.Location = New System.Drawing.Point(27, 14)
+        Me.lblLogiLogNote.Location = New System.Drawing.Point(17, 15)
         Me.lblLogiLogNote.Name = "lblLogiLogNote"
-        Me.lblLogiLogNote.Size = New System.Drawing.Size(568, 31)
+        Me.lblLogiLogNote.Size = New System.Drawing.Size(387, 31)
         Me.lblLogiLogNote.TabIndex = 1
         Me.lblLogiLogNote.Text = "Please select machine to login!"
         Me.lblLogiLogNote.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -459,7 +462,7 @@ Partial Class frmHome
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(535, 10)
+        Me.Label7.Location = New System.Drawing.Point(720, 9)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(294, 37)
         Me.Label7.TabIndex = 2
@@ -468,10 +471,12 @@ Partial Class frmHome
         '
         'PictureBox1
         '
+        Me.PictureBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.PictureBox1.Image = Global.SPSApp1.My.Resources.Resources.proguard_logo
-        Me.PictureBox1.Location = New System.Drawing.Point(275, 9)
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 0)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(166, 41)
+        Me.PictureBox1.Size = New System.Drawing.Size(293, 56)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -479,7 +484,7 @@ Partial Class frmHome
         'lblLoginInProgress
         '
         Me.lblLoginInProgress.AutoSize = True
-        Me.lblLoginInProgress.Location = New System.Drawing.Point(1710, 865)
+        Me.lblLoginInProgress.Location = New System.Drawing.Point(72, 129)
         Me.lblLoginInProgress.Name = "lblLoginInProgress"
         Me.lblLoginInProgress.Size = New System.Drawing.Size(32, 13)
         Me.lblLoginInProgress.TabIndex = 6
@@ -489,7 +494,7 @@ Partial Class frmHome
         'lblLogoutInProgress
         '
         Me.lblLogoutInProgress.AutoSize = True
-        Me.lblLogoutInProgress.Location = New System.Drawing.Point(1711, 877)
+        Me.lblLogoutInProgress.Location = New System.Drawing.Point(73, 141)
         Me.lblLogoutInProgress.Name = "lblLogoutInProgress"
         Me.lblLogoutInProgress.Size = New System.Drawing.Size(32, 13)
         Me.lblLogoutInProgress.TabIndex = 6
@@ -499,7 +504,7 @@ Partial Class frmHome
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(1620, 880)
+        Me.Label6.Location = New System.Drawing.Point(10, 649)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(91, 13)
         Me.Label6.TabIndex = 6
@@ -509,7 +514,7 @@ Partial Class frmHome
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(1620, 868)
+        Me.Label5.Location = New System.Drawing.Point(10, 637)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(82, 13)
         Me.Label5.TabIndex = 6
@@ -519,7 +524,7 @@ Partial Class frmHome
         'lblTest7
         '
         Me.lblTest7.AutoSize = True
-        Me.lblTest7.Location = New System.Drawing.Point(1367, 681)
+        Me.lblTest7.Location = New System.Drawing.Point(10, 665)
         Me.lblTest7.Name = "lblTest7"
         Me.lblTest7.Size = New System.Drawing.Size(48, 13)
         Me.lblTest7.TabIndex = 5
@@ -529,7 +534,7 @@ Partial Class frmHome
         'lblTest6
         '
         Me.lblTest6.AutoSize = True
-        Me.lblTest6.Location = New System.Drawing.Point(1367, 668)
+        Me.lblTest6.Location = New System.Drawing.Point(10, 678)
         Me.lblTest6.Name = "lblTest6"
         Me.lblTest6.Size = New System.Drawing.Size(48, 13)
         Me.lblTest6.TabIndex = 5
@@ -539,7 +544,7 @@ Partial Class frmHome
         'lblTest5
         '
         Me.lblTest5.AutoSize = True
-        Me.lblTest5.Location = New System.Drawing.Point(1709, 831)
+        Me.lblTest5.Location = New System.Drawing.Point(72, 103)
         Me.lblTest5.Name = "lblTest5"
         Me.lblTest5.Size = New System.Drawing.Size(48, 13)
         Me.lblTest5.TabIndex = 5
@@ -549,7 +554,7 @@ Partial Class frmHome
         'lblTest4
         '
         Me.lblTest4.AutoSize = True
-        Me.lblTest4.Location = New System.Drawing.Point(1709, 818)
+        Me.lblTest4.Location = New System.Drawing.Point(72, 90)
         Me.lblTest4.Name = "lblTest4"
         Me.lblTest4.Size = New System.Drawing.Size(48, 13)
         Me.lblTest4.TabIndex = 5
@@ -559,7 +564,7 @@ Partial Class frmHome
         'lblTest3
         '
         Me.lblTest3.AutoSize = True
-        Me.lblTest3.Location = New System.Drawing.Point(1709, 805)
+        Me.lblTest3.Location = New System.Drawing.Point(72, 77)
         Me.lblTest3.Name = "lblTest3"
         Me.lblTest3.Size = New System.Drawing.Size(48, 13)
         Me.lblTest3.TabIndex = 5
@@ -569,7 +574,7 @@ Partial Class frmHome
         'lblTest2
         '
         Me.lblTest2.AutoSize = True
-        Me.lblTest2.Location = New System.Drawing.Point(1709, 792)
+        Me.lblTest2.Location = New System.Drawing.Point(72, 64)
         Me.lblTest2.Name = "lblTest2"
         Me.lblTest2.Size = New System.Drawing.Size(48, 13)
         Me.lblTest2.TabIndex = 5
@@ -579,7 +584,7 @@ Partial Class frmHome
         'lblTest1
         '
         Me.lblTest1.AutoSize = True
-        Me.lblTest1.Location = New System.Drawing.Point(1709, 779)
+        Me.lblTest1.Location = New System.Drawing.Point(72, 51)
         Me.lblTest1.Name = "lblTest1"
         Me.lblTest1.Size = New System.Drawing.Size(48, 13)
         Me.lblTest1.TabIndex = 5
@@ -589,7 +594,7 @@ Partial Class frmHome
         'lblHours
         '
         Me.lblHours.AutoSize = True
-        Me.lblHours.Location = New System.Drawing.Point(1709, 765)
+        Me.lblHours.Location = New System.Drawing.Point(72, 37)
         Me.lblHours.Name = "lblHours"
         Me.lblHours.Size = New System.Drawing.Size(51, 13)
         Me.lblHours.TabIndex = 5
@@ -599,7 +604,7 @@ Partial Class frmHome
         'lblOnOffMC20
         '
         Me.lblOnOffMC20.AutoSize = True
-        Me.lblOnOffMC20.Location = New System.Drawing.Point(1524, 888)
+        Me.lblOnOffMC20.Location = New System.Drawing.Point(10, 595)
         Me.lblOnOffMC20.Name = "lblOnOffMC20"
         Me.lblOnOffMC20.Size = New System.Drawing.Size(74, 13)
         Me.lblOnOffMC20.TabIndex = 3
@@ -609,7 +614,7 @@ Partial Class frmHome
         'lblRxMC20
         '
         Me.lblRxMC20.AutoSize = True
-        Me.lblRxMC20.Location = New System.Drawing.Point(1424, 901)
+        Me.lblRxMC20.Location = New System.Drawing.Point(10, 310)
         Me.lblRxMC20.Name = "lblRxMC20"
         Me.lblRxMC20.Size = New System.Drawing.Size(48, 13)
         Me.lblRxMC20.TabIndex = 3
@@ -619,7 +624,7 @@ Partial Class frmHome
         'lblOnOffMC10
         '
         Me.lblOnOffMC10.AutoSize = True
-        Me.lblOnOffMC10.Location = New System.Drawing.Point(1524, 758)
+        Me.lblOnOffMC10.Location = New System.Drawing.Point(10, 465)
         Me.lblOnOffMC10.Name = "lblOnOffMC10"
         Me.lblOnOffMC10.Size = New System.Drawing.Size(74, 13)
         Me.lblOnOffMC10.TabIndex = 3
@@ -629,7 +634,7 @@ Partial Class frmHome
         'lblRxMC10
         '
         Me.lblRxMC10.AutoSize = True
-        Me.lblRxMC10.Location = New System.Drawing.Point(1424, 771)
+        Me.lblRxMC10.Location = New System.Drawing.Point(10, 180)
         Me.lblRxMC10.Name = "lblRxMC10"
         Me.lblRxMC10.Size = New System.Drawing.Size(48, 13)
         Me.lblRxMC10.TabIndex = 3
@@ -639,7 +644,7 @@ Partial Class frmHome
         'lblOnOffMC19
         '
         Me.lblOnOffMC19.AutoSize = True
-        Me.lblOnOffMC19.Location = New System.Drawing.Point(1524, 875)
+        Me.lblOnOffMC19.Location = New System.Drawing.Point(10, 582)
         Me.lblOnOffMC19.Name = "lblOnOffMC19"
         Me.lblOnOffMC19.Size = New System.Drawing.Size(74, 13)
         Me.lblOnOffMC19.TabIndex = 3
@@ -649,7 +654,7 @@ Partial Class frmHome
         'lblRxMC19
         '
         Me.lblRxMC19.AutoSize = True
-        Me.lblRxMC19.Location = New System.Drawing.Point(1424, 888)
+        Me.lblRxMC19.Location = New System.Drawing.Point(10, 297)
         Me.lblRxMC19.Name = "lblRxMC19"
         Me.lblRxMC19.Size = New System.Drawing.Size(48, 13)
         Me.lblRxMC19.TabIndex = 3
@@ -659,7 +664,7 @@ Partial Class frmHome
         'lblOnOffMC9
         '
         Me.lblOnOffMC9.AutoSize = True
-        Me.lblOnOffMC9.Location = New System.Drawing.Point(1524, 745)
+        Me.lblOnOffMC9.Location = New System.Drawing.Point(10, 452)
         Me.lblOnOffMC9.Name = "lblOnOffMC9"
         Me.lblOnOffMC9.Size = New System.Drawing.Size(68, 13)
         Me.lblOnOffMC9.TabIndex = 3
@@ -669,7 +674,7 @@ Partial Class frmHome
         'lblRxMC9
         '
         Me.lblRxMC9.AutoSize = True
-        Me.lblRxMC9.Location = New System.Drawing.Point(1424, 758)
+        Me.lblRxMC9.Location = New System.Drawing.Point(10, 167)
         Me.lblRxMC9.Name = "lblRxMC9"
         Me.lblRxMC9.Size = New System.Drawing.Size(42, 13)
         Me.lblRxMC9.TabIndex = 3
@@ -679,7 +684,7 @@ Partial Class frmHome
         'lblOnOffMC18
         '
         Me.lblOnOffMC18.AutoSize = True
-        Me.lblOnOffMC18.Location = New System.Drawing.Point(1524, 862)
+        Me.lblOnOffMC18.Location = New System.Drawing.Point(10, 569)
         Me.lblOnOffMC18.Name = "lblOnOffMC18"
         Me.lblOnOffMC18.Size = New System.Drawing.Size(74, 13)
         Me.lblOnOffMC18.TabIndex = 3
@@ -689,7 +694,7 @@ Partial Class frmHome
         'lblRxMC18
         '
         Me.lblRxMC18.AutoSize = True
-        Me.lblRxMC18.Location = New System.Drawing.Point(1424, 875)
+        Me.lblRxMC18.Location = New System.Drawing.Point(10, 284)
         Me.lblRxMC18.Name = "lblRxMC18"
         Me.lblRxMC18.Size = New System.Drawing.Size(48, 13)
         Me.lblRxMC18.TabIndex = 3
@@ -699,7 +704,7 @@ Partial Class frmHome
         'lblOnOffMC8
         '
         Me.lblOnOffMC8.AutoSize = True
-        Me.lblOnOffMC8.Location = New System.Drawing.Point(1524, 732)
+        Me.lblOnOffMC8.Location = New System.Drawing.Point(10, 439)
         Me.lblOnOffMC8.Name = "lblOnOffMC8"
         Me.lblOnOffMC8.Size = New System.Drawing.Size(68, 13)
         Me.lblOnOffMC8.TabIndex = 3
@@ -709,7 +714,7 @@ Partial Class frmHome
         'lblRxMC8
         '
         Me.lblRxMC8.AutoSize = True
-        Me.lblRxMC8.Location = New System.Drawing.Point(1424, 745)
+        Me.lblRxMC8.Location = New System.Drawing.Point(10, 154)
         Me.lblRxMC8.Name = "lblRxMC8"
         Me.lblRxMC8.Size = New System.Drawing.Size(42, 13)
         Me.lblRxMC8.TabIndex = 3
@@ -719,7 +724,7 @@ Partial Class frmHome
         'lblOnOffMC17
         '
         Me.lblOnOffMC17.AutoSize = True
-        Me.lblOnOffMC17.Location = New System.Drawing.Point(1524, 849)
+        Me.lblOnOffMC17.Location = New System.Drawing.Point(10, 556)
         Me.lblOnOffMC17.Name = "lblOnOffMC17"
         Me.lblOnOffMC17.Size = New System.Drawing.Size(74, 13)
         Me.lblOnOffMC17.TabIndex = 3
@@ -729,7 +734,7 @@ Partial Class frmHome
         'lblRxMC17
         '
         Me.lblRxMC17.AutoSize = True
-        Me.lblRxMC17.Location = New System.Drawing.Point(1424, 862)
+        Me.lblRxMC17.Location = New System.Drawing.Point(10, 271)
         Me.lblRxMC17.Name = "lblRxMC17"
         Me.lblRxMC17.Size = New System.Drawing.Size(48, 13)
         Me.lblRxMC17.TabIndex = 3
@@ -739,7 +744,7 @@ Partial Class frmHome
         'lblOnOffMC7
         '
         Me.lblOnOffMC7.AutoSize = True
-        Me.lblOnOffMC7.Location = New System.Drawing.Point(1524, 719)
+        Me.lblOnOffMC7.Location = New System.Drawing.Point(10, 426)
         Me.lblOnOffMC7.Name = "lblOnOffMC7"
         Me.lblOnOffMC7.Size = New System.Drawing.Size(68, 13)
         Me.lblOnOffMC7.TabIndex = 3
@@ -749,7 +754,7 @@ Partial Class frmHome
         'lblRxMC7
         '
         Me.lblRxMC7.AutoSize = True
-        Me.lblRxMC7.Location = New System.Drawing.Point(1424, 732)
+        Me.lblRxMC7.Location = New System.Drawing.Point(10, 141)
         Me.lblRxMC7.Name = "lblRxMC7"
         Me.lblRxMC7.Size = New System.Drawing.Size(42, 13)
         Me.lblRxMC7.TabIndex = 3
@@ -759,7 +764,7 @@ Partial Class frmHome
         'lblOnOffMC16
         '
         Me.lblOnOffMC16.AutoSize = True
-        Me.lblOnOffMC16.Location = New System.Drawing.Point(1524, 836)
+        Me.lblOnOffMC16.Location = New System.Drawing.Point(10, 543)
         Me.lblOnOffMC16.Name = "lblOnOffMC16"
         Me.lblOnOffMC16.Size = New System.Drawing.Size(74, 13)
         Me.lblOnOffMC16.TabIndex = 3
@@ -769,7 +774,7 @@ Partial Class frmHome
         'lblRxMC16
         '
         Me.lblRxMC16.AutoSize = True
-        Me.lblRxMC16.Location = New System.Drawing.Point(1424, 849)
+        Me.lblRxMC16.Location = New System.Drawing.Point(10, 258)
         Me.lblRxMC16.Name = "lblRxMC16"
         Me.lblRxMC16.Size = New System.Drawing.Size(48, 13)
         Me.lblRxMC16.TabIndex = 3
@@ -779,7 +784,7 @@ Partial Class frmHome
         'lblOnOffMC6
         '
         Me.lblOnOffMC6.AutoSize = True
-        Me.lblOnOffMC6.Location = New System.Drawing.Point(1524, 706)
+        Me.lblOnOffMC6.Location = New System.Drawing.Point(10, 413)
         Me.lblOnOffMC6.Name = "lblOnOffMC6"
         Me.lblOnOffMC6.Size = New System.Drawing.Size(68, 13)
         Me.lblOnOffMC6.TabIndex = 3
@@ -789,7 +794,7 @@ Partial Class frmHome
         'lblRxMC6
         '
         Me.lblRxMC6.AutoSize = True
-        Me.lblRxMC6.Location = New System.Drawing.Point(1424, 719)
+        Me.lblRxMC6.Location = New System.Drawing.Point(10, 128)
         Me.lblRxMC6.Name = "lblRxMC6"
         Me.lblRxMC6.Size = New System.Drawing.Size(42, 13)
         Me.lblRxMC6.TabIndex = 3
@@ -799,7 +804,7 @@ Partial Class frmHome
         'lblOnOffMC15
         '
         Me.lblOnOffMC15.AutoSize = True
-        Me.lblOnOffMC15.Location = New System.Drawing.Point(1524, 823)
+        Me.lblOnOffMC15.Location = New System.Drawing.Point(10, 530)
         Me.lblOnOffMC15.Name = "lblOnOffMC15"
         Me.lblOnOffMC15.Size = New System.Drawing.Size(74, 13)
         Me.lblOnOffMC15.TabIndex = 3
@@ -809,7 +814,7 @@ Partial Class frmHome
         'lblRxMC15
         '
         Me.lblRxMC15.AutoSize = True
-        Me.lblRxMC15.Location = New System.Drawing.Point(1424, 836)
+        Me.lblRxMC15.Location = New System.Drawing.Point(10, 245)
         Me.lblRxMC15.Name = "lblRxMC15"
         Me.lblRxMC15.Size = New System.Drawing.Size(48, 13)
         Me.lblRxMC15.TabIndex = 3
@@ -819,7 +824,7 @@ Partial Class frmHome
         'lblSettingTab
         '
         Me.lblSettingTab.AutoSize = True
-        Me.lblSettingTab.Location = New System.Drawing.Point(1616, 833)
+        Me.lblSettingTab.Location = New System.Drawing.Point(16, 767)
         Me.lblSettingTab.Name = "lblSettingTab"
         Me.lblSettingTab.Size = New System.Drawing.Size(40, 13)
         Me.lblSettingTab.TabIndex = 3
@@ -829,7 +834,7 @@ Partial Class frmHome
         'lblOnOffMC5
         '
         Me.lblOnOffMC5.AutoSize = True
-        Me.lblOnOffMC5.Location = New System.Drawing.Point(1524, 694)
+        Me.lblOnOffMC5.Location = New System.Drawing.Point(10, 401)
         Me.lblOnOffMC5.Name = "lblOnOffMC5"
         Me.lblOnOffMC5.Size = New System.Drawing.Size(68, 13)
         Me.lblOnOffMC5.TabIndex = 3
@@ -839,7 +844,7 @@ Partial Class frmHome
         'lblRxMC5
         '
         Me.lblRxMC5.AutoSize = True
-        Me.lblRxMC5.Location = New System.Drawing.Point(1424, 707)
+        Me.lblRxMC5.Location = New System.Drawing.Point(10, 116)
         Me.lblRxMC5.Name = "lblRxMC5"
         Me.lblRxMC5.Size = New System.Drawing.Size(42, 13)
         Me.lblRxMC5.TabIndex = 3
@@ -849,7 +854,7 @@ Partial Class frmHome
         'lblOnOffMC14
         '
         Me.lblOnOffMC14.AutoSize = True
-        Me.lblOnOffMC14.Location = New System.Drawing.Point(1524, 810)
+        Me.lblOnOffMC14.Location = New System.Drawing.Point(10, 517)
         Me.lblOnOffMC14.Name = "lblOnOffMC14"
         Me.lblOnOffMC14.Size = New System.Drawing.Size(74, 13)
         Me.lblOnOffMC14.TabIndex = 3
@@ -859,7 +864,7 @@ Partial Class frmHome
         'lblRxMC14
         '
         Me.lblRxMC14.AutoSize = True
-        Me.lblRxMC14.Location = New System.Drawing.Point(1424, 823)
+        Me.lblRxMC14.Location = New System.Drawing.Point(10, 232)
         Me.lblRxMC14.Name = "lblRxMC14"
         Me.lblRxMC14.Size = New System.Drawing.Size(48, 13)
         Me.lblRxMC14.TabIndex = 3
@@ -869,7 +874,7 @@ Partial Class frmHome
         'lblOnOffMC13
         '
         Me.lblOnOffMC13.AutoSize = True
-        Me.lblOnOffMC13.Location = New System.Drawing.Point(1524, 797)
+        Me.lblOnOffMC13.Location = New System.Drawing.Point(10, 504)
         Me.lblOnOffMC13.Name = "lblOnOffMC13"
         Me.lblOnOffMC13.Size = New System.Drawing.Size(74, 13)
         Me.lblOnOffMC13.TabIndex = 3
@@ -879,7 +884,7 @@ Partial Class frmHome
         'lblJobOrderTab
         '
         Me.lblJobOrderTab.AutoSize = True
-        Me.lblJobOrderTab.Location = New System.Drawing.Point(1616, 820)
+        Me.lblJobOrderTab.Location = New System.Drawing.Point(16, 754)
         Me.lblJobOrderTab.Name = "lblJobOrderTab"
         Me.lblJobOrderTab.Size = New System.Drawing.Size(50, 13)
         Me.lblJobOrderTab.TabIndex = 3
@@ -889,7 +894,7 @@ Partial Class frmHome
         'lblOnOffMC4
         '
         Me.lblOnOffMC4.AutoSize = True
-        Me.lblOnOffMC4.Location = New System.Drawing.Point(1521, 681)
+        Me.lblOnOffMC4.Location = New System.Drawing.Point(7, 388)
         Me.lblOnOffMC4.Name = "lblOnOffMC4"
         Me.lblOnOffMC4.Size = New System.Drawing.Size(68, 13)
         Me.lblOnOffMC4.TabIndex = 3
@@ -899,7 +904,7 @@ Partial Class frmHome
         'lblRxMC13
         '
         Me.lblRxMC13.AutoSize = True
-        Me.lblRxMC13.Location = New System.Drawing.Point(1424, 810)
+        Me.lblRxMC13.Location = New System.Drawing.Point(10, 219)
         Me.lblRxMC13.Name = "lblRxMC13"
         Me.lblRxMC13.Size = New System.Drawing.Size(48, 13)
         Me.lblRxMC13.TabIndex = 3
@@ -909,7 +914,7 @@ Partial Class frmHome
         'lblOnOffMC12
         '
         Me.lblOnOffMC12.AutoSize = True
-        Me.lblOnOffMC12.Location = New System.Drawing.Point(1524, 784)
+        Me.lblOnOffMC12.Location = New System.Drawing.Point(10, 491)
         Me.lblOnOffMC12.Name = "lblOnOffMC12"
         Me.lblOnOffMC12.Size = New System.Drawing.Size(74, 13)
         Me.lblOnOffMC12.TabIndex = 3
@@ -919,7 +924,7 @@ Partial Class frmHome
         'lblRxMC4
         '
         Me.lblRxMC4.AutoSize = True
-        Me.lblRxMC4.Location = New System.Drawing.Point(1424, 694)
+        Me.lblRxMC4.Location = New System.Drawing.Point(10, 103)
         Me.lblRxMC4.Name = "lblRxMC4"
         Me.lblRxMC4.Size = New System.Drawing.Size(42, 13)
         Me.lblRxMC4.TabIndex = 3
@@ -929,7 +934,7 @@ Partial Class frmHome
         'lblLogoutTab
         '
         Me.lblLogoutTab.AutoSize = True
-        Me.lblLogoutTab.Location = New System.Drawing.Point(1618, 807)
+        Me.lblLogoutTab.Location = New System.Drawing.Point(18, 741)
         Me.lblLogoutTab.Name = "lblLogoutTab"
         Me.lblLogoutTab.Size = New System.Drawing.Size(36, 13)
         Me.lblLogoutTab.TabIndex = 3
@@ -939,7 +944,7 @@ Partial Class frmHome
         'lblOnOffMC3
         '
         Me.lblOnOffMC3.AutoSize = True
-        Me.lblOnOffMC3.Location = New System.Drawing.Point(1521, 668)
+        Me.lblOnOffMC3.Location = New System.Drawing.Point(7, 375)
         Me.lblOnOffMC3.Name = "lblOnOffMC3"
         Me.lblOnOffMC3.Size = New System.Drawing.Size(68, 13)
         Me.lblOnOffMC3.TabIndex = 3
@@ -949,7 +954,7 @@ Partial Class frmHome
         'lblRxMC12
         '
         Me.lblRxMC12.AutoSize = True
-        Me.lblRxMC12.Location = New System.Drawing.Point(1424, 797)
+        Me.lblRxMC12.Location = New System.Drawing.Point(10, 206)
         Me.lblRxMC12.Name = "lblRxMC12"
         Me.lblRxMC12.Size = New System.Drawing.Size(48, 13)
         Me.lblRxMC12.TabIndex = 3
@@ -959,7 +964,7 @@ Partial Class frmHome
         'lblOnOffMC11
         '
         Me.lblOnOffMC11.AutoSize = True
-        Me.lblOnOffMC11.Location = New System.Drawing.Point(1524, 771)
+        Me.lblOnOffMC11.Location = New System.Drawing.Point(10, 478)
         Me.lblOnOffMC11.Name = "lblOnOffMC11"
         Me.lblOnOffMC11.Size = New System.Drawing.Size(74, 13)
         Me.lblOnOffMC11.TabIndex = 3
@@ -969,7 +974,7 @@ Partial Class frmHome
         'lblRxMC3
         '
         Me.lblRxMC3.AutoSize = True
-        Me.lblRxMC3.Location = New System.Drawing.Point(1421, 681)
+        Me.lblRxMC3.Location = New System.Drawing.Point(7, 90)
         Me.lblRxMC3.Name = "lblRxMC3"
         Me.lblRxMC3.Size = New System.Drawing.Size(42, 13)
         Me.lblRxMC3.TabIndex = 3
@@ -979,7 +984,7 @@ Partial Class frmHome
         'lblLoginTab
         '
         Me.lblLoginTab.AutoSize = True
-        Me.lblLoginTab.Location = New System.Drawing.Point(1618, 794)
+        Me.lblLoginTab.Location = New System.Drawing.Point(18, 728)
         Me.lblLoginTab.Name = "lblLoginTab"
         Me.lblLoginTab.Size = New System.Drawing.Size(33, 13)
         Me.lblLoginTab.TabIndex = 3
@@ -989,7 +994,7 @@ Partial Class frmHome
         'lblOnOffMC2
         '
         Me.lblOnOffMC2.AutoSize = True
-        Me.lblOnOffMC2.Location = New System.Drawing.Point(1521, 655)
+        Me.lblOnOffMC2.Location = New System.Drawing.Point(7, 362)
         Me.lblOnOffMC2.Name = "lblOnOffMC2"
         Me.lblOnOffMC2.Size = New System.Drawing.Size(68, 13)
         Me.lblOnOffMC2.TabIndex = 3
@@ -999,7 +1004,7 @@ Partial Class frmHome
         'lblRxMC11
         '
         Me.lblRxMC11.AutoSize = True
-        Me.lblRxMC11.Location = New System.Drawing.Point(1424, 784)
+        Me.lblRxMC11.Location = New System.Drawing.Point(10, 193)
         Me.lblRxMC11.Name = "lblRxMC11"
         Me.lblRxMC11.Size = New System.Drawing.Size(48, 13)
         Me.lblRxMC11.TabIndex = 3
@@ -1009,7 +1014,7 @@ Partial Class frmHome
         'lblHomeTab
         '
         Me.lblHomeTab.AutoSize = True
-        Me.lblHomeTab.Location = New System.Drawing.Point(1618, 781)
+        Me.lblHomeTab.Location = New System.Drawing.Point(18, 715)
         Me.lblHomeTab.Name = "lblHomeTab"
         Me.lblHomeTab.Size = New System.Drawing.Size(35, 13)
         Me.lblHomeTab.TabIndex = 3
@@ -1019,7 +1024,7 @@ Partial Class frmHome
         'lblOnOffMC1
         '
         Me.lblOnOffMC1.AutoSize = True
-        Me.lblOnOffMC1.Location = New System.Drawing.Point(1521, 642)
+        Me.lblOnOffMC1.Location = New System.Drawing.Point(7, 349)
         Me.lblOnOffMC1.Name = "lblOnOffMC1"
         Me.lblOnOffMC1.Size = New System.Drawing.Size(68, 13)
         Me.lblOnOffMC1.TabIndex = 3
@@ -1029,7 +1034,7 @@ Partial Class frmHome
         'lblRxMC2
         '
         Me.lblRxMC2.AutoSize = True
-        Me.lblRxMC2.Location = New System.Drawing.Point(1421, 668)
+        Me.lblRxMC2.Location = New System.Drawing.Point(7, 77)
         Me.lblRxMC2.Name = "lblRxMC2"
         Me.lblRxMC2.Size = New System.Drawing.Size(42, 13)
         Me.lblRxMC2.TabIndex = 3
@@ -1040,7 +1045,7 @@ Partial Class frmHome
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(1620, 849)
+        Me.Label4.Location = New System.Drawing.Point(10, 618)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(84, 16)
         Me.Label4.TabIndex = 3
@@ -1051,7 +1056,7 @@ Partial Class frmHome
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(1616, 765)
+        Me.Label2.Location = New System.Drawing.Point(16, 699)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(78, 16)
         Me.Label2.TabIndex = 3
@@ -1062,7 +1067,7 @@ Partial Class frmHome
         '
         Me.Label23.AutoSize = True
         Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.Location = New System.Drawing.Point(1486, 619)
+        Me.Label23.Location = New System.Drawing.Point(10, 331)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(103, 16)
         Me.Label23.TabIndex = 3
@@ -1073,7 +1078,7 @@ Partial Class frmHome
         '
         Me.Label22.AutoSize = True
         Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.Location = New System.Drawing.Point(1420, 619)
+        Me.Label22.Location = New System.Drawing.Point(6, 28)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(60, 32)
         Me.Label22.TabIndex = 3
@@ -1083,7 +1088,7 @@ Partial Class frmHome
         'lblRxMC1
         '
         Me.lblRxMC1.AutoSize = True
-        Me.lblRxMC1.Location = New System.Drawing.Point(1421, 655)
+        Me.lblRxMC1.Location = New System.Drawing.Point(7, 64)
         Me.lblRxMC1.Name = "lblRxMC1"
         Me.lblRxMC1.Size = New System.Drawing.Size(42, 13)
         Me.lblRxMC1.TabIndex = 3
@@ -1113,7 +1118,7 @@ Partial Class frmHome
         Me.lblOptNm1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblOptNm1.Location = New System.Drawing.Point(24, 99)
         Me.lblOptNm1.Name = "lblOptNm1"
-        Me.lblOptNm1.Size = New System.Drawing.Size(197, 22)
+        Me.lblOptNm1.Size = New System.Drawing.Size(210, 22)
         Me.lblOptNm1.TabIndex = 5
         Me.lblOptNm1.Text = "-"
         Me.lblOptNm1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1189,9 +1194,9 @@ Partial Class frmHome
         Me.GroupBox1.Controls.Add(Me.lblTO1)
         Me.GroupBox1.Controls.Add(Me.lblWO1)
         Me.GroupBox1.Controls.Add(Me.PicMC1)
-        Me.GroupBox1.Location = New System.Drawing.Point(6, 10)
+        Me.GroupBox1.Location = New System.Drawing.Point(3, 3)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(254, 297)
+        Me.GroupBox1.Size = New System.Drawing.Size(248, 296)
         Me.GroupBox1.TabIndex = 6
         Me.GroupBox1.TabStop = False
         '
@@ -1217,7 +1222,7 @@ Partial Class frmHome
         Me.picStatMC1.Image = CType(resources.GetObject("picStatMC1.Image"), System.Drawing.Image)
         Me.picStatMC1.Location = New System.Drawing.Point(57, 21)
         Me.picStatMC1.Name = "picStatMC1"
-        Me.picStatMC1.Size = New System.Drawing.Size(134, 17)
+        Me.picStatMC1.Size = New System.Drawing.Size(119, 17)
         Me.picStatMC1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picStatMC1.TabIndex = 6
         Me.picStatMC1.TabStop = False
@@ -1229,7 +1234,7 @@ Partial Class frmHome
         Me.PicMC1.Image = Global.SPSApp1.My.Resources.Resources.MiniDash2
         Me.PicMC1.Location = New System.Drawing.Point(3, 16)
         Me.PicMC1.Name = "PicMC1"
-        Me.PicMC1.Size = New System.Drawing.Size(248, 278)
+        Me.PicMC1.Size = New System.Drawing.Size(242, 277)
         Me.PicMC1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PicMC1.TabIndex = 4
         Me.PicMC1.TabStop = False
@@ -1246,9 +1251,9 @@ Partial Class frmHome
         Me.GroupBox2.Controls.Add(Me.lblTO2)
         Me.GroupBox2.Controls.Add(Me.lblWO2)
         Me.GroupBox2.Controls.Add(Me.picMC2)
-        Me.GroupBox2.Location = New System.Drawing.Point(259, 10)
+        Me.GroupBox2.Location = New System.Drawing.Point(257, 3)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(254, 297)
+        Me.GroupBox2.Size = New System.Drawing.Size(248, 296)
         Me.GroupBox2.TabIndex = 6
         Me.GroupBox2.TabStop = False
         '
@@ -1260,7 +1265,7 @@ Partial Class frmHome
         Me.picStatMC2.Image = CType(resources.GetObject("picStatMC2.Image"), System.Drawing.Image)
         Me.picStatMC2.Location = New System.Drawing.Point(57, 21)
         Me.picStatMC2.Name = "picStatMC2"
-        Me.picStatMC2.Size = New System.Drawing.Size(134, 17)
+        Me.picStatMC2.Size = New System.Drawing.Size(119, 17)
         Me.picStatMC2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picStatMC2.TabIndex = 7
         Me.picStatMC2.TabStop = False
@@ -1358,7 +1363,7 @@ Partial Class frmHome
         Me.picMC2.Image = Global.SPSApp1.My.Resources.Resources.MiniDash2
         Me.picMC2.Location = New System.Drawing.Point(3, 16)
         Me.picMC2.Name = "picMC2"
-        Me.picMC2.Size = New System.Drawing.Size(248, 278)
+        Me.picMC2.Size = New System.Drawing.Size(242, 277)
         Me.picMC2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picMC2.TabIndex = 4
         Me.picMC2.TabStop = False
@@ -1375,9 +1380,9 @@ Partial Class frmHome
         Me.GroupBox3.Controls.Add(Me.lblTO3)
         Me.GroupBox3.Controls.Add(Me.lblWO3)
         Me.GroupBox3.Controls.Add(Me.picMC3)
-        Me.GroupBox3.Location = New System.Drawing.Point(512, 10)
+        Me.GroupBox3.Location = New System.Drawing.Point(511, 3)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(254, 297)
+        Me.GroupBox3.Size = New System.Drawing.Size(248, 296)
         Me.GroupBox3.TabIndex = 6
         Me.GroupBox3.TabStop = False
         '
@@ -1389,7 +1394,7 @@ Partial Class frmHome
         Me.picStatMC3.Image = Global.SPSApp1.My.Resources.Resources.LineNoPlan
         Me.picStatMC3.Location = New System.Drawing.Point(57, 21)
         Me.picStatMC3.Name = "picStatMC3"
-        Me.picStatMC3.Size = New System.Drawing.Size(134, 17)
+        Me.picStatMC3.Size = New System.Drawing.Size(119, 17)
         Me.picStatMC3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picStatMC3.TabIndex = 7
         Me.picStatMC3.TabStop = False
@@ -1487,7 +1492,7 @@ Partial Class frmHome
         Me.picMC3.Image = CType(resources.GetObject("picMC3.Image"), System.Drawing.Image)
         Me.picMC3.Location = New System.Drawing.Point(3, 16)
         Me.picMC3.Name = "picMC3"
-        Me.picMC3.Size = New System.Drawing.Size(248, 278)
+        Me.picMC3.Size = New System.Drawing.Size(242, 277)
         Me.picMC3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picMC3.TabIndex = 4
         Me.picMC3.TabStop = False
@@ -1504,9 +1509,9 @@ Partial Class frmHome
         Me.GroupBox4.Controls.Add(Me.lblTO4)
         Me.GroupBox4.Controls.Add(Me.lblWO4)
         Me.GroupBox4.Controls.Add(Me.picMC4)
-        Me.GroupBox4.Location = New System.Drawing.Point(765, 10)
+        Me.GroupBox4.Location = New System.Drawing.Point(765, 3)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(254, 297)
+        Me.GroupBox4.Size = New System.Drawing.Size(248, 296)
         Me.GroupBox4.TabIndex = 6
         Me.GroupBox4.TabStop = False
         '
@@ -1518,7 +1523,7 @@ Partial Class frmHome
         Me.picStatMC4.Image = CType(resources.GetObject("picStatMC4.Image"), System.Drawing.Image)
         Me.picStatMC4.Location = New System.Drawing.Point(57, 21)
         Me.picStatMC4.Name = "picStatMC4"
-        Me.picStatMC4.Size = New System.Drawing.Size(134, 17)
+        Me.picStatMC4.Size = New System.Drawing.Size(119, 17)
         Me.picStatMC4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picStatMC4.TabIndex = 7
         Me.picStatMC4.TabStop = False
@@ -1616,7 +1621,7 @@ Partial Class frmHome
         Me.picMC4.Image = CType(resources.GetObject("picMC4.Image"), System.Drawing.Image)
         Me.picMC4.Location = New System.Drawing.Point(3, 16)
         Me.picMC4.Name = "picMC4"
-        Me.picMC4.Size = New System.Drawing.Size(248, 278)
+        Me.picMC4.Size = New System.Drawing.Size(242, 277)
         Me.picMC4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picMC4.TabIndex = 4
         Me.picMC4.TabStop = False
@@ -1633,9 +1638,9 @@ Partial Class frmHome
         Me.GroupBox5.Controls.Add(Me.lblTO5)
         Me.GroupBox5.Controls.Add(Me.lblWO5)
         Me.GroupBox5.Controls.Add(Me.picMC5)
-        Me.GroupBox5.Location = New System.Drawing.Point(1018, 10)
+        Me.GroupBox5.Location = New System.Drawing.Point(1019, 3)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(254, 297)
+        Me.GroupBox5.Size = New System.Drawing.Size(248, 296)
         Me.GroupBox5.TabIndex = 6
         Me.GroupBox5.TabStop = False
         '
@@ -1647,7 +1652,7 @@ Partial Class frmHome
         Me.picStatMC5.Image = CType(resources.GetObject("picStatMC5.Image"), System.Drawing.Image)
         Me.picStatMC5.Location = New System.Drawing.Point(57, 21)
         Me.picStatMC5.Name = "picStatMC5"
-        Me.picStatMC5.Size = New System.Drawing.Size(134, 17)
+        Me.picStatMC5.Size = New System.Drawing.Size(119, 17)
         Me.picStatMC5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picStatMC5.TabIndex = 7
         Me.picStatMC5.TabStop = False
@@ -1745,7 +1750,7 @@ Partial Class frmHome
         Me.picMC5.Image = CType(resources.GetObject("picMC5.Image"), System.Drawing.Image)
         Me.picMC5.Location = New System.Drawing.Point(3, 16)
         Me.picMC5.Name = "picMC5"
-        Me.picMC5.Size = New System.Drawing.Size(248, 278)
+        Me.picMC5.Size = New System.Drawing.Size(242, 277)
         Me.picMC5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picMC5.TabIndex = 4
         Me.picMC5.TabStop = False
@@ -1762,9 +1767,9 @@ Partial Class frmHome
         Me.GroupBox6.Controls.Add(Me.lblTO6)
         Me.GroupBox6.Controls.Add(Me.lblWO6)
         Me.GroupBox6.Controls.Add(Me.picMC6)
-        Me.GroupBox6.Location = New System.Drawing.Point(1271, 10)
+        Me.GroupBox6.Location = New System.Drawing.Point(1273, 3)
         Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Size = New System.Drawing.Size(254, 297)
+        Me.GroupBox6.Size = New System.Drawing.Size(248, 296)
         Me.GroupBox6.TabIndex = 6
         Me.GroupBox6.TabStop = False
         '
@@ -1776,7 +1781,7 @@ Partial Class frmHome
         Me.picStatMC6.Image = CType(resources.GetObject("picStatMC6.Image"), System.Drawing.Image)
         Me.picStatMC6.Location = New System.Drawing.Point(57, 21)
         Me.picStatMC6.Name = "picStatMC6"
-        Me.picStatMC6.Size = New System.Drawing.Size(134, 17)
+        Me.picStatMC6.Size = New System.Drawing.Size(119, 17)
         Me.picStatMC6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picStatMC6.TabIndex = 7
         Me.picStatMC6.TabStop = False
@@ -1874,7 +1879,7 @@ Partial Class frmHome
         Me.picMC6.Image = CType(resources.GetObject("picMC6.Image"), System.Drawing.Image)
         Me.picMC6.Location = New System.Drawing.Point(3, 16)
         Me.picMC6.Name = "picMC6"
-        Me.picMC6.Size = New System.Drawing.Size(248, 278)
+        Me.picMC6.Size = New System.Drawing.Size(242, 277)
         Me.picMC6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picMC6.TabIndex = 4
         Me.picMC6.TabStop = False
@@ -1891,9 +1896,9 @@ Partial Class frmHome
         Me.GroupBox7.Controls.Add(Me.lblTO7)
         Me.GroupBox7.Controls.Add(Me.lblWO7)
         Me.GroupBox7.Controls.Add(Me.picMC7)
-        Me.GroupBox7.Location = New System.Drawing.Point(1524, 10)
+        Me.GroupBox7.Location = New System.Drawing.Point(1527, 3)
         Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Size = New System.Drawing.Size(254, 297)
+        Me.GroupBox7.Size = New System.Drawing.Size(249, 296)
         Me.GroupBox7.TabIndex = 6
         Me.GroupBox7.TabStop = False
         '
@@ -1905,7 +1910,7 @@ Partial Class frmHome
         Me.picStatMC7.Image = CType(resources.GetObject("picStatMC7.Image"), System.Drawing.Image)
         Me.picStatMC7.Location = New System.Drawing.Point(57, 21)
         Me.picStatMC7.Name = "picStatMC7"
-        Me.picStatMC7.Size = New System.Drawing.Size(134, 17)
+        Me.picStatMC7.Size = New System.Drawing.Size(114, 17)
         Me.picStatMC7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picStatMC7.TabIndex = 8
         Me.picStatMC7.TabStop = False
@@ -2003,7 +2008,7 @@ Partial Class frmHome
         Me.picMC7.Image = CType(resources.GetObject("picMC7.Image"), System.Drawing.Image)
         Me.picMC7.Location = New System.Drawing.Point(3, 16)
         Me.picMC7.Name = "picMC7"
-        Me.picMC7.Size = New System.Drawing.Size(248, 278)
+        Me.picMC7.Size = New System.Drawing.Size(243, 277)
         Me.picMC7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picMC7.TabIndex = 4
         Me.picMC7.TabStop = False
@@ -2020,9 +2025,9 @@ Partial Class frmHome
         Me.GroupBox8.Controls.Add(Me.lblTO8)
         Me.GroupBox8.Controls.Add(Me.lblWO8)
         Me.GroupBox8.Controls.Add(Me.picMC8)
-        Me.GroupBox8.Location = New System.Drawing.Point(6, 307)
+        Me.GroupBox8.Location = New System.Drawing.Point(3, 305)
         Me.GroupBox8.Name = "GroupBox8"
-        Me.GroupBox8.Size = New System.Drawing.Size(254, 297)
+        Me.GroupBox8.Size = New System.Drawing.Size(248, 296)
         Me.GroupBox8.TabIndex = 6
         Me.GroupBox8.TabStop = False
         '
@@ -2034,7 +2039,7 @@ Partial Class frmHome
         Me.picStatMC8.Image = CType(resources.GetObject("picStatMC8.Image"), System.Drawing.Image)
         Me.picStatMC8.Location = New System.Drawing.Point(57, 21)
         Me.picStatMC8.Name = "picStatMC8"
-        Me.picStatMC8.Size = New System.Drawing.Size(134, 17)
+        Me.picStatMC8.Size = New System.Drawing.Size(119, 17)
         Me.picStatMC8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picStatMC8.TabIndex = 9
         Me.picStatMC8.TabStop = False
@@ -2132,7 +2137,7 @@ Partial Class frmHome
         Me.picMC8.Image = CType(resources.GetObject("picMC8.Image"), System.Drawing.Image)
         Me.picMC8.Location = New System.Drawing.Point(3, 16)
         Me.picMC8.Name = "picMC8"
-        Me.picMC8.Size = New System.Drawing.Size(248, 278)
+        Me.picMC8.Size = New System.Drawing.Size(242, 277)
         Me.picMC8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picMC8.TabIndex = 4
         Me.picMC8.TabStop = False
@@ -2149,9 +2154,9 @@ Partial Class frmHome
         Me.GroupBox9.Controls.Add(Me.lblTO11)
         Me.GroupBox9.Controls.Add(Me.lblWO11)
         Me.GroupBox9.Controls.Add(Me.picMC11)
-        Me.GroupBox9.Location = New System.Drawing.Point(766, 307)
+        Me.GroupBox9.Location = New System.Drawing.Point(765, 305)
         Me.GroupBox9.Name = "GroupBox9"
-        Me.GroupBox9.Size = New System.Drawing.Size(254, 297)
+        Me.GroupBox9.Size = New System.Drawing.Size(248, 296)
         Me.GroupBox9.TabIndex = 6
         Me.GroupBox9.TabStop = False
         '
@@ -2163,7 +2168,7 @@ Partial Class frmHome
         Me.picStatMC11.Image = CType(resources.GetObject("picStatMC11.Image"), System.Drawing.Image)
         Me.picStatMC11.Location = New System.Drawing.Point(57, 21)
         Me.picStatMC11.Name = "picStatMC11"
-        Me.picStatMC11.Size = New System.Drawing.Size(134, 17)
+        Me.picStatMC11.Size = New System.Drawing.Size(119, 17)
         Me.picStatMC11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picStatMC11.TabIndex = 12
         Me.picStatMC11.TabStop = False
@@ -2261,7 +2266,7 @@ Partial Class frmHome
         Me.picMC11.Image = CType(resources.GetObject("picMC11.Image"), System.Drawing.Image)
         Me.picMC11.Location = New System.Drawing.Point(3, 16)
         Me.picMC11.Name = "picMC11"
-        Me.picMC11.Size = New System.Drawing.Size(248, 278)
+        Me.picMC11.Size = New System.Drawing.Size(242, 277)
         Me.picMC11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picMC11.TabIndex = 4
         Me.picMC11.TabStop = False
@@ -2279,9 +2284,9 @@ Partial Class frmHome
         Me.GroupBox10.Controls.Add(Me.lblTO9)
         Me.GroupBox10.Controls.Add(Me.lblWO9)
         Me.GroupBox10.Controls.Add(Me.picMC9)
-        Me.GroupBox10.Location = New System.Drawing.Point(260, 307)
+        Me.GroupBox10.Location = New System.Drawing.Point(257, 305)
         Me.GroupBox10.Name = "GroupBox10"
-        Me.GroupBox10.Size = New System.Drawing.Size(254, 297)
+        Me.GroupBox10.Size = New System.Drawing.Size(248, 296)
         Me.GroupBox10.TabIndex = 6
         Me.GroupBox10.TabStop = False
         '
@@ -2293,7 +2298,7 @@ Partial Class frmHome
         Me.picStatMC9.Image = CType(resources.GetObject("picStatMC9.Image"), System.Drawing.Image)
         Me.picStatMC9.Location = New System.Drawing.Point(57, 21)
         Me.picStatMC9.Name = "picStatMC9"
-        Me.picStatMC9.Size = New System.Drawing.Size(134, 17)
+        Me.picStatMC9.Size = New System.Drawing.Size(119, 17)
         Me.picStatMC9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picStatMC9.TabIndex = 10
         Me.picStatMC9.TabStop = False
@@ -2403,7 +2408,7 @@ Partial Class frmHome
         Me.picMC9.Image = CType(resources.GetObject("picMC9.Image"), System.Drawing.Image)
         Me.picMC9.Location = New System.Drawing.Point(3, 16)
         Me.picMC9.Name = "picMC9"
-        Me.picMC9.Size = New System.Drawing.Size(248, 278)
+        Me.picMC9.Size = New System.Drawing.Size(242, 277)
         Me.picMC9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picMC9.TabIndex = 4
         Me.picMC9.TabStop = False
@@ -2420,9 +2425,9 @@ Partial Class frmHome
         Me.GroupBox11.Controls.Add(Me.lblTO12)
         Me.GroupBox11.Controls.Add(Me.lblWO12)
         Me.GroupBox11.Controls.Add(Me.picMC12)
-        Me.GroupBox11.Location = New System.Drawing.Point(1019, 307)
+        Me.GroupBox11.Location = New System.Drawing.Point(1019, 305)
         Me.GroupBox11.Name = "GroupBox11"
-        Me.GroupBox11.Size = New System.Drawing.Size(254, 297)
+        Me.GroupBox11.Size = New System.Drawing.Size(248, 296)
         Me.GroupBox11.TabIndex = 6
         Me.GroupBox11.TabStop = False
         '
@@ -2434,7 +2439,7 @@ Partial Class frmHome
         Me.picStatMC12.Image = CType(resources.GetObject("picStatMC12.Image"), System.Drawing.Image)
         Me.picStatMC12.Location = New System.Drawing.Point(57, 21)
         Me.picStatMC12.Name = "picStatMC12"
-        Me.picStatMC12.Size = New System.Drawing.Size(134, 17)
+        Me.picStatMC12.Size = New System.Drawing.Size(119, 17)
         Me.picStatMC12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picStatMC12.TabIndex = 13
         Me.picStatMC12.TabStop = False
@@ -2532,7 +2537,7 @@ Partial Class frmHome
         Me.picMC12.Image = CType(resources.GetObject("picMC12.Image"), System.Drawing.Image)
         Me.picMC12.Location = New System.Drawing.Point(3, 16)
         Me.picMC12.Name = "picMC12"
-        Me.picMC12.Size = New System.Drawing.Size(248, 278)
+        Me.picMC12.Size = New System.Drawing.Size(242, 277)
         Me.picMC12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picMC12.TabIndex = 4
         Me.picMC12.TabStop = False
@@ -2549,9 +2554,9 @@ Partial Class frmHome
         Me.GroupBox12.Controls.Add(Me.lblTO10)
         Me.GroupBox12.Controls.Add(Me.lblWO10)
         Me.GroupBox12.Controls.Add(Me.picMC10)
-        Me.GroupBox12.Location = New System.Drawing.Point(513, 307)
+        Me.GroupBox12.Location = New System.Drawing.Point(511, 305)
         Me.GroupBox12.Name = "GroupBox12"
-        Me.GroupBox12.Size = New System.Drawing.Size(254, 297)
+        Me.GroupBox12.Size = New System.Drawing.Size(248, 296)
         Me.GroupBox12.TabIndex = 6
         Me.GroupBox12.TabStop = False
         '
@@ -2563,7 +2568,7 @@ Partial Class frmHome
         Me.picStatMC10.Image = CType(resources.GetObject("picStatMC10.Image"), System.Drawing.Image)
         Me.picStatMC10.Location = New System.Drawing.Point(57, 21)
         Me.picStatMC10.Name = "picStatMC10"
-        Me.picStatMC10.Size = New System.Drawing.Size(134, 17)
+        Me.picStatMC10.Size = New System.Drawing.Size(119, 17)
         Me.picStatMC10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picStatMC10.TabIndex = 11
         Me.picStatMC10.TabStop = False
@@ -2661,7 +2666,7 @@ Partial Class frmHome
         Me.picMC10.Image = CType(resources.GetObject("picMC10.Image"), System.Drawing.Image)
         Me.picMC10.Location = New System.Drawing.Point(3, 16)
         Me.picMC10.Name = "picMC10"
-        Me.picMC10.Size = New System.Drawing.Size(248, 278)
+        Me.picMC10.Size = New System.Drawing.Size(242, 277)
         Me.picMC10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picMC10.TabIndex = 4
         Me.picMC10.TabStop = False
@@ -2678,9 +2683,9 @@ Partial Class frmHome
         Me.GroupBox13.Controls.Add(Me.lblTO13)
         Me.GroupBox13.Controls.Add(Me.lblWO13)
         Me.GroupBox13.Controls.Add(Me.picMC13)
-        Me.GroupBox13.Location = New System.Drawing.Point(1272, 307)
+        Me.GroupBox13.Location = New System.Drawing.Point(1273, 305)
         Me.GroupBox13.Name = "GroupBox13"
-        Me.GroupBox13.Size = New System.Drawing.Size(254, 297)
+        Me.GroupBox13.Size = New System.Drawing.Size(248, 296)
         Me.GroupBox13.TabIndex = 6
         Me.GroupBox13.TabStop = False
         '
@@ -2692,7 +2697,7 @@ Partial Class frmHome
         Me.picStatMC13.Image = CType(resources.GetObject("picStatMC13.Image"), System.Drawing.Image)
         Me.picStatMC13.Location = New System.Drawing.Point(57, 21)
         Me.picStatMC13.Name = "picStatMC13"
-        Me.picStatMC13.Size = New System.Drawing.Size(134, 17)
+        Me.picStatMC13.Size = New System.Drawing.Size(119, 17)
         Me.picStatMC13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picStatMC13.TabIndex = 14
         Me.picStatMC13.TabStop = False
@@ -2790,7 +2795,7 @@ Partial Class frmHome
         Me.picMC13.Image = CType(resources.GetObject("picMC13.Image"), System.Drawing.Image)
         Me.picMC13.Location = New System.Drawing.Point(3, 16)
         Me.picMC13.Name = "picMC13"
-        Me.picMC13.Size = New System.Drawing.Size(248, 278)
+        Me.picMC13.Size = New System.Drawing.Size(242, 277)
         Me.picMC13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picMC13.TabIndex = 4
         Me.picMC13.TabStop = False
@@ -2807,9 +2812,9 @@ Partial Class frmHome
         Me.GroupBox14.Controls.Add(Me.lblTO14)
         Me.GroupBox14.Controls.Add(Me.lblWO14)
         Me.GroupBox14.Controls.Add(Me.picMC14)
-        Me.GroupBox14.Location = New System.Drawing.Point(1525, 307)
+        Me.GroupBox14.Location = New System.Drawing.Point(1527, 305)
         Me.GroupBox14.Name = "GroupBox14"
-        Me.GroupBox14.Size = New System.Drawing.Size(254, 297)
+        Me.GroupBox14.Size = New System.Drawing.Size(249, 296)
         Me.GroupBox14.TabIndex = 6
         Me.GroupBox14.TabStop = False
         '
@@ -2821,7 +2826,7 @@ Partial Class frmHome
         Me.picStatMC14.Image = CType(resources.GetObject("picStatMC14.Image"), System.Drawing.Image)
         Me.picStatMC14.Location = New System.Drawing.Point(57, 21)
         Me.picStatMC14.Name = "picStatMC14"
-        Me.picStatMC14.Size = New System.Drawing.Size(134, 17)
+        Me.picStatMC14.Size = New System.Drawing.Size(114, 17)
         Me.picStatMC14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picStatMC14.TabIndex = 15
         Me.picStatMC14.TabStop = False
@@ -2919,7 +2924,7 @@ Partial Class frmHome
         Me.picMC14.Image = CType(resources.GetObject("picMC14.Image"), System.Drawing.Image)
         Me.picMC14.Location = New System.Drawing.Point(3, 16)
         Me.picMC14.Name = "picMC14"
-        Me.picMC14.Size = New System.Drawing.Size(248, 278)
+        Me.picMC14.Size = New System.Drawing.Size(243, 277)
         Me.picMC14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picMC14.TabIndex = 4
         Me.picMC14.TabStop = False
@@ -3029,9 +3034,9 @@ Partial Class frmHome
         Me.GroupBox15.Controls.Add(Me.lblTO18)
         Me.GroupBox15.Controls.Add(Me.lblWO18)
         Me.GroupBox15.Controls.Add(Me.picMC18)
-        Me.GroupBox15.Location = New System.Drawing.Point(769, 610)
+        Me.GroupBox15.Location = New System.Drawing.Point(765, 607)
         Me.GroupBox15.Name = "GroupBox15"
-        Me.GroupBox15.Size = New System.Drawing.Size(254, 297)
+        Me.GroupBox15.Size = New System.Drawing.Size(248, 297)
         Me.GroupBox15.TabIndex = 6
         Me.GroupBox15.TabStop = False
         '
@@ -3043,7 +3048,7 @@ Partial Class frmHome
         Me.picStatMC18.Image = CType(resources.GetObject("picStatMC18.Image"), System.Drawing.Image)
         Me.picStatMC18.Location = New System.Drawing.Point(57, 21)
         Me.picStatMC18.Name = "picStatMC18"
-        Me.picStatMC18.Size = New System.Drawing.Size(134, 17)
+        Me.picStatMC18.Size = New System.Drawing.Size(119, 17)
         Me.picStatMC18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picStatMC18.TabIndex = 12
         Me.picStatMC18.TabStop = False
@@ -3141,7 +3146,7 @@ Partial Class frmHome
         Me.picMC18.Image = CType(resources.GetObject("picMC18.Image"), System.Drawing.Image)
         Me.picMC18.Location = New System.Drawing.Point(3, 16)
         Me.picMC18.Name = "picMC18"
-        Me.picMC18.Size = New System.Drawing.Size(248, 278)
+        Me.picMC18.Size = New System.Drawing.Size(242, 278)
         Me.picMC18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picMC18.TabIndex = 4
         Me.picMC18.TabStop = False
@@ -3158,9 +3163,9 @@ Partial Class frmHome
         Me.GroupBox16.Controls.Add(Me.lblTO15)
         Me.GroupBox16.Controls.Add(Me.lblWO15)
         Me.GroupBox16.Controls.Add(Me.picMC15)
-        Me.GroupBox16.Location = New System.Drawing.Point(9, 610)
+        Me.GroupBox16.Location = New System.Drawing.Point(3, 607)
         Me.GroupBox16.Name = "GroupBox16"
-        Me.GroupBox16.Size = New System.Drawing.Size(254, 297)
+        Me.GroupBox16.Size = New System.Drawing.Size(248, 297)
         Me.GroupBox16.TabIndex = 6
         Me.GroupBox16.TabStop = False
         '
@@ -3172,7 +3177,7 @@ Partial Class frmHome
         Me.picStatMC15.Image = CType(resources.GetObject("picStatMC15.Image"), System.Drawing.Image)
         Me.picStatMC15.Location = New System.Drawing.Point(57, 21)
         Me.picStatMC15.Name = "picStatMC15"
-        Me.picStatMC15.Size = New System.Drawing.Size(134, 17)
+        Me.picStatMC15.Size = New System.Drawing.Size(119, 17)
         Me.picStatMC15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picStatMC15.TabIndex = 9
         Me.picStatMC15.TabStop = False
@@ -3270,7 +3275,7 @@ Partial Class frmHome
         Me.picMC15.Image = CType(resources.GetObject("picMC15.Image"), System.Drawing.Image)
         Me.picMC15.Location = New System.Drawing.Point(3, 16)
         Me.picMC15.Name = "picMC15"
-        Me.picMC15.Size = New System.Drawing.Size(248, 278)
+        Me.picMC15.Size = New System.Drawing.Size(242, 278)
         Me.picMC15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picMC15.TabIndex = 4
         Me.picMC15.TabStop = False
@@ -3288,9 +3293,9 @@ Partial Class frmHome
         Me.GroupBox17.Controls.Add(Me.lblTO16)
         Me.GroupBox17.Controls.Add(Me.lblWO16)
         Me.GroupBox17.Controls.Add(Me.picMC16)
-        Me.GroupBox17.Location = New System.Drawing.Point(263, 610)
+        Me.GroupBox17.Location = New System.Drawing.Point(257, 607)
         Me.GroupBox17.Name = "GroupBox17"
-        Me.GroupBox17.Size = New System.Drawing.Size(254, 297)
+        Me.GroupBox17.Size = New System.Drawing.Size(248, 297)
         Me.GroupBox17.TabIndex = 6
         Me.GroupBox17.TabStop = False
         '
@@ -3302,7 +3307,7 @@ Partial Class frmHome
         Me.picStatMC16.Image = CType(resources.GetObject("picStatMC16.Image"), System.Drawing.Image)
         Me.picStatMC16.Location = New System.Drawing.Point(57, 21)
         Me.picStatMC16.Name = "picStatMC16"
-        Me.picStatMC16.Size = New System.Drawing.Size(134, 17)
+        Me.picStatMC16.Size = New System.Drawing.Size(119, 17)
         Me.picStatMC16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picStatMC16.TabIndex = 10
         Me.picStatMC16.TabStop = False
@@ -3412,7 +3417,7 @@ Partial Class frmHome
         Me.picMC16.Image = CType(resources.GetObject("picMC16.Image"), System.Drawing.Image)
         Me.picMC16.Location = New System.Drawing.Point(3, 16)
         Me.picMC16.Name = "picMC16"
-        Me.picMC16.Size = New System.Drawing.Size(248, 278)
+        Me.picMC16.Size = New System.Drawing.Size(242, 278)
         Me.picMC16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picMC16.TabIndex = 4
         Me.picMC16.TabStop = False
@@ -3429,9 +3434,9 @@ Partial Class frmHome
         Me.GroupBox18.Controls.Add(Me.lblTO19)
         Me.GroupBox18.Controls.Add(Me.lblWO19)
         Me.GroupBox18.Controls.Add(Me.picMC19)
-        Me.GroupBox18.Location = New System.Drawing.Point(1022, 610)
+        Me.GroupBox18.Location = New System.Drawing.Point(1019, 607)
         Me.GroupBox18.Name = "GroupBox18"
-        Me.GroupBox18.Size = New System.Drawing.Size(254, 297)
+        Me.GroupBox18.Size = New System.Drawing.Size(248, 297)
         Me.GroupBox18.TabIndex = 6
         Me.GroupBox18.TabStop = False
         '
@@ -3443,7 +3448,7 @@ Partial Class frmHome
         Me.picStatMC19.Image = CType(resources.GetObject("picStatMC19.Image"), System.Drawing.Image)
         Me.picStatMC19.Location = New System.Drawing.Point(57, 21)
         Me.picStatMC19.Name = "picStatMC19"
-        Me.picStatMC19.Size = New System.Drawing.Size(134, 17)
+        Me.picStatMC19.Size = New System.Drawing.Size(119, 17)
         Me.picStatMC19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picStatMC19.TabIndex = 13
         Me.picStatMC19.TabStop = False
@@ -3541,7 +3546,7 @@ Partial Class frmHome
         Me.picMC19.Image = CType(resources.GetObject("picMC19.Image"), System.Drawing.Image)
         Me.picMC19.Location = New System.Drawing.Point(3, 16)
         Me.picMC19.Name = "picMC19"
-        Me.picMC19.Size = New System.Drawing.Size(248, 278)
+        Me.picMC19.Size = New System.Drawing.Size(242, 278)
         Me.picMC19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picMC19.TabIndex = 4
         Me.picMC19.TabStop = False
@@ -3558,9 +3563,9 @@ Partial Class frmHome
         Me.GroupBox19.Controls.Add(Me.lblTO17)
         Me.GroupBox19.Controls.Add(Me.lblWO17)
         Me.GroupBox19.Controls.Add(Me.picMC17)
-        Me.GroupBox19.Location = New System.Drawing.Point(516, 610)
+        Me.GroupBox19.Location = New System.Drawing.Point(511, 607)
         Me.GroupBox19.Name = "GroupBox19"
-        Me.GroupBox19.Size = New System.Drawing.Size(254, 297)
+        Me.GroupBox19.Size = New System.Drawing.Size(248, 297)
         Me.GroupBox19.TabIndex = 6
         Me.GroupBox19.TabStop = False
         '
@@ -3572,7 +3577,7 @@ Partial Class frmHome
         Me.picStatMC17.Image = CType(resources.GetObject("picStatMC17.Image"), System.Drawing.Image)
         Me.picStatMC17.Location = New System.Drawing.Point(57, 21)
         Me.picStatMC17.Name = "picStatMC17"
-        Me.picStatMC17.Size = New System.Drawing.Size(134, 17)
+        Me.picStatMC17.Size = New System.Drawing.Size(119, 17)
         Me.picStatMC17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picStatMC17.TabIndex = 11
         Me.picStatMC17.TabStop = False
@@ -3670,7 +3675,7 @@ Partial Class frmHome
         Me.picMC17.Image = CType(resources.GetObject("picMC17.Image"), System.Drawing.Image)
         Me.picMC17.Location = New System.Drawing.Point(3, 16)
         Me.picMC17.Name = "picMC17"
-        Me.picMC17.Size = New System.Drawing.Size(248, 278)
+        Me.picMC17.Size = New System.Drawing.Size(242, 278)
         Me.picMC17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picMC17.TabIndex = 4
         Me.picMC17.TabStop = False
@@ -3708,8 +3713,9 @@ Partial Class frmHome
         '
         'PictureBox2
         '
+        Me.PictureBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox2.Image = Global.SPSApp1.My.Resources.Resources.Powered_by_SPS
-        Me.PictureBox2.Location = New System.Drawing.Point(193, 13)
+        Me.PictureBox2.Location = New System.Drawing.Point(2433, 994)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(143, 26)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -3718,8 +3724,9 @@ Partial Class frmHome
         '
         'PictureBox3
         '
+        Me.PictureBox3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.PictureBox3.Image = Global.SPSApp1.My.Resources.Resources.Legend3
-        Me.PictureBox3.Location = New System.Drawing.Point(279, 6)
+        Me.PictureBox3.Location = New System.Drawing.Point(12, 982)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(603, 41)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -3728,12 +3735,13 @@ Partial Class frmHome
         '
         'btnMCSelect
         '
+        Me.btnMCSelect.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnMCSelect.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMCSelect.IconChar = FontAwesome.Sharp.IconChar.CheckSquare
         Me.btnMCSelect.IconColor = System.Drawing.Color.Black
         Me.btnMCSelect.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnMCSelect.IconSize = 40
-        Me.btnMCSelect.Location = New System.Drawing.Point(1604, 619)
+        Me.btnMCSelect.Location = New System.Drawing.Point(71, 3)
         Me.btnMCSelect.Name = "btnMCSelect"
         Me.btnMCSelect.Size = New System.Drawing.Size(175, 62)
         Me.btnMCSelect.TabIndex = 2
@@ -3745,12 +3753,13 @@ Partial Class frmHome
         '
         'btnMCSelClear
         '
+        Me.btnMCSelClear.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnMCSelClear.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMCSelClear.IconChar = FontAwesome.Sharp.IconChar.Eraser
         Me.btnMCSelClear.IconColor = System.Drawing.Color.Black
         Me.btnMCSelClear.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnMCSelClear.IconSize = 40
-        Me.btnMCSelClear.Location = New System.Drawing.Point(1604, 684)
+        Me.btnMCSelClear.Location = New System.Drawing.Point(71, 74)
         Me.btnMCSelClear.Name = "btnMCSelClear"
         Me.btnMCSelClear.Size = New System.Drawing.Size(175, 62)
         Me.btnMCSelClear.TabIndex = 2
@@ -3760,121 +3769,157 @@ Partial Class frmHome
         Me.btnMCSelClear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnMCSelClear.UseVisualStyleBackColor = True
         '
-        'Panel3
+        'GroupBox20
         '
-        Me.Panel3.Controls.Add(Me.Panel4)
-        Me.Panel3.Controls.Add(Me.PictureBox3)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel3.Location = New System.Drawing.Point(0, 982)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(2375, 50)
-        Me.Panel3.TabIndex = 7
+        Me.GroupBox20.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.GroupBox20.Controls.Add(Me.Label22)
+        Me.GroupBox20.Controls.Add(Me.lblOnOffMC15)
+        Me.GroupBox20.Controls.Add(Me.lblRxMC20)
+        Me.GroupBox20.Controls.Add(Me.lblOnOffMC5)
+        Me.GroupBox20.Controls.Add(Me.lblLoginInProgress)
+        Me.GroupBox20.Controls.Add(Me.lblOnOffMC6)
+        Me.GroupBox20.Controls.Add(Me.lblOnOffMC20)
+        Me.GroupBox20.Controls.Add(Me.lblOnOffMC16)
+        Me.GroupBox20.Controls.Add(Me.lblLogoutInProgress)
+        Me.GroupBox20.Controls.Add(Me.lblOnOffMC14)
+        Me.GroupBox20.Controls.Add(Me.lblRxMC10)
+        Me.GroupBox20.Controls.Add(Me.lblOnOffMC13)
+        Me.GroupBox20.Controls.Add(Me.lblRxMC3)
+        Me.GroupBox20.Controls.Add(Me.lblOnOffMC12)
+        Me.GroupBox20.Controls.Add(Me.lblOnOffMC7)
+        Me.GroupBox20.Controls.Add(Me.Label6)
+        Me.GroupBox20.Controls.Add(Me.lblOnOffMC11)
+        Me.GroupBox20.Controls.Add(Me.lblRxMC19)
+        Me.GroupBox20.Controls.Add(Me.lblOnOffMC17)
+        Me.GroupBox20.Controls.Add(Me.lblRxMC2)
+        Me.GroupBox20.Controls.Add(Me.lblRxMC11)
+        Me.GroupBox20.Controls.Add(Me.Label5)
+        Me.GroupBox20.Controls.Add(Me.lblRxMC9)
+        Me.GroupBox20.Controls.Add(Me.lblTest6)
+        Me.GroupBox20.Controls.Add(Me.Label4)
+        Me.GroupBox20.Controls.Add(Me.lblOnOffMC8)
+        Me.GroupBox20.Controls.Add(Me.lblSettingTab)
+        Me.GroupBox20.Controls.Add(Me.lblOnOffMC10)
+        Me.GroupBox20.Controls.Add(Me.lblJobOrderTab)
+        Me.GroupBox20.Controls.Add(Me.lblRxMC12)
+        Me.GroupBox20.Controls.Add(Me.lblLogoutTab)
+        Me.GroupBox20.Controls.Add(Me.lblRxMC1)
+        Me.GroupBox20.Controls.Add(Me.lblLoginTab)
+        Me.GroupBox20.Controls.Add(Me.lblRxMC4)
+        Me.GroupBox20.Controls.Add(Me.lblHomeTab)
+        Me.GroupBox20.Controls.Add(Me.lblRxMC18)
+        Me.GroupBox20.Controls.Add(Me.lblTest7)
+        Me.GroupBox20.Controls.Add(Me.Label2)
+        Me.GroupBox20.Controls.Add(Me.lblTest5)
+        Me.GroupBox20.Controls.Add(Me.lblRxMC13)
+        Me.GroupBox20.Controls.Add(Me.Label23)
+        Me.GroupBox20.Controls.Add(Me.lblTest4)
+        Me.GroupBox20.Controls.Add(Me.lblOnOffMC18)
+        Me.GroupBox20.Controls.Add(Me.lblRxMC8)
+        Me.GroupBox20.Controls.Add(Me.lblOnOffMC1)
+        Me.GroupBox20.Controls.Add(Me.lblTest3)
+        Me.GroupBox20.Controls.Add(Me.lblRxMC14)
+        Me.GroupBox20.Controls.Add(Me.lblHours)
+        Me.GroupBox20.Controls.Add(Me.lblRxMC17)
+        Me.GroupBox20.Controls.Add(Me.lblTest2)
+        Me.GroupBox20.Controls.Add(Me.lblOnOffMC2)
+        Me.GroupBox20.Controls.Add(Me.lblTest1)
+        Me.GroupBox20.Controls.Add(Me.lblRxMC5)
+        Me.GroupBox20.Controls.Add(Me.lblOnOffMC19)
+        Me.GroupBox20.Controls.Add(Me.lblOnOffMC3)
+        Me.GroupBox20.Controls.Add(Me.lblRxMC15)
+        Me.GroupBox20.Controls.Add(Me.lblRxMC7)
+        Me.GroupBox20.Controls.Add(Me.lblOnOffMC4)
+        Me.GroupBox20.Controls.Add(Me.lblOnOffMC9)
+        Me.GroupBox20.Controls.Add(Me.lblRxMC6)
+        Me.GroupBox20.Controls.Add(Me.lblRxMC16)
+        Me.GroupBox20.Location = New System.Drawing.Point(2221, 24)
+        Me.GroupBox20.Name = "GroupBox20"
+        Me.GroupBox20.Size = New System.Drawing.Size(332, 866)
+        Me.GroupBox20.TabIndex = 9
+        Me.GroupBox20.TabStop = False
+        Me.GroupBox20.Text = "GroupBox20"
         '
-        'Panel4
+        'TableLayoutPanel1
         '
-        Me.Panel4.Controls.Add(Me.PictureBox2)
-        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel4.Location = New System.Drawing.Point(2027, 0)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(348, 50)
-        Me.Panel4.TabIndex = 2
+        Me.TableLayoutPanel1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TableLayoutPanel1.ColumnCount = 3
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 1785.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel2, 1, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.GroupBox20, 2, 0)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 62)
+        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
+        Me.TableLayoutPanel1.RowCount = 1
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(2588, 914)
+        Me.TableLayoutPanel1.TabIndex = 10
         '
-        'Panel5
+        'TableLayoutPanel2
         '
-        Me.Panel5.Controls.Add(Me.GroupBox14)
-        Me.Panel5.Controls.Add(Me.GroupBox7)
-        Me.Panel5.Controls.Add(Me.lblRxMC20)
-        Me.Panel5.Controls.Add(Me.GroupBox13)
-        Me.Panel5.Controls.Add(Me.lblOnOffMC20)
-        Me.Panel5.Controls.Add(Me.GroupBox6)
-        Me.Panel5.Controls.Add(Me.lblRxMC10)
-        Me.Panel5.Controls.Add(Me.lblRxMC3)
-        Me.Panel5.Controls.Add(Me.lblLoginInProgress)
-        Me.Panel5.Controls.Add(Me.GroupBox12)
-        Me.Panel5.Controls.Add(Me.lblRxMC19)
-        Me.Panel5.Controls.Add(Me.lblRxMC2)
-        Me.Panel5.Controls.Add(Me.lblRxMC9)
-        Me.Panel5.Controls.Add(Me.Label22)
-        Me.Panel5.Controls.Add(Me.lblOnOffMC10)
-        Me.Panel5.Controls.Add(Me.lblRxMC1)
-        Me.Panel5.Controls.Add(Me.lblRxMC18)
-        Me.Panel5.Controls.Add(Me.GroupBox3)
-        Me.Panel5.Controls.Add(Me.lblLogoutInProgress)
-        Me.Panel5.Controls.Add(Me.GroupBox11)
-        Me.Panel5.Controls.Add(Me.lblRxMC8)
-        Me.Panel5.Controls.Add(Me.GroupBox5)
-        Me.Panel5.Controls.Add(Me.lblRxMC17)
-        Me.Panel5.Controls.Add(Me.GroupBox10)
-        Me.Panel5.Controls.Add(Me.lblOnOffMC19)
-        Me.Panel5.Controls.Add(Me.GroupBox8)
-        Me.Panel5.Controls.Add(Me.lblRxMC7)
-        Me.Panel5.Controls.Add(Me.GroupBox2)
-        Me.Panel5.Controls.Add(Me.Label6)
-        Me.Panel5.Controls.Add(Me.GroupBox9)
-        Me.Panel5.Controls.Add(Me.lblRxMC16)
-        Me.Panel5.Controls.Add(Me.GroupBox4)
-        Me.Panel5.Controls.Add(Me.lblRxMC6)
-        Me.Panel5.Controls.Add(Me.GroupBox1)
-        Me.Panel5.Controls.Add(Me.lblOnOffMC9)
-        Me.Panel5.Controls.Add(Me.lblOnOffMC4)
-        Me.Panel5.Controls.Add(Me.lblRxMC15)
-        Me.Panel5.Controls.Add(Me.btnMCSelect)
-        Me.Panel5.Controls.Add(Me.Label5)
-        Me.Panel5.Controls.Add(Me.lblOnOffMC3)
-        Me.Panel5.Controls.Add(Me.lblRxMC5)
-        Me.Panel5.Controls.Add(Me.lblOnOffMC2)
-        Me.Panel5.Controls.Add(Me.lblRxMC14)
-        Me.Panel5.Controls.Add(Me.lblOnOffMC1)
-        Me.Panel5.Controls.Add(Me.lblOnOffMC18)
-        Me.Panel5.Controls.Add(Me.Label23)
-        Me.Panel5.Controls.Add(Me.lblRxMC13)
-        Me.Panel5.Controls.Add(Me.GroupBox16)
-        Me.Panel5.Controls.Add(Me.lblTest7)
-        Me.Panel5.Controls.Add(Me.Label4)
-        Me.Panel5.Controls.Add(Me.lblRxMC4)
-        Me.Panel5.Controls.Add(Me.lblSettingTab)
-        Me.Panel5.Controls.Add(Me.lblRxMC12)
-        Me.Panel5.Controls.Add(Me.lblJobOrderTab)
-        Me.Panel5.Controls.Add(Me.lblOnOffMC8)
-        Me.Panel5.Controls.Add(Me.lblLogoutTab)
-        Me.Panel5.Controls.Add(Me.lblTest6)
-        Me.Panel5.Controls.Add(Me.lblLoginTab)
-        Me.Panel5.Controls.Add(Me.lblRxMC11)
-        Me.Panel5.Controls.Add(Me.lblHomeTab)
-        Me.Panel5.Controls.Add(Me.GroupBox19)
-        Me.Panel5.Controls.Add(Me.Label2)
-        Me.Panel5.Controls.Add(Me.lblOnOffMC17)
-        Me.Panel5.Controls.Add(Me.lblOnOffMC11)
-        Me.Panel5.Controls.Add(Me.lblTest5)
-        Me.Panel5.Controls.Add(Me.btnMCSelClear)
-        Me.Panel5.Controls.Add(Me.lblOnOffMC7)
-        Me.Panel5.Controls.Add(Me.lblOnOffMC12)
-        Me.Panel5.Controls.Add(Me.lblTest4)
-        Me.Panel5.Controls.Add(Me.lblOnOffMC13)
-        Me.Panel5.Controls.Add(Me.GroupBox18)
-        Me.Panel5.Controls.Add(Me.lblOnOffMC14)
-        Me.Panel5.Controls.Add(Me.lblOnOffMC16)
-        Me.Panel5.Controls.Add(Me.GroupBox15)
-        Me.Panel5.Controls.Add(Me.lblTest3)
-        Me.Panel5.Controls.Add(Me.lblHours)
-        Me.Panel5.Controls.Add(Me.lblOnOffMC6)
-        Me.Panel5.Controls.Add(Me.lblOnOffMC5)
-        Me.Panel5.Controls.Add(Me.lblTest2)
-        Me.Panel5.Controls.Add(Me.lblTest1)
-        Me.Panel5.Controls.Add(Me.GroupBox17)
-        Me.Panel5.Controls.Add(Me.lblOnOffMC15)
-        Me.Panel5.Location = New System.Drawing.Point(275, 58)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(1795, 920)
-        Me.Panel5.TabIndex = 8
+        Me.TableLayoutPanel2.ColumnCount = 7
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571!))
+        Me.TableLayoutPanel2.Controls.Add(Me.GroupBox16, 0, 2)
+        Me.TableLayoutPanel2.Controls.Add(Me.GroupBox8, 0, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.GroupBox17, 1, 2)
+        Me.TableLayoutPanel2.Controls.Add(Me.GroupBox10, 1, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.GroupBox12, 2, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.GroupBox1, 0, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.GroupBox2, 1, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.GroupBox3, 2, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.GroupBox7, 6, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.GroupBox13, 5, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.GroupBox19, 2, 2)
+        Me.TableLayoutPanel2.Controls.Add(Me.GroupBox14, 6, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.GroupBox11, 4, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.GroupBox9, 3, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.GroupBox6, 5, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.GroupBox4, 3, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.GroupBox5, 4, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.GroupBox15, 3, 2)
+        Me.TableLayoutPanel2.Controls.Add(Me.GroupBox18, 4, 2)
+        Me.TableLayoutPanel2.Controls.Add(Me.TableLayoutPanel3, 6, 2)
+        Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(404, 3)
+        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
+        Me.TableLayoutPanel2.RowCount = 3
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1779, 908)
+        Me.TableLayoutPanel2.TabIndex = 10
+        '
+        'TableLayoutPanel3
+        '
+        Me.TableLayoutPanel3.ColumnCount = 1
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel3.Controls.Add(Me.btnMCSelect, 0, 0)
+        Me.TableLayoutPanel3.Controls.Add(Me.btnMCSelClear, 0, 1)
+        Me.TableLayoutPanel3.Location = New System.Drawing.Point(1527, 607)
+        Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
+        Me.TableLayoutPanel3.RowCount = 2
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(249, 142)
+        Me.TableLayoutPanel3.TabIndex = 7
         '
         'frmHome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(2375, 1032)
-        Me.Controls.Add(Me.Panel5)
-        Me.Controls.Add(Me.Panel3)
+        Me.ClientSize = New System.Drawing.Size(2588, 1032)
+        Me.Controls.Add(Me.PictureBox3)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -3963,10 +4008,11 @@ Partial Class frmHome
         CType(Me.picMC17, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel4.ResumeLayout(False)
-        Me.Panel5.ResumeLayout(False)
-        Me.Panel5.PerformLayout()
+        Me.GroupBox20.ResumeLayout(False)
+        Me.GroupBox20.PerformLayout()
+        Me.TableLayoutPanel1.ResumeLayout(False)
+        Me.TableLayoutPanel2.ResumeLayout(False)
+        Me.TableLayoutPanel3.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -4259,7 +4305,8 @@ Partial Class frmHome
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents Panel3 As Panel
-    Friend WithEvents Panel4 As Panel
-    Friend WithEvents Panel5 As Panel
+    Friend WithEvents GroupBox20 As GroupBox
+    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
+    Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
+    Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
 End Class

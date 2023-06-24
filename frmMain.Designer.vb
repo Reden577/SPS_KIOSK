@@ -145,7 +145,7 @@ Partial Class frmMain
         Me.SidePanel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.SidePanel1.Location = New System.Drawing.Point(0, 26)
         Me.SidePanel1.Name = "SidePanel1"
-        Me.SidePanel1.Size = New System.Drawing.Size(188, 1014)
+        Me.SidePanel1.Size = New System.Drawing.Size(145, 1014)
         Me.SidePanel1.TabIndex = 1
         '
         'SidePanel2
@@ -157,14 +157,14 @@ Partial Class frmMain
         Me.SidePanel2.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.SidePanel2.Location = New System.Drawing.Point(0, 747)
         Me.SidePanel2.Name = "SidePanel2"
-        Me.SidePanel2.Size = New System.Drawing.Size(188, 245)
+        Me.SidePanel2.Size = New System.Drawing.Size(145, 245)
         Me.SidePanel2.TabIndex = 5
         '
         'btnWO
         '
         Me.btnWO.FlatAppearance.BorderSize = 0
         Me.btnWO.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnWO.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnWO.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnWO.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.btnWO.IconChar = FontAwesome.Sharp.IconChar.ListCheck
         Me.btnWO.IconColor = System.Drawing.Color.White
@@ -173,7 +173,7 @@ Partial Class frmMain
         Me.btnWO.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnWO.Location = New System.Drawing.Point(0, 98)
         Me.btnWO.Name = "btnWO"
-        Me.btnWO.Size = New System.Drawing.Size(188, 45)
+        Me.btnWO.Size = New System.Drawing.Size(145, 45)
         Me.btnWO.TabIndex = 2
         Me.btnWO.Text = "JOB ORDER"
         Me.btnWO.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -184,7 +184,7 @@ Partial Class frmMain
         '
         Me.btnSettings.FlatAppearance.BorderSize = 0
         Me.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSettings.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSettings.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSettings.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.btnSettings.IconChar = FontAwesome.Sharp.IconChar.Gear
         Me.btnSettings.IconColor = System.Drawing.Color.White
@@ -193,7 +193,7 @@ Partial Class frmMain
         Me.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnSettings.Location = New System.Drawing.Point(0, 147)
         Me.btnSettings.Name = "btnSettings"
-        Me.btnSettings.Size = New System.Drawing.Size(188, 45)
+        Me.btnSettings.Size = New System.Drawing.Size(145, 45)
         Me.btnSettings.TabIndex = 2
         Me.btnSettings.Text = "SETTINGS"
         Me.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -204,7 +204,7 @@ Partial Class frmMain
         '
         Me.btnLogOut.FlatAppearance.BorderSize = 0
         Me.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnLogOut.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLogOut.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogOut.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.btnLogOut.IconChar = FontAwesome.Sharp.IconChar.UserXmark
         Me.btnLogOut.IconColor = System.Drawing.Color.White
@@ -213,7 +213,7 @@ Partial Class frmMain
         Me.btnLogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnLogOut.Location = New System.Drawing.Point(0, 50)
         Me.btnLogOut.Name = "btnLogOut"
-        Me.btnLogOut.Size = New System.Drawing.Size(188, 45)
+        Me.btnLogOut.Size = New System.Drawing.Size(145, 45)
         Me.btnLogOut.TabIndex = 2
         Me.btnLogOut.Tag = ""
         Me.btnLogOut.Text = "LOG OUT"
@@ -225,7 +225,7 @@ Partial Class frmMain
         '
         Me.btnLogin.FlatAppearance.BorderSize = 0
         Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogin.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.btnLogin.IconChar = FontAwesome.Sharp.IconChar.UserCheck
         Me.btnLogin.IconColor = System.Drawing.Color.White
@@ -234,7 +234,7 @@ Partial Class frmMain
         Me.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnLogin.Location = New System.Drawing.Point(0, 3)
         Me.btnLogin.Name = "btnLogin"
-        Me.btnLogin.Size = New System.Drawing.Size(188, 45)
+        Me.btnLogin.Size = New System.Drawing.Size(145, 45)
         Me.btnLogin.TabIndex = 2
         Me.btnLogin.Tag = ""
         Me.btnLogin.Text = "LOGIN"
@@ -248,7 +248,7 @@ Partial Class frmMain
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel7.Location = New System.Drawing.Point(0, 992)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(188, 22)
+        Me.Panel7.Size = New System.Drawing.Size(145, 22)
         Me.Panel7.TabIndex = 4
         '
         'btnHome
@@ -256,7 +256,7 @@ Partial Class frmMain
         Me.btnHome.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnHome.FlatAppearance.BorderSize = 0
         Me.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnHome.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnHome.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnHome.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.btnHome.IconChar = FontAwesome.Sharp.IconChar.HomeLg
         Me.btnHome.IconColor = System.Drawing.Color.White
@@ -265,7 +265,7 @@ Partial Class frmMain
         Me.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnHome.Location = New System.Drawing.Point(0, 0)
         Me.btnHome.Name = "btnHome"
-        Me.btnHome.Size = New System.Drawing.Size(188, 45)
+        Me.btnHome.Size = New System.Drawing.Size(145, 45)
         Me.btnHome.TabIndex = 2
         Me.btnHome.Text = "HOME"
         Me.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -278,9 +278,9 @@ Partial Class frmMain
         Me.Panel4.Controls.Add(Me.Panel6)
         Me.Panel4.Controls.Add(Me.Panel5)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel4.Location = New System.Drawing.Point(188, 1018)
+        Me.Panel4.Location = New System.Drawing.Point(145, 1018)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(1722, 22)
+        Me.Panel4.Size = New System.Drawing.Size(1765, 22)
         Me.Panel4.TabIndex = 2
         '
         'Panel6
@@ -295,7 +295,7 @@ Partial Class frmMain
         '
         Me.Panel5.Controls.Add(Me.lblDate)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel5.Location = New System.Drawing.Point(1551, 0)
+        Me.Panel5.Location = New System.Drawing.Point(1594, 0)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(171, 22)
         Me.Panel5.TabIndex = 0
@@ -361,9 +361,9 @@ Partial Class frmMain
         Me.PanelFrmContainer.Controls.Add(Me.lblJOProgressMC1)
         Me.PanelFrmContainer.Controls.Add(Me.lblCurrentScreen)
         Me.PanelFrmContainer.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelFrmContainer.Location = New System.Drawing.Point(188, 26)
+        Me.PanelFrmContainer.Location = New System.Drawing.Point(145, 26)
         Me.PanelFrmContainer.Name = "PanelFrmContainer"
-        Me.PanelFrmContainer.Size = New System.Drawing.Size(1722, 992)
+        Me.PanelFrmContainer.Size = New System.Drawing.Size(1765, 992)
         Me.PanelFrmContainer.TabIndex = 3
         '
         'Label5

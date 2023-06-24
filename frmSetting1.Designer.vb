@@ -736,6 +736,7 @@ Partial Class frmSetting1
         '
         'PictureBox2
         '
+        Me.PictureBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox2.Image = Global.SPSApp1.My.Resources.Resources.Powered_by_SPS
         Me.PictureBox2.Location = New System.Drawing.Point(1679, 954)
         Me.PictureBox2.Name = "PictureBox2"
