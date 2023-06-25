@@ -1114,11 +1114,12 @@ Partial Class frmHome
         '
         Me.lblOptNm1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblOptNm1.AutoSize = True
         Me.lblOptNm1.BackColor = System.Drawing.Color.White
         Me.lblOptNm1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblOptNm1.Location = New System.Drawing.Point(24, 99)
         Me.lblOptNm1.Name = "lblOptNm1"
-        Me.lblOptNm1.Size = New System.Drawing.Size(210, 22)
+        Me.lblOptNm1.Size = New System.Drawing.Size(14, 20)
         Me.lblOptNm1.TabIndex = 5
         Me.lblOptNm1.Text = "-"
         Me.lblOptNm1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft

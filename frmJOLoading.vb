@@ -39,6 +39,7 @@ Public Class frmJOLoading
 
     Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         dgvJO.ClearSelection()
+        dgvAPI.ClearSelection()
         lblDGVMachineId.Text = "-"
         lblDGVJOCode.Text = "-"
         lblDGVMoldID.Text = "-"
@@ -107,10 +108,11 @@ Public Class frmJOLoading
         sel.SelectMoldIdDetails(lblDGVMoldID.Text)
         preLDJODetail_PN1 = sel.PN1
         preLDJODetail_PN2 = sel.PN2
-        preLDJODetail_CavPN1 = sel.CavPN1
-        preLDJODetail_CavPN2 = sel.cavPN2
-        preLDJODetail_CycleTime = sel.CycleTime
         'preLDJODetail_MachineId = sel.AllowedMC
+        preLDJODetail_CavPN1 = sel.CavPN1
+        preLDJODetail_CavPN2 = "0"
+        preLDJODetail_CycleTime = sel.CycleTime
+
     End Sub
     '//
 
@@ -211,5 +213,6 @@ Public Class frmJOLoading
         lblDGVJOPlanQty.Text = dgvAPI.CurrentRow.Cells(1).Value.ToString
         lblDGVMoldID.Text = dgvAPI.CurrentRow.Cells(2).Value.ToString
         lblDGVMachineId.Text = dgvAPI.CurrentRow.Cells(3).Value.ToString
+        compareMCLogged_VS_MCSelected()
     End Sub
 End Class

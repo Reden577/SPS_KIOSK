@@ -1768,133 +1768,133 @@ Public Class frmHome
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "Machine 1"
+            modMCIdNow = "MC1"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC2 = True And modTempCheckMC2 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "Machine 2"
+            modMCIdNow = "MC2"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC3 = True And modTempCheckMC3 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "Machine 3"
+            modMCIdNow = "MC3"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC4 = True And modTempCheckMC4 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "Machine 4"
+            modMCIdNow = "MC4"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC5 = True And modTempCheckMC5 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "Machine 5"
+            modMCIdNow = "MC5"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC6 = True And modTempCheckMC6 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "Machine 6"
+            modMCIdNow = "MC6"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC7 = True And modTempCheckMC7 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "Machine 7"
+            modMCIdNow = "MC7"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC8 = True And modTempCheckMC8 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "Machine 8"
+            modMCIdNow = "MC8"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC9 = True And modTempCheckMC9 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "Machine 9"
+            modMCIdNow = "MC9"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC10 = True And modTempCheckMC10 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "Machine 10"
+            modMCIdNow = "MC10"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC11 = True And modTempCheckMC11 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "Machine 11"
+            modMCIdNow = "MC11"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC12 = True And modTempCheckMC12 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "Machine 12"
+            modMCIdNow = "MC12"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC13 = True And modTempCheckMC13 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "Machine 13"
+            modMCIdNow = "MC13"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC14 = True And modTempCheckMC14 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "Machine 14"
+            modMCIdNow = "MC14"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC15 = True And modTempCheckMC15 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "Machine 15"
+            modMCIdNow = "MC15"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC16 = True And modTempCheckMC16 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "Machine 16"
+            modMCIdNow = "MC16"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC17 = True And modTempCheckMC17 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "Machine 17"
+            modMCIdNow = "MC17"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC18 = True And modTempCheckMC18 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "Machine 18"
+            modMCIdNow = "MC18"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC19 = True And modTempCheckMC19 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "Machine 19"
+            modMCIdNow = "MC19"
             UpdateUserLogin()
         End If
     End Sub
@@ -1914,133 +1914,133 @@ Public Class frmHome
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "Machine 1"
+            modMCIdNow = "MC1"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC2 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "Machine 2"
+            modMCIdNow = "MC2"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC3 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "Machine 3"
+            modMCIdNow = "MC3"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC4 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "Machine 4"
+            modMCIdNow = "MC4"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC5 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "Machine 5"
+            modMCIdNow = "MC5"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC6 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "Machine 6"
+            modMCIdNow = "MC6"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC7 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "Machine 7"
+            modMCIdNow = "MC7"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC8 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "Machine 8"
+            modMCIdNow = "MC8"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC9 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "Machine 9"
+            modMCIdNow = "MC9"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC10 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "Machine 10"
+            modMCIdNow = "MC10"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC11 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "Machine 11"
+            modMCIdNow = "MC11"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC12 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "Machine 12"
+            modMCIdNow = "MC12"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC13 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "Machine 13"
+            modMCIdNow = "MC13"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC14 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "Machine 14"
+            modMCIdNow = "MC14"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC15 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "Machine 15"
+            modMCIdNow = "MC15"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC16 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "Machine 16"
+            modMCIdNow = "MC16"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC17 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "Machine 17"
+            modMCIdNow = "MC17"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC18 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "Machine 18"
+            modMCIdNow = "MC18"
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC19 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "Machine 19"
+            modMCIdNow = "MC19"
             UpdateUserLogin()
         End If
     End Sub

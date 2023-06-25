@@ -485,10 +485,6 @@ Public Class frmMain
         CallInsertDT_KIOSKTriggered_QAStoppage()
         DTClearStoreValue_ForInsert()
     End Sub
-
-    Private Sub PanelFrmContainer_Paint(sender As Object, e As PaintEventArgs) Handles PanelFrmContainer.Paint
-
-    End Sub
     '//
 
     '// CALLING INSERTING DOWNTIME STOPPAGE 

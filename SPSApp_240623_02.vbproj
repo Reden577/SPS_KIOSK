@@ -217,6 +217,7 @@
     </Compile>
     <Compile Include="ModbusModule.vb" />
     <Compile Include="modButtonAndClickFlags.vb" />
+    <Compile Include="modErrorFlag.vb" />
     <Compile Include="modLoginDetails.vb" />
     <Compile Include="modMySettingsValues.vb" />
     <Compile Include="modQuality.vb" />
@@ -633,6 +634,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\indicator green.png" />
+    <None Include="Resources\sps4.png" />
     <Content Include="sps2_g83_icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

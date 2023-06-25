@@ -27,18 +27,20 @@ Partial Class frmSplashLoading
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.lblProgress = New System.Windows.Forms.Label()
         Me.tmrProgress = New System.Windows.Forms.Timer(Me.components)
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ProgressBar1
         '
-        Me.ProgressBar1.Location = New System.Drawing.Point(16, 292)
+        Me.ProgressBar1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ProgressBar1.Location = New System.Drawing.Point(16, 314)
         Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(755, 25)
+        Me.ProgressBar1.Size = New System.Drawing.Size(702, 25)
         Me.ProgressBar1.TabIndex = 1
         '
         'lblProgress
@@ -46,7 +48,7 @@ Partial Class frmSplashLoading
         Me.lblProgress.AutoSize = True
         Me.lblProgress.BackColor = System.Drawing.Color.Transparent
         Me.lblProgress.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblProgress.Location = New System.Drawing.Point(12, 269)
+        Me.lblProgress.Location = New System.Drawing.Point(16, 291)
         Me.lblProgress.Name = "lblProgress"
         Me.lblProgress.Size = New System.Drawing.Size(57, 20)
         Me.lblProgress.TabIndex = 2
@@ -58,32 +60,34 @@ Partial Class frmSplashLoading
         Me.tmrProgress.Enabled = True
         Me.tmrProgress.Interval = 50
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.SPSApp1.My.Resources.Resources.sps3
-        Me.PictureBox1.Location = New System.Drawing.Point(706, 323)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(65, 35)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
         'PictureBox2
         '
+        Me.PictureBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox2.Image = Global.SPSApp1.My.Resources.Resources.proguard_logo
-        Me.PictureBox2.Location = New System.Drawing.Point(48, 35)
+        Me.PictureBox2.Location = New System.Drawing.Point(16, 12)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(697, 221)
+        Me.PictureBox2.Size = New System.Drawing.Size(702, 191)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 3
         Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.SPSApp1.My.Resources.Resources.sps4
+        Me.PictureBox1.Location = New System.Drawing.Point(577, 225)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(141, 77)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(605, 338)
+        Me.Label1.Location = New System.Drawing.Point(475, 282)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(95, 20)
         Me.Label1.TabIndex = 2
@@ -94,7 +98,7 @@ Partial Class frmSplashLoading
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 382)
+        Me.ClientSize = New System.Drawing.Size(736, 358)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lblProgress)
@@ -106,17 +110,16 @@ Partial Class frmSplashLoading
         Me.MinimizeBox = False
         Me.Name = "frmSplashLoading"
         Me.Text = "LOADING SPS APP"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents ProgressBar1 As ProgressBar
     Friend WithEvents lblProgress As Label
     Friend WithEvents tmrProgress As Timer
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
 End Class

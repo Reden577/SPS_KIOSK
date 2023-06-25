@@ -11,7 +11,7 @@
 
     '// JOB ORDER DETAILS SET VALUES
     Public Sub JobOrderLoadDetails()
-        If preLDJODetail_MachineId = "Machine 1" Then
+        If preLDJODetail_MachineId = "MC1" Then
             stJOMC1 = preLDJODetail_JOCode
             stJOPartNo1MC1 = preLDJODetail_PN1
             stJOPartNo2MC1 = preLDJODetail_PN2
@@ -20,11 +20,11 @@
             stJOQuantityMC1 = preLDJODetail_PlanQty
             stJOCycleTimeMC1 = preLDJODetail_CycleTime
             stJOMoldIDMC1 = preLDJODetail_MoldId
-            stJOMachineIDMC1 = preLDJODetail_MachineId
+            stJOMachineIDMC1 = stMachineID
             stJOStartTimeMC1 = preLDJODetail_StartTime
             modJOLoadedFlagMC1 = True
         End If
-        If preLDJODetail_MachineId = "Machine 2" Then
+        If preLDJODetail_MachineId = "MC2" Then
             stJOMC2 = preLDJODetail_JOCode
             stJOPartNo1MC2 = preLDJODetail_PN1
             stJOPartNo2MC2 = preLDJODetail_PN2
@@ -33,7 +33,7 @@
             stJOQuantityMC2 = preLDJODetail_PlanQty
             stJOCycleTimeMC2 = preLDJODetail_CycleTime
             stJOMoldIDMC2 = preLDJODetail_MoldId
-            stJOMachineIDMC2 = preLDJODetail_MachineId
+            stJOMachineIDMC2 = stMachineID
             stJOStartTimeMC2 = preLDJODetail_StartTime
             modJOLoadedFlagMC2 = True
         End If
@@ -119,7 +119,7 @@
 
     '//UNLOADING JOB ORDER
     Public Sub JobOrderUnloadDetails()
-        If lblDGVMachineId.Text = "Machine 1" And lblDGVLoadStats.Text = "Loaded" Then
+        If lblDGVMachineId.Text = "MC1" And lblDGVLoadStats.Text = "Loaded" Then
             stJOMC1 = Nothing
             stJOPartNo1MC1 = Nothing
             stJOPartNo2MC1 = Nothing
@@ -137,7 +137,7 @@
             CounterP2MC1 = 0
             modJOLoadedFlagMC1 = False
         End If
-        If lblDGVMachineId.Text = "Machine 2" And lblDGVLoadStats.Text = "Loaded" Then
+        If lblDGVMachineId.Text = "MC2" And lblDGVLoadStats.Text = "Loaded" Then
             stJOMC2 = Nothing
             stJOPartNo1MC2 = Nothing
             stJOPartNo2MC2 = Nothing
@@ -307,10 +307,10 @@
         If preLDJODetail_MachineId = "Machine 2" Then stMachineID = "MC2"
     End Sub
     Public Sub UpdateJO_At_Loading()
-        MachineIDInitialsSub()
+        'MachineIDInitialsSub()
         Dim insert As New clsLogJODetails
         insert.AllowedMachine = preLDJODetail_MachineId
-        insert.ShiftCode = sfShiftCodeMod & stMachineID
+        insert.ShiftCode = sfShiftCodeMod & preLDJODetail_MachineId
         insert.JOCode = preLDJODetail_JOCode
         insert.ModlID = preLDJODetail_MoldId
         insert.PN1 = preLDJODetail_PN1

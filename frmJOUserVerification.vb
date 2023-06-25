@@ -34,15 +34,15 @@ Public Class frmJOUserVerification
             If txtJOVerification.Text = modLogOTS And txtJOVerification.Text <> "" Then
 
                 ' For Job Order Loading Ver.1
-                If JOloadBtnClick = True Then
-                    stJOLoadedBy = modLogUserName
-                    bolJOLoadConfirm = True
-                    JOloadBtnClick = False
-                    modLogUserID = Nothing
-                    modLogOTS = Nothing
-                    modLogAccessLevel = Nothing
-                    Me.Close()
-                End If
+                'If JOloadBtnClick = True Then
+                '    stJOLoadedBy = modLogUserName
+                '    bolJOLoadConfirm = True
+                '    JOloadBtnClick = False
+                '    modLogUserID = Nothing
+                '    modLogOTS = Nothing
+                '    modLogAccessLevel = Nothing
+                '    Me.Close()
+                'End If
                 'If JOUnloadBtnClick = True Then
                 '    stJOUnloadedBy = modLogUserName
                 '    bolJOUnloadConfirm = True
