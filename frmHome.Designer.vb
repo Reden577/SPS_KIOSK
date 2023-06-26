@@ -403,7 +403,7 @@ Partial Class frmHome
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(2588, 56)
+        Me.Panel1.Size = New System.Drawing.Size(2580, 56)
         Me.Panel1.TabIndex = 2
         '
         'Panel2
@@ -411,7 +411,7 @@ Partial Class frmHome
         Me.Panel2.Controls.Add(Me.picComCheckOnOff)
         Me.Panel2.Controls.Add(Me.lblLogiLogNote)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel2.Location = New System.Drawing.Point(2127, 0)
+        Me.Panel2.Location = New System.Drawing.Point(2119, 0)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(461, 56)
         Me.Panel2.TabIndex = 5
@@ -3716,7 +3716,7 @@ Partial Class frmHome
         '
         Me.PictureBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox2.Image = Global.SPSApp1.My.Resources.Resources.Powered_by_SPS
-        Me.PictureBox2.Location = New System.Drawing.Point(2433, 994)
+        Me.PictureBox2.Location = New System.Drawing.Point(2425, 994)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(143, 26)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -3834,12 +3834,13 @@ Partial Class frmHome
         Me.GroupBox20.Controls.Add(Me.lblOnOffMC9)
         Me.GroupBox20.Controls.Add(Me.lblRxMC6)
         Me.GroupBox20.Controls.Add(Me.lblRxMC16)
-        Me.GroupBox20.Location = New System.Drawing.Point(2221, 24)
+        Me.GroupBox20.Location = New System.Drawing.Point(2215, 24)
         Me.GroupBox20.Name = "GroupBox20"
         Me.GroupBox20.Size = New System.Drawing.Size(332, 866)
         Me.GroupBox20.TabIndex = 9
         Me.GroupBox20.TabStop = False
         Me.GroupBox20.Text = "GroupBox20"
+        Me.GroupBox20.Visible = False
         '
         'TableLayoutPanel1
         '
@@ -3856,7 +3857,7 @@ Partial Class frmHome
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(2588, 914)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(2580, 914)
         Me.TableLayoutPanel1.TabIndex = 10
         '
         'TableLayoutPanel2
@@ -3890,7 +3891,7 @@ Partial Class frmHome
         Me.TableLayoutPanel2.Controls.Add(Me.GroupBox18, 4, 2)
         Me.TableLayoutPanel2.Controls.Add(Me.TableLayoutPanel3, 6, 2)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(404, 3)
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(400, 3)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 3
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
@@ -3917,7 +3918,7 @@ Partial Class frmHome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(2588, 1032)
+        Me.ClientSize = New System.Drawing.Size(2580, 1032)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.TableLayoutPanel1)
