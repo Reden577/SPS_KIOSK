@@ -76,7 +76,7 @@ Public Class frmQualityStoppage
 
     '// LOADS THE COUNTERMEASURE BASED ON THE GIVEN QA STOPPAGE
     Private Sub cboQAStoppage_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboQAStoppage.SelectedIndexChanged
-        Me.MListQualityCountermeasureTableAdapter.FillByQAStoppage(Me.SPSDataSet4.MListQualityCountermeasure, cboQAStoppage.Text, "MC1")
+        Me.MListQualityCountermeasureTableAdapter.FillByQAStoppage(Me.SPSDataSet4.MListQualityCountermeasure, cboQAStoppage.Text, modSetVal_MCID)
         cboCountermeasure.Text = ""
         SaveBtnEnableDisable()
     End Sub
@@ -84,7 +84,7 @@ Public Class frmQualityStoppage
 
     '// STORING INFO FOR INSERTING DOWNTIME RECORDS
     Public Sub DTStoreValue_ForInsert()
-        DTstoValue_ShiftCode = sfShiftCodeMod + "MC1"
+        DTstoValue_ShiftCode = sfShiftCodeMod + modSetVal_MCID
         DTstoValue_UserName = lblUserLog.Text
         DTstoValue_UserID = lblUserID.Text
         DTstoValue_DTType = "Quality"
@@ -99,9 +99,9 @@ Public Class frmQualityStoppage
         DTstoValue_ForQAVeri = "n/a"
         DTstoValue_TtlVeriMins = 0
         DTstoValue_TtlFailFreq = 0
-        DTstoValue_DTStatus = "MC1NewStoppage"
+        DTstoValue_DTStatus = modSetVal_DTNewStoppage
         DTstoValue_JOCode = lblJOCode.Text
-        DTstoValue_MachineID = modMachineIDMC1
+        DTstoValue_MachineID = modSetVal_MCID
 
 
         cboQAStoppage.SelectedItem = ""
@@ -115,7 +115,7 @@ Public Class frmQualityStoppage
     '// INSERTING DOWNTIME STOPPAGE 
     Public Sub InsertDowntimeRecord()
         Dim insertDT As New cls001_InsertDowntime_QAStoppage
-        insertDT.cls001_ShiftCode = sfShiftCodeMod + "MC1"
+        insertDT.cls001_ShiftCode = sfShiftCodeMod + modSetVal_MCID
         insertDT.cls001_UserName = lblUserLog.Text
         insertDT.cls001_UserID = lblUserID.Text
         insertDT.cls001_DTType = "Quality"
@@ -130,9 +130,9 @@ Public Class frmQualityStoppage
         insertDT.cls001_ForQAVeri = "n/a"
         insertDT.cls001_TtlQAVeriMins = 0
         insertDT.cls001_TtlFailfreg = 0
-        insertDT.cls001_DTStatus = "MC1NewStoppage"
+        insertDT.cls001_DTStatus = modSetVal_DTNewStoppage
         insertDT.cls001_JOCode = lblJOCode.Text
-        insertDT.cls001_MachineID = modMachineIDMC1
+        insertDT.cls001_MachineID = modSetVal_MCID
         insertDT.InsertDowntime()
         cboQAStoppage.SelectedItem = ""
         cboQAStoppage.Text = ""
@@ -150,8 +150,8 @@ Public Class frmQualityStoppage
             CM = cboCountermeasure.Text
         End If
         Dim Upd8 As New clsUpdateDTStoppage
-        Upd8.cls001_DTStatus = "MC1NewStoppage"
-        Upd8.cls001_MachineID = modMachineIDMC1
+        Upd8.cls001_DTStatus = modSetVal_DTNewStoppage
+        Upd8.cls001_MachineID = modSetVal_MCID
         Upd8.cls001_UserName = modQualityUserLogin
         Upd8.cls001_UserID = modQualityUIDLogin
         Upd8.cls001_DTType = "Quality"
@@ -167,16 +167,16 @@ Public Class frmQualityStoppage
         Dim result As Integer
         Dim cnt As New clsCountDTType_byDTStatusMCId
         cnt.cls001_DTType = "Quality"
-        cnt.cls001_DTStatus = "MC1NewStoppage"
-        cnt.cls001_MachineID = modMachineIDMC1
+        cnt.cls001_DTStatus = modSetVal_DTNewStoppage
+        cnt.cls001_MachineID = modSetVal_MCID
         cnt.CountDTType()
         result = cnt.cntDTtype
 
         If result >= 1 Then
             Dim sel As New clsSelDTReasonCMeasure
             sel.cls001_DTType = "Quality"
-            sel.cls001_MachineID = modMachineIDMC1
-            sel.cls001_DTStatus = "MC1NewStoppage"
+            sel.cls001_MachineID = modSetVal_MCID
+            sel.cls001_DTStatus = modSetVal_DTNewStoppage
             sel.SelDTReason_CMeasure()
             cboQAStoppage.Text = sel.cls001_DTReason
             cboCountermeasure.Text = sel.cls001_DTCountermeasure
@@ -199,8 +199,8 @@ Public Class frmQualityStoppage
         upd8.cls001_ForQAVeri = "TBA"
         upd8.cls001_TtlFailfreg = QAFailCounter
         upd8.cls001_DTType = "Quality"
-        upd8.cls001_DTStatus = "MC1NewStoppage"
-        upd8.cls001_MachineID = modMachineIDMC1
+        upd8.cls001_DTStatus = modSetVal_DTNewStoppage
+        upd8.cls001_MachineID = modSetVal_MCID
         upd8.UpdateDT_AtQAFail()
     End Sub
     '//

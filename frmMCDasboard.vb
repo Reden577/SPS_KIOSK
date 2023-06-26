@@ -15,42 +15,80 @@ Public Class frmMCDasboard
 
         If bolMCDashboard1 = True Then
             lblMCDasboard.Text = "Machine 1"
+            modSetVal_MCID = "MC1"
+            modSetVal_DTNewStoppage = "MC1NewStoppage"
         ElseIf bolMCDashboard2 = True Then
             lblMCDasboard.Text = "Machine 2"
+            modSetVal_DTNewStoppage = "MC2NewStoppage"
+            modSetVal_MCID = "MC2"
         ElseIf bolMCDashboard3 = True Then
             lblMCDasboard.Text = "Machine 3"
+            modSetVal_DTNewStoppage = "MC3NewStoppage"
+            modSetVal_MCID = "MC3"
         ElseIf bolMCDashboard4 = True Then
             lblMCDasboard.Text = "Machine 4"
+            modSetVal_DTNewStoppage = "MC4NewStoppage"
+            modSetVal_MCID = "MC4"
         ElseIf bolMCDashboard5 = True Then
             lblMCDasboard.Text = "Machine 5"
+            modSetVal_DTNewStoppage = "MC5NewStoppage"
+            modSetVal_MCID = "MC5"
         ElseIf bolMCDashboard6 = True Then
             lblMCDasboard.Text = "Machine 6"
+            modSetVal_DTNewStoppage = "MC6NewStoppage"
+            modSetVal_MCID = "MC6"
         ElseIf bolMCDashboard7 = True Then
             lblMCDasboard.Text = "Machine 7"
+            modSetVal_DTNewStoppage = "MC7NewStoppage"
+            modSetVal_MCID = "MC7"
         ElseIf bolMCDashboard8 = True Then
             lblMCDasboard.Text = "Machine 8"
+            modSetVal_DTNewStoppage = "MC8NewStoppage"
+            modSetVal_MCID = "MC8"
         ElseIf bolMCDashboard9 = True Then
             lblMCDasboard.Text = "Machine 9"
+            modSetVal_DTNewStoppage = "MC9NewStoppage"
+            modSetVal_MCID = "MC9"
         ElseIf bolMCDashboard10 = True Then
             lblMCDasboard.Text = "Machine 10"
+            modSetVal_DTNewStoppage = "MC01NewStoppage"
+            modSetVal_MCID = "MC10"
         ElseIf bolMCDashboard11 = True Then
             lblMCDasboard.Text = "Machine 11"
+            modSetVal_DTNewStoppage = "MC11NewStoppage"
+            modSetVal_MCID = "MC11"
         ElseIf bolMCDashboard12 = True Then
             lblMCDasboard.Text = "Machine 12"
+            modSetVal_DTNewStoppage = "MC12NewStoppage"
+            modSetVal_MCID = "MC12"
         ElseIf bolMCDashboard13 = True Then
             lblMCDasboard.Text = "Machine 13"
+            modSetVal_DTNewStoppage = "MC13NewStoppage"
+            modSetVal_MCID = "MC13"
         ElseIf bolMCDashboard14 = True Then
             lblMCDasboard.Text = "Machine 14"
+            modSetVal_DTNewStoppage = "MC14NewStoppage"
+            modSetVal_MCID = "MC14"
         ElseIf bolMCDashboard15 = True Then
             lblMCDasboard.Text = "Machine 15"
+            modSetVal_DTNewStoppage = "MC15NewStoppage"
+            modSetVal_MCID = "MC15"
         ElseIf bolMCDashboard16 = True Then
             lblMCDasboard.Text = "Machine 16"
+            modSetVal_DTNewStoppage = "MC16NewStoppage"
+            modSetVal_MCID = "MC16"
         ElseIf bolMCDashboard17 = True Then
             lblMCDasboard.Text = "Machine 17"
+            modSetVal_DTNewStoppage = "MC17NewStoppage"
+            modSetVal_MCID = "MC17"
         ElseIf bolMCDashboard18 = True Then
             lblMCDasboard.Text = "Machine 18"
+            modSetVal_DTNewStoppage = "MC18NewStoppage"
+            modSetVal_MCID = "MC18"
         ElseIf bolMCDashboard19 = True Then
             lblMCDasboard.Text = "Machine 19"
+            modSetVal_DTNewStoppage = "MC19NewStoppage"
+            modSetVal_MCID = "MC19"
         End If
 
     End Sub
@@ -75,6 +113,9 @@ Public Class frmMCDasboard
         bolMCDashboard17 = False
         bolMCDashboard18 = False
         bolMCDashboard19 = False
+
+        modSetVal_DTNewStoppage = ""
+        modSetVal_MCID = ""
     End Sub
 
     Public Sub MachineStatusImage()
@@ -243,7 +284,7 @@ Public Class frmMCDasboard
             lblDateTimeStart.Text = stJOStartTimeMC1
             lblOutputP1.Text = CounterP1MC1
             lblOutputP2.Text = CounterP2MC1
-            lblShift.Text = sfShiftCodeMod & "MC1"
+            lblShift.Text = sfShiftCodeMod & modSetVal_MCID
         End If
         If bolMCDashboard2 = True Then
             lblActualQty0.Text = TotalCountMC2
@@ -630,7 +671,7 @@ Public Class frmMCDasboard
     End Sub
 
     Public Sub UpdateDowntimetoDataGridVidw()
-        Me.DowntimeTableAdapter.ShowNewDowntime(Me.SPSDataSet1.Downtime, "MC1NewStoppage")
+        Me.DowntimeTableAdapter.ShowNewDowntime(Me.SPSDataSet1.Downtime, modSetVal_DTNewStoppage)
         cboShiftCode.Text = ""
     End Sub
 

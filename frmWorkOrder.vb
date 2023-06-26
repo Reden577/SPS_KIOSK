@@ -302,10 +302,10 @@
     '//
 
     '// UPDATING JOB ORDER LOADED DETAILS TO DB TABLE
-    Public Sub MachineIDInitialsSub()
-        If preLDJODetail_MachineId = "Machine 1" Then stMachineID = "MC1"
-        If preLDJODetail_MachineId = "Machine 2" Then stMachineID = "MC2"
-    End Sub
+    'Public Sub MachineIDInitialsSub()
+    '    If preLDJODetail_MachineId = "Machine 1" Then stMachineID = "MC1"
+    '    If preLDJODetail_MachineId = "Machine 2" Then stMachineID = "MC2"
+    'End Sub
     Public Sub UpdateJO_At_Loading()
         'MachineIDInitialsSub()
         Dim insert As New clsLogJODetails
