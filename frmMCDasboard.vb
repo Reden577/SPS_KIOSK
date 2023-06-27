@@ -7,10 +7,7 @@ Public Class frmMCDasboard
     Dim stStopDetails As String = "{0,-40}{1,-30}{2,-30}{3,-30}"
     Private Sub frmMCDasboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'SPSDataSet1.Downtime' table. You can move, or remove it, as needed.
-        Me.DowntimeTableAdapter.Fill(Me.SPSDataSet1.Downtime)
-        DropdownShiftCodeDistinctValue()
-        UpdateDowntimetoDataGridVidw()
-        cboShiftCode.Text = ""
+
         Me.CenterToScreen()
 
         If bolMCDashboard1 = True Then
@@ -91,6 +88,10 @@ Public Class frmMCDasboard
             modSetVal_MCID = "MC19"
         End If
 
+        Me.DowntimeTableAdapter.FillByDTStatus(Me.SPSDataSet1.Downtime, "modSetVal_DTNewStoppage")
+        DropdownShiftCodeDistinctValue()
+        UpdateDowntimetoDataGridVidw()
+        cboShiftCode.Text = ""
     End Sub
 
     Private Sub frmMCDasboard_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
