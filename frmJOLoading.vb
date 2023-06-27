@@ -67,21 +67,21 @@ Public Class frmJOLoading
 
     '// DESERIALIZING JSON API (JOB ORDER SOURCE FORM ARC-STONE)
     Public Sub DeserializeJSON()
-        'Dim uriString As String = "http://192.168.8.78/arc.flow.PRD/workflows/custom/sps-integration"
-        'Dim uri As New Uri(uriString)
+        Dim uriString As String = "http://192.168.8.78/arc.flow.PRD/workflows/custom/sps-integration"
+        Dim uri As New Uri(uriString)
 
-        ''make Http request
-        'Dim Request As HttpWebRequest = HttpWebRequest.Create(uri)
-        'Request.Method = "GET"
+        'make Http request
+        Dim Request As HttpWebRequest = HttpWebRequest.Create(uri)
+        Request.Method = "GET"
 
-        ''get HTTP response
-        'Dim Response As HttpWebResponse = Request.GetResponse()
+        'get HTTP response
+        Dim Response As HttpWebResponse = Request.GetResponse()
 
-        ''Read Http response
-        'Dim Read = New StreamReader(Response.GetResponseStream)
+        'Read Http response
+        Dim Read = New StreamReader(Response.GetResponseStream)
 
-        'Dim Raw As String = Read.ReadToEnd()
-        'RichTextBox1.Text = Raw
+        Dim Raw As String = Read.ReadToEnd()
+        RichTextBox1.Text = Raw
 
         Dim json As String = RichTextBox1.Text
         Dim data = JsonConvert.DeserializeObject(Of JSON_JobOrder)(json)
