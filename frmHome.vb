@@ -1298,7 +1298,7 @@ Public Class frmHome
         End If
         If menuTabLogout = True Then
             Dim i As Integer
-            i = (MessageBox.Show("Machine come to a stop in a few minutes!" &
+            i = (MessageBox.Show("Machine will stop in a few seconds!" &
                                  vbNewLine & "Do want to proceed?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
             'result = 6
             If i = 6 Then
@@ -1579,18 +1579,7 @@ Public Class frmHome
     Public Sub machineONOFFStatUpdate()
         lblOnOffMC1.Text = RxPLCM0
         lblOnOffMC2.Text = RxPLCM1
-        'lblOnOffMC3.Text = RxPLCM2
-        'lblOnOffMC4.Text = RxPLCM3
-        'lblOnOffMC5.Text = RxPLCM4
-        'lblOnOffMC6.Text = RxPLCM5
-        'lblOnOffMC7.Text = RxPLCM6
-        'lblOnOffMC8.Text = RxPLCM7
-        'lblOnOffMC9.Text = RxPLCM8
-        'lblOnOffMC10.Text = RxPLCM9
-        'lblOnOffMC11.Text = RxPLCM10
-        'lblOnOffMC12.Text = RxPLCM11
-        'lblOnOffMC13.Text = RxPLCM12
-        'lblOnOffMC14.Text = RxPLCM13
+
     End Sub
     Private Sub lblOnOffMC1_TextChanged(sender As Object, e As EventArgs) Handles lblOnOffMC1.TextChanged
         If lblOnOffMC1.Text = "True" Then
@@ -1749,6 +1738,9 @@ Public Class frmHome
             con.Open()
             cmd.ExecuteNonQuery()
             con.Close()
+
+
+
         End Using
     End Sub
     '//
@@ -2050,9 +2042,15 @@ Public Class frmHome
     Public Sub ConditionsToTriggerMachineOFF()
         If modUserLoginFlagMC1 = False _
             Or (stJOMC1 = "-" Or stJOMC1 = Nothing) Then
-            modMCStopConditionTriggered = True
+            modMC1Stop_logoutOrNoJO = True
         Else
-            modMCStopConditionTriggered = False
+            modMC1Stop_logoutOrNoJO = False
+        End If
+        If modUserLoginFlagMC2 = False _
+            Or (stJOMC2 = "-" Or stJOMC2 = Nothing) Then
+            modMC2Stop_logoutOrNoJO = True
+        Else
+            modMC2Stop_logoutOrNoJO = False
         End If
     End Sub
     '//

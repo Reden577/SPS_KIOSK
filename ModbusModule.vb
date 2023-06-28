@@ -84,5 +84,24 @@
     Public D2040 As Integer
 
     Public modMCStopConditionTriggered As Boolean
+    Public modMC1Stop_logoutOrNoJO As Boolean
+    Public modMC2Stop_logoutOrNoJO As Boolean
+    Public modMC3Stop_logoutOrNoJO As Boolean
+    Public modMC4Stop_logoutOrNoJO As Boolean
+    Public modMC5Stop_logoutOrNoJO As Boolean
+    Public modMC6Stop_logoutOrNoJO As Boolean
+    Public modMC7Stop_logoutOrNoJO As Boolean
+    Public modMC8Stop_logoutOrNoJO As Boolean
+    Public modMC9Stop_logoutOrNoJO As Boolean
+    Public modMC10Stop_logoutOrNoJO As Boolean
+    Public modMC11Stop_logoutOrNoJO As Boolean
+    Public modMC12Stop_logoutOrNoJO As Boolean
+    Public modMC13Stop_logoutOrNoJO As Boolean
+    Public modMC14Stop_logoutOrNoJO As Boolean
+    Public modMC15Stop_logoutOrNoJO As Boolean
+    Public modMC16Stop_logoutOrNoJO As Boolean
+    Public modMC17Stop_logoutOrNoJO As Boolean
+    Public modMC18Stop_logoutOrNoJO As Boolean
+    Public modMC19Stop_logoutOrNoJO As Boolean
 
 End Module

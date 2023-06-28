@@ -44,6 +44,8 @@ Public Class frmJOLoading
         lblDGVJOCode.Text = "-"
         lblDGVMoldID.Text = "-"
         lblDGVJOPlanQty.Text = "-"
+        lblLoadStat.Text = "-"
+        lblProdStat.Text = "-"
     End Sub
 
     Private Sub dgvJO_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvJO.CellContentClick
@@ -55,7 +57,7 @@ Public Class frmJOLoading
         'CompareJOCode_Vs_JOCodeLoadedDetails()
         compareMCLogged_VS_MCSelected()
     End Sub
-    Private Sub lblDGVMachineId_TextChanged(sender As Object, e As EventArgs) Handles lblDGVMachineId.TextChanged
+    Private Sub lblDGVMachineId_TextChanged(sender As Object, e As EventArgs) Handles lblDGVMachineId.TextChanged, lblProdStat.TextChanged, lblLoadStat.TextChanged
         'If (lblDGVMoldID.Text <> "-" And lblDGVMoldID.Text <> "") _
         '    And (lblDGVMachineId.Text <> "-" And lblDGVMachineId.Text <> "") Then
         '    btnJOLoadBtn2Click.Enabled = True
@@ -67,21 +69,21 @@ Public Class frmJOLoading
 
     '// DESERIALIZING JSON API (JOB ORDER SOURCE FORM ARC-STONE)
     Public Sub DeserializeJSON()
-        Dim uriString As String = "http://192.168.8.78/arc.flow.PRD/workflows/custom/sps-integration"
-        Dim uri As New Uri(uriString)
+        'Dim uriString As String = "http://192.168.8.78/arc.flow.PRD/workflows/custom/sps-integration"
+        'Dim uri As New Uri(uriString)
 
-        'make Http request
-        Dim Request As HttpWebRequest = HttpWebRequest.Create(uri)
-        Request.Method = "GET"
+        ''make Http request
+        'Dim Request As HttpWebRequest = HttpWebRequest.Create(uri)
+        'Request.Method = "GET"
 
-        'get HTTP response
-        Dim Response As HttpWebResponse = Request.GetResponse()
+        ''get HTTP response
+        'Dim Response As HttpWebResponse = Request.GetResponse()
 
-        'Read Http response
-        Dim Read = New StreamReader(Response.GetResponseStream)
+        ''Read Http response
+        'Dim Read = New StreamReader(Response.GetResponseStream)
 
-        Dim Raw As String = Read.ReadToEnd()
-        RichTextBox1.Text = Raw
+        'Dim Raw As String = Read.ReadToEnd()
+        'RichTextBox1.Text = Raw
 
         Dim json As String = RichTextBox1.Text
         Dim data = JsonConvert.DeserializeObject(Of JSON_JobOrder)(json)
@@ -208,11 +210,56 @@ Public Class frmJOLoading
         upd8.updateLoadStat()
     End Sub
 
+    '// LOAD DETAILS TO JO SUMMARY
     Private Sub dgvAPI_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvAPI.CellContentClick
         lblDGVJOCode.Text = dgvAPI.CurrentRow.Cells(0).Value.ToString
         lblDGVJOPlanQty.Text = dgvAPI.CurrentRow.Cells(1).Value.ToString
         lblDGVMoldID.Text = dgvAPI.CurrentRow.Cells(2).Value.ToString
         lblDGVMachineId.Text = dgvAPI.CurrentRow.Cells(3).Value.ToString
-        compareMCLogged_VS_MCSelected()
+
+        CheckIFJO_IsLoaded()
+
     End Sub
+
+    Public Sub CheckIFJO_IsLoaded()
+        Dim sqlcmd As String = "Select [JOB_ORDER] from [Production].[JOLoadedDetails] where [JOB_ORDER] = '" + lblDGVJOCode.Text + "' "
+        Dim con As New SqlConnection(modSetVal_SqlPath)
+        Dim JC As String
+        Using cmd As SqlCommand = New SqlCommand(sqlcmd, con)
+            con.Open()
+            JC = cmd.ExecuteScalar()
+            con.Close()
+
+            If JC = lblDGVJOCode.Text Then
+
+                Dim proc1 As String = "Select [Load_Stats],[Prodn_Stats] from [Production].[JOLoadedDetails] where [JOB_ORDER] = @JOCode"
+                Dim con1 As New SqlConnection(modSetVal_SqlPath)
+                Using cmd1 As SqlCommand = New SqlCommand(proc1, con1)
+                    cmd1.Parameters.AddWithValue("@JOCode", lblDGVJOCode.Text)
+                    con1.Open()
+                    Dim myReader As SqlDataReader
+                    myReader = cmd1.ExecuteReader
+                    myReader.Read()
+                    lblLoadStat.Text = myReader("Load_Stats")
+                    lblProdStat.Text = myReader("Prodn_Stats")
+                    con1.Close()
+                End Using
+            Else
+                lblLoadStat.Text = "For Loading"
+                lblProdStat.Text = "For Production"
+            End If
+        End Using
+
+        If lblLoadStat.Text = "Unloaded" Then
+            btnJOLoadBtn2Click.Enabled = False
+            MessageBox.Show("Job Order: " & lblDGVJOCode.Text & " was already processed" _
+                            & vbNewLine & "With Production Status: " & lblProdStat.Text, "Job Order Info...", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        Else
+            compareMCLogged_VS_MCSelected()
+        End If
+
+    End Sub
+
+
+
 End Class

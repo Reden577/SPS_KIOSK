@@ -762,6 +762,7 @@ Partial Class frmMCDasboard
         Me.Label1.Size = New System.Drawing.Size(348, 25)
         Me.Label1.TabIndex = 11
         Me.Label1.Text = "PENDING FOR QA VERIFICATION!"
+        Me.Label1.Visible = False
         '
         'frmMCDasboard
         '

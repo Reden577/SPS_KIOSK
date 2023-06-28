@@ -73,6 +73,7 @@ Public Class frmMain
         UnloadJO_PLCCountersTo_0()
         MC1LoadedJOCavQty()
         MC2LoadedJOCavQty()
+        LogoutAndNoJOFlag()
     End Sub
     '//
 
@@ -175,6 +176,7 @@ Public Class frmMain
         End If
         menuTabHome = True
         menuTabWorkOrder = False
+        frmWorkOrder.Close()
         menuTabLogin = False
         menuTabSetting = False
         menuTabLogout = False
@@ -189,6 +191,7 @@ Public Class frmMain
         menuTabLogin = True
         menuTabHome = False
         menuTabWorkOrder = False
+        frmWorkOrder.Close()
         menuTabSetting = False
         menuTabLogout = False
     End Sub
@@ -202,6 +205,7 @@ Public Class frmMain
         menuTabLogout = True
         menuTabHome = False
         menuTabWorkOrder = False
+        frmWorkOrder.Close()
         menuTabLogin = False
         menuTabSetting = False
     End Sub
@@ -209,6 +213,7 @@ Public Class frmMain
         menuTabSetting = True
         menuTabHome = False
         menuTabWorkOrder = False
+        frmWorkOrder.Close()
         menuTabLogin = False
         menuTabLogout = False
         ActiveButton2(sender, rgbColors.rgb_BlueGreen)
@@ -326,8 +331,8 @@ Public Class frmMain
             RxPLCM6 = rxCoil(6) '2054 MC1 Machine Ready (Machine HMI)
             RxPLCM7 = rxCoil(7) '2055 MC2 Machine Ready (Machine HMI)
             RxPLCM8 = rxCoil(8) '2056
-            RxPLCM9 = rxCoil(9) '2057 MC1 KIOSK CONDITION TRIGGERED Flag
-            RxPLCM10 = rxCoil(10) '2058 MC2 KIOSK CONDITION TRIGGERD Flag
+            RxPLCM9 = rxCoil(9) '2057 
+            RxPLCM10 = rxCoil(10) '2058 
             RxPLCM11 = rxCoil(11) '2059
             RxPLCM12 = rxCoil(12) '2060 MC1 Test Auto Mode Flag
             RxPLCM13 = rxCoil(13) '2061 MC2 Test Auto Mode Flag
@@ -539,4 +544,30 @@ Public Class frmMain
         DTstoValue_MachineID = ""
     End Sub
     '//
+
+    '// LOG OUT AND NO JOB ORDER FLAG
+    Public Sub LogoutAndNoJOFlag()
+        If modMC1Stop_logoutOrNoJO = True Then
+            If ModClient.Connected = True Then
+                ModClient.WriteSingleCoil(2051, True) '2051 M3 MC1 KIOSK Login & JO Flag
+            End If
+        Else
+            If ModClient.Connected = True Then
+                ModClient.WriteSingleCoil(2051, False) '2051 M3 MC1 KIOSK Login & JO Flag
+            End If
+        End If
+
+        If modMC2Stop_logoutOrNoJO = True Then
+            If ModClient.Connected = True Then
+                ModClient.WriteSingleCoil(2052, True) '2052 M4 MC1 KIOSK Login & JO Flag
+            End If
+        Else
+            If ModClient.Connected = True Then
+                ModClient.WriteSingleCoil(2052, False) '2052 M4 MC1 KIOSK Login & JO Flag
+            End If
+        End If
+    End Sub
+
+    '//
+
 End Class

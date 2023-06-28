@@ -2,9 +2,11 @@
 
     '// FORM LOAD SUB
     Private Sub frmWorkOrder_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'MessageBox.Show("Loading Work Order")
         Me.JOLoadedDetailsTableAdapter2.Fill(Me.JOLoadedDetails_MachineIDOnly.JOLoadedDetails)
         cboByMachine.Text = ""
         Me.JOLoadedDetailsTableAdapter.Fill(Me.JOLodedDetails_3.JOLoadedDetails)
+        btnUnload.Enabled = False
         Me.CenterToScreen()
     End Sub
     '//
@@ -60,6 +62,7 @@
     '// BUTTON CLEAR FUNCTION
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         ClearDGVSelection()
+        btnUnload.Enabled = False
     End Sub
     '//
 
@@ -73,7 +76,7 @@
     '// REALTIME CHECK TIMER (100ms)
     Private Sub JOSelectRTCheck_Tick(sender As Object, e As EventArgs) Handles JOSelectRTCheck.Tick
         lblMenuTabWorkOrder.Text = menuTabWorkOrder
-        EnableDisableUnloadBtn()
+        'EnableDisableUnloadBtn()
         FunctionsEnableDisable_At_MachineRunning()
         'DGVCellFormating_Loaded_Inprogress()
         'DGVCellFormating_Unloaded_Incomplete()
@@ -195,7 +198,9 @@
             lblDGVPN2Reject.Text = dgvJobOrder.CurrentRow.Cells(22).Value.ToString
             lblDGVActualPN1OUt.Text = dgvJobOrder.CurrentRow.Cells(23).Value.ToString
             lblDGVAvtualP2Out.Text = dgvJobOrder.CurrentRow.Cells(24).Value.ToString
-            lblDGVTtlRunTime.Text = dgvJobOrder.CurrentRow.Cells(31).Value.ToString
+        lblDGVTtlRunTime.Text = dgvJobOrder.CurrentRow.Cells(31).Value.ToString
+
+        CheckMachineID_RunStopStat()
 
     End Sub
     '//
@@ -379,9 +384,6 @@
     End Sub
     '//
 
-
-
-
     '//
     Private Sub btnClearDGVselection_Click(sender As Object, e As EventArgs)
 
@@ -426,6 +428,33 @@
         Else
             'grpJO_OrderDetails.Enabled = True
             btnOpenJO.Enabled = True
+        End If
+    End Sub
+    '//
+
+    '// ENABLE DISABLE UNLOAD BUTTON
+    '// check machine ID if Running or Stop
+    Public Sub CheckMachineID_RunStopStat()
+        If lblDGVMachineId.Text = "MC1" Then
+            If RxPLCM0 = False And lblDGVLoadStats.Text = "Loaded" Then
+                btnUnload.Enabled = True
+            ElseIf RxPLCM0 = True Then
+                btnUnload.Enabled = False
+                MessageBox.Show("Machine 1 is currently running!" _
+                                & vbNewLine & "Unloading JO is not possible...", "Button Status...")
+            Else
+                btnUnload.Enabled = False
+            End If
+        ElseIf lblDGVMachineId.Text = "MC2" Then
+            If RxPLCM1 = False And lblDGVLoadStats.Text = "Loaded" Then
+                btnUnload.Enabled = True
+            ElseIf RxPLCM1 = True Then
+                btnUnload.Enabled = False
+                MessageBox.Show("Machine 2 is currently running!" _
+                                & vbNewLine & "Unloading JO is not possible...", "Button Status...")
+            Else
+                btnUnload.Enabled = False
+            End If
         End If
     End Sub
     '//
