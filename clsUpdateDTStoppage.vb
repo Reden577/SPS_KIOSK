@@ -11,6 +11,8 @@ Public Class clsUpdateDTStoppage
                         ,[DT_Type] = @DTType
                         ,[DT_Reason] = @DTReason
                         ,[DT_Countermeasure] = @DTCMeasure
+                        ,[VerifiedBy_QA] = @VerByQA
+                        ,[CreatedBy] = @CreatedBy
                       WHERE [DTStatus] = @DTStatus  And [Machine_ID] = @MachineID"
         Using cmd As SqlCommand = New SqlCommand(proc, con)
             cmd.Parameters.AddWithValue("@DTStatus", cls001_DTStatus)
@@ -20,6 +22,8 @@ Public Class clsUpdateDTStoppage
             cmd.Parameters.AddWithValue("@DTType", cls001_DTType)
             cmd.Parameters.AddWithValue("@DTReason", cls001_DTReason)
             cmd.Parameters.AddWithValue("@DTCMeasure", cls001_DTCountermeasure)
+            cmd.Parameters.AddWithValue("@VerByQA", cls001_VeriByQA)
+            cmd.Parameters.AddWithValue("@CreatedBy", cls001_CreatedBy)
             con.Open()
             cmd.ExecuteNonQuery()
             con.Close()

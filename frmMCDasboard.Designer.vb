@@ -87,7 +87,7 @@ Partial Class frmMCDasboard
         Me.btnFilter = New FontAwesome.Sharp.IconButton()
         Me.picMCStatus = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblQAInfoDetails = New System.Windows.Forms.Label()
         CType(Me.dgvStoppage, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DowntimeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SPSDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -103,9 +103,9 @@ Partial Class frmMCDasboard
         Me.lblMCDasboard.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblMCDasboard.Location = New System.Drawing.Point(7, 3)
         Me.lblMCDasboard.Name = "lblMCDasboard"
-        Me.lblMCDasboard.Size = New System.Drawing.Size(195, 31)
+        Me.lblMCDasboard.Size = New System.Drawing.Size(153, 31)
         Me.lblMCDasboard.TabIndex = 0
-        Me.lblMCDasboard.Text = "Machine Name"
+        Me.lblMCDasboard.Text = "Machine 00"
         '
         'lblShift
         '
@@ -752,24 +752,23 @@ Partial Class frmMCDasboard
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
-        'Label1
+        'lblQAInfoDetails
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Yellow
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(390, 4)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(348, 25)
-        Me.Label1.TabIndex = 11
-        Me.Label1.Text = "PENDING FOR QA VERIFICATION!"
-        Me.Label1.Visible = False
+        Me.lblQAInfoDetails.AutoSize = True
+        Me.lblQAInfoDetails.BackColor = System.Drawing.Color.Yellow
+        Me.lblQAInfoDetails.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblQAInfoDetails.Location = New System.Drawing.Point(304, 4)
+        Me.lblQAInfoDetails.Name = "lblQAInfoDetails"
+        Me.lblQAInfoDetails.Size = New System.Drawing.Size(312, 24)
+        Me.lblQAInfoDetails.TabIndex = 11
+        Me.lblQAInfoDetails.Text = "PENDING FOR QA VERIFICATION!"
         '
         'frmMCDasboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1090, 877)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lblQAInfoDetails)
         Me.Controls.Add(Me.lblQualityBtn)
         Me.Controls.Add(Me.btnShowAll)
         Me.Controls.Add(Me.cboShiftCode)
@@ -890,5 +889,5 @@ Partial Class frmMCDasboard
     Friend WithEvents cboShiftCode As ComboBox
     Friend WithEvents btnShowAll As Button
     Friend WithEvents lblQualityBtn As FontAwesome.Sharp.IconButton
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lblQAInfoDetails As Label
 End Class

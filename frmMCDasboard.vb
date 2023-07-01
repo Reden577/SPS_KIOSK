@@ -7,85 +7,105 @@ Public Class frmMCDasboard
     Dim stStopDetails As String = "{0,-40}{1,-30}{2,-30}{3,-30}"
     Private Sub frmMCDasboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'SPSDataSet1.Downtime' table. You can move, or remove it, as needed.
+        lblQAInfoDetails.Visible = False
 
         Me.CenterToScreen()
 
         If bolMCDashboard1 = True Then
             lblMCDasboard.Text = "Machine 1"
-            modSetVal_MCID = "MC1"
-            modSetVal_DTNewStoppage = "MC1NewStoppage"
+            modSetVal_MCID = modMC1_stMCId
+            modSetVal_DTNewStoppage = modMC1_stNewStoppage
+            modSetVal_JCode = stJOMC1
         ElseIf bolMCDashboard2 = True Then
             lblMCDasboard.Text = "Machine 2"
-            modSetVal_DTNewStoppage = "MC2NewStoppage"
-            modSetVal_MCID = "MC2"
+            modSetVal_DTNewStoppage = modMC2_stNewStoppage
+            modSetVal_MCID = modMC2_stMCId
+            modSetVal_JCode = stJOMC2
         ElseIf bolMCDashboard3 = True Then
             lblMCDasboard.Text = "Machine 3"
-            modSetVal_DTNewStoppage = "MC3NewStoppage"
-            modSetVal_MCID = "MC3"
+            modSetVal_DTNewStoppage = modMC3_stNewStoppage
+            modSetVal_MCID = modMC3_stMCId
+            modSetVal_JCode = stJOMC3
         ElseIf bolMCDashboard4 = True Then
             lblMCDasboard.Text = "Machine 4"
-            modSetVal_DTNewStoppage = "MC4NewStoppage"
-            modSetVal_MCID = "MC4"
+            modSetVal_DTNewStoppage = modMC4_stNewStoppage
+            modSetVal_MCID = modMC4_stMCId
+            modSetVal_JCode = stJOMC4
         ElseIf bolMCDashboard5 = True Then
             lblMCDasboard.Text = "Machine 5"
-            modSetVal_DTNewStoppage = "MC5NewStoppage"
-            modSetVal_MCID = "MC5"
+            modSetVal_DTNewStoppage = modMC5_stNewStoppage
+            modSetVal_MCID = modMC5_stMCId
+            modSetVal_JCode = stJOMC5
         ElseIf bolMCDashboard6 = True Then
             lblMCDasboard.Text = "Machine 6"
-            modSetVal_DTNewStoppage = "MC6NewStoppage"
-            modSetVal_MCID = "MC6"
+            modSetVal_DTNewStoppage = modMC6_stNewStoppage
+            modSetVal_MCID = modMC6_stMCId
+            modSetVal_JCode = stJOMC6
         ElseIf bolMCDashboard7 = True Then
             lblMCDasboard.Text = "Machine 7"
-            modSetVal_DTNewStoppage = "MC7NewStoppage"
-            modSetVal_MCID = "MC7"
+            modSetVal_DTNewStoppage = modMC7_stNewStoppage
+            modSetVal_MCID = modMC7_stMCId
+            modSetVal_JCode = stJOMC7
         ElseIf bolMCDashboard8 = True Then
             lblMCDasboard.Text = "Machine 8"
-            modSetVal_DTNewStoppage = "MC8NewStoppage"
-            modSetVal_MCID = "MC8"
+            modSetVal_DTNewStoppage = modMC8_stNewStoppage
+            modSetVal_MCID = modMC8_stMCId
+            modSetVal_JCode = stJOMC8
         ElseIf bolMCDashboard9 = True Then
             lblMCDasboard.Text = "Machine 9"
-            modSetVal_DTNewStoppage = "MC9NewStoppage"
-            modSetVal_MCID = "MC9"
+            modSetVal_DTNewStoppage = modMC9_stNewStoppage
+            modSetVal_MCID = modMC9_stMCId
+            modSetVal_JCode = stJOMC9
         ElseIf bolMCDashboard10 = True Then
             lblMCDasboard.Text = "Machine 10"
-            modSetVal_DTNewStoppage = "MC01NewStoppage"
-            modSetVal_MCID = "MC10"
+            modSetVal_DTNewStoppage = modMC10_stNewStoppage
+            modSetVal_MCID = modMC10_stMCId
+            modSetVal_JCode = stJOMC10
         ElseIf bolMCDashboard11 = True Then
             lblMCDasboard.Text = "Machine 11"
-            modSetVal_DTNewStoppage = "MC11NewStoppage"
-            modSetVal_MCID = "MC11"
+            modSetVal_DTNewStoppage = modMC11_stNewStoppage
+            modSetVal_MCID = modMC11_stMCId
+            modSetVal_JCode = stJOMC11
         ElseIf bolMCDashboard12 = True Then
             lblMCDasboard.Text = "Machine 12"
-            modSetVal_DTNewStoppage = "MC12NewStoppage"
-            modSetVal_MCID = "MC12"
+            modSetVal_DTNewStoppage = modMC12_stNewStoppage
+            modSetVal_MCID = modMC12_stMCId
+            modSetVal_JCode = stJOMC12
         ElseIf bolMCDashboard13 = True Then
             lblMCDasboard.Text = "Machine 13"
-            modSetVal_DTNewStoppage = "MC13NewStoppage"
-            modSetVal_MCID = "MC13"
+            modSetVal_DTNewStoppage = modMC13_stNewStoppage
+            modSetVal_MCID = modMC13_stMCId
+            modSetVal_JCode = stJOMC13
         ElseIf bolMCDashboard14 = True Then
             lblMCDasboard.Text = "Machine 14"
-            modSetVal_DTNewStoppage = "MC14NewStoppage"
-            modSetVal_MCID = "MC14"
+            modSetVal_DTNewStoppage = modMC14_stNewStoppage
+            modSetVal_MCID = modMC14_stMCId
+            modSetVal_JCode = stJOMC14
         ElseIf bolMCDashboard15 = True Then
             lblMCDasboard.Text = "Machine 15"
-            modSetVal_DTNewStoppage = "MC15NewStoppage"
-            modSetVal_MCID = "MC15"
+            modSetVal_DTNewStoppage = modMC15_stNewStoppage
+            modSetVal_MCID = modMC15_stMCId
+            modSetVal_JCode = stJOMC15
         ElseIf bolMCDashboard16 = True Then
             lblMCDasboard.Text = "Machine 16"
-            modSetVal_DTNewStoppage = "MC16NewStoppage"
-            modSetVal_MCID = "MC16"
+            modSetVal_DTNewStoppage = modMC16_stNewStoppage
+            modSetVal_MCID = modMC16_stMCId
+            modSetVal_JCode = stJOMC16
         ElseIf bolMCDashboard17 = True Then
             lblMCDasboard.Text = "Machine 17"
-            modSetVal_DTNewStoppage = "MC17NewStoppage"
-            modSetVal_MCID = "MC17"
+            modSetVal_DTNewStoppage = modMC17_stNewStoppage
+            modSetVal_MCID = modMC17_stMCId
+            modSetVal_JCode = stJOMC17
         ElseIf bolMCDashboard18 = True Then
             lblMCDasboard.Text = "Machine 18"
-            modSetVal_DTNewStoppage = "MC18NewStoppage"
-            modSetVal_MCID = "MC18"
+            modSetVal_DTNewStoppage = modMC18_stNewStoppage
+            modSetVal_MCID = modMC18_stMCId
+            modSetVal_JCode = stJOMC18
         ElseIf bolMCDashboard19 = True Then
             lblMCDasboard.Text = "Machine 19"
-            modSetVal_DTNewStoppage = "MC19NewStoppage"
-            modSetVal_MCID = "MC19"
+            modSetVal_DTNewStoppage = modMC19_stNewStoppage
+            modSetVal_MCID = modMC19_stMCId
+            modSetVal_JCode = stJOMC19
         End If
 
         Me.DowntimeTableAdapter.FillByDTStatus(Me.SPSDataSet1.Downtime, "modSetVal_DTNewStoppage")
@@ -654,6 +674,7 @@ Public Class frmMCDasboard
         'mcDTlistBox()
         MachineDetails()
         MachineStatusImage()
+        QAInfoDetailsDisplay()
     End Sub
 
     '// 
@@ -693,4 +714,29 @@ Public Class frmMCDasboard
         modQualityBtn_AtMCDash_isTrue = True
         frmJOUserVerification.Show()
     End Sub
+
+    '//
+    Public Sub QAInfoDetailsDisplay()
+        If bolMCDashboard1 = True Then
+            If modQAStopMC1_isTrue = True Then
+                lblQAInfoDetails.Visible = True
+                lblQAInfoDetails.Text = "NEW QA STOPPAGE WAS CREATED. MACHINE WILL STOP AFTER 1CYCLE..."
+            Else
+                lblQAInfoDetails.Visible = False
+                lblQAInfoDetails.Text = ""
+            End If
+
+        ElseIf bolMCDashboard2 = True Then
+            If modQAStopMC2_isTrue = True Then
+                lblQAInfoDetails.Visible = True
+                lblQAInfoDetails.Text = "NEW QA STOPPAGE WAS CREATED. MACHINE WILL STOP AFTER 1CYCLE..."
+            Else
+                lblQAInfoDetails.Visible = False
+                lblQAInfoDetails.Text = ""
+            End If
+        End If
+
+    End Sub
+
+    '//
 End Class

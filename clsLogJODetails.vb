@@ -71,7 +71,7 @@ Public Class clsLogJODetails
                 con.Close()
             End Using
         Catch ex As Exception
-            'MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show(ex.Message, "Saving Job Order Details...", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Exit Sub
         End Try
 

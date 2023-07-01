@@ -13,12 +13,13 @@
 
     '// JOB ORDER DETAILS SET VALUES
     Public Sub JobOrderLoadDetails()
-        If preLDJODetail_MachineId = "MC1" Then
+        'MC1
+        If preLDJODetail_MachineId = modMC1_stMCId Then
             stJOMC1 = preLDJODetail_JOCode
             stJOPartNo1MC1 = preLDJODetail_PN1
             stJOPartNo2MC1 = preLDJODetail_PN2
             stJOMoldCavP1MC1 = preLDJODetail_CavPN1
-            stJOMoldCavP2MC1 = preLDJODetail_CavPN2
+            stJOMoldCavP2MC1 = preLDJODetail_CavPN1 'ONLY 1 Cavity Qty for Two part numbers using CavPN1 for CavPN2
             stJOQuantityMC1 = preLDJODetail_PlanQty
             stJOCycleTimeMC1 = preLDJODetail_CycleTime
             stJOMoldIDMC1 = preLDJODetail_MoldId
@@ -26,12 +27,13 @@
             stJOStartTimeMC1 = preLDJODetail_StartTime
             modJOLoadedFlagMC1 = True
         End If
-        If preLDJODetail_MachineId = "MC2" Then
+        'MC2
+        If preLDJODetail_MachineId = modMC2_stMCId Then
             stJOMC2 = preLDJODetail_JOCode
             stJOPartNo1MC2 = preLDJODetail_PN1
             stJOPartNo2MC2 = preLDJODetail_PN2
             stJOMoldCavP1MC2 = preLDJODetail_CavPN1
-            stJOMoldCavP2MC2 = preLDJODetail_CavPN2
+            stJOMoldCavP2MC2 = preLDJODetail_CavPN1 'ONLY 1 Cavity Qty for Two part numbers using CavPN1 for CavPN2
             stJOQuantityMC2 = preLDJODetail_PlanQty
             stJOCycleTimeMC2 = preLDJODetail_CycleTime
             stJOMoldIDMC2 = preLDJODetail_MoldId
@@ -77,7 +79,7 @@
     Private Sub JOSelectRTCheck_Tick(sender As Object, e As EventArgs) Handles JOSelectRTCheck.Tick
         lblMenuTabWorkOrder.Text = menuTabWorkOrder
         'EnableDisableUnloadBtn()
-        FunctionsEnableDisable_At_MachineRunning()
+        'FunctionsEnableDisable_At_MachineRunning()
         'DGVCellFormating_Loaded_Inprogress()
         'DGVCellFormating_Unloaded_Incomplete()
         'DGVCellFormating_PlanComplete_Loaded()
@@ -109,20 +111,20 @@
     '//
 
     '// ENABLE / DISABLE UNLOAD BUTTON
-    Public Sub EnableDisableUnloadBtn()
-        If RxPLCM0 = False Then
-            If lblDGVLoadStats.Text = "Loaded" Then
-                btnUnload.Enabled = True
-            Else
-                btnUnload.Enabled = False
-            End If
-        End If
-    End Sub
+    'Public Sub EnableDisableUnloadBtn()
+    '    If RxPLCM0 = False Then
+    '        If lblDGVLoadStats.Text = "Loaded" Then
+    '            btnUnload.Enabled = True
+    '        Else
+    '            btnUnload.Enabled = False
+    '        End If
+    '    End If
+    'End Sub
     '//
 
     '//UNLOADING JOB ORDER
     Public Sub JobOrderUnloadDetails()
-        If lblDGVMachineId.Text = "MC1" And lblDGVLoadStats.Text = "Loaded" Then
+        If lblDGVMachineId.Text = modMC1_stMCId And lblDGVLoadStats.Text = mod_stLoadStat_Loaded Then
             stJOMC1 = Nothing
             stJOPartNo1MC1 = Nothing
             stJOPartNo2MC1 = Nothing
@@ -140,7 +142,7 @@
             CounterP2MC1 = 0
             modJOLoadedFlagMC1 = False
         End If
-        If lblDGVMachineId.Text = "MC2" And lblDGVLoadStats.Text = "Loaded" Then
+        If lblDGVMachineId.Text = modMC2_stMCId And lblDGVLoadStats.Text = mod_stLoadStat_Loaded Then
             stJOMC2 = Nothing
             stJOPartNo1MC2 = Nothing
             stJOPartNo2MC2 = Nothing
@@ -253,7 +255,7 @@
     '// CHANGING THE DGV ROW BACK AND FORE COLOR TO DEFAULT IF JO IS NOT YET LOADED
     Public Sub DGVCellFormating_NotLoaded()
         For Each row As DataGridViewRow In dgvJobOrder.Rows
-            If row.Cells(13).Value = "Loaded" Then
+            If row.Cells(13).Value = mod_stLoadStat_Loaded Then
                 row.DefaultCellStyle.BackColor = Color.White
                 row.DefaultCellStyle.ForeColor = Color.Black
             End If
@@ -264,7 +266,7 @@
     '// CHANGING THE DGV ROW BACK AND FORE COLOR IF JO PRODU'N STAT IS IN PROGRESS
     Public Sub DGVCellFormating_Loaded_Inprogress()
         For Each row As DataGridViewRow In dgvJobOrder.Rows
-            If row.Cells(13).Value = "Loaded" Then
+            If row.Cells(13).Value = mod_stLoadStat_Loaded Then
                 row.DefaultCellStyle.BackColor = Color.Orange
             End If
         Next
@@ -274,7 +276,7 @@
     '// CHANGING THE DGV ROW BACK AND FORE COLOR IF PLAN COMPLETE
     Public Sub DGVCellFormating_PlanComplete_Unloaded()
         For Each row As DataGridViewRow In dgvJobOrder.Rows
-            If row.Cells(13).Value = "Unloaded" And row.Cells(14).Value = "Plan Complete" Then
+            If row.Cells(13).Value = mod_stLoadStat_Unloaded And row.Cells(14).Value = mod_stProdStat_PlanComplete Then
                 row.DefaultCellStyle.BackColor = Color.Green
                 row.DefaultCellStyle.ForeColor = Color.White
             End If
@@ -285,8 +287,8 @@
     '// CHANGING THE DGV ROW BACK AND FORE COLOR WHEN JO WAS UNLOADED WITH INCOMPLETE DATA
     Public Sub DGVCellFormating_Unloaded_Incomplete()
         For Each row As DataGridViewRow In dgvJobOrder.Rows
-            If row.Cells(13).Value = "Unloaded" And row.DefaultCellStyle.BackColor <> Color.DarkRed _
-                And row.Cells(14).Value = "Incomplete" Then
+            If row.Cells(13).Value = mod_stLoadStat_Unloaded And row.DefaultCellStyle.BackColor <> Color.DarkRed _
+                And row.Cells(14).Value = mod_stProdStat_INC Then
                 row.DefaultCellStyle.BackColor = Color.DarkRed
                 row.DefaultCellStyle.ForeColor = Color.White
             End If
@@ -297,7 +299,7 @@
     '// CHANGING THE DGV ROW BACK AND FORE COLOR WHEN JO WAS UNLOADED WITH INCOMPLETE DATA
     Public Sub DGVCellFormating_PlanComplete_Loaded()
         For Each row As DataGridViewRow In dgvJobOrder.Rows
-            If row.Cells(13).Value = "Loaded" And row.Cells(14).Value = "Plan Complete" _
+            If row.Cells(13).Value = mod_stLoadStat_Loaded And row.Cells(14).Value = mod_stProdStat_PlanComplete _
                 And row.DefaultCellStyle.BackColor <> Color.GreenYellow Then
                 row.DefaultCellStyle.BackColor = Color.GreenYellow
                 row.DefaultCellStyle.ForeColor = Color.Black
@@ -326,8 +328,8 @@
         insert.CycleTime = preLDJODetail_CycleTime
         insert.StartTime = Now()
         insert.EndTime = "none"
-        insert.LoadStat = "Loaded"
-        insert.ProdnStat = "In Progress"
+        insert.LoadStat = mod_stLoadStat_Loaded
+        insert.ProdnStat = mod_stProdStat_InProg
         insert.LoadedBy = preLDJODetail_LoadedBy
         insert.UnloadedBy = "none"
         insert.UnloadTime = "none"
@@ -398,9 +400,9 @@
 
     '// ENDABLE DISABLE BUTTON LOAD
     Private Sub lblDGVLoadStats_TextChanged(sender As Object, e As EventArgs) Handles lblDGVLoadStats.TextChanged
-        If lblDGVLoadStats.Text = "Loaded" Then
+        If lblDGVLoadStats.Text = mod_stLoadStat_Loaded Then
             btnLoad.Enabled = False
-        ElseIf lblDGVLoadStats.Text = "Unloaded" Then
+        ElseIf lblDGVLoadStats.Text = mod_stLoadStat_Unloaded Then
             btnLoad.Enabled = False
         Else
             btnLoad.Enabled = True
@@ -421,22 +423,23 @@
     '//
 
     '//
-    Public Sub FunctionsEnableDisable_At_MachineRunning()
-        If RxPLCM0 = True Then
-            'grpJO_OrderDetails.Enabled = False
-            btnOpenJO.Enabled = False
-        Else
-            'grpJO_OrderDetails.Enabled = True
-            btnOpenJO.Enabled = True
-        End If
-    End Sub
+    'Public Sub FunctionsEnableDisable_At_MachineRunning()
+    '    If RxPLCM0 = True Then
+    '        'grpJO_OrderDetails.Enabled = False
+    '        btnOpenJO.Enabled = False
+    '    Else
+    '        'grpJO_OrderDetails.Enabled = True
+    '        btnOpenJO.Enabled = True
+    '    End If
+    'End Sub
     '//
 
     '// ENABLE DISABLE UNLOAD BUTTON
     '// check machine ID if Running or Stop
     Public Sub CheckMachineID_RunStopStat()
-        If lblDGVMachineId.Text = "MC1" Then
-            If RxPLCM0 = False And lblDGVLoadStats.Text = "Loaded" Then
+
+        If lblDGVMachineId.Text = modMC1_stMCId Then
+            If RxPLCM0 = False And lblDGVLoadStats.Text = mod_stLoadStat_Loaded Then
                 btnUnload.Enabled = True
             ElseIf RxPLCM0 = True Then
                 btnUnload.Enabled = False
@@ -445,8 +448,9 @@
             Else
                 btnUnload.Enabled = False
             End If
-        ElseIf lblDGVMachineId.Text = "MC2" Then
-            If RxPLCM1 = False And lblDGVLoadStats.Text = "Loaded" Then
+
+        ElseIf lblDGVMachineId.Text = modMC2_stMCId Then
+            If RxPLCM1 = False And lblDGVLoadStats.Text = mod_stLoadStat_Loaded Then
                 btnUnload.Enabled = True
             ElseIf RxPLCM1 = True Then
                 btnUnload.Enabled = False
@@ -456,6 +460,7 @@
                 btnUnload.Enabled = False
             End If
         End If
+
     End Sub
     '//
 End Class

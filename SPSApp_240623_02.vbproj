@@ -97,18 +97,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClassSelectUD.vb" />
+    <Compile Include="clsAccessRights.vb" />
+    <Compile Include="clsCheckDTby_Quality_N_NewStoppage.vb" />
+    <Compile Include="clsCheckExistingDowntime.vb" />
+    <Compile Include="clsCheckQAVerification.vb" />
     <Compile Include="clsCountDTType_byDTStatusMCId.vb" />
     <Compile Include="clsHomeMCStatusIndicator.vb" />
     <Compile Include="clsJOAPI.vb" />
     <Compile Include="clsLoadSettings.vb" />
     <Compile Include="clsLogJODetails.vb" />
     <Compile Include="cls002_ModBusConnection.vb" />
+    <Compile Include="clsDowntimeDetails.vb" />
     <Compile Include="clsSelAll_MCDash_AR_QAFeat.vb" />
     <Compile Include="clsSelDTReasonCMeasure.vb" />
     <Compile Include="clsSelectAllJODetails_byJOcode.vb" />
     <Compile Include="clsSelectAllPartNOMList.vb" />
     <Compile Include="cls001_InsertDowntime_QAStoppage.vb" />
+    <Compile Include="clsStoreValueMCQAStoppage.vb" />
     <Compile Include="clsUpdateDowntime_QAFail.vb" />
+    <Compile Include="clsUpdateDTAtQAPass.vb" />
     <Compile Include="clsUpdateDTStoppage.vb" />
     <Compile Include="clsUpdateJODetailsAtUnloading.vb" />
     <Compile Include="clsUpdateJOLoadedDetailsAll.vb" />

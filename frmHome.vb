@@ -324,6 +324,7 @@ Public Class frmHome
             modJOLoadedFlagMC2 = True
         End If
 
+
         stJOMC3 = My.Settings.JOCodeMC3
         stJOMC4 = My.Settings.JOCodeMC4
 
@@ -1383,6 +1384,7 @@ Public Class frmHome
         If stJOCycleTimeMC1 <> "" And stJOMoldCavP1MC1 <> "" And stJOMoldCavP2MC1 <> "" And stJOQuantityMC1 <> "" Then
             iPlanProdTimeMC1 = ((CInt(stJOCycleTimeMC1) / ((CInt(stJOMoldCavP1MC1) + CInt(stJOMoldCavP2MC1))) * CInt(stJOQuantityMC1)) / 60)
         End If
+
         If stJOCycleTimeMC2 <> "" And stJOMoldCavP1MC2 <> "" And stJOMoldCavP2MC2 <> "" And stJOQuantityMC2 <> "" Then
             iPlanProdTimeMC2 = ((CInt(stJOCycleTimeMC2) / ((CInt(stJOMoldCavP1MC2) + CInt(stJOMoldCavP2MC2))) * CInt(stJOQuantityMC2)) / 60)
         End If
@@ -1426,154 +1428,11 @@ Public Class frmHome
         Try
             If CounterP1MC1 <> "" And CounterP2MC1 <> "" Then TotalCountMC1 = CInt(CounterP1MC1) + CInt(CounterP2MC1)
             If CounterP1MC2 <> "" And CounterP2MC2 <> "" Then TotalCountMC2 = CInt(CounterP1MC2) + CInt(CounterP2MC2)
-            'TotalCountMC3 = CInt(CounterP1MC3) + CInt(CounterP2MC3)
-            'TotalCountMC4 = CInt(CounterP1MC4) + CInt(CounterP2MC4)
-            'TotalCountMC5 = CInt(CounterP1MC5) + CInt(CounterP2MC5)
-            'TotalCountMC6 = CInt(CounterP1MC6) + CInt(CounterP2MC6)
-            'TotalCountMC7 = CInt(CounterP1MC7) + CInt(CounterP2MC7)
-            'TotalCountMC8 = CInt(CounterP1MC8) + CInt(CounterP2MC8)
-            'TotalCountMC9 = CInt(CounterP1MC9) + CInt(CounterP2MC9)
-            'TotalCountMC10 = CInt(CounterP1MC10) + CInt(CounterP2MC10)
-            'TotalCountMC11 = CInt(CounterP1MC11) + CInt(CounterP2MC11)
-            'TotalCountMC12 = CInt(CounterP1MC12) + CInt(CounterP2MC12)
-            'TotalCountMC13 = CInt(CounterP1MC13) + CInt(CounterP2MC13)
-            'TotalCountMC14 = CInt(CounterP1MC14) + CInt(CounterP2MC14)
-            'TotalCountMC15 = CInt(CounterP1MC15) + CInt(CounterP2MC15)
-            'TotalCountMC16 = CInt(CounterP1MC16) + CInt(CounterP2MC16)
-            'TotalCountMC17 = CInt(CounterP1MC17) + CInt(CounterP2MC17)
-            'TotalCountMC18 = CInt(CounterP1MC18) + CInt(CounterP2MC18)
-            'TotalCountMC19 = CInt(CounterP1MC19) + CInt(CounterP2MC19)
+
         Catch ex As Exception
-            MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show(ex.Message, "Reading Actual Running Quantity...", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
-    '//
-
-    '// PLAN COMPLETE STATUS
-    'Function PlanComplete(PlanQty As Integer, ActualQty As Integer) As String
-    '    If ActualQty < PlanQty Then
-    '        Return "" '"IN PROGRESS"
-    '    ElseIf ActualQty >= PlanQty Then
-    '        Return "" '"PLAN COMPLETE"
-    '    Else
-    '        Return Nothing
-    '    End If
-    'End Function
-    'Public Sub MachineStop_Plancomplete()
-    '    If Not stJOQuantityMC1 = "" And Not TotalCountMC1 = "" Then
-    '        JOStatusMC1 = PlanComplete(CInt(stJOQuantityMC1), CInt(TotalCountMC1))
-    '        If JOStatusMC1 = "PLAN COMPLETE" Then
-    '            PlanCompleteMC1 = True
-    '        Else
-    '            PlanCompleteMC1 = False
-    '        End If
-    '    End If
-    '    If Not stJOQuantityMC2 = "" And Not TotalCountMC2 = "" Then
-    '        JOStatusMC2 = PlanComplete(CInt(stJOQuantityMC2), CInt(TotalCountMC2))
-    '        If JOStatusMC2 = "PLAN COMPLETE" Then
-    '            PlanCompleteMC2 = True
-    '        Else
-    '            PlanCompleteMC2 = False
-    '        End If
-    '    End If
-    '    If Not stJOQuantityMC3 = "" And Not TotalCountMC3 = "" Then
-    '        JOStatusMC3 = PlanComplete(CInt(stJOQuantityMC3), CInt(TotalCountMC3))
-    '        If JOStatusMC3 = "PLAN COMPLETE" Then
-    '            PlanCompleteMC3 = True
-    '        Else
-    '            PlanCompleteMC3 = False
-    '        End If
-    '    End If
-    '    If Not stJOQuantityMC4 = "" And Not TotalCountMC4 = "" Then
-    '        JOStatusMC4 = PlanComplete(CInt(stJOQuantityMC4), CInt(TotalCountMC4))
-    '        If JOStatusMC4 = "PLAN COMPLETE" Then
-    '            PlanCompleteMC4 = True
-    '        Else
-    '            PlanCompleteMC4 = False
-    '        End If
-    '    End If
-    '    If Not stJOQuantityMC5 = "" And Not TotalCountMC5 = "" Then
-    '        JOStatusMC5 = PlanComplete(CInt(stJOQuantityMC5), CInt(TotalCountMC5))
-    '        If JOStatusMC5 = "PLAN COMPLETE" Then
-    '            PlanCompleteMC5 = True
-    '        Else
-    '            PlanCompleteMC5 = False
-    '        End If
-    '    End If
-    '    If Not stJOQuantityMC6 = "" And Not TotalCountMC6 = "" Then
-    '        JOStatusMC6 = PlanComplete(CInt(stJOQuantityMC6), CInt(TotalCountMC6))
-    '        If JOStatusMC6 = "PLAN COMPLETE" Then
-    '            PlanCompleteMC6 = True
-    '        Else
-    '            PlanCompleteMC6 = False
-    '        End If
-    '    End If
-    '    If Not stJOQuantityMC7 = "" And Not TotalCountMC7 = "" Then
-    '        JOStatusMC7 = PlanComplete(CInt(stJOQuantityMC7), CInt(TotalCountMC7))
-    '        If JOStatusMC7 = "PLAN COMPLETE" Then
-    '            PlanCompleteMC7 = True
-    '        Else
-    '            PlanCompleteMC7 = False
-    '        End If
-    '    End If
-    '    If Not stJOQuantityMC8 = "" And Not TotalCountMC8 = "" Then
-    '        JOStatusMC8 = PlanComplete(CInt(stJOQuantityMC8), CInt(TotalCountMC8))
-    '        If JOStatusMC8 = "PLAN COMPLETE" Then
-    '            PlanCompleteMC8 = True
-    '        Else
-    '            PlanCompleteMC8 = False
-    '        End If
-    '    End If
-    '    If Not stJOQuantityMC9 = "" And Not TotalCountMC9 = "" Then
-    '        JOStatusMC9 = PlanComplete(CInt(stJOQuantityMC9), CInt(TotalCountMC9))
-    '        If JOStatusMC9 = "PLAN COMPLETE" Then
-    '            PlanCompleteMC9 = True
-    '        Else
-    '            PlanCompleteMC9 = False
-    '        End If
-    '    End If
-    '    If Not stJOQuantityMC10 = "" And Not TotalCountMC10 = "" Then
-    '        JOStatusMC10 = PlanComplete(CInt(stJOQuantityMC10), CInt(TotalCountMC10))
-    '        If JOStatusMC10 = "PLAN COMPLETE" Then
-    '            PlanCompleteMC10 = True
-    '        Else
-    '            PlanCompleteMC10 = False
-    '        End If
-    '    End If
-    '    If Not stJOQuantityMC11 = "" And Not TotalCountMC11 = "" Then
-    '        JOStatusMC11 = PlanComplete(CInt(stJOQuantityMC11), CInt(TotalCountMC11))
-    '        If JOStatusMC11 = "PLAN COMPLETE" Then
-    '            PlanCompleteMC11 = True
-    '        Else
-    '            PlanCompleteMC11 = False
-    '        End If
-    '    End If
-    '    If Not stJOQuantityMC12 = "" And Not TotalCountMC12 = "" Then
-    '        JOStatusMC12 = PlanComplete(CInt(stJOQuantityMC12), CInt(TotalCountMC12))
-    '        If JOStatusMC12 = "PLAN COMPLETE" Then
-    '            PlanCompleteMC12 = True
-    '        Else
-    '            PlanCompleteMC12 = False
-    '        End If
-    '    End If
-    '    If Not stJOQuantityMC13 = "" And Not TotalCountMC13 = "" Then
-    '        JOStatusMC13 = PlanComplete(CInt(stJOQuantityMC13), CInt(TotalCountMC13))
-    '        If JOStatusMC13 = "PLAN COMPLETE" Then
-    '            PlanCompleteMC13 = True
-    '        Else
-    '            PlanCompleteMC13 = False
-    '        End If
-    '    End If
-    '    If Not stJOQuantityMC14 = "" And Not TotalCountMC14 = "" Then
-    '        JOStatusMC14 = PlanComplete(CInt(stJOQuantityMC14), CInt(TotalCountMC14))
-    '        If JOStatusMC14 = "PLAN COMPLETE" Then
-    '            PlanCompleteMC14 = True
-    '        Else
-    '            PlanCompleteMC14 = False
-    '        End If
-    '    End If
-    'End Sub
-    '//
 
     '// MACHINE START/STOP STATUS UPDATE
     Public Sub machineONOFFStatUpdate()
@@ -1760,133 +1619,133 @@ Public Class frmHome
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "MC1"
+            modMCIdNow = modMC1_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC2 = True And modTempCheckMC2 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "MC2"
+            modMCIdNow = modMC2_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC3 = True And modTempCheckMC3 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "MC3"
+            modMCIdNow = modMC3_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC4 = True And modTempCheckMC4 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "MC4"
+            modMCIdNow = modMC4_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC5 = True And modTempCheckMC5 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "MC5"
+            modMCIdNow = modMC5_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC6 = True And modTempCheckMC6 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "MC6"
+            modMCIdNow = modMC6_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC7 = True And modTempCheckMC7 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "MC7"
+            modMCIdNow = modMC7_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC8 = True And modTempCheckMC8 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "MC8"
+            modMCIdNow = modMC8_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC9 = True And modTempCheckMC9 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "MC9"
+            modMCIdNow = modMC9_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC10 = True And modTempCheckMC10 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "MC10"
+            modMCIdNow = modMC10_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC11 = True And modTempCheckMC11 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "MC11"
+            modMCIdNow = modMC11_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC12 = True And modTempCheckMC12 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "MC12"
+            modMCIdNow = modMC12_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC13 = True And modTempCheckMC13 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "MC13"
+            modMCIdNow = modMC13_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC14 = True And modTempCheckMC14 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "MC14"
+            modMCIdNow = modMC14_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC15 = True And modTempCheckMC15 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "MC15"
+            modMCIdNow = modMC15_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC16 = True And modTempCheckMC16 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "MC16"
+            modMCIdNow = modMC16_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC17 = True And modTempCheckMC17 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "MC17"
+            modMCIdNow = modMC17_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC18 = True And modTempCheckMC18 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "MC18"
+            modMCIdNow = modMC18_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC19 = True And modTempCheckMC19 = True Then
             modMCUnNow = stUserName
             modMCUNIdNow = stUserID
             modMCAcLvlNow = stAccessLvl
-            modMCIdNow = "MC19"
+            modMCIdNow = modMC19_stMCId
             UpdateUserLogin()
         End If
     End Sub
@@ -1906,133 +1765,133 @@ Public Class frmHome
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "MC1"
+            modMCIdNow = modMC1_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC2 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "MC2"
+            modMCIdNow = modMC2_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC3 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "MC3"
+            modMCIdNow = modMC3_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC4 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "MC4"
+            modMCIdNow = modMC4_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC5 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "MC5"
+            modMCIdNow = modMC5_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC6 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "MC6"
+            modMCIdNow = modMC6_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC7 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "MC7"
+            modMCIdNow = modMC7_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC8 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "MC8"
+            modMCIdNow = modMC8_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC9 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "MC9"
+            modMCIdNow = modMC9_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC10 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "MC10"
+            modMCIdNow = modMC10_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC11 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "MC11"
+            modMCIdNow = modMC11_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC12 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "MC12"
+            modMCIdNow = modMC12_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC13 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "MC13"
+            modMCIdNow = modMC13_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC14 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "MC14"
+            modMCIdNow = modMC14_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC15 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "MC15"
+            modMCIdNow = modMC15_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC16 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "MC16"
+            modMCIdNow = modMC16_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC17 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "MC17"
+            modMCIdNow = modMC17_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC18 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "MC18"
+            modMCIdNow = modMC18_stMCId
             UpdateUserLogin()
         End If
         If modUserLoginFlagMC19 = False Then
             modMCUnNow = "none"
             modMCUNIdNow = "none"
             modMCAcLvlNow = "none"
-            modMCIdNow = "MC19"
+            modMCIdNow = modMC19_stMCId
             UpdateUserLogin()
         End If
     End Sub
@@ -2040,12 +1899,14 @@ Public Class frmHome
 
     '// CONDITIONS THAT WILL TRIGGER THE MACHINE TO STOP
     Public Sub ConditionsToTriggerMachineOFF()
+        'MC1
         If modUserLoginFlagMC1 = False _
             Or (stJOMC1 = "-" Or stJOMC1 = Nothing) Then
             modMC1Stop_logoutOrNoJO = True
         Else
             modMC1Stop_logoutOrNoJO = False
         End If
+        'MC2
         If modUserLoginFlagMC2 = False _
             Or (stJOMC2 = "-" Or stJOMC2 = Nothing) Then
             modMC2Stop_logoutOrNoJO = True
@@ -2054,78 +1915,5 @@ Public Class frmHome
         End If
     End Sub
     '//
-
-    '//
-    Private Sub Button1_Click(sender As Object, e As EventArgs)
-        'logDowntimeToTextFile()
-
-        'Dim DTtx As MCDowntime
-        'DTtx = New MCDowntime
-        'DTtx.ackUserName = "Reden"
-        'DTtx.ackUNID = "123456"
-        'DTtx.ackDate = Now()
-        'DTtx.mcName = "MC1"
-        'DTtx.mcDowntimeDetail = "Downtime testing"
-        'DTtx.mcDTStart = DateAndTime.TimeOfDay
-        'DTtx.mcDTEnd = DateAndTime.TimeOfDay
-
-        ''MsgBox(DT.ackUserName & " " & DT.ackUNID & " " & DT.ackDate & " " & DT.mcName & " " & DT.mcDowntimeDetail & " " & DT.mcDTStart & " " & DT.mcDTEnd)
-        'Dim swMCDowntime As StreamWriter
-        'swMCDowntime = New StreamWriter("C:\Users\TuF GaminG\Documents\000 projects\001VB.Net\DemoTextfiles\Mcdowntime.json", True)
-        'Dim myDowntimeSerializer As New JsonSerializer()
-        'myDowntimeSerializer.Serialize(swMCDowntime, DTtx)
-        'swMCDowntime.Close()
-
-    End Sub
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs)
-
-        'Dim DTrx As New MCDowntime
-        'Dim srMCDowntime As StreamReader
-        'srMCDowntime = New StreamReader("C:\Users\TuF GaminG\Documents\000 projects\001VB.Net\DemoTextfiles\Mcdowntime.json")
-        'Dim myDowntimeSerializer As New JsonSerializer()
-        'DTrx = myDowntimeSerializer.Deserialize(srMCDowntime, DTrx.GetType)
-        'srMCDowntime.Close()
-
-        ''MsgBox(DTrx.ackUserName & " " & DTrx.ackUNID & " " & DTrx.ackDate & " " & DTrx.mcName & " " & DTrx.mcDowntimeDetail & " " & DTrx.mcDTStart & " " & DTrx.mcDTEnd)
-        'MsgBox(DTrx)
-    End Sub
-
-
-    'Public Sub logDowntimeToTextFile()
-    '    Dim dtx As MCDowntime
-    '    dtx = New MCDowntime
-    '    dtx.mcName = "Mc1"
-    '    dtx.mcShiftCode = sfShiftCodeMod & dtx.mcName
-    '    dtx.ackUserName = "tba"
-    '    dtx.ackUNID = "tba"
-    '    dtx.mcDTtype = "Operator"
-    '    dtx.mcDTStart = Now()
-    '    dtx.mcDowntimeDetail = "Downtime 2"
-    '    dtx.mcDTCountermeasure = "Countermeasure 2"
-    '    dtx.ackDate = Now()
-    '    dtx.mcDTEnd = "tba"
-
-    '    Dim details As String
-    '    details = dtx.mcName & " ," &
-    '        dtx.mcShiftCode & " ," &
-    '        dtx.ackUserName & " ," &
-    '        dtx.ackUNID & " ," &
-    '        dtx.mcDTtype & " ," &
-    '        dtx.mcDTStart & " ," &
-    '        dtx.mcDowntimeDetail & " ," &
-    '        dtx.mcDTCountermeasure & " ," &
-    '        dtx.ackDate & " ," &
-    '        dtx.mcDTEnd
-
-    '    Dim filePath As String
-    '    filePath = "C:\Users\TuF GaminG\Documents\000 projects\001VB.Net\DemoTextfiles\mc1downtime.txt"
-
-    '    Dim swDowntime As StreamWriter
-    '    swDowntime = New StreamWriter(filePath, True)
-
-    '    swDowntime.WriteLine(details)
-    '    swDowntime.Close()
-    'End Sub
 
 End Class

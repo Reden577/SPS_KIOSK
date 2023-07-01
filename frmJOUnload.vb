@@ -127,12 +127,12 @@ Public Class frmJOUnload
     Public Sub UnloadingConditions()
         If lblEndTime.Text <> "none" And lblEndTime.Text <> "" Then
             'preUnloadDetails_EndTime = preUnloadDetails_EndTime
-            preUnloadDetails_ProdnStat = "Plan Complete"
-            preUnloadDetails_LoadStat = "Unloaded"
+            preUnloadDetails_ProdnStat = mod_stProdStat_PlanComplete
+            preUnloadDetails_LoadStat = mod_stLoadStat_Unloaded
         Else
             preUnloadDetails_EndTime = "none"
-            preUnloadDetails_ProdnStat = "Incomplete"
-            preUnloadDetails_LoadStat = "Unloaded"
+            preUnloadDetails_ProdnStat = mod_stProdStat_INC
+            preUnloadDetails_LoadStat = mod_stLoadStat_Unloaded
         End If
     End Sub
     '//

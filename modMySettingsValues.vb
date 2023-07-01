@@ -9,11 +9,17 @@
     Public modSetVal_DTComplete As String
     Public modSetVal_DTNewStoppage As String
     Public modSetVal_MCID As String
+    Public modSetVal_JCode As String
 
     Public modSetVal_IPAdd As String = "169.254.190.100"
     'Public modSetVal_IPAdd As String = "169.254.5.225"
     Public modSetVal_Port As Integer = 502
     Public modSetVal_SqlPath As String = "Data Source=DESKTOP-4OGTIB2\DIAVIEWSQL;Initial Catalog=SPS;Persist Security Info=True;User ID=sa;Password=doc577isin"
     'Public modSetVal_SqlPath As String = "Data Source=DESKTOP-1HR4BP1\SQLEXPRESS;Initial Catalog=SPS;User ID=sa;Password=admin01"
+
+
+
+
+
 
 End Module

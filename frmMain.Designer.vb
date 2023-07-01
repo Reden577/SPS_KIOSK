@@ -40,6 +40,42 @@ Partial Class frmMain
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.lblDate = New System.Windows.Forms.Label()
         Me.PanelFrmContainer = New System.Windows.Forms.Panel()
+        Me.lblRxPLCM18 = New System.Windows.Forms.Label()
+        Me.Label57 = New System.Windows.Forms.Label()
+        Me.lblRxPLCM17 = New System.Windows.Forms.Label()
+        Me.Label55 = New System.Windows.Forms.Label()
+        Me.lblRxPLCM16 = New System.Windows.Forms.Label()
+        Me.Label53 = New System.Windows.Forms.Label()
+        Me.lblRxPLCM15 = New System.Windows.Forms.Label()
+        Me.Label51 = New System.Windows.Forms.Label()
+        Me.lblRxPLCM14 = New System.Windows.Forms.Label()
+        Me.Label49 = New System.Windows.Forms.Label()
+        Me.lblRxPLCM13 = New System.Windows.Forms.Label()
+        Me.Label47 = New System.Windows.Forms.Label()
+        Me.lblRxPLCM12 = New System.Windows.Forms.Label()
+        Me.Label45 = New System.Windows.Forms.Label()
+        Me.lblRxPLCM11 = New System.Windows.Forms.Label()
+        Me.Label43 = New System.Windows.Forms.Label()
+        Me.lblRxPLCM10 = New System.Windows.Forms.Label()
+        Me.Label41 = New System.Windows.Forms.Label()
+        Me.lblRxPLCM9 = New System.Windows.Forms.Label()
+        Me.Label39 = New System.Windows.Forms.Label()
+        Me.lblRxPLCM8 = New System.Windows.Forms.Label()
+        Me.Label35 = New System.Windows.Forms.Label()
+        Me.lblRxPLCM7 = New System.Windows.Forms.Label()
+        Me.Label31 = New System.Windows.Forms.Label()
+        Me.lblRxPLCM6 = New System.Windows.Forms.Label()
+        Me.Label27 = New System.Windows.Forms.Label()
+        Me.lblRxPLCM5 = New System.Windows.Forms.Label()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.lblRxPLCM4 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.lblRxPLCM3 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.lblRxPLCM2 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.lblRxPLCM1 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.lblJOProgressMC2 = New System.Windows.Forms.Label()
         Me.Label38 = New System.Windows.Forms.Label()
@@ -314,6 +350,42 @@ Partial Class frmMain
         '
         'PanelFrmContainer
         '
+        Me.PanelFrmContainer.Controls.Add(Me.lblRxPLCM18)
+        Me.PanelFrmContainer.Controls.Add(Me.Label57)
+        Me.PanelFrmContainer.Controls.Add(Me.lblRxPLCM17)
+        Me.PanelFrmContainer.Controls.Add(Me.Label55)
+        Me.PanelFrmContainer.Controls.Add(Me.lblRxPLCM16)
+        Me.PanelFrmContainer.Controls.Add(Me.Label53)
+        Me.PanelFrmContainer.Controls.Add(Me.lblRxPLCM15)
+        Me.PanelFrmContainer.Controls.Add(Me.Label51)
+        Me.PanelFrmContainer.Controls.Add(Me.lblRxPLCM14)
+        Me.PanelFrmContainer.Controls.Add(Me.Label49)
+        Me.PanelFrmContainer.Controls.Add(Me.lblRxPLCM13)
+        Me.PanelFrmContainer.Controls.Add(Me.Label47)
+        Me.PanelFrmContainer.Controls.Add(Me.lblRxPLCM12)
+        Me.PanelFrmContainer.Controls.Add(Me.Label45)
+        Me.PanelFrmContainer.Controls.Add(Me.lblRxPLCM11)
+        Me.PanelFrmContainer.Controls.Add(Me.Label43)
+        Me.PanelFrmContainer.Controls.Add(Me.lblRxPLCM10)
+        Me.PanelFrmContainer.Controls.Add(Me.Label41)
+        Me.PanelFrmContainer.Controls.Add(Me.lblRxPLCM9)
+        Me.PanelFrmContainer.Controls.Add(Me.Label39)
+        Me.PanelFrmContainer.Controls.Add(Me.lblRxPLCM8)
+        Me.PanelFrmContainer.Controls.Add(Me.Label35)
+        Me.PanelFrmContainer.Controls.Add(Me.lblRxPLCM7)
+        Me.PanelFrmContainer.Controls.Add(Me.Label31)
+        Me.PanelFrmContainer.Controls.Add(Me.lblRxPLCM6)
+        Me.PanelFrmContainer.Controls.Add(Me.Label27)
+        Me.PanelFrmContainer.Controls.Add(Me.lblRxPLCM5)
+        Me.PanelFrmContainer.Controls.Add(Me.Label23)
+        Me.PanelFrmContainer.Controls.Add(Me.lblRxPLCM4)
+        Me.PanelFrmContainer.Controls.Add(Me.Label19)
+        Me.PanelFrmContainer.Controls.Add(Me.lblRxPLCM3)
+        Me.PanelFrmContainer.Controls.Add(Me.Label15)
+        Me.PanelFrmContainer.Controls.Add(Me.lblRxPLCM2)
+        Me.PanelFrmContainer.Controls.Add(Me.Label11)
+        Me.PanelFrmContainer.Controls.Add(Me.lblRxPLCM1)
+        Me.PanelFrmContainer.Controls.Add(Me.Label1)
         Me.PanelFrmContainer.Controls.Add(Me.lblCurrentForm)
         Me.PanelFrmContainer.Controls.Add(Me.Label5)
         Me.PanelFrmContainer.Controls.Add(Me.lblJOProgressMC2)
@@ -365,6 +437,330 @@ Partial Class frmMain
         Me.PanelFrmContainer.Name = "PanelFrmContainer"
         Me.PanelFrmContainer.Size = New System.Drawing.Size(1765, 992)
         Me.PanelFrmContainer.TabIndex = 3
+        '
+        'lblRxPLCM18
+        '
+        Me.lblRxPLCM18.AutoSize = True
+        Me.lblRxPLCM18.Location = New System.Drawing.Point(360, 307)
+        Me.lblRxPLCM18.Name = "lblRxPLCM18"
+        Me.lblRxPLCM18.Size = New System.Drawing.Size(32, 13)
+        Me.lblRxPLCM18.TabIndex = 2
+        Me.lblRxPLCM18.Text = "False"
+        '
+        'Label57
+        '
+        Me.Label57.AutoSize = True
+        Me.Label57.Location = New System.Drawing.Point(299, 307)
+        Me.Label57.Name = "Label57"
+        Me.Label57.Size = New System.Drawing.Size(64, 13)
+        Me.Label57.TabIndex = 2
+        Me.Label57.Text = "RxPLCM18:"
+        '
+        'lblRxPLCM17
+        '
+        Me.lblRxPLCM17.AutoSize = True
+        Me.lblRxPLCM17.Location = New System.Drawing.Point(360, 294)
+        Me.lblRxPLCM17.Name = "lblRxPLCM17"
+        Me.lblRxPLCM17.Size = New System.Drawing.Size(32, 13)
+        Me.lblRxPLCM17.TabIndex = 2
+        Me.lblRxPLCM17.Text = "False"
+        '
+        'Label55
+        '
+        Me.Label55.AutoSize = True
+        Me.Label55.Location = New System.Drawing.Point(299, 294)
+        Me.Label55.Name = "Label55"
+        Me.Label55.Size = New System.Drawing.Size(64, 13)
+        Me.Label55.TabIndex = 2
+        Me.Label55.Text = "RxPLCM17:"
+        '
+        'lblRxPLCM16
+        '
+        Me.lblRxPLCM16.AutoSize = True
+        Me.lblRxPLCM16.Location = New System.Drawing.Point(360, 281)
+        Me.lblRxPLCM16.Name = "lblRxPLCM16"
+        Me.lblRxPLCM16.Size = New System.Drawing.Size(32, 13)
+        Me.lblRxPLCM16.TabIndex = 2
+        Me.lblRxPLCM16.Text = "False"
+        '
+        'Label53
+        '
+        Me.Label53.AutoSize = True
+        Me.Label53.Location = New System.Drawing.Point(299, 281)
+        Me.Label53.Name = "Label53"
+        Me.Label53.Size = New System.Drawing.Size(64, 13)
+        Me.Label53.TabIndex = 2
+        Me.Label53.Text = "RxPLCM16:"
+        '
+        'lblRxPLCM15
+        '
+        Me.lblRxPLCM15.AutoSize = True
+        Me.lblRxPLCM15.Location = New System.Drawing.Point(360, 268)
+        Me.lblRxPLCM15.Name = "lblRxPLCM15"
+        Me.lblRxPLCM15.Size = New System.Drawing.Size(32, 13)
+        Me.lblRxPLCM15.TabIndex = 2
+        Me.lblRxPLCM15.Text = "False"
+        '
+        'Label51
+        '
+        Me.Label51.AutoSize = True
+        Me.Label51.Location = New System.Drawing.Point(299, 268)
+        Me.Label51.Name = "Label51"
+        Me.Label51.Size = New System.Drawing.Size(64, 13)
+        Me.Label51.TabIndex = 2
+        Me.Label51.Text = "RxPLCM15:"
+        '
+        'lblRxPLCM14
+        '
+        Me.lblRxPLCM14.AutoSize = True
+        Me.lblRxPLCM14.Location = New System.Drawing.Point(360, 255)
+        Me.lblRxPLCM14.Name = "lblRxPLCM14"
+        Me.lblRxPLCM14.Size = New System.Drawing.Size(32, 13)
+        Me.lblRxPLCM14.TabIndex = 2
+        Me.lblRxPLCM14.Text = "False"
+        '
+        'Label49
+        '
+        Me.Label49.AutoSize = True
+        Me.Label49.Location = New System.Drawing.Point(299, 255)
+        Me.Label49.Name = "Label49"
+        Me.Label49.Size = New System.Drawing.Size(64, 13)
+        Me.Label49.TabIndex = 2
+        Me.Label49.Text = "RxPLCM14:"
+        '
+        'lblRxPLCM13
+        '
+        Me.lblRxPLCM13.AutoSize = True
+        Me.lblRxPLCM13.Location = New System.Drawing.Point(360, 242)
+        Me.lblRxPLCM13.Name = "lblRxPLCM13"
+        Me.lblRxPLCM13.Size = New System.Drawing.Size(32, 13)
+        Me.lblRxPLCM13.TabIndex = 2
+        Me.lblRxPLCM13.Text = "False"
+        '
+        'Label47
+        '
+        Me.Label47.AutoSize = True
+        Me.Label47.Location = New System.Drawing.Point(299, 242)
+        Me.Label47.Name = "Label47"
+        Me.Label47.Size = New System.Drawing.Size(64, 13)
+        Me.Label47.TabIndex = 2
+        Me.Label47.Text = "RxPLCM13:"
+        '
+        'lblRxPLCM12
+        '
+        Me.lblRxPLCM12.AutoSize = True
+        Me.lblRxPLCM12.Location = New System.Drawing.Point(360, 229)
+        Me.lblRxPLCM12.Name = "lblRxPLCM12"
+        Me.lblRxPLCM12.Size = New System.Drawing.Size(32, 13)
+        Me.lblRxPLCM12.TabIndex = 2
+        Me.lblRxPLCM12.Text = "False"
+        '
+        'Label45
+        '
+        Me.Label45.AutoSize = True
+        Me.Label45.Location = New System.Drawing.Point(299, 229)
+        Me.Label45.Name = "Label45"
+        Me.Label45.Size = New System.Drawing.Size(64, 13)
+        Me.Label45.TabIndex = 2
+        Me.Label45.Text = "RxPLCM12:"
+        '
+        'lblRxPLCM11
+        '
+        Me.lblRxPLCM11.AutoSize = True
+        Me.lblRxPLCM11.Location = New System.Drawing.Point(360, 216)
+        Me.lblRxPLCM11.Name = "lblRxPLCM11"
+        Me.lblRxPLCM11.Size = New System.Drawing.Size(32, 13)
+        Me.lblRxPLCM11.TabIndex = 2
+        Me.lblRxPLCM11.Text = "False"
+        '
+        'Label43
+        '
+        Me.Label43.AutoSize = True
+        Me.Label43.Location = New System.Drawing.Point(299, 216)
+        Me.Label43.Name = "Label43"
+        Me.Label43.Size = New System.Drawing.Size(64, 13)
+        Me.Label43.TabIndex = 2
+        Me.Label43.Text = "RxPLCM11:"
+        '
+        'lblRxPLCM10
+        '
+        Me.lblRxPLCM10.AutoSize = True
+        Me.lblRxPLCM10.Location = New System.Drawing.Point(360, 203)
+        Me.lblRxPLCM10.Name = "lblRxPLCM10"
+        Me.lblRxPLCM10.Size = New System.Drawing.Size(32, 13)
+        Me.lblRxPLCM10.TabIndex = 2
+        Me.lblRxPLCM10.Text = "False"
+        '
+        'Label41
+        '
+        Me.Label41.AutoSize = True
+        Me.Label41.Location = New System.Drawing.Point(299, 203)
+        Me.Label41.Name = "Label41"
+        Me.Label41.Size = New System.Drawing.Size(64, 13)
+        Me.Label41.TabIndex = 2
+        Me.Label41.Text = "RxPLCM10:"
+        '
+        'lblRxPLCM9
+        '
+        Me.lblRxPLCM9.AutoSize = True
+        Me.lblRxPLCM9.Location = New System.Drawing.Point(360, 190)
+        Me.lblRxPLCM9.Name = "lblRxPLCM9"
+        Me.lblRxPLCM9.Size = New System.Drawing.Size(32, 13)
+        Me.lblRxPLCM9.TabIndex = 2
+        Me.lblRxPLCM9.Text = "False"
+        '
+        'Label39
+        '
+        Me.Label39.AutoSize = True
+        Me.Label39.Location = New System.Drawing.Point(299, 190)
+        Me.Label39.Name = "Label39"
+        Me.Label39.Size = New System.Drawing.Size(58, 13)
+        Me.Label39.TabIndex = 2
+        Me.Label39.Text = "RxPLCM9:"
+        '
+        'lblRxPLCM8
+        '
+        Me.lblRxPLCM8.AutoSize = True
+        Me.lblRxPLCM8.Location = New System.Drawing.Point(360, 177)
+        Me.lblRxPLCM8.Name = "lblRxPLCM8"
+        Me.lblRxPLCM8.Size = New System.Drawing.Size(32, 13)
+        Me.lblRxPLCM8.TabIndex = 2
+        Me.lblRxPLCM8.Text = "False"
+        '
+        'Label35
+        '
+        Me.Label35.AutoSize = True
+        Me.Label35.Location = New System.Drawing.Point(299, 177)
+        Me.Label35.Name = "Label35"
+        Me.Label35.Size = New System.Drawing.Size(58, 13)
+        Me.Label35.TabIndex = 2
+        Me.Label35.Text = "RxPLCM8:"
+        '
+        'lblRxPLCM7
+        '
+        Me.lblRxPLCM7.AutoSize = True
+        Me.lblRxPLCM7.Location = New System.Drawing.Point(360, 164)
+        Me.lblRxPLCM7.Name = "lblRxPLCM7"
+        Me.lblRxPLCM7.Size = New System.Drawing.Size(32, 13)
+        Me.lblRxPLCM7.TabIndex = 2
+        Me.lblRxPLCM7.Text = "False"
+        '
+        'Label31
+        '
+        Me.Label31.AutoSize = True
+        Me.Label31.Location = New System.Drawing.Point(299, 164)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(58, 13)
+        Me.Label31.TabIndex = 2
+        Me.Label31.Text = "RxPLCM7:"
+        '
+        'lblRxPLCM6
+        '
+        Me.lblRxPLCM6.AutoSize = True
+        Me.lblRxPLCM6.Location = New System.Drawing.Point(360, 151)
+        Me.lblRxPLCM6.Name = "lblRxPLCM6"
+        Me.lblRxPLCM6.Size = New System.Drawing.Size(32, 13)
+        Me.lblRxPLCM6.TabIndex = 2
+        Me.lblRxPLCM6.Text = "False"
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Location = New System.Drawing.Point(299, 151)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(58, 13)
+        Me.Label27.TabIndex = 2
+        Me.Label27.Text = "RxPLCM6:"
+        '
+        'lblRxPLCM5
+        '
+        Me.lblRxPLCM5.AutoSize = True
+        Me.lblRxPLCM5.Location = New System.Drawing.Point(360, 138)
+        Me.lblRxPLCM5.Name = "lblRxPLCM5"
+        Me.lblRxPLCM5.Size = New System.Drawing.Size(32, 13)
+        Me.lblRxPLCM5.TabIndex = 2
+        Me.lblRxPLCM5.Text = "False"
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Location = New System.Drawing.Point(299, 138)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(58, 13)
+        Me.Label23.TabIndex = 2
+        Me.Label23.Text = "RxPLCM5:"
+        '
+        'lblRxPLCM4
+        '
+        Me.lblRxPLCM4.AutoSize = True
+        Me.lblRxPLCM4.Location = New System.Drawing.Point(360, 125)
+        Me.lblRxPLCM4.Name = "lblRxPLCM4"
+        Me.lblRxPLCM4.Size = New System.Drawing.Size(32, 13)
+        Me.lblRxPLCM4.TabIndex = 2
+        Me.lblRxPLCM4.Text = "False"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(299, 125)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(58, 13)
+        Me.Label19.TabIndex = 2
+        Me.Label19.Text = "RxPLCM4:"
+        '
+        'lblRxPLCM3
+        '
+        Me.lblRxPLCM3.AutoSize = True
+        Me.lblRxPLCM3.Location = New System.Drawing.Point(360, 112)
+        Me.lblRxPLCM3.Name = "lblRxPLCM3"
+        Me.lblRxPLCM3.Size = New System.Drawing.Size(32, 13)
+        Me.lblRxPLCM3.TabIndex = 2
+        Me.lblRxPLCM3.Text = "False"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(299, 112)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(58, 13)
+        Me.Label15.TabIndex = 2
+        Me.Label15.Text = "RxPLCM3:"
+        '
+        'lblRxPLCM2
+        '
+        Me.lblRxPLCM2.AutoSize = True
+        Me.lblRxPLCM2.Location = New System.Drawing.Point(360, 99)
+        Me.lblRxPLCM2.Name = "lblRxPLCM2"
+        Me.lblRxPLCM2.Size = New System.Drawing.Size(32, 13)
+        Me.lblRxPLCM2.TabIndex = 2
+        Me.lblRxPLCM2.Text = "False"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(299, 99)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(58, 13)
+        Me.Label11.TabIndex = 2
+        Me.Label11.Text = "RxPLCM2:"
+        '
+        'lblRxPLCM1
+        '
+        Me.lblRxPLCM1.AutoSize = True
+        Me.lblRxPLCM1.Location = New System.Drawing.Point(360, 86)
+        Me.lblRxPLCM1.Name = "lblRxPLCM1"
+        Me.lblRxPLCM1.Size = New System.Drawing.Size(32, 13)
+        Me.lblRxPLCM1.TabIndex = 2
+        Me.lblRxPLCM1.Text = "False"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(299, 86)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(58, 13)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "RxPLCM1:"
         '
         'Label5
         '
@@ -711,7 +1107,7 @@ Partial Class frmMain
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(120, 337)
+        Me.Label7.Location = New System.Drawing.Point(299, 73)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(58, 13)
         Me.Label7.TabIndex = 1
@@ -747,7 +1143,7 @@ Partial Class frmMain
         'lblRxPLCM0
         '
         Me.lblRxPLCM0.AutoSize = True
-        Me.lblRxPLCM0.Location = New System.Drawing.Point(181, 337)
+        Me.lblRxPLCM0.Location = New System.Drawing.Point(360, 73)
         Me.lblRxPLCM0.Name = "lblRxPLCM0"
         Me.lblRxPLCM0.Size = New System.Drawing.Size(32, 13)
         Me.lblRxPLCM0.TabIndex = 1
@@ -865,4 +1261,40 @@ Partial Class frmMain
     Friend WithEvents lblRxPLCM0 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents lblQAMCStopFlag As Label
+    Friend WithEvents lblRxPLCM18 As Label
+    Friend WithEvents Label57 As Label
+    Friend WithEvents lblRxPLCM17 As Label
+    Friend WithEvents Label55 As Label
+    Friend WithEvents lblRxPLCM16 As Label
+    Friend WithEvents Label53 As Label
+    Friend WithEvents lblRxPLCM15 As Label
+    Friend WithEvents Label51 As Label
+    Friend WithEvents lblRxPLCM14 As Label
+    Friend WithEvents Label49 As Label
+    Friend WithEvents lblRxPLCM13 As Label
+    Friend WithEvents Label47 As Label
+    Friend WithEvents lblRxPLCM12 As Label
+    Friend WithEvents Label45 As Label
+    Friend WithEvents lblRxPLCM11 As Label
+    Friend WithEvents Label43 As Label
+    Friend WithEvents lblRxPLCM10 As Label
+    Friend WithEvents Label41 As Label
+    Friend WithEvents lblRxPLCM9 As Label
+    Friend WithEvents Label39 As Label
+    Friend WithEvents lblRxPLCM8 As Label
+    Friend WithEvents Label35 As Label
+    Friend WithEvents lblRxPLCM7 As Label
+    Friend WithEvents Label31 As Label
+    Friend WithEvents lblRxPLCM6 As Label
+    Friend WithEvents Label27 As Label
+    Friend WithEvents lblRxPLCM5 As Label
+    Friend WithEvents Label23 As Label
+    Friend WithEvents lblRxPLCM4 As Label
+    Friend WithEvents Label19 As Label
+    Friend WithEvents lblRxPLCM3 As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents lblRxPLCM2 As Label
+    Friend WithEvents Label11 As Label
+    Friend WithEvents lblRxPLCM1 As Label
+    Friend WithEvents Label1 As Label
 End Class

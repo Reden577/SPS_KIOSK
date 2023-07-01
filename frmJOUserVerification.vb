@@ -82,11 +82,13 @@ Public Class frmJOUserVerification
                     modQualityUserLogin = modLogUserName
                     modQualityUIDLogin = modLogUserID
                     Try
-                        Dim Result As Boolean
-                        Dim arights As New clsSelAll_MCDash_AR_QAFeat
-                        arights.checkAccess(modLogAccessLevel)
-                        Result = arights.QABtn_isTrue
-                        If Result = True Then
+                        Dim Result As String
+                        Dim AR As New clsAccessRights
+                        AR.AccsRights_UserID = modLogUserID
+                        AR.AccsRights_AccessRights = modLogAccessLevel
+                        AR.CheckAccessRights()
+                        Result = AR.AccsRights_Result
+                        If Result = "QALvl1" Or Result = "QALvl2" Then
                             modLogUserName = Nothing
                             modLogUserID = Nothing
                             modLogOTS = Nothing
@@ -94,16 +96,37 @@ Public Class frmJOUserVerification
                             Me.Hide()
                             frmQualityStoppage.ShowDialog()
                             Me.Close()
-                            Exit Sub
-                        ElseIf IsDBNull(Result) Then
-                            MessageBox.Show("You are not allowed to do this transaction!!!" _
-                            & vbNewLine & "If this error persist please contact your local Admin...", "Confirmation Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                            Me.Close()
                         Else
                             MessageBox.Show("You are not allowed to do this transaction!!!" _
-                            & vbNewLine & "If this error persist please contact your local Admin...", "Confirmation Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                                & vbNewLine & "If this error persist please contact your local Admin...", "Confirmation Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                             Me.Close()
                         End If
+
+                        modQualityUserLogin = modLogUserName
+
+
+                        'Dim Result As Boolean
+                        'Dim arights As New clsSelAll_MCDash_AR_QAFeat
+                        'arights.checkAccess(modLogAccessLevel)
+                        'Result = arights.QABtn_isTrue
+                        'If Result = True Then
+                        '    modLogUserName = Nothing
+                        '    modLogUserID = Nothing
+                        '    modLogOTS = Nothing
+                        '    modLogAccessLevel = Nothing
+                        '    Me.Hide()
+                        '    frmQualityStoppage.ShowDialog()
+                        '    Me.Close()
+                        '    Exit Sub
+                        'ElseIf IsDBNull(Result) Then
+                        '    MessageBox.Show("You are not allowed to do this transaction!!!" _
+                        '    & vbNewLine & "If this error persist please contact your local Admin...", "Confirmation Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                        '    Me.Close()
+                        'Else
+                        '    MessageBox.Show("You are not allowed to do this transaction!!!" _
+                        '    & vbNewLine & "If this error persist please contact your local Admin...", "Confirmation Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                        '    Me.Close()
+                        'End If
                         '
                         'modQualityUserLogin = modLogUserName
                     Catch ex As Exception
