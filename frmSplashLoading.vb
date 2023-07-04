@@ -1,13 +1,34 @@
-﻿Imports System.Threading
+﻿Imports System.IO
+Imports System.Threading
 Imports System.Windows.Media.Media3D
 
 Public Class frmSplashLoading
     Private Sub frmSplashLoading_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Dim plcCon As New cls002_ModBusConnection
         'plcCon.ConnectModClient()
-        modSetVal_SqlPath = My.Settings.SQLPath
-        modSetVal_IPAdd = My.Settings.IPAddress
-        modSetVal_Port = My.Settings.Port
+
+        Dim stMyConfig(2) As String
+        Dim MyConfig As StreamReader
+        MyConfig = New StreamReader("MyConfig.txt")
+        For i = 0 To 2
+            stMyConfig(i) = MyConfig.ReadLine
+            If i = 0 Then
+                modSetVal_SqlPath = stMyConfig(i)
+            ElseIf i = 1 Then
+                modSetVal_IPAdd = stMyConfig(i)
+            ElseIf i = 2 Then
+                modSetVal_Port = stMyConfig(i)
+            End If
+        Next
+
+        My.Settings.SQLPath = modSetVal_SqlPath
+        My.Settings.IPAddress = modSetVal_IPAdd
+        My.Settings.Port = modSetVal_Port
+        My.Settings.Save()
+
+        'modSetVal_SqlPath = My.Settings.SQLPath
+        'modSetVal_IPAdd = My.Settings.IPAddress
+        'modSetVal_Port = My.Settings.Port
         Me.CenterToScreen()
     End Sub
 

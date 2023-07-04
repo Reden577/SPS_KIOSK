@@ -5,7 +5,7 @@ VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SPSApp_240623_02", "SPSApp_240623_02.vbproj", "{72803013-C5A5-4E45-99F3-3F3994C72964}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SPSAPP_280623_01", "..\SPSAPP_280623_01\SPSAPP_280623_01.vdproj", "{58A1078D-9993-4B21-9669-0E05D4BE2CD3}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SPSApp1_280623_03Build01", "..\SPSApp1_280623_03Build01\SPSApp1_280623_03Build01.vdproj", "{086CBD48-3F71-4896-AD11-E385A08D49FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +17,8 @@ Global
 		{72803013-C5A5-4E45-99F3-3F3994C72964}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72803013-C5A5-4E45-99F3-3F3994C72964}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72803013-C5A5-4E45-99F3-3F3994C72964}.Release|Any CPU.Build.0 = Release|Any CPU
-		{58A1078D-9993-4B21-9669-0E05D4BE2CD3}.Debug|Any CPU.ActiveCfg = Debug
-		{58A1078D-9993-4B21-9669-0E05D4BE2CD3}.Release|Any CPU.ActiveCfg = Release
+		{086CBD48-3F71-4896-AD11-E385A08D49FE}.Debug|Any CPU.ActiveCfg = Debug
+		{086CBD48-3F71-4896-AD11-E385A08D49FE}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
