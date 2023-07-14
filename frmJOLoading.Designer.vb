@@ -458,7 +458,7 @@ Partial Class frmJOLoading
         '
         Me.RichTextBox1.Location = New System.Drawing.Point(1002, 442)
         Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(452, 160)
+        Me.RichTextBox1.Size = New System.Drawing.Size(452, 248)
         Me.RichTextBox1.TabIndex = 11
         Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
         Me.RichTextBox1.Visible = False
@@ -521,7 +521,7 @@ Partial Class frmJOLoading
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(975, 725)
+        Me.ClientSize = New System.Drawing.Size(974, 725)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.GroupBox1)

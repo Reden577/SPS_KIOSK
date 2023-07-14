@@ -3081,8 +3081,8 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-4OGTIB2\DIAVIEWSQL;Initial Catalog=SPS;Persist Security Info="& _ 
-            "True;User ID=sa;Password=doc577isin")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=169.254.190.85,49172;Initial Catalog=SPS;Persist Security Info=True;U"& _ 
+            "ser ID=sa;Password=doc577isin")>  _
         Public ReadOnly Property SPSConnectionString() As String
             Get
                 Return CType(Me("SPSConnectionString"),String)

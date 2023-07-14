@@ -24,7 +24,8 @@ Public Class frmHome
     Dim JOStatusMC13 As String
     Dim JOStatusMC14 As String
 
-
+    Dim logDTMC1_QA As String
+    Dim logDTMC2_QA As String
 
     '// FORM LOAD SUB
     Private Sub frmHome_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -1050,10 +1051,12 @@ Public Class frmHome
 
     '// INDICATOR IMAGES DURING MACHINE RUN, MACHINE STOP and PLAN COMPLETE
     Public Sub MCStatusPIC()
+        CheckQADT()
         Dim StatMC1 As New clsHomeMCStatusIndicator
         StatMC1.bolStartStop = StartStopMC1
         StatMC1.bolPlanComplete = RxPLCM14
         StatMC1.stJOPlan = stJOMC1
+        StatMC1.stQAStoppage = logDTMC1_QA
         StatMC1.McStatusIndicator()
         picStatMC1.Image = StatMC1.iStats_Indicator
 
@@ -1061,10 +1064,28 @@ Public Class frmHome
         StatMC2.bolStartStop = StartStopMC2
         StatMC2.bolPlanComplete = RxPLCM15
         StatMC2.stJOPlan = stJOMC2
+        StatMC2.stQAStoppage = logDTMC2_QA
         StatMC2.McStatusIndicator()
         picStatMC2.Image = StatMC2.iStats_Indicator
     End Sub
     '//
+
+    Public Sub CheckQADT()
+        'MC1
+        Dim qaDTMC1 As New clsCheckExistingDowntime
+        qaDTMC1.checkDT_stMCId = "MC1"
+        qaDTMC1.checkDT_stNewStoppage = "MC1NewStoppage"
+        qaDTMC1.checkExistingDT()
+        logDTMC1_QA = qaDTMC1.checkDT_Result
+
+        'MC2
+        Dim qaDTMC2 As New clsCheckExistingDowntime
+        qaDTMC2.checkDT_stMCId = "MC2"
+        qaDTMC2.checkDT_stNewStoppage = "MC2NewStoppage"
+        qaDTMC2.checkExistingDT()
+        logDTMC2_QA = qaDTMC2.checkDT_Result
+
+    End Sub
 
     '// MENU TABS STATE AND CONDITIONS
     Public Sub MenuTabStats()

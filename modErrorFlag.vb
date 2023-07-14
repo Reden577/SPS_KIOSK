@@ -7,6 +7,7 @@
     Public modErrFlag_CheckDTbyQualityNNewStoppage As Boolean
     Public modErrFlag_CheckQAVerification As Boolean
     Public modErrFlag_UpdateQAPass As Boolean
+    Public modErrFlag_LogJODetails As Boolean
 
 
 End Module
