@@ -6,9 +6,6 @@ Public Class clsJOAPI
         <JsonProperty("JOB_ORDER")>
         Public Property JOBORDER As String
 
-        '<JsonProperty("PART_NO_1")>
-        'Public Property PARTNO1 As String
-
         <JsonProperty("JOB_ORDER_QTY")>
         Public Property JOBORDERQTY As Double
 
@@ -17,6 +14,12 @@ Public Class clsJOAPI
 
         <JsonProperty("MACHINE_ID")>
         Public Property MACHINEID As String
+
+        <JsonProperty("PART_NO_1")>
+        Public Property PARTNO1 As String
+
+        <JsonProperty("PART_NO_2")>
+        Public Property PARTNO2 As String
 
         '<JsonProperty("MOLD_SETUP_START")>
         'Public Property MOLDSETUPSTART As String

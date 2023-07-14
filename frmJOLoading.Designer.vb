@@ -68,6 +68,10 @@ Partial Class frmJOLoading
         Me.MListNewJobOrderBindingSource3 = New System.Windows.Forms.BindingSource(Me.components)
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.lblParntNo1 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.lblParntNo2 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
         CType(Me.dgvJO, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MListNewJobOrderBindingSource5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MListNewJobOrder_1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -254,7 +258,7 @@ Partial Class frmJOLoading
         '
         Me.lblDGVMoldID.AutoSize = True
         Me.lblDGVMoldID.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDGVMoldID.Location = New System.Drawing.Point(92, 62)
+        Me.lblDGVMoldID.Location = New System.Drawing.Point(92, 116)
         Me.lblDGVMoldID.Name = "lblDGVMoldID"
         Me.lblDGVMoldID.Size = New System.Drawing.Size(14, 20)
         Me.lblDGVMoldID.TabIndex = 4
@@ -264,7 +268,7 @@ Partial Class frmJOLoading
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(15, 62)
+        Me.Label2.Location = New System.Drawing.Point(15, 116)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(68, 20)
         Me.Label2.TabIndex = 4
@@ -274,7 +278,7 @@ Partial Class frmJOLoading
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(15, 115)
+        Me.Label1.Location = New System.Drawing.Point(15, 169)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(94, 20)
         Me.Label1.TabIndex = 4
@@ -302,7 +306,7 @@ Partial Class frmJOLoading
         '
         Me.lblDGVJOPlanQty.AutoSize = True
         Me.lblDGVJOPlanQty.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDGVJOPlanQty.Location = New System.Drawing.Point(92, 89)
+        Me.lblDGVJOPlanQty.Location = New System.Drawing.Point(92, 143)
         Me.lblDGVJOPlanQty.Name = "lblDGVJOPlanQty"
         Me.lblDGVJOPlanQty.Size = New System.Drawing.Size(14, 20)
         Me.lblDGVJOPlanQty.TabIndex = 4
@@ -312,7 +316,7 @@ Partial Class frmJOLoading
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(15, 89)
+        Me.Label4.Location = New System.Drawing.Point(15, 143)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(68, 20)
         Me.Label4.TabIndex = 4
@@ -347,15 +351,19 @@ Partial Class frmJOLoading
         Me.GroupBox2.Controls.Add(Me.lblDGVJOCode)
         Me.GroupBox2.Controls.Add(Me.lblProdStat)
         Me.GroupBox2.Controls.Add(Me.lblLoadStat)
+        Me.GroupBox2.Controls.Add(Me.Label11)
         Me.GroupBox2.Controls.Add(Me.Label4)
         Me.GroupBox2.Controls.Add(Me.lblDGVMachineId)
+        Me.GroupBox2.Controls.Add(Me.lblParntNo2)
         Me.GroupBox2.Controls.Add(Me.lblDGVJOPlanQty)
+        Me.GroupBox2.Controls.Add(Me.Label8)
+        Me.GroupBox2.Controls.Add(Me.lblParntNo1)
         Me.GroupBox2.Controls.Add(Me.Label2)
         Me.GroupBox2.Controls.Add(Me.lblDGVMoldID)
         Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.Location = New System.Drawing.Point(18, 434)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(617, 209)
+        Me.GroupBox2.Size = New System.Drawing.Size(617, 260)
         Me.GroupBox2.TabIndex = 6
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "JO Summary Load To:"
@@ -364,7 +372,7 @@ Partial Class frmJOLoading
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(15, 169)
+        Me.Label9.Location = New System.Drawing.Point(15, 223)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(80, 20)
         Me.Label9.TabIndex = 4
@@ -374,7 +382,7 @@ Partial Class frmJOLoading
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(15, 141)
+        Me.Label7.Location = New System.Drawing.Point(15, 195)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(83, 20)
         Me.Label7.TabIndex = 4
@@ -384,7 +392,7 @@ Partial Class frmJOLoading
         '
         Me.lblProdStat.AutoSize = True
         Me.lblProdStat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblProdStat.Location = New System.Drawing.Point(115, 169)
+        Me.lblProdStat.Location = New System.Drawing.Point(115, 223)
         Me.lblProdStat.Name = "lblProdStat"
         Me.lblProdStat.Size = New System.Drawing.Size(14, 20)
         Me.lblProdStat.TabIndex = 4
@@ -394,7 +402,7 @@ Partial Class frmJOLoading
         '
         Me.lblLoadStat.AutoSize = True
         Me.lblLoadStat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLoadStat.Location = New System.Drawing.Point(115, 141)
+        Me.lblLoadStat.Location = New System.Drawing.Point(115, 195)
         Me.lblLoadStat.Name = "lblLoadStat"
         Me.lblLoadStat.Size = New System.Drawing.Size(14, 20)
         Me.lblLoadStat.TabIndex = 4
@@ -404,7 +412,7 @@ Partial Class frmJOLoading
         '
         Me.lblDGVMachineId.AutoSize = True
         Me.lblDGVMachineId.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDGVMachineId.Location = New System.Drawing.Point(115, 115)
+        Me.lblDGVMachineId.Location = New System.Drawing.Point(115, 169)
         Me.lblDGVMachineId.Name = "lblDGVMachineId"
         Me.lblDGVMachineId.Size = New System.Drawing.Size(14, 20)
         Me.lblDGVMachineId.TabIndex = 4
@@ -464,16 +472,56 @@ Partial Class frmJOLoading
         Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.Location = New System.Drawing.Point(27, 13)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(917, 649)
+        Me.GroupBox3.Size = New System.Drawing.Size(917, 700)
         Me.GroupBox3.TabIndex = 12
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "JOB ORDER SOURCE: ARC-STONE"
+        '
+        'lblParntNo1
+        '
+        Me.lblParntNo1.AutoSize = True
+        Me.lblParntNo1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblParntNo1.Location = New System.Drawing.Point(92, 62)
+        Me.lblParntNo1.Name = "lblParntNo1"
+        Me.lblParntNo1.Size = New System.Drawing.Size(14, 20)
+        Me.lblParntNo1.TabIndex = 4
+        Me.lblParntNo1.Text = "-"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(15, 62)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(47, 20)
+        Me.Label8.TabIndex = 4
+        Me.Label8.Text = "PN 1:"
+        '
+        'lblParntNo2
+        '
+        Me.lblParntNo2.AutoSize = True
+        Me.lblParntNo2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblParntNo2.Location = New System.Drawing.Point(92, 89)
+        Me.lblParntNo2.Name = "lblParntNo2"
+        Me.lblParntNo2.Size = New System.Drawing.Size(14, 20)
+        Me.lblParntNo2.TabIndex = 4
+        Me.lblParntNo2.Text = "-"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(15, 89)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(47, 20)
+        Me.Label11.TabIndex = 4
+        Me.Label11.Text = "PN 2:"
         '
         'frmJOLoading
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(969, 674)
+        Me.ClientSize = New System.Drawing.Size(975, 725)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.GroupBox1)
@@ -548,4 +596,8 @@ Partial Class frmJOLoading
     Friend WithEvents Label7 As Label
     Friend WithEvents lblProdStat As Label
     Friend WithEvents lblLoadStat As Label
+    Friend WithEvents Label11 As Label
+    Friend WithEvents lblParntNo2 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents lblParntNo1 As Label
 End Class

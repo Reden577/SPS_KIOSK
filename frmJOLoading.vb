@@ -217,6 +217,19 @@ Public Class frmJOLoading
         lblDGVMoldID.Text = dgvAPI.CurrentRow.Cells(2).Value.ToString
         lblDGVMachineId.Text = dgvAPI.CurrentRow.Cells(3).Value.ToString
 
+        If dgvAPI.CurrentRow.Cells(4).Value <> "" Then
+            lblParntNo1.Text = dgvAPI.CurrentRow.Cells(4).Value.ToString
+        Else
+            lblParntNo1.Text = "n/a"
+        End If
+
+        If dgvAPI.CurrentRow.Cells(5).Value <> "" Then
+            lblParntNo2.Text = dgvAPI.CurrentRow.Cells(5).Value.ToString
+        Else
+            lblParntNo2.Text = "n/a"
+        End If
+
+
         CheckIFJO_IsLoaded()
 
     End Sub
