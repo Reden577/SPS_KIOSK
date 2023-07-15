@@ -134,10 +134,55 @@ Public Class frmJOUserVerification
                             & vbNewLine & "If this error persist please contact your local Admin...", "Confirmation Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                         Me.Close()
                     End Try
-
                 End If
+
+                'FOR BYPASS TRIGGERING
+                'MC1
+                If bolMCDashboard1 = True Then
+                    If modSysFlagMC1_Bypass_init = True Then
+                        If txtJOVerification.Text = modLogOTS Then
+                            If modSysFlagMC1_Bypass_isTrue = False Then
+                                modSysFlagMC1_Bypass_isTrue = True
+                                Me.Close()
+                            Else
+                                modSysFlagMC1_Bypass_isTrue = False
+                                Me.Close()
+                            End If
+
+                        Else
+                            MessageBox.Show("You are not allowed to do this transaction!!!" _
+                            & vbNewLine & "If this error persist please contact your local Admin...", "BYPASS Confirmation..", MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+                            modSysFlagMC1_Bypass_isTrue = False
+                            modSysFlagMC1_Bypass_init = False
+                            Me.Close()
+                        End If
+                    End If
+                    'MC2
+                ElseIf bolMCDashboard2 = True Then
+                    If modSysFlagMC2_Bypass_init = True Then
+                        If txtJOVerification.Text = modLogOTS Then
+                            If modSysFlagMC2_Bypass_isTrue = False Then
+                                modSysFlagMC2_Bypass_isTrue = True
+                                Me.Close()
+                            Else
+                                modSysFlagMC2_Bypass_isTrue = False
+                                Me.Close()
+                            End If
+
+                        Else
+                            MessageBox.Show("You are not allowed to do this transaction!!!" _
+                            & vbNewLine & "If this error persist please contact your local Admin...", "BYPASS Confirmation..", MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+                            modSysFlagMC2_Bypass_isTrue = False
+                            modSysFlagMC2_Bypass_init = False
+                            Me.Close()
+                        End If
+                    End If
+                End If
+
             Else
-                MessageBox.Show("You are not allowed to do this transaction!!!" _
+                    MessageBox.Show("You are not allowed to do this transaction!!!" _
                     & vbNewLine & "If this error persist please contact your local Admin...", "Confirmation Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
         Catch ex As Exception

@@ -24,12 +24,25 @@ Public Class frmMain
         modSetVal_SqlPath = My.Settings.SQLPath
         modSetVal_IPAdd = My.Settings.IPAddress
 
+        'modSysFlagMC1_Bypass_isTrue = My.Settings.MC1Bypass
+        'modSysFlagMC2_Bypass_isTrue = My.Settings.MC2Bypass
         ConnectToModbus()
+        readCoilsRegisters()
+
+        If RxPLCM9 = True Then
+            modSysFlagMC1_Bypass_isTrue = True
+        End If
+        If RxPLCM10 = True Then
+            modSysFlagMC2_Bypass_isTrue = True
+        End If
     End Sub
 
     Private Sub frmMain_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         My.Settings.SQLPath = modSetVal_SqlPath
         My.Settings.IPAddress = modSetVal_IPAdd
+
+        My.Settings.MC1Bypass = modSysFlagMC1_Bypass_isTrue
+        My.Settings.MC2Bypass = modSysFlagMC2_Bypass_isTrue
     End Sub
 
     '// CLOSE APPLICATION
@@ -77,6 +90,7 @@ Public Class frmMain
         MC1LoadedJOCavQty()
         MC2LoadedJOCavQty()
         LogoutAndNoJOFlag()
+        BypassMC()
     End Sub
     '//
 
@@ -343,8 +357,8 @@ Public Class frmMain
                 RxPLCM6 = rxCoil(6) '2054 MC1 Machine Ready (Machine HMI)
                 RxPLCM7 = rxCoil(7) '2055 MC2 Machine Ready (Machine HMI)
                 RxPLCM8 = rxCoil(8) '2056
-                RxPLCM9 = rxCoil(9) '2057 
-                RxPLCM10 = rxCoil(10) '2058 
+                RxPLCM9 = rxCoil(9) '2057 MC1 Bypass
+                RxPLCM10 = rxCoil(10) '2058 MC2 Bypass
                 RxPLCM11 = rxCoil(11) '2059
                 RxPLCM12 = rxCoil(12) '2060 MC1 Test Auto Mode Flag
                 RxPLCM13 = rxCoil(13) '2061 MC2 Test Auto Mode Flag
@@ -642,4 +656,21 @@ Public Class frmMain
         End If
     End Sub
     '//
+
+    Public Sub BypassMC()
+        'MC1
+        If modSysFlagMC1_Bypass_isTrue = True Then
+            ModClient.WriteSingleCoil(2057, True) '2057 M9 MC1 BYPASS
+        Else
+            ModClient.WriteSingleCoil(2057, False) '2057 M9 MC1 BYPASS
+        End If
+        'MC2
+        If modSysFlagMC2_Bypass_isTrue = True Then
+            ModClient.WriteSingleCoil(2058, True) '2058 M10 MC2 BYPASS
+        Else
+            ModClient.WriteSingleCoil(2058, False) '2058 M10 MC2 BYPASS
+        End If
+
+
+    End Sub
 End Class

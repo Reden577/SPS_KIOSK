@@ -26,6 +26,8 @@ Public Class frmSplashLoading
         My.Settings.Port = modSetVal_Port
         My.Settings.Save()
 
+        'modSysFlagMC1_Bypass_isTrue = My.Settings.MC1Bypass
+        'modSysFlagMC2_Bypass_isTrue = My.Settings.MC2Bypass
         'modSetVal_SqlPath = My.Settings.SQLPath
         'modSetVal_IPAdd = My.Settings.IPAddress
         'modSetVal_Port = My.Settings.Port

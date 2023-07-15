@@ -1045,5 +1045,11 @@
     <Setting Name="Port" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">502</Value>
     </Setting>
+    <Setting Name="MC1Bypass" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="MC2Bypass" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

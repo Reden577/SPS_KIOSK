@@ -4205,6 +4205,30 @@ Namespace My
                 Me("Port") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
+        Public Property MC1Bypass() As Boolean
+            Get
+                Return CType(Me("MC1Bypass"),Boolean)
+            End Get
+            Set
+                Me("MC1Bypass") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
+        Public Property MC2Bypass() As Boolean
+            Get
+                Return CType(Me("MC2Bypass"),Boolean)
+            End Get
+            Set
+                Me("MC2Bypass") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

@@ -682,6 +682,7 @@ Public Class frmMCDasboard
         MachineStatusImage()
         QAInfoDetailsDisplay()
         RTCheckQAStoppage()
+        SysBypassBtnStat()
     End Sub
 
     '// 
@@ -770,5 +771,52 @@ Public Class frmMCDasboard
         If RxPLCM1 = True Then
             modQA_DTStat_MC2 = False
         End If
+    End Sub
+
+    Private Sub IconButton1_Click(sender As Object, e As EventArgs) Handles btnBypass.Click
+        'MC1 Bypas Init
+        If bolMCDashboard1 = True Then
+            modSysFlagMC1_Bypass_init = True
+            frmJOUserVerification.ShowDialog()
+            'MC2 Bypas Init
+        ElseIf bolMCDashboard2 = True Then
+            modSysFlagMC2_Bypass_init = True
+            frmJOUserVerification.ShowDialog()
+        End If
+    End Sub
+
+    Public Sub SysBypassBtnStat()
+        If bolMCDashboard1 = True Then
+            'MC1
+            If RxPLCM9 = True Then
+                btnBypass.IconColor = Color.White
+                btnBypass.IconChar = FontAwesome.Sharp.IconChar.HandshakeAltSlash
+                btnBypass.Text = "SYS BYPASS ON"
+                btnBypass.ForeColor = Color.White
+                btnBypass.BackColor = Color.Red
+            Else
+                btnBypass.IconColor = Color.Green
+                btnBypass.IconChar = FontAwesome.Sharp.IconChar.HandshakeAlt
+                btnBypass.Text = "SYS BYPASS OFF"
+                btnBypass.ForeColor = Color.Black
+                btnBypass.BackColor = Color.White
+            End If
+            'MC2
+        ElseIf bolMCDashboard2 = True Then
+            If RxPLCM10 = True Then
+                btnBypass.IconColor = Color.White
+                btnBypass.IconChar = FontAwesome.Sharp.IconChar.HandshakeAltSlash
+                btnBypass.Text = "SYS BYPASS ON"
+                btnBypass.ForeColor = Color.White
+                btnBypass.BackColor = Color.Red
+            Else
+                btnBypass.IconColor = Color.Green
+                btnBypass.IconChar = FontAwesome.Sharp.IconChar.HandshakeAlt
+                btnBypass.Text = "SYS BYPASS OFF"
+                btnBypass.ForeColor = Color.Black
+                btnBypass.BackColor = Color.White
+            End If
+        End If
+
     End Sub
 End Class
