@@ -646,6 +646,7 @@
     <None Include="Resources\sps4.png" />
     <None Include="Resources\LineQAStop.png" />
     <None Include="Resources\QASIGN.png" />
+    <None Include="Resources\DASHBOARD-11.png" />
     <Content Include="sps2_g83_icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

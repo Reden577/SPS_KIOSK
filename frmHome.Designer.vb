@@ -27,10 +27,12 @@ Partial Class frmHome
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.picComCheckOnOff = New System.Windows.Forms.PictureBox()
         Me.lblLogiLogNote = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lblLoginInProgress = New System.Windows.Forms.Label()
         Me.lblLogoutInProgress = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -99,63 +101,96 @@ Partial Class frmHome
         Me.lblAO1 = New System.Windows.Forms.Label()
         Me.lblThO1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.btnCheckMC1 = New FontAwesome.Sharp.IconButton()
+        Me.picStatMC1 = New System.Windows.Forms.PictureBox()
+        Me.PicMC1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.picStatMC2 = New System.Windows.Forms.PictureBox()
+        Me.btnCheckMC2 = New FontAwesome.Sharp.IconButton()
         Me.lblThO2 = New System.Windows.Forms.Label()
         Me.lblMC2 = New System.Windows.Forms.Label()
         Me.lblAO2 = New System.Windows.Forms.Label()
         Me.lblOptNm2 = New System.Windows.Forms.Label()
         Me.lblTO2 = New System.Windows.Forms.Label()
         Me.lblWO2 = New System.Windows.Forms.Label()
+        Me.picMC2 = New System.Windows.Forms.PictureBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.picStatMC3 = New System.Windows.Forms.PictureBox()
+        Me.btnCheckMC3 = New FontAwesome.Sharp.IconButton()
         Me.lblThO3 = New System.Windows.Forms.Label()
         Me.lblMC3 = New System.Windows.Forms.Label()
         Me.lblAO3 = New System.Windows.Forms.Label()
         Me.lblOptNm3 = New System.Windows.Forms.Label()
         Me.lblTO3 = New System.Windows.Forms.Label()
         Me.lblWO3 = New System.Windows.Forms.Label()
+        Me.picMC3 = New System.Windows.Forms.PictureBox()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.picStatMC4 = New System.Windows.Forms.PictureBox()
+        Me.btnCheckMC4 = New FontAwesome.Sharp.IconButton()
         Me.lblThO4 = New System.Windows.Forms.Label()
         Me.lblMC4 = New System.Windows.Forms.Label()
         Me.lblAO4 = New System.Windows.Forms.Label()
         Me.lblOptNm4 = New System.Windows.Forms.Label()
         Me.lblTO4 = New System.Windows.Forms.Label()
         Me.lblWO4 = New System.Windows.Forms.Label()
+        Me.picMC4 = New System.Windows.Forms.PictureBox()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.picStatMC5 = New System.Windows.Forms.PictureBox()
+        Me.btnCheckMC5 = New FontAwesome.Sharp.IconButton()
         Me.lblThO5 = New System.Windows.Forms.Label()
         Me.lblMC5 = New System.Windows.Forms.Label()
         Me.lblAO5 = New System.Windows.Forms.Label()
         Me.lblOptNm5 = New System.Windows.Forms.Label()
         Me.lblTO5 = New System.Windows.Forms.Label()
         Me.lblWO5 = New System.Windows.Forms.Label()
+        Me.picMC5 = New System.Windows.Forms.PictureBox()
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
+        Me.picStatMC6 = New System.Windows.Forms.PictureBox()
+        Me.btnCheckMC6 = New FontAwesome.Sharp.IconButton()
         Me.lblThO6 = New System.Windows.Forms.Label()
         Me.lblMC6 = New System.Windows.Forms.Label()
         Me.lblAO6 = New System.Windows.Forms.Label()
         Me.lblOptNm6 = New System.Windows.Forms.Label()
         Me.lblTO6 = New System.Windows.Forms.Label()
         Me.lblWO6 = New System.Windows.Forms.Label()
+        Me.picMC6 = New System.Windows.Forms.PictureBox()
         Me.GroupBox7 = New System.Windows.Forms.GroupBox()
+        Me.picStatMC7 = New System.Windows.Forms.PictureBox()
+        Me.btnCheckMC7 = New FontAwesome.Sharp.IconButton()
         Me.lblThO7 = New System.Windows.Forms.Label()
         Me.lblMC7 = New System.Windows.Forms.Label()
         Me.lblAO7 = New System.Windows.Forms.Label()
         Me.lblOptNm7 = New System.Windows.Forms.Label()
         Me.lblTO7 = New System.Windows.Forms.Label()
         Me.lblWO7 = New System.Windows.Forms.Label()
+        Me.picMC7 = New System.Windows.Forms.PictureBox()
         Me.GroupBox8 = New System.Windows.Forms.GroupBox()
+        Me.picStatMC8 = New System.Windows.Forms.PictureBox()
+        Me.btnCheckMC8 = New FontAwesome.Sharp.IconButton()
         Me.lblThO8 = New System.Windows.Forms.Label()
         Me.lblMC8 = New System.Windows.Forms.Label()
         Me.lblAO8 = New System.Windows.Forms.Label()
         Me.lblOptNm8 = New System.Windows.Forms.Label()
         Me.lblTO8 = New System.Windows.Forms.Label()
         Me.lblWO8 = New System.Windows.Forms.Label()
+        Me.picMC8 = New System.Windows.Forms.PictureBox()
         Me.GroupBox9 = New System.Windows.Forms.GroupBox()
+        Me.picStatMC11 = New System.Windows.Forms.PictureBox()
+        Me.btnCheckMC11 = New FontAwesome.Sharp.IconButton()
         Me.lblThO11 = New System.Windows.Forms.Label()
         Me.lblMC11 = New System.Windows.Forms.Label()
         Me.lblAO11 = New System.Windows.Forms.Label()
         Me.lblOptNm11 = New System.Windows.Forms.Label()
         Me.lblTO11 = New System.Windows.Forms.Label()
         Me.lblWO11 = New System.Windows.Forms.Label()
+        Me.picMC11 = New System.Windows.Forms.PictureBox()
         Me.GroupBox10 = New System.Windows.Forms.GroupBox()
+        Me.picStatMC9 = New System.Windows.Forms.PictureBox()
+        Me.btnCheckMC9 = New FontAwesome.Sharp.IconButton()
         Me.lblThO9 = New System.Windows.Forms.Label()
         Me.lblMC9 = New System.Windows.Forms.Label()
         Me.lblAO9 = New System.Windows.Forms.Label()
@@ -163,34 +198,47 @@ Partial Class frmHome
         Me.lblOptNm9 = New System.Windows.Forms.Label()
         Me.lblTO9 = New System.Windows.Forms.Label()
         Me.lblWO9 = New System.Windows.Forms.Label()
+        Me.picMC9 = New System.Windows.Forms.PictureBox()
         Me.GroupBox11 = New System.Windows.Forms.GroupBox()
+        Me.picStatMC12 = New System.Windows.Forms.PictureBox()
+        Me.btnCheckMC12 = New FontAwesome.Sharp.IconButton()
         Me.lblThO12 = New System.Windows.Forms.Label()
         Me.lblMC12 = New System.Windows.Forms.Label()
         Me.lblAO12 = New System.Windows.Forms.Label()
         Me.lblOptNm12 = New System.Windows.Forms.Label()
         Me.lblTO12 = New System.Windows.Forms.Label()
         Me.lblWO12 = New System.Windows.Forms.Label()
+        Me.picMC12 = New System.Windows.Forms.PictureBox()
         Me.GroupBox12 = New System.Windows.Forms.GroupBox()
+        Me.picStatMC10 = New System.Windows.Forms.PictureBox()
+        Me.btnCheckMC10 = New FontAwesome.Sharp.IconButton()
         Me.lblThO10 = New System.Windows.Forms.Label()
         Me.lblMC10 = New System.Windows.Forms.Label()
         Me.lblAO10 = New System.Windows.Forms.Label()
         Me.lblOptNm10 = New System.Windows.Forms.Label()
         Me.lblTO10 = New System.Windows.Forms.Label()
         Me.lblWO10 = New System.Windows.Forms.Label()
+        Me.picMC10 = New System.Windows.Forms.PictureBox()
         Me.GroupBox13 = New System.Windows.Forms.GroupBox()
+        Me.picStatMC13 = New System.Windows.Forms.PictureBox()
+        Me.btnCheckMC13 = New FontAwesome.Sharp.IconButton()
         Me.lblThO13 = New System.Windows.Forms.Label()
         Me.lblMC13 = New System.Windows.Forms.Label()
         Me.lblAO13 = New System.Windows.Forms.Label()
         Me.lblOptNm13 = New System.Windows.Forms.Label()
         Me.lblTO13 = New System.Windows.Forms.Label()
         Me.lblWO13 = New System.Windows.Forms.Label()
+        Me.picMC13 = New System.Windows.Forms.PictureBox()
         Me.GroupBox14 = New System.Windows.Forms.GroupBox()
+        Me.picStatMC14 = New System.Windows.Forms.PictureBox()
+        Me.btnCheckMC14 = New FontAwesome.Sharp.IconButton()
         Me.lblThO14 = New System.Windows.Forms.Label()
         Me.lblMC14 = New System.Windows.Forms.Label()
         Me.lblAO14 = New System.Windows.Forms.Label()
         Me.lblOptNm14 = New System.Windows.Forms.Label()
         Me.lblTO14 = New System.Windows.Forms.Label()
         Me.lblWO14 = New System.Windows.Forms.Label()
+        Me.picMC14 = New System.Windows.Forms.PictureBox()
         Me.ProdDetailsRealtimeCheck = New System.Windows.Forms.Timer(Me.components)
         Me.timMC1 = New System.Windows.Forms.Timer(Me.components)
         Me.timMC2 = New System.Windows.Forms.Timer(Me.components)
@@ -208,20 +256,28 @@ Partial Class frmHome
         Me.timMC14 = New System.Windows.Forms.Timer(Me.components)
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.GroupBox15 = New System.Windows.Forms.GroupBox()
+        Me.picStatMC18 = New System.Windows.Forms.PictureBox()
+        Me.btnCheckMC18 = New FontAwesome.Sharp.IconButton()
         Me.lblThO18 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.lblAO18 = New System.Windows.Forms.Label()
         Me.lblOptNm18 = New System.Windows.Forms.Label()
         Me.lblTO18 = New System.Windows.Forms.Label()
         Me.lblWO18 = New System.Windows.Forms.Label()
+        Me.picMC18 = New System.Windows.Forms.PictureBox()
         Me.GroupBox16 = New System.Windows.Forms.GroupBox()
+        Me.picStatMC15 = New System.Windows.Forms.PictureBox()
+        Me.btnCheckMC15 = New FontAwesome.Sharp.IconButton()
         Me.lblThO15 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.lblAO15 = New System.Windows.Forms.Label()
         Me.lblOptNm15 = New System.Windows.Forms.Label()
         Me.lblTO15 = New System.Windows.Forms.Label()
         Me.lblWO15 = New System.Windows.Forms.Label()
+        Me.picMC15 = New System.Windows.Forms.PictureBox()
         Me.GroupBox17 = New System.Windows.Forms.GroupBox()
+        Me.picStatMC16 = New System.Windows.Forms.PictureBox()
+        Me.btnCheckMC16 = New FontAwesome.Sharp.IconButton()
         Me.lblThO16 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.lblAO16 = New System.Windows.Forms.Label()
@@ -229,20 +285,27 @@ Partial Class frmHome
         Me.lblOptNm16 = New System.Windows.Forms.Label()
         Me.lblTO16 = New System.Windows.Forms.Label()
         Me.lblWO16 = New System.Windows.Forms.Label()
+        Me.picMC16 = New System.Windows.Forms.PictureBox()
         Me.GroupBox18 = New System.Windows.Forms.GroupBox()
+        Me.picStatMC19 = New System.Windows.Forms.PictureBox()
+        Me.btnCheckMC19 = New FontAwesome.Sharp.IconButton()
         Me.lblThO19 = New System.Windows.Forms.Label()
         Me.Label29 = New System.Windows.Forms.Label()
         Me.lblAO19 = New System.Windows.Forms.Label()
         Me.lblOptNm19 = New System.Windows.Forms.Label()
         Me.lblTO19 = New System.Windows.Forms.Label()
         Me.lblWO19 = New System.Windows.Forms.Label()
+        Me.picMC19 = New System.Windows.Forms.PictureBox()
         Me.GroupBox19 = New System.Windows.Forms.GroupBox()
+        Me.picStatMC17 = New System.Windows.Forms.PictureBox()
+        Me.btnCheckMC17 = New FontAwesome.Sharp.IconButton()
         Me.lblThO17 = New System.Windows.Forms.Label()
         Me.Label35 = New System.Windows.Forms.Label()
         Me.lblAO17 = New System.Windows.Forms.Label()
         Me.lblOptNm17 = New System.Windows.Forms.Label()
         Me.lblTO17 = New System.Windows.Forms.Label()
         Me.lblWO17 = New System.Windows.Forms.Label()
+        Me.picMC17 = New System.Windows.Forms.PictureBox()
         Me.timMC15 = New System.Windows.Forms.Timer(Me.components)
         Me.timMC16 = New System.Windows.Forms.Timer(Me.components)
         Me.timMC17 = New System.Windows.Forms.Timer(Me.components)
@@ -252,136 +315,149 @@ Partial Class frmHome
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.picStatMC15 = New System.Windows.Forms.PictureBox()
-        Me.btnCheckMC15 = New FontAwesome.Sharp.IconButton()
-        Me.picMC15 = New System.Windows.Forms.PictureBox()
-        Me.picStatMC8 = New System.Windows.Forms.PictureBox()
-        Me.btnCheckMC8 = New FontAwesome.Sharp.IconButton()
-        Me.picMC8 = New System.Windows.Forms.PictureBox()
-        Me.picStatMC16 = New System.Windows.Forms.PictureBox()
-        Me.btnCheckMC16 = New FontAwesome.Sharp.IconButton()
-        Me.picMC16 = New System.Windows.Forms.PictureBox()
-        Me.picStatMC9 = New System.Windows.Forms.PictureBox()
-        Me.btnCheckMC9 = New FontAwesome.Sharp.IconButton()
-        Me.picMC9 = New System.Windows.Forms.PictureBox()
-        Me.picStatMC10 = New System.Windows.Forms.PictureBox()
-        Me.btnCheckMC10 = New FontAwesome.Sharp.IconButton()
-        Me.picMC10 = New System.Windows.Forms.PictureBox()
-        Me.btnCheckMC1 = New FontAwesome.Sharp.IconButton()
-        Me.picStatMC1 = New System.Windows.Forms.PictureBox()
-        Me.PicMC1 = New System.Windows.Forms.PictureBox()
-        Me.picStatMC2 = New System.Windows.Forms.PictureBox()
-        Me.btnCheckMC2 = New FontAwesome.Sharp.IconButton()
-        Me.picMC2 = New System.Windows.Forms.PictureBox()
-        Me.picStatMC3 = New System.Windows.Forms.PictureBox()
-        Me.btnCheckMC3 = New FontAwesome.Sharp.IconButton()
-        Me.picMC3 = New System.Windows.Forms.PictureBox()
-        Me.picStatMC7 = New System.Windows.Forms.PictureBox()
-        Me.btnCheckMC7 = New FontAwesome.Sharp.IconButton()
-        Me.picMC7 = New System.Windows.Forms.PictureBox()
-        Me.picStatMC13 = New System.Windows.Forms.PictureBox()
-        Me.btnCheckMC13 = New FontAwesome.Sharp.IconButton()
-        Me.picMC13 = New System.Windows.Forms.PictureBox()
-        Me.picStatMC17 = New System.Windows.Forms.PictureBox()
-        Me.btnCheckMC17 = New FontAwesome.Sharp.IconButton()
-        Me.picMC17 = New System.Windows.Forms.PictureBox()
-        Me.picStatMC14 = New System.Windows.Forms.PictureBox()
-        Me.btnCheckMC14 = New FontAwesome.Sharp.IconButton()
-        Me.picMC14 = New System.Windows.Forms.PictureBox()
-        Me.picStatMC12 = New System.Windows.Forms.PictureBox()
-        Me.btnCheckMC12 = New FontAwesome.Sharp.IconButton()
-        Me.picMC12 = New System.Windows.Forms.PictureBox()
-        Me.picStatMC11 = New System.Windows.Forms.PictureBox()
-        Me.btnCheckMC11 = New FontAwesome.Sharp.IconButton()
-        Me.picMC11 = New System.Windows.Forms.PictureBox()
-        Me.picStatMC6 = New System.Windows.Forms.PictureBox()
-        Me.btnCheckMC6 = New FontAwesome.Sharp.IconButton()
-        Me.picMC6 = New System.Windows.Forms.PictureBox()
-        Me.picStatMC4 = New System.Windows.Forms.PictureBox()
-        Me.btnCheckMC4 = New FontAwesome.Sharp.IconButton()
-        Me.picMC4 = New System.Windows.Forms.PictureBox()
-        Me.picStatMC5 = New System.Windows.Forms.PictureBox()
-        Me.btnCheckMC5 = New FontAwesome.Sharp.IconButton()
-        Me.picMC5 = New System.Windows.Forms.PictureBox()
-        Me.picStatMC18 = New System.Windows.Forms.PictureBox()
-        Me.btnCheckMC18 = New FontAwesome.Sharp.IconButton()
-        Me.picMC18 = New System.Windows.Forms.PictureBox()
-        Me.picStatMC19 = New System.Windows.Forms.PictureBox()
-        Me.btnCheckMC19 = New FontAwesome.Sharp.IconButton()
-        Me.picMC19 = New System.Windows.Forms.PictureBox()
         Me.btnMCSelect = New FontAwesome.Sharp.IconButton()
         Me.btnMCSelClear = New FontAwesome.Sharp.IconButton()
-        Me.picComCheckOnOff = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.ttpJO = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ttpTO = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ttpAO = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ttpOEE = New System.Windows.Forms.ToolTip(Me.components)
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.Label27 = New System.Windows.Forms.Label()
+        Me.Label28 = New System.Windows.Forms.Label()
+        Me.Label30 = New System.Windows.Forms.Label()
+        Me.Label31 = New System.Windows.Forms.Label()
+        Me.Label32 = New System.Windows.Forms.Label()
+        Me.Label33 = New System.Windows.Forms.Label()
+        Me.Label34 = New System.Windows.Forms.Label()
+        Me.Label36 = New System.Windows.Forms.Label()
+        Me.Label37 = New System.Windows.Forms.Label()
+        Me.Label38 = New System.Windows.Forms.Label()
+        Me.Label39 = New System.Windows.Forms.Label()
+        Me.Label40 = New System.Windows.Forms.Label()
+        Me.Label41 = New System.Windows.Forms.Label()
+        Me.Label42 = New System.Windows.Forms.Label()
+        Me.Label43 = New System.Windows.Forms.Label()
+        Me.Label44 = New System.Windows.Forms.Label()
+        Me.Label45 = New System.Windows.Forms.Label()
+        Me.Label46 = New System.Windows.Forms.Label()
+        Me.Label47 = New System.Windows.Forms.Label()
+        Me.Label48 = New System.Windows.Forms.Label()
+        Me.Label49 = New System.Windows.Forms.Label()
+        Me.Label50 = New System.Windows.Forms.Label()
+        Me.Label51 = New System.Windows.Forms.Label()
+        Me.Label52 = New System.Windows.Forms.Label()
+        Me.Label53 = New System.Windows.Forms.Label()
+        Me.Label54 = New System.Windows.Forms.Label()
+        Me.Label55 = New System.Windows.Forms.Label()
+        Me.Label56 = New System.Windows.Forms.Label()
+        Me.Label57 = New System.Windows.Forms.Label()
+        Me.Label58 = New System.Windows.Forms.Label()
+        Me.Label59 = New System.Windows.Forms.Label()
+        Me.Label60 = New System.Windows.Forms.Label()
+        Me.Label61 = New System.Windows.Forms.Label()
+        Me.Label62 = New System.Windows.Forms.Label()
+        Me.Label63 = New System.Windows.Forms.Label()
+        Me.Label64 = New System.Windows.Forms.Label()
+        Me.Label65 = New System.Windows.Forms.Label()
+        Me.Label66 = New System.Windows.Forms.Label()
+        Me.Label67 = New System.Windows.Forms.Label()
+        Me.Label68 = New System.Windows.Forms.Label()
+        Me.Label69 = New System.Windows.Forms.Label()
+        Me.Label70 = New System.Windows.Forms.Label()
+        Me.Label71 = New System.Windows.Forms.Label()
+        Me.Label72 = New System.Windows.Forms.Label()
+        Me.Label73 = New System.Windows.Forms.Label()
+        Me.Label74 = New System.Windows.Forms.Label()
+        Me.Label75 = New System.Windows.Forms.Label()
+        Me.Label76 = New System.Windows.Forms.Label()
+        Me.Label77 = New System.Windows.Forms.Label()
+        Me.Label78 = New System.Windows.Forms.Label()
+        Me.Label79 = New System.Windows.Forms.Label()
+        Me.Label80 = New System.Windows.Forms.Label()
+        Me.Label81 = New System.Windows.Forms.Label()
+        Me.Label82 = New System.Windows.Forms.Label()
+        Me.Label83 = New System.Windows.Forms.Label()
+        Me.Label84 = New System.Windows.Forms.Label()
+        Me.Label85 = New System.Windows.Forms.Label()
+        Me.Label86 = New System.Windows.Forms.Label()
+        Me.Label87 = New System.Windows.Forms.Label()
+        Me.Label88 = New System.Windows.Forms.Label()
+        Me.Label89 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        CType(Me.picComCheckOnOff, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.picStatMC1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PicMC1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
+        CType(Me.picStatMC2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picMC2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
+        CType(Me.picStatMC3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picMC3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox4.SuspendLayout()
+        CType(Me.picStatMC4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picMC4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox5.SuspendLayout()
+        CType(Me.picStatMC5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picMC5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox6.SuspendLayout()
+        CType(Me.picStatMC6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picMC6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox7.SuspendLayout()
+        CType(Me.picStatMC7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picMC7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox8.SuspendLayout()
+        CType(Me.picStatMC8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picMC8, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox9.SuspendLayout()
+        CType(Me.picStatMC11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picMC11, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox10.SuspendLayout()
+        CType(Me.picStatMC9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picMC9, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox11.SuspendLayout()
+        CType(Me.picStatMC12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picMC12, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox12.SuspendLayout()
+        CType(Me.picStatMC10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picMC10, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox13.SuspendLayout()
+        CType(Me.picStatMC13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picMC13, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox14.SuspendLayout()
+        CType(Me.picStatMC14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picMC14, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox15.SuspendLayout()
+        CType(Me.picStatMC18, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picMC18, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox16.SuspendLayout()
+        CType(Me.picStatMC15, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picMC15, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox17.SuspendLayout()
+        CType(Me.picStatMC16, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picMC16, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox18.SuspendLayout()
+        CType(Me.picStatMC19, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picMC19, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox19.SuspendLayout()
+        CType(Me.picStatMC17, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picMC17, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox20.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picStatMC15, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picMC15, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picStatMC8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picMC8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picStatMC16, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picMC16, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picStatMC9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picMC9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picStatMC10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picMC10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picStatMC1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PicMC1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picStatMC2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picMC2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picStatMC3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picMC3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picStatMC7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picMC7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picStatMC13, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picMC13, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picStatMC17, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picMC17, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picStatMC14, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picMC14, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picStatMC12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picMC12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picStatMC11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picMC11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picStatMC6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picMC6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picStatMC4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picMC4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picStatMC5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picMC5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picStatMC18, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picMC18, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picStatMC19, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picMC19, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picComCheckOnOff, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -415,6 +491,17 @@ Partial Class frmHome
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(461, 56)
         Me.Panel2.TabIndex = 5
+        '
+        'picComCheckOnOff
+        '
+        Me.picComCheckOnOff.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.picComCheckOnOff.Image = Global.SPSApp1.My.Resources.Resources.indicator_green
+        Me.picComCheckOnOff.Location = New System.Drawing.Point(430, 3)
+        Me.picComCheckOnOff.Name = "picComCheckOnOff"
+        Me.picComCheckOnOff.Size = New System.Drawing.Size(28, 28)
+        Me.picComCheckOnOff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picComCheckOnOff.TabIndex = 3
+        Me.picComCheckOnOff.TabStop = False
         '
         'lblLogiLogNote
         '
@@ -457,6 +544,18 @@ Partial Class frmHome
         Me.Label7.TabIndex = 2
         Me.Label7.Text = "COMPANY NAME"
         Me.Label7.Visible = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox1.Image = Global.SPSApp1.My.Resources.Resources.proguard_logo
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(293, 56)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
         '
         'lblLoginInProgress
         '
@@ -1163,6 +1262,10 @@ Partial Class frmHome
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label13)
+        Me.GroupBox1.Controls.Add(Me.Label12)
+        Me.GroupBox1.Controls.Add(Me.Label15)
+        Me.GroupBox1.Controls.Add(Me.Label11)
         Me.GroupBox1.Controls.Add(Me.btnCheckMC1)
         Me.GroupBox1.Controls.Add(Me.picStatMC1)
         Me.GroupBox1.Controls.Add(Me.lblThO1)
@@ -1178,8 +1281,100 @@ Partial Class frmHome
         Me.GroupBox1.TabIndex = 6
         Me.GroupBox1.TabStop = False
         '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.BackColor = System.Drawing.Color.White
+        Me.Label13.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(19, 252)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(39, 19)
+        Me.Label13.TabIndex = 7
+        Me.Label13.Text = "OEE:"
+        Me.ttpOEE.SetToolTip(Me.Label13, "OVERALL EQUIPMENT EFFECTIVENESS")
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.BackColor = System.Drawing.Color.White
+        Me.Label12.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(19, 225)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(33, 19)
+        Me.Label12.TabIndex = 7
+        Me.Label12.Text = "AO:"
+        Me.ttpAO.SetToolTip(Me.Label12, "ACTUAL OUTPUT")
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.BackColor = System.Drawing.Color.White
+        Me.Label15.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(19, 127)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(28, 19)
+        Me.Label15.TabIndex = 7
+        Me.Label15.Text = "JO:"
+        Me.ttpJO.SetToolTip(Me.Label15, "JOB ORDER CODE")
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.White
+        Me.Label11.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(19, 198)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(31, 19)
+        Me.Label11.TabIndex = 7
+        Me.Label11.Text = "TO:"
+        Me.ttpTO.SetToolTip(Me.Label11, "TARGET OUTPUT")
+        '
+        'btnCheckMC1
+        '
+        Me.btnCheckMC1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnCheckMC1.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.btnCheckMC1.IconColor = System.Drawing.Color.Black
+        Me.btnCheckMC1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnCheckMC1.IconSize = 45
+        Me.btnCheckMC1.Location = New System.Drawing.Point(204, 15)
+        Me.btnCheckMC1.Name = "btnCheckMC1"
+        Me.btnCheckMC1.Size = New System.Drawing.Size(40, 40)
+        Me.btnCheckMC1.TabIndex = 1
+        Me.btnCheckMC1.Tag = "1"
+        Me.btnCheckMC1.UseVisualStyleBackColor = True
+        '
+        'picStatMC1
+        '
+        Me.picStatMC1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.picStatMC1.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.picStatMC1.Image = Global.SPSApp1.My.Resources.Resources.LineNoPlan
+        Me.picStatMC1.Location = New System.Drawing.Point(57, 21)
+        Me.picStatMC1.Name = "picStatMC1"
+        Me.picStatMC1.Size = New System.Drawing.Size(119, 17)
+        Me.picStatMC1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picStatMC1.TabIndex = 6
+        Me.picStatMC1.TabStop = False
+        Me.picStatMC1.Tag = "1"
+        '
+        'PicMC1
+        '
+        Me.PicMC1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PicMC1.Image = Global.SPSApp1.My.Resources.Resources.MiniDash2
+        Me.PicMC1.Location = New System.Drawing.Point(3, 16)
+        Me.PicMC1.Name = "PicMC1"
+        Me.PicMC1.Size = New System.Drawing.Size(242, 277)
+        Me.PicMC1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PicMC1.TabIndex = 4
+        Me.PicMC1.TabStop = False
+        Me.PicMC1.Tag = "1"
+        '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.Label16)
+        Me.GroupBox2.Controls.Add(Me.Label17)
+        Me.GroupBox2.Controls.Add(Me.Label18)
+        Me.GroupBox2.Controls.Add(Me.Label19)
         Me.GroupBox2.Controls.Add(Me.picStatMC2)
         Me.GroupBox2.Controls.Add(Me.btnCheckMC2)
         Me.GroupBox2.Controls.Add(Me.lblThO2)
@@ -1194,6 +1389,34 @@ Partial Class frmHome
         Me.GroupBox2.Size = New System.Drawing.Size(248, 296)
         Me.GroupBox2.TabIndex = 6
         Me.GroupBox2.TabStop = False
+        '
+        'picStatMC2
+        '
+        Me.picStatMC2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.picStatMC2.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.picStatMC2.Image = CType(resources.GetObject("picStatMC2.Image"), System.Drawing.Image)
+        Me.picStatMC2.Location = New System.Drawing.Point(57, 21)
+        Me.picStatMC2.Name = "picStatMC2"
+        Me.picStatMC2.Size = New System.Drawing.Size(119, 17)
+        Me.picStatMC2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picStatMC2.TabIndex = 7
+        Me.picStatMC2.TabStop = False
+        Me.picStatMC2.Tag = "2"
+        '
+        'btnCheckMC2
+        '
+        Me.btnCheckMC2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnCheckMC2.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.btnCheckMC2.IconColor = System.Drawing.Color.Black
+        Me.btnCheckMC2.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnCheckMC2.IconSize = 45
+        Me.btnCheckMC2.Location = New System.Drawing.Point(204, 15)
+        Me.btnCheckMC2.Name = "btnCheckMC2"
+        Me.btnCheckMC2.Size = New System.Drawing.Size(40, 40)
+        Me.btnCheckMC2.TabIndex = 2
+        Me.btnCheckMC2.Tag = "2"
+        Me.btnCheckMC2.UseVisualStyleBackColor = True
         '
         'lblThO2
         '
@@ -1267,8 +1490,24 @@ Partial Class frmHome
         Me.lblWO2.Text = "-"
         Me.lblWO2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'picMC2
+        '
+        Me.picMC2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.picMC2.Image = Global.SPSApp1.My.Resources.Resources.MiniDash2
+        Me.picMC2.Location = New System.Drawing.Point(3, 16)
+        Me.picMC2.Name = "picMC2"
+        Me.picMC2.Size = New System.Drawing.Size(242, 277)
+        Me.picMC2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picMC2.TabIndex = 4
+        Me.picMC2.TabStop = False
+        Me.picMC2.Tag = "2"
+        '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.Label21)
+        Me.GroupBox3.Controls.Add(Me.Label25)
+        Me.GroupBox3.Controls.Add(Me.Label26)
+        Me.GroupBox3.Controls.Add(Me.Label27)
         Me.GroupBox3.Controls.Add(Me.picStatMC3)
         Me.GroupBox3.Controls.Add(Me.btnCheckMC3)
         Me.GroupBox3.Controls.Add(Me.lblThO3)
@@ -1283,6 +1522,34 @@ Partial Class frmHome
         Me.GroupBox3.Size = New System.Drawing.Size(248, 296)
         Me.GroupBox3.TabIndex = 6
         Me.GroupBox3.TabStop = False
+        '
+        'picStatMC3
+        '
+        Me.picStatMC3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.picStatMC3.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.picStatMC3.Image = Global.SPSApp1.My.Resources.Resources.LineNoPlan
+        Me.picStatMC3.Location = New System.Drawing.Point(57, 21)
+        Me.picStatMC3.Name = "picStatMC3"
+        Me.picStatMC3.Size = New System.Drawing.Size(119, 17)
+        Me.picStatMC3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picStatMC3.TabIndex = 7
+        Me.picStatMC3.TabStop = False
+        Me.picStatMC3.Tag = "3"
+        '
+        'btnCheckMC3
+        '
+        Me.btnCheckMC3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnCheckMC3.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.btnCheckMC3.IconColor = System.Drawing.Color.Black
+        Me.btnCheckMC3.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnCheckMC3.IconSize = 45
+        Me.btnCheckMC3.Location = New System.Drawing.Point(204, 15)
+        Me.btnCheckMC3.Name = "btnCheckMC3"
+        Me.btnCheckMC3.Size = New System.Drawing.Size(40, 40)
+        Me.btnCheckMC3.TabIndex = 3
+        Me.btnCheckMC3.Tag = "3"
+        Me.btnCheckMC3.UseVisualStyleBackColor = True
         '
         'lblThO3
         '
@@ -1356,8 +1623,24 @@ Partial Class frmHome
         Me.lblWO3.Text = "-"
         Me.lblWO3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'picMC3
+        '
+        Me.picMC3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.picMC3.Image = CType(resources.GetObject("picMC3.Image"), System.Drawing.Image)
+        Me.picMC3.Location = New System.Drawing.Point(3, 16)
+        Me.picMC3.Name = "picMC3"
+        Me.picMC3.Size = New System.Drawing.Size(242, 277)
+        Me.picMC3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picMC3.TabIndex = 4
+        Me.picMC3.TabStop = False
+        Me.picMC3.Tag = "3"
+        '
         'GroupBox4
         '
+        Me.GroupBox4.Controls.Add(Me.Label28)
+        Me.GroupBox4.Controls.Add(Me.Label30)
+        Me.GroupBox4.Controls.Add(Me.Label31)
+        Me.GroupBox4.Controls.Add(Me.Label32)
         Me.GroupBox4.Controls.Add(Me.picStatMC4)
         Me.GroupBox4.Controls.Add(Me.btnCheckMC4)
         Me.GroupBox4.Controls.Add(Me.lblThO4)
@@ -1372,6 +1655,34 @@ Partial Class frmHome
         Me.GroupBox4.Size = New System.Drawing.Size(248, 296)
         Me.GroupBox4.TabIndex = 6
         Me.GroupBox4.TabStop = False
+        '
+        'picStatMC4
+        '
+        Me.picStatMC4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.picStatMC4.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.picStatMC4.Image = CType(resources.GetObject("picStatMC4.Image"), System.Drawing.Image)
+        Me.picStatMC4.Location = New System.Drawing.Point(57, 21)
+        Me.picStatMC4.Name = "picStatMC4"
+        Me.picStatMC4.Size = New System.Drawing.Size(119, 17)
+        Me.picStatMC4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picStatMC4.TabIndex = 7
+        Me.picStatMC4.TabStop = False
+        Me.picStatMC4.Tag = "4"
+        '
+        'btnCheckMC4
+        '
+        Me.btnCheckMC4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnCheckMC4.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.btnCheckMC4.IconColor = System.Drawing.Color.Black
+        Me.btnCheckMC4.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnCheckMC4.IconSize = 45
+        Me.btnCheckMC4.Location = New System.Drawing.Point(204, 15)
+        Me.btnCheckMC4.Name = "btnCheckMC4"
+        Me.btnCheckMC4.Size = New System.Drawing.Size(40, 40)
+        Me.btnCheckMC4.TabIndex = 4
+        Me.btnCheckMC4.Tag = "4"
+        Me.btnCheckMC4.UseVisualStyleBackColor = True
         '
         'lblThO4
         '
@@ -1445,8 +1756,24 @@ Partial Class frmHome
         Me.lblWO4.Text = "-"
         Me.lblWO4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'picMC4
+        '
+        Me.picMC4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.picMC4.Image = CType(resources.GetObject("picMC4.Image"), System.Drawing.Image)
+        Me.picMC4.Location = New System.Drawing.Point(3, 16)
+        Me.picMC4.Name = "picMC4"
+        Me.picMC4.Size = New System.Drawing.Size(242, 277)
+        Me.picMC4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picMC4.TabIndex = 4
+        Me.picMC4.TabStop = False
+        Me.picMC4.Tag = "4"
+        '
         'GroupBox5
         '
+        Me.GroupBox5.Controls.Add(Me.Label33)
+        Me.GroupBox5.Controls.Add(Me.Label34)
+        Me.GroupBox5.Controls.Add(Me.Label36)
+        Me.GroupBox5.Controls.Add(Me.Label37)
         Me.GroupBox5.Controls.Add(Me.picStatMC5)
         Me.GroupBox5.Controls.Add(Me.btnCheckMC5)
         Me.GroupBox5.Controls.Add(Me.lblThO5)
@@ -1461,6 +1788,34 @@ Partial Class frmHome
         Me.GroupBox5.Size = New System.Drawing.Size(248, 296)
         Me.GroupBox5.TabIndex = 6
         Me.GroupBox5.TabStop = False
+        '
+        'picStatMC5
+        '
+        Me.picStatMC5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.picStatMC5.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.picStatMC5.Image = CType(resources.GetObject("picStatMC5.Image"), System.Drawing.Image)
+        Me.picStatMC5.Location = New System.Drawing.Point(57, 21)
+        Me.picStatMC5.Name = "picStatMC5"
+        Me.picStatMC5.Size = New System.Drawing.Size(119, 17)
+        Me.picStatMC5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picStatMC5.TabIndex = 7
+        Me.picStatMC5.TabStop = False
+        Me.picStatMC5.Tag = "5"
+        '
+        'btnCheckMC5
+        '
+        Me.btnCheckMC5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnCheckMC5.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.btnCheckMC5.IconColor = System.Drawing.Color.Black
+        Me.btnCheckMC5.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnCheckMC5.IconSize = 45
+        Me.btnCheckMC5.Location = New System.Drawing.Point(204, 15)
+        Me.btnCheckMC5.Name = "btnCheckMC5"
+        Me.btnCheckMC5.Size = New System.Drawing.Size(40, 40)
+        Me.btnCheckMC5.TabIndex = 5
+        Me.btnCheckMC5.Tag = "5"
+        Me.btnCheckMC5.UseVisualStyleBackColor = True
         '
         'lblThO5
         '
@@ -1534,8 +1889,24 @@ Partial Class frmHome
         Me.lblWO5.Text = "-"
         Me.lblWO5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'picMC5
+        '
+        Me.picMC5.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.picMC5.Image = CType(resources.GetObject("picMC5.Image"), System.Drawing.Image)
+        Me.picMC5.Location = New System.Drawing.Point(3, 16)
+        Me.picMC5.Name = "picMC5"
+        Me.picMC5.Size = New System.Drawing.Size(242, 277)
+        Me.picMC5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picMC5.TabIndex = 4
+        Me.picMC5.TabStop = False
+        Me.picMC5.Tag = "5"
+        '
         'GroupBox6
         '
+        Me.GroupBox6.Controls.Add(Me.Label38)
+        Me.GroupBox6.Controls.Add(Me.Label39)
+        Me.GroupBox6.Controls.Add(Me.Label40)
+        Me.GroupBox6.Controls.Add(Me.Label41)
         Me.GroupBox6.Controls.Add(Me.picStatMC6)
         Me.GroupBox6.Controls.Add(Me.btnCheckMC6)
         Me.GroupBox6.Controls.Add(Me.lblThO6)
@@ -1550,6 +1921,34 @@ Partial Class frmHome
         Me.GroupBox6.Size = New System.Drawing.Size(248, 296)
         Me.GroupBox6.TabIndex = 6
         Me.GroupBox6.TabStop = False
+        '
+        'picStatMC6
+        '
+        Me.picStatMC6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.picStatMC6.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.picStatMC6.Image = CType(resources.GetObject("picStatMC6.Image"), System.Drawing.Image)
+        Me.picStatMC6.Location = New System.Drawing.Point(57, 21)
+        Me.picStatMC6.Name = "picStatMC6"
+        Me.picStatMC6.Size = New System.Drawing.Size(119, 17)
+        Me.picStatMC6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picStatMC6.TabIndex = 7
+        Me.picStatMC6.TabStop = False
+        Me.picStatMC6.Tag = "6"
+        '
+        'btnCheckMC6
+        '
+        Me.btnCheckMC6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnCheckMC6.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.btnCheckMC6.IconColor = System.Drawing.Color.Black
+        Me.btnCheckMC6.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnCheckMC6.IconSize = 45
+        Me.btnCheckMC6.Location = New System.Drawing.Point(204, 15)
+        Me.btnCheckMC6.Name = "btnCheckMC6"
+        Me.btnCheckMC6.Size = New System.Drawing.Size(40, 40)
+        Me.btnCheckMC6.TabIndex = 6
+        Me.btnCheckMC6.Tag = "6"
+        Me.btnCheckMC6.UseVisualStyleBackColor = True
         '
         'lblThO6
         '
@@ -1623,8 +2022,24 @@ Partial Class frmHome
         Me.lblWO6.Text = "-"
         Me.lblWO6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'picMC6
+        '
+        Me.picMC6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.picMC6.Image = CType(resources.GetObject("picMC6.Image"), System.Drawing.Image)
+        Me.picMC6.Location = New System.Drawing.Point(3, 16)
+        Me.picMC6.Name = "picMC6"
+        Me.picMC6.Size = New System.Drawing.Size(242, 277)
+        Me.picMC6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picMC6.TabIndex = 4
+        Me.picMC6.TabStop = False
+        Me.picMC6.Tag = "6"
+        '
         'GroupBox7
         '
+        Me.GroupBox7.Controls.Add(Me.Label42)
+        Me.GroupBox7.Controls.Add(Me.Label43)
+        Me.GroupBox7.Controls.Add(Me.Label44)
+        Me.GroupBox7.Controls.Add(Me.Label45)
         Me.GroupBox7.Controls.Add(Me.picStatMC7)
         Me.GroupBox7.Controls.Add(Me.btnCheckMC7)
         Me.GroupBox7.Controls.Add(Me.lblThO7)
@@ -1639,6 +2054,34 @@ Partial Class frmHome
         Me.GroupBox7.Size = New System.Drawing.Size(249, 296)
         Me.GroupBox7.TabIndex = 6
         Me.GroupBox7.TabStop = False
+        '
+        'picStatMC7
+        '
+        Me.picStatMC7.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.picStatMC7.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.picStatMC7.Image = CType(resources.GetObject("picStatMC7.Image"), System.Drawing.Image)
+        Me.picStatMC7.Location = New System.Drawing.Point(57, 21)
+        Me.picStatMC7.Name = "picStatMC7"
+        Me.picStatMC7.Size = New System.Drawing.Size(114, 17)
+        Me.picStatMC7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picStatMC7.TabIndex = 8
+        Me.picStatMC7.TabStop = False
+        Me.picStatMC7.Tag = "7"
+        '
+        'btnCheckMC7
+        '
+        Me.btnCheckMC7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnCheckMC7.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.btnCheckMC7.IconColor = System.Drawing.Color.Black
+        Me.btnCheckMC7.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnCheckMC7.IconSize = 45
+        Me.btnCheckMC7.Location = New System.Drawing.Point(204, 15)
+        Me.btnCheckMC7.Name = "btnCheckMC7"
+        Me.btnCheckMC7.Size = New System.Drawing.Size(40, 40)
+        Me.btnCheckMC7.TabIndex = 7
+        Me.btnCheckMC7.Tag = "7"
+        Me.btnCheckMC7.UseVisualStyleBackColor = True
         '
         'lblThO7
         '
@@ -1712,8 +2155,24 @@ Partial Class frmHome
         Me.lblWO7.Text = "-"
         Me.lblWO7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'picMC7
+        '
+        Me.picMC7.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.picMC7.Image = CType(resources.GetObject("picMC7.Image"), System.Drawing.Image)
+        Me.picMC7.Location = New System.Drawing.Point(3, 16)
+        Me.picMC7.Name = "picMC7"
+        Me.picMC7.Size = New System.Drawing.Size(243, 277)
+        Me.picMC7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picMC7.TabIndex = 4
+        Me.picMC7.TabStop = False
+        Me.picMC7.Tag = "7"
+        '
         'GroupBox8
         '
+        Me.GroupBox8.Controls.Add(Me.Label86)
+        Me.GroupBox8.Controls.Add(Me.Label87)
+        Me.GroupBox8.Controls.Add(Me.Label88)
+        Me.GroupBox8.Controls.Add(Me.Label89)
         Me.GroupBox8.Controls.Add(Me.picStatMC8)
         Me.GroupBox8.Controls.Add(Me.btnCheckMC8)
         Me.GroupBox8.Controls.Add(Me.lblThO8)
@@ -1728,6 +2187,34 @@ Partial Class frmHome
         Me.GroupBox8.Size = New System.Drawing.Size(248, 296)
         Me.GroupBox8.TabIndex = 6
         Me.GroupBox8.TabStop = False
+        '
+        'picStatMC8
+        '
+        Me.picStatMC8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.picStatMC8.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.picStatMC8.Image = CType(resources.GetObject("picStatMC8.Image"), System.Drawing.Image)
+        Me.picStatMC8.Location = New System.Drawing.Point(57, 21)
+        Me.picStatMC8.Name = "picStatMC8"
+        Me.picStatMC8.Size = New System.Drawing.Size(119, 17)
+        Me.picStatMC8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picStatMC8.TabIndex = 9
+        Me.picStatMC8.TabStop = False
+        Me.picStatMC8.Tag = "8"
+        '
+        'btnCheckMC8
+        '
+        Me.btnCheckMC8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnCheckMC8.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.btnCheckMC8.IconColor = System.Drawing.Color.Black
+        Me.btnCheckMC8.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnCheckMC8.IconSize = 45
+        Me.btnCheckMC8.Location = New System.Drawing.Point(204, 15)
+        Me.btnCheckMC8.Name = "btnCheckMC8"
+        Me.btnCheckMC8.Size = New System.Drawing.Size(40, 40)
+        Me.btnCheckMC8.TabIndex = 8
+        Me.btnCheckMC8.Tag = "8"
+        Me.btnCheckMC8.UseVisualStyleBackColor = True
         '
         'lblThO8
         '
@@ -1801,8 +2288,24 @@ Partial Class frmHome
         Me.lblWO8.Text = "-"
         Me.lblWO8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'picMC8
+        '
+        Me.picMC8.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.picMC8.Image = CType(resources.GetObject("picMC8.Image"), System.Drawing.Image)
+        Me.picMC8.Location = New System.Drawing.Point(3, 16)
+        Me.picMC8.Name = "picMC8"
+        Me.picMC8.Size = New System.Drawing.Size(242, 277)
+        Me.picMC8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picMC8.TabIndex = 4
+        Me.picMC8.TabStop = False
+        Me.picMC8.Tag = "8"
+        '
         'GroupBox9
         '
+        Me.GroupBox9.Controls.Add(Me.Label62)
+        Me.GroupBox9.Controls.Add(Me.Label63)
+        Me.GroupBox9.Controls.Add(Me.Label64)
+        Me.GroupBox9.Controls.Add(Me.Label65)
         Me.GroupBox9.Controls.Add(Me.picStatMC11)
         Me.GroupBox9.Controls.Add(Me.btnCheckMC11)
         Me.GroupBox9.Controls.Add(Me.lblThO11)
@@ -1817,6 +2320,34 @@ Partial Class frmHome
         Me.GroupBox9.Size = New System.Drawing.Size(248, 296)
         Me.GroupBox9.TabIndex = 6
         Me.GroupBox9.TabStop = False
+        '
+        'picStatMC11
+        '
+        Me.picStatMC11.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.picStatMC11.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.picStatMC11.Image = CType(resources.GetObject("picStatMC11.Image"), System.Drawing.Image)
+        Me.picStatMC11.Location = New System.Drawing.Point(57, 21)
+        Me.picStatMC11.Name = "picStatMC11"
+        Me.picStatMC11.Size = New System.Drawing.Size(119, 17)
+        Me.picStatMC11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picStatMC11.TabIndex = 12
+        Me.picStatMC11.TabStop = False
+        Me.picStatMC11.Tag = "picStatMC11"
+        '
+        'btnCheckMC11
+        '
+        Me.btnCheckMC11.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnCheckMC11.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.btnCheckMC11.IconColor = System.Drawing.Color.Black
+        Me.btnCheckMC11.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnCheckMC11.IconSize = 45
+        Me.btnCheckMC11.Location = New System.Drawing.Point(204, 15)
+        Me.btnCheckMC11.Name = "btnCheckMC11"
+        Me.btnCheckMC11.Size = New System.Drawing.Size(40, 40)
+        Me.btnCheckMC11.TabIndex = 11
+        Me.btnCheckMC11.Tag = "11"
+        Me.btnCheckMC11.UseVisualStyleBackColor = True
         '
         'lblThO11
         '
@@ -1890,8 +2421,24 @@ Partial Class frmHome
         Me.lblWO11.Text = "-"
         Me.lblWO11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'picMC11
+        '
+        Me.picMC11.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.picMC11.Image = CType(resources.GetObject("picMC11.Image"), System.Drawing.Image)
+        Me.picMC11.Location = New System.Drawing.Point(3, 16)
+        Me.picMC11.Name = "picMC11"
+        Me.picMC11.Size = New System.Drawing.Size(242, 277)
+        Me.picMC11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picMC11.TabIndex = 4
+        Me.picMC11.TabStop = False
+        Me.picMC11.Tag = "11"
+        '
         'GroupBox10
         '
+        Me.GroupBox10.Controls.Add(Me.Label74)
+        Me.GroupBox10.Controls.Add(Me.Label75)
+        Me.GroupBox10.Controls.Add(Me.Label76)
+        Me.GroupBox10.Controls.Add(Me.Label77)
         Me.GroupBox10.Controls.Add(Me.picStatMC9)
         Me.GroupBox10.Controls.Add(Me.btnCheckMC9)
         Me.GroupBox10.Controls.Add(Me.lblThO9)
@@ -1907,6 +2454,34 @@ Partial Class frmHome
         Me.GroupBox10.Size = New System.Drawing.Size(248, 296)
         Me.GroupBox10.TabIndex = 6
         Me.GroupBox10.TabStop = False
+        '
+        'picStatMC9
+        '
+        Me.picStatMC9.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.picStatMC9.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.picStatMC9.Image = CType(resources.GetObject("picStatMC9.Image"), System.Drawing.Image)
+        Me.picStatMC9.Location = New System.Drawing.Point(57, 21)
+        Me.picStatMC9.Name = "picStatMC9"
+        Me.picStatMC9.Size = New System.Drawing.Size(119, 17)
+        Me.picStatMC9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picStatMC9.TabIndex = 10
+        Me.picStatMC9.TabStop = False
+        Me.picStatMC9.Tag = "9"
+        '
+        'btnCheckMC9
+        '
+        Me.btnCheckMC9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnCheckMC9.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.btnCheckMC9.IconColor = System.Drawing.Color.Black
+        Me.btnCheckMC9.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnCheckMC9.IconSize = 45
+        Me.btnCheckMC9.Location = New System.Drawing.Point(204, 15)
+        Me.btnCheckMC9.Name = "btnCheckMC9"
+        Me.btnCheckMC9.Size = New System.Drawing.Size(40, 40)
+        Me.btnCheckMC9.TabIndex = 9
+        Me.btnCheckMC9.Tag = "9"
+        Me.btnCheckMC9.UseVisualStyleBackColor = True
         '
         'lblThO9
         '
@@ -1992,8 +2567,24 @@ Partial Class frmHome
         Me.lblWO9.Text = "-"
         Me.lblWO9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'picMC9
+        '
+        Me.picMC9.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.picMC9.Image = CType(resources.GetObject("picMC9.Image"), System.Drawing.Image)
+        Me.picMC9.Location = New System.Drawing.Point(3, 16)
+        Me.picMC9.Name = "picMC9"
+        Me.picMC9.Size = New System.Drawing.Size(242, 277)
+        Me.picMC9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picMC9.TabIndex = 4
+        Me.picMC9.TabStop = False
+        Me.picMC9.Tag = "9"
+        '
         'GroupBox11
         '
+        Me.GroupBox11.Controls.Add(Me.Label54)
+        Me.GroupBox11.Controls.Add(Me.Label55)
+        Me.GroupBox11.Controls.Add(Me.Label56)
+        Me.GroupBox11.Controls.Add(Me.Label57)
         Me.GroupBox11.Controls.Add(Me.picStatMC12)
         Me.GroupBox11.Controls.Add(Me.btnCheckMC12)
         Me.GroupBox11.Controls.Add(Me.lblThO12)
@@ -2008,6 +2599,34 @@ Partial Class frmHome
         Me.GroupBox11.Size = New System.Drawing.Size(248, 296)
         Me.GroupBox11.TabIndex = 6
         Me.GroupBox11.TabStop = False
+        '
+        'picStatMC12
+        '
+        Me.picStatMC12.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.picStatMC12.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.picStatMC12.Image = CType(resources.GetObject("picStatMC12.Image"), System.Drawing.Image)
+        Me.picStatMC12.Location = New System.Drawing.Point(57, 21)
+        Me.picStatMC12.Name = "picStatMC12"
+        Me.picStatMC12.Size = New System.Drawing.Size(119, 17)
+        Me.picStatMC12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picStatMC12.TabIndex = 13
+        Me.picStatMC12.TabStop = False
+        Me.picStatMC12.Tag = "12"
+        '
+        'btnCheckMC12
+        '
+        Me.btnCheckMC12.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnCheckMC12.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.btnCheckMC12.IconColor = System.Drawing.Color.Black
+        Me.btnCheckMC12.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnCheckMC12.IconSize = 45
+        Me.btnCheckMC12.Location = New System.Drawing.Point(204, 15)
+        Me.btnCheckMC12.Name = "btnCheckMC12"
+        Me.btnCheckMC12.Size = New System.Drawing.Size(40, 40)
+        Me.btnCheckMC12.TabIndex = 12
+        Me.btnCheckMC12.Tag = "12"
+        Me.btnCheckMC12.UseVisualStyleBackColor = True
         '
         'lblThO12
         '
@@ -2081,8 +2700,24 @@ Partial Class frmHome
         Me.lblWO12.Text = "-"
         Me.lblWO12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'picMC12
+        '
+        Me.picMC12.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.picMC12.Image = CType(resources.GetObject("picMC12.Image"), System.Drawing.Image)
+        Me.picMC12.Location = New System.Drawing.Point(3, 16)
+        Me.picMC12.Name = "picMC12"
+        Me.picMC12.Size = New System.Drawing.Size(242, 277)
+        Me.picMC12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picMC12.TabIndex = 4
+        Me.picMC12.TabStop = False
+        Me.picMC12.Tag = "12"
+        '
         'GroupBox12
         '
+        Me.GroupBox12.Controls.Add(Me.Label70)
+        Me.GroupBox12.Controls.Add(Me.Label71)
+        Me.GroupBox12.Controls.Add(Me.Label72)
+        Me.GroupBox12.Controls.Add(Me.Label73)
         Me.GroupBox12.Controls.Add(Me.picStatMC10)
         Me.GroupBox12.Controls.Add(Me.btnCheckMC10)
         Me.GroupBox12.Controls.Add(Me.lblThO10)
@@ -2097,6 +2732,34 @@ Partial Class frmHome
         Me.GroupBox12.Size = New System.Drawing.Size(248, 296)
         Me.GroupBox12.TabIndex = 6
         Me.GroupBox12.TabStop = False
+        '
+        'picStatMC10
+        '
+        Me.picStatMC10.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.picStatMC10.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.picStatMC10.Image = CType(resources.GetObject("picStatMC10.Image"), System.Drawing.Image)
+        Me.picStatMC10.Location = New System.Drawing.Point(57, 21)
+        Me.picStatMC10.Name = "picStatMC10"
+        Me.picStatMC10.Size = New System.Drawing.Size(119, 17)
+        Me.picStatMC10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picStatMC10.TabIndex = 11
+        Me.picStatMC10.TabStop = False
+        Me.picStatMC10.Tag = "10"
+        '
+        'btnCheckMC10
+        '
+        Me.btnCheckMC10.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnCheckMC10.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.btnCheckMC10.IconColor = System.Drawing.Color.Black
+        Me.btnCheckMC10.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnCheckMC10.IconSize = 45
+        Me.btnCheckMC10.Location = New System.Drawing.Point(204, 15)
+        Me.btnCheckMC10.Name = "btnCheckMC10"
+        Me.btnCheckMC10.Size = New System.Drawing.Size(40, 40)
+        Me.btnCheckMC10.TabIndex = 10
+        Me.btnCheckMC10.Tag = "10"
+        Me.btnCheckMC10.UseVisualStyleBackColor = True
         '
         'lblThO10
         '
@@ -2170,8 +2833,24 @@ Partial Class frmHome
         Me.lblWO10.Text = "-"
         Me.lblWO10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'picMC10
+        '
+        Me.picMC10.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.picMC10.Image = CType(resources.GetObject("picMC10.Image"), System.Drawing.Image)
+        Me.picMC10.Location = New System.Drawing.Point(3, 16)
+        Me.picMC10.Name = "picMC10"
+        Me.picMC10.Size = New System.Drawing.Size(242, 277)
+        Me.picMC10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picMC10.TabIndex = 4
+        Me.picMC10.TabStop = False
+        Me.picMC10.Tag = "10"
+        '
         'GroupBox13
         '
+        Me.GroupBox13.Controls.Add(Me.Label50)
+        Me.GroupBox13.Controls.Add(Me.Label51)
+        Me.GroupBox13.Controls.Add(Me.Label52)
+        Me.GroupBox13.Controls.Add(Me.Label53)
         Me.GroupBox13.Controls.Add(Me.picStatMC13)
         Me.GroupBox13.Controls.Add(Me.btnCheckMC13)
         Me.GroupBox13.Controls.Add(Me.lblThO13)
@@ -2186,6 +2865,34 @@ Partial Class frmHome
         Me.GroupBox13.Size = New System.Drawing.Size(248, 296)
         Me.GroupBox13.TabIndex = 6
         Me.GroupBox13.TabStop = False
+        '
+        'picStatMC13
+        '
+        Me.picStatMC13.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.picStatMC13.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.picStatMC13.Image = CType(resources.GetObject("picStatMC13.Image"), System.Drawing.Image)
+        Me.picStatMC13.Location = New System.Drawing.Point(57, 21)
+        Me.picStatMC13.Name = "picStatMC13"
+        Me.picStatMC13.Size = New System.Drawing.Size(119, 17)
+        Me.picStatMC13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picStatMC13.TabIndex = 14
+        Me.picStatMC13.TabStop = False
+        Me.picStatMC13.Tag = "13"
+        '
+        'btnCheckMC13
+        '
+        Me.btnCheckMC13.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnCheckMC13.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.btnCheckMC13.IconColor = System.Drawing.Color.Black
+        Me.btnCheckMC13.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnCheckMC13.IconSize = 45
+        Me.btnCheckMC13.Location = New System.Drawing.Point(204, 15)
+        Me.btnCheckMC13.Name = "btnCheckMC13"
+        Me.btnCheckMC13.Size = New System.Drawing.Size(40, 40)
+        Me.btnCheckMC13.TabIndex = 13
+        Me.btnCheckMC13.Tag = "13"
+        Me.btnCheckMC13.UseVisualStyleBackColor = True
         '
         'lblThO13
         '
@@ -2259,8 +2966,24 @@ Partial Class frmHome
         Me.lblWO13.Text = "-"
         Me.lblWO13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'picMC13
+        '
+        Me.picMC13.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.picMC13.Image = CType(resources.GetObject("picMC13.Image"), System.Drawing.Image)
+        Me.picMC13.Location = New System.Drawing.Point(3, 16)
+        Me.picMC13.Name = "picMC13"
+        Me.picMC13.Size = New System.Drawing.Size(242, 277)
+        Me.picMC13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picMC13.TabIndex = 4
+        Me.picMC13.TabStop = False
+        Me.picMC13.Tag = "13"
+        '
         'GroupBox14
         '
+        Me.GroupBox14.Controls.Add(Me.Label46)
+        Me.GroupBox14.Controls.Add(Me.Label47)
+        Me.GroupBox14.Controls.Add(Me.Label48)
+        Me.GroupBox14.Controls.Add(Me.Label49)
         Me.GroupBox14.Controls.Add(Me.picStatMC14)
         Me.GroupBox14.Controls.Add(Me.btnCheckMC14)
         Me.GroupBox14.Controls.Add(Me.lblThO14)
@@ -2275,6 +2998,34 @@ Partial Class frmHome
         Me.GroupBox14.Size = New System.Drawing.Size(249, 296)
         Me.GroupBox14.TabIndex = 6
         Me.GroupBox14.TabStop = False
+        '
+        'picStatMC14
+        '
+        Me.picStatMC14.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.picStatMC14.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.picStatMC14.Image = CType(resources.GetObject("picStatMC14.Image"), System.Drawing.Image)
+        Me.picStatMC14.Location = New System.Drawing.Point(57, 21)
+        Me.picStatMC14.Name = "picStatMC14"
+        Me.picStatMC14.Size = New System.Drawing.Size(114, 17)
+        Me.picStatMC14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picStatMC14.TabIndex = 15
+        Me.picStatMC14.TabStop = False
+        Me.picStatMC14.Tag = "14"
+        '
+        'btnCheckMC14
+        '
+        Me.btnCheckMC14.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnCheckMC14.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.btnCheckMC14.IconColor = System.Drawing.Color.Black
+        Me.btnCheckMC14.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnCheckMC14.IconSize = 45
+        Me.btnCheckMC14.Location = New System.Drawing.Point(204, 15)
+        Me.btnCheckMC14.Name = "btnCheckMC14"
+        Me.btnCheckMC14.Size = New System.Drawing.Size(40, 40)
+        Me.btnCheckMC14.TabIndex = 14
+        Me.btnCheckMC14.Tag = "14"
+        Me.btnCheckMC14.UseVisualStyleBackColor = True
         '
         'lblThO14
         '
@@ -2347,6 +3098,18 @@ Partial Class frmHome
         Me.lblWO14.TabIndex = 5
         Me.lblWO14.Text = "-"
         Me.lblWO14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'picMC14
+        '
+        Me.picMC14.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.picMC14.Image = CType(resources.GetObject("picMC14.Image"), System.Drawing.Image)
+        Me.picMC14.Location = New System.Drawing.Point(3, 16)
+        Me.picMC14.Name = "picMC14"
+        Me.picMC14.Size = New System.Drawing.Size(243, 277)
+        Me.picMC14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picMC14.TabIndex = 4
+        Me.picMC14.TabStop = False
+        Me.picMC14.Tag = "14"
         '
         'ProdDetailsRealtimeCheck
         '
@@ -2443,6 +3206,10 @@ Partial Class frmHome
         '
         'GroupBox15
         '
+        Me.GroupBox15.Controls.Add(Me.Label66)
+        Me.GroupBox15.Controls.Add(Me.Label67)
+        Me.GroupBox15.Controls.Add(Me.Label68)
+        Me.GroupBox15.Controls.Add(Me.Label69)
         Me.GroupBox15.Controls.Add(Me.picStatMC18)
         Me.GroupBox15.Controls.Add(Me.btnCheckMC18)
         Me.GroupBox15.Controls.Add(Me.lblThO18)
@@ -2457,6 +3224,34 @@ Partial Class frmHome
         Me.GroupBox15.Size = New System.Drawing.Size(248, 297)
         Me.GroupBox15.TabIndex = 6
         Me.GroupBox15.TabStop = False
+        '
+        'picStatMC18
+        '
+        Me.picStatMC18.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.picStatMC18.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.picStatMC18.Image = CType(resources.GetObject("picStatMC18.Image"), System.Drawing.Image)
+        Me.picStatMC18.Location = New System.Drawing.Point(57, 21)
+        Me.picStatMC18.Name = "picStatMC18"
+        Me.picStatMC18.Size = New System.Drawing.Size(119, 17)
+        Me.picStatMC18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picStatMC18.TabIndex = 12
+        Me.picStatMC18.TabStop = False
+        Me.picStatMC18.Tag = "18"
+        '
+        'btnCheckMC18
+        '
+        Me.btnCheckMC18.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnCheckMC18.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.btnCheckMC18.IconColor = System.Drawing.Color.Black
+        Me.btnCheckMC18.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnCheckMC18.IconSize = 45
+        Me.btnCheckMC18.Location = New System.Drawing.Point(204, 15)
+        Me.btnCheckMC18.Name = "btnCheckMC18"
+        Me.btnCheckMC18.Size = New System.Drawing.Size(40, 40)
+        Me.btnCheckMC18.TabIndex = 11
+        Me.btnCheckMC18.Tag = "18"
+        Me.btnCheckMC18.UseVisualStyleBackColor = True
         '
         'lblThO18
         '
@@ -2530,8 +3325,24 @@ Partial Class frmHome
         Me.lblWO18.Text = "-"
         Me.lblWO18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'picMC18
+        '
+        Me.picMC18.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.picMC18.Image = CType(resources.GetObject("picMC18.Image"), System.Drawing.Image)
+        Me.picMC18.Location = New System.Drawing.Point(3, 16)
+        Me.picMC18.Name = "picMC18"
+        Me.picMC18.Size = New System.Drawing.Size(242, 278)
+        Me.picMC18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picMC18.TabIndex = 4
+        Me.picMC18.TabStop = False
+        Me.picMC18.Tag = "18"
+        '
         'GroupBox16
         '
+        Me.GroupBox16.Controls.Add(Me.Label82)
+        Me.GroupBox16.Controls.Add(Me.Label83)
+        Me.GroupBox16.Controls.Add(Me.Label84)
+        Me.GroupBox16.Controls.Add(Me.Label85)
         Me.GroupBox16.Controls.Add(Me.picStatMC15)
         Me.GroupBox16.Controls.Add(Me.btnCheckMC15)
         Me.GroupBox16.Controls.Add(Me.lblThO15)
@@ -2546,6 +3357,34 @@ Partial Class frmHome
         Me.GroupBox16.Size = New System.Drawing.Size(248, 297)
         Me.GroupBox16.TabIndex = 6
         Me.GroupBox16.TabStop = False
+        '
+        'picStatMC15
+        '
+        Me.picStatMC15.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.picStatMC15.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.picStatMC15.Image = CType(resources.GetObject("picStatMC15.Image"), System.Drawing.Image)
+        Me.picStatMC15.Location = New System.Drawing.Point(57, 21)
+        Me.picStatMC15.Name = "picStatMC15"
+        Me.picStatMC15.Size = New System.Drawing.Size(119, 17)
+        Me.picStatMC15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picStatMC15.TabIndex = 9
+        Me.picStatMC15.TabStop = False
+        Me.picStatMC15.Tag = "15"
+        '
+        'btnCheckMC15
+        '
+        Me.btnCheckMC15.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnCheckMC15.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.btnCheckMC15.IconColor = System.Drawing.Color.Black
+        Me.btnCheckMC15.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnCheckMC15.IconSize = 45
+        Me.btnCheckMC15.Location = New System.Drawing.Point(204, 15)
+        Me.btnCheckMC15.Name = "btnCheckMC15"
+        Me.btnCheckMC15.Size = New System.Drawing.Size(40, 40)
+        Me.btnCheckMC15.TabIndex = 8
+        Me.btnCheckMC15.Tag = "15"
+        Me.btnCheckMC15.UseVisualStyleBackColor = True
         '
         'lblThO15
         '
@@ -2619,8 +3458,24 @@ Partial Class frmHome
         Me.lblWO15.Text = "-"
         Me.lblWO15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'picMC15
+        '
+        Me.picMC15.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.picMC15.Image = CType(resources.GetObject("picMC15.Image"), System.Drawing.Image)
+        Me.picMC15.Location = New System.Drawing.Point(3, 16)
+        Me.picMC15.Name = "picMC15"
+        Me.picMC15.Size = New System.Drawing.Size(242, 278)
+        Me.picMC15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picMC15.TabIndex = 4
+        Me.picMC15.TabStop = False
+        Me.picMC15.Tag = "15"
+        '
         'GroupBox17
         '
+        Me.GroupBox17.Controls.Add(Me.Label78)
+        Me.GroupBox17.Controls.Add(Me.Label79)
+        Me.GroupBox17.Controls.Add(Me.Label80)
+        Me.GroupBox17.Controls.Add(Me.Label81)
         Me.GroupBox17.Controls.Add(Me.picStatMC16)
         Me.GroupBox17.Controls.Add(Me.btnCheckMC16)
         Me.GroupBox17.Controls.Add(Me.lblThO16)
@@ -2636,6 +3491,34 @@ Partial Class frmHome
         Me.GroupBox17.Size = New System.Drawing.Size(248, 297)
         Me.GroupBox17.TabIndex = 6
         Me.GroupBox17.TabStop = False
+        '
+        'picStatMC16
+        '
+        Me.picStatMC16.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.picStatMC16.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.picStatMC16.Image = CType(resources.GetObject("picStatMC16.Image"), System.Drawing.Image)
+        Me.picStatMC16.Location = New System.Drawing.Point(57, 21)
+        Me.picStatMC16.Name = "picStatMC16"
+        Me.picStatMC16.Size = New System.Drawing.Size(119, 17)
+        Me.picStatMC16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picStatMC16.TabIndex = 10
+        Me.picStatMC16.TabStop = False
+        Me.picStatMC16.Tag = "16"
+        '
+        'btnCheckMC16
+        '
+        Me.btnCheckMC16.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnCheckMC16.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.btnCheckMC16.IconColor = System.Drawing.Color.Black
+        Me.btnCheckMC16.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnCheckMC16.IconSize = 45
+        Me.btnCheckMC16.Location = New System.Drawing.Point(204, 15)
+        Me.btnCheckMC16.Name = "btnCheckMC16"
+        Me.btnCheckMC16.Size = New System.Drawing.Size(40, 40)
+        Me.btnCheckMC16.TabIndex = 9
+        Me.btnCheckMC16.Tag = "16"
+        Me.btnCheckMC16.UseVisualStyleBackColor = True
         '
         'lblThO16
         '
@@ -2721,8 +3604,24 @@ Partial Class frmHome
         Me.lblWO16.Text = "-"
         Me.lblWO16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'picMC16
+        '
+        Me.picMC16.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.picMC16.Image = CType(resources.GetObject("picMC16.Image"), System.Drawing.Image)
+        Me.picMC16.Location = New System.Drawing.Point(3, 16)
+        Me.picMC16.Name = "picMC16"
+        Me.picMC16.Size = New System.Drawing.Size(242, 278)
+        Me.picMC16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picMC16.TabIndex = 4
+        Me.picMC16.TabStop = False
+        Me.picMC16.Tag = "16"
+        '
         'GroupBox18
         '
+        Me.GroupBox18.Controls.Add(Me.Label58)
+        Me.GroupBox18.Controls.Add(Me.Label59)
+        Me.GroupBox18.Controls.Add(Me.Label60)
+        Me.GroupBox18.Controls.Add(Me.Label61)
         Me.GroupBox18.Controls.Add(Me.picStatMC19)
         Me.GroupBox18.Controls.Add(Me.btnCheckMC19)
         Me.GroupBox18.Controls.Add(Me.lblThO19)
@@ -2737,6 +3636,34 @@ Partial Class frmHome
         Me.GroupBox18.Size = New System.Drawing.Size(248, 297)
         Me.GroupBox18.TabIndex = 6
         Me.GroupBox18.TabStop = False
+        '
+        'picStatMC19
+        '
+        Me.picStatMC19.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.picStatMC19.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.picStatMC19.Image = CType(resources.GetObject("picStatMC19.Image"), System.Drawing.Image)
+        Me.picStatMC19.Location = New System.Drawing.Point(57, 21)
+        Me.picStatMC19.Name = "picStatMC19"
+        Me.picStatMC19.Size = New System.Drawing.Size(119, 17)
+        Me.picStatMC19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picStatMC19.TabIndex = 13
+        Me.picStatMC19.TabStop = False
+        Me.picStatMC19.Tag = "19"
+        '
+        'btnCheckMC19
+        '
+        Me.btnCheckMC19.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnCheckMC19.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.btnCheckMC19.IconColor = System.Drawing.Color.Black
+        Me.btnCheckMC19.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnCheckMC19.IconSize = 45
+        Me.btnCheckMC19.Location = New System.Drawing.Point(204, 15)
+        Me.btnCheckMC19.Name = "btnCheckMC19"
+        Me.btnCheckMC19.Size = New System.Drawing.Size(40, 40)
+        Me.btnCheckMC19.TabIndex = 12
+        Me.btnCheckMC19.Tag = "19"
+        Me.btnCheckMC19.UseVisualStyleBackColor = True
         '
         'lblThO19
         '
@@ -2810,6 +3737,18 @@ Partial Class frmHome
         Me.lblWO19.Text = "-"
         Me.lblWO19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'picMC19
+        '
+        Me.picMC19.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.picMC19.Image = CType(resources.GetObject("picMC19.Image"), System.Drawing.Image)
+        Me.picMC19.Location = New System.Drawing.Point(3, 16)
+        Me.picMC19.Name = "picMC19"
+        Me.picMC19.Size = New System.Drawing.Size(242, 278)
+        Me.picMC19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picMC19.TabIndex = 4
+        Me.picMC19.TabStop = False
+        Me.picMC19.Tag = "19"
+        '
         'GroupBox19
         '
         Me.GroupBox19.Controls.Add(Me.picStatMC17)
@@ -2826,6 +3765,34 @@ Partial Class frmHome
         Me.GroupBox19.Size = New System.Drawing.Size(248, 297)
         Me.GroupBox19.TabIndex = 6
         Me.GroupBox19.TabStop = False
+        '
+        'picStatMC17
+        '
+        Me.picStatMC17.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.picStatMC17.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.picStatMC17.Image = CType(resources.GetObject("picStatMC17.Image"), System.Drawing.Image)
+        Me.picStatMC17.Location = New System.Drawing.Point(57, 21)
+        Me.picStatMC17.Name = "picStatMC17"
+        Me.picStatMC17.Size = New System.Drawing.Size(119, 17)
+        Me.picStatMC17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picStatMC17.TabIndex = 11
+        Me.picStatMC17.TabStop = False
+        Me.picStatMC17.Tag = "17"
+        '
+        'btnCheckMC17
+        '
+        Me.btnCheckMC17.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnCheckMC17.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.btnCheckMC17.IconColor = System.Drawing.Color.Black
+        Me.btnCheckMC17.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnCheckMC17.IconSize = 45
+        Me.btnCheckMC17.Location = New System.Drawing.Point(204, 15)
+        Me.btnCheckMC17.Name = "btnCheckMC17"
+        Me.btnCheckMC17.Size = New System.Drawing.Size(40, 40)
+        Me.btnCheckMC17.TabIndex = 10
+        Me.btnCheckMC17.Tag = "17"
+        Me.btnCheckMC17.UseVisualStyleBackColor = True
         '
         'lblThO17
         '
@@ -2898,6 +3865,18 @@ Partial Class frmHome
         Me.lblWO17.TabIndex = 5
         Me.lblWO17.Text = "-"
         Me.lblWO17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'picMC17
+        '
+        Me.picMC17.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.picMC17.Image = CType(resources.GetObject("picMC17.Image"), System.Drawing.Image)
+        Me.picMC17.Location = New System.Drawing.Point(3, 16)
+        Me.picMC17.Name = "picMC17"
+        Me.picMC17.Size = New System.Drawing.Size(242, 278)
+        Me.picMC17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picMC17.TabIndex = 4
+        Me.picMC17.TabStop = False
+        Me.picMC17.Tag = "17"
         '
         'timMC15
         '
@@ -3073,788 +4052,6 @@ Partial Class frmHome
         Me.TableLayoutPanel3.Size = New System.Drawing.Size(249, 142)
         Me.TableLayoutPanel3.TabIndex = 7
         '
-        'PictureBox3
-        '
-        Me.PictureBox3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox3.Image = Global.SPSApp1.My.Resources.Resources.Legend3
-        Me.PictureBox3.Location = New System.Drawing.Point(12, 982)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(603, 41)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox3.TabIndex = 1
-        Me.PictureBox3.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox2.Image = Global.SPSApp1.My.Resources.Resources.Powered_by_SPS
-        Me.PictureBox2.Location = New System.Drawing.Point(2425, 994)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(143, 26)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 0
-        Me.PictureBox2.TabStop = False
-        '
-        'picStatMC15
-        '
-        Me.picStatMC15.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.picStatMC15.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.picStatMC15.Image = CType(resources.GetObject("picStatMC15.Image"), System.Drawing.Image)
-        Me.picStatMC15.Location = New System.Drawing.Point(57, 21)
-        Me.picStatMC15.Name = "picStatMC15"
-        Me.picStatMC15.Size = New System.Drawing.Size(119, 17)
-        Me.picStatMC15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picStatMC15.TabIndex = 9
-        Me.picStatMC15.TabStop = False
-        Me.picStatMC15.Tag = "15"
-        '
-        'btnCheckMC15
-        '
-        Me.btnCheckMC15.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnCheckMC15.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.btnCheckMC15.IconColor = System.Drawing.Color.Black
-        Me.btnCheckMC15.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnCheckMC15.IconSize = 45
-        Me.btnCheckMC15.Location = New System.Drawing.Point(204, 15)
-        Me.btnCheckMC15.Name = "btnCheckMC15"
-        Me.btnCheckMC15.Size = New System.Drawing.Size(40, 40)
-        Me.btnCheckMC15.TabIndex = 8
-        Me.btnCheckMC15.Tag = "15"
-        Me.btnCheckMC15.UseVisualStyleBackColor = True
-        '
-        'picMC15
-        '
-        Me.picMC15.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.picMC15.Image = CType(resources.GetObject("picMC15.Image"), System.Drawing.Image)
-        Me.picMC15.Location = New System.Drawing.Point(3, 16)
-        Me.picMC15.Name = "picMC15"
-        Me.picMC15.Size = New System.Drawing.Size(242, 278)
-        Me.picMC15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picMC15.TabIndex = 4
-        Me.picMC15.TabStop = False
-        Me.picMC15.Tag = "15"
-        '
-        'picStatMC8
-        '
-        Me.picStatMC8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.picStatMC8.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.picStatMC8.Image = CType(resources.GetObject("picStatMC8.Image"), System.Drawing.Image)
-        Me.picStatMC8.Location = New System.Drawing.Point(57, 21)
-        Me.picStatMC8.Name = "picStatMC8"
-        Me.picStatMC8.Size = New System.Drawing.Size(119, 17)
-        Me.picStatMC8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picStatMC8.TabIndex = 9
-        Me.picStatMC8.TabStop = False
-        Me.picStatMC8.Tag = "8"
-        '
-        'btnCheckMC8
-        '
-        Me.btnCheckMC8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnCheckMC8.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.btnCheckMC8.IconColor = System.Drawing.Color.Black
-        Me.btnCheckMC8.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnCheckMC8.IconSize = 45
-        Me.btnCheckMC8.Location = New System.Drawing.Point(204, 15)
-        Me.btnCheckMC8.Name = "btnCheckMC8"
-        Me.btnCheckMC8.Size = New System.Drawing.Size(40, 40)
-        Me.btnCheckMC8.TabIndex = 8
-        Me.btnCheckMC8.Tag = "8"
-        Me.btnCheckMC8.UseVisualStyleBackColor = True
-        '
-        'picMC8
-        '
-        Me.picMC8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.picMC8.Image = CType(resources.GetObject("picMC8.Image"), System.Drawing.Image)
-        Me.picMC8.Location = New System.Drawing.Point(3, 16)
-        Me.picMC8.Name = "picMC8"
-        Me.picMC8.Size = New System.Drawing.Size(242, 277)
-        Me.picMC8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picMC8.TabIndex = 4
-        Me.picMC8.TabStop = False
-        Me.picMC8.Tag = "8"
-        '
-        'picStatMC16
-        '
-        Me.picStatMC16.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.picStatMC16.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.picStatMC16.Image = CType(resources.GetObject("picStatMC16.Image"), System.Drawing.Image)
-        Me.picStatMC16.Location = New System.Drawing.Point(57, 21)
-        Me.picStatMC16.Name = "picStatMC16"
-        Me.picStatMC16.Size = New System.Drawing.Size(119, 17)
-        Me.picStatMC16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picStatMC16.TabIndex = 10
-        Me.picStatMC16.TabStop = False
-        Me.picStatMC16.Tag = "16"
-        '
-        'btnCheckMC16
-        '
-        Me.btnCheckMC16.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnCheckMC16.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.btnCheckMC16.IconColor = System.Drawing.Color.Black
-        Me.btnCheckMC16.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnCheckMC16.IconSize = 45
-        Me.btnCheckMC16.Location = New System.Drawing.Point(204, 15)
-        Me.btnCheckMC16.Name = "btnCheckMC16"
-        Me.btnCheckMC16.Size = New System.Drawing.Size(40, 40)
-        Me.btnCheckMC16.TabIndex = 9
-        Me.btnCheckMC16.Tag = "16"
-        Me.btnCheckMC16.UseVisualStyleBackColor = True
-        '
-        'picMC16
-        '
-        Me.picMC16.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.picMC16.Image = CType(resources.GetObject("picMC16.Image"), System.Drawing.Image)
-        Me.picMC16.Location = New System.Drawing.Point(3, 16)
-        Me.picMC16.Name = "picMC16"
-        Me.picMC16.Size = New System.Drawing.Size(242, 278)
-        Me.picMC16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picMC16.TabIndex = 4
-        Me.picMC16.TabStop = False
-        Me.picMC16.Tag = "16"
-        '
-        'picStatMC9
-        '
-        Me.picStatMC9.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.picStatMC9.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.picStatMC9.Image = CType(resources.GetObject("picStatMC9.Image"), System.Drawing.Image)
-        Me.picStatMC9.Location = New System.Drawing.Point(57, 21)
-        Me.picStatMC9.Name = "picStatMC9"
-        Me.picStatMC9.Size = New System.Drawing.Size(119, 17)
-        Me.picStatMC9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picStatMC9.TabIndex = 10
-        Me.picStatMC9.TabStop = False
-        Me.picStatMC9.Tag = "9"
-        '
-        'btnCheckMC9
-        '
-        Me.btnCheckMC9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnCheckMC9.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.btnCheckMC9.IconColor = System.Drawing.Color.Black
-        Me.btnCheckMC9.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnCheckMC9.IconSize = 45
-        Me.btnCheckMC9.Location = New System.Drawing.Point(204, 15)
-        Me.btnCheckMC9.Name = "btnCheckMC9"
-        Me.btnCheckMC9.Size = New System.Drawing.Size(40, 40)
-        Me.btnCheckMC9.TabIndex = 9
-        Me.btnCheckMC9.Tag = "9"
-        Me.btnCheckMC9.UseVisualStyleBackColor = True
-        '
-        'picMC9
-        '
-        Me.picMC9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.picMC9.Image = CType(resources.GetObject("picMC9.Image"), System.Drawing.Image)
-        Me.picMC9.Location = New System.Drawing.Point(3, 16)
-        Me.picMC9.Name = "picMC9"
-        Me.picMC9.Size = New System.Drawing.Size(242, 277)
-        Me.picMC9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picMC9.TabIndex = 4
-        Me.picMC9.TabStop = False
-        Me.picMC9.Tag = "9"
-        '
-        'picStatMC10
-        '
-        Me.picStatMC10.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.picStatMC10.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.picStatMC10.Image = CType(resources.GetObject("picStatMC10.Image"), System.Drawing.Image)
-        Me.picStatMC10.Location = New System.Drawing.Point(57, 21)
-        Me.picStatMC10.Name = "picStatMC10"
-        Me.picStatMC10.Size = New System.Drawing.Size(119, 17)
-        Me.picStatMC10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picStatMC10.TabIndex = 11
-        Me.picStatMC10.TabStop = False
-        Me.picStatMC10.Tag = "10"
-        '
-        'btnCheckMC10
-        '
-        Me.btnCheckMC10.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnCheckMC10.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.btnCheckMC10.IconColor = System.Drawing.Color.Black
-        Me.btnCheckMC10.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnCheckMC10.IconSize = 45
-        Me.btnCheckMC10.Location = New System.Drawing.Point(204, 15)
-        Me.btnCheckMC10.Name = "btnCheckMC10"
-        Me.btnCheckMC10.Size = New System.Drawing.Size(40, 40)
-        Me.btnCheckMC10.TabIndex = 10
-        Me.btnCheckMC10.Tag = "10"
-        Me.btnCheckMC10.UseVisualStyleBackColor = True
-        '
-        'picMC10
-        '
-        Me.picMC10.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.picMC10.Image = CType(resources.GetObject("picMC10.Image"), System.Drawing.Image)
-        Me.picMC10.Location = New System.Drawing.Point(3, 16)
-        Me.picMC10.Name = "picMC10"
-        Me.picMC10.Size = New System.Drawing.Size(242, 277)
-        Me.picMC10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picMC10.TabIndex = 4
-        Me.picMC10.TabStop = False
-        Me.picMC10.Tag = "10"
-        '
-        'btnCheckMC1
-        '
-        Me.btnCheckMC1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnCheckMC1.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.btnCheckMC1.IconColor = System.Drawing.Color.Black
-        Me.btnCheckMC1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnCheckMC1.IconSize = 45
-        Me.btnCheckMC1.Location = New System.Drawing.Point(204, 15)
-        Me.btnCheckMC1.Name = "btnCheckMC1"
-        Me.btnCheckMC1.Size = New System.Drawing.Size(40, 40)
-        Me.btnCheckMC1.TabIndex = 1
-        Me.btnCheckMC1.Tag = "1"
-        Me.btnCheckMC1.UseVisualStyleBackColor = True
-        '
-        'picStatMC1
-        '
-        Me.picStatMC1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.picStatMC1.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.picStatMC1.Image = Global.SPSApp1.My.Resources.Resources.LineNoPlan
-        Me.picStatMC1.Location = New System.Drawing.Point(57, 21)
-        Me.picStatMC1.Name = "picStatMC1"
-        Me.picStatMC1.Size = New System.Drawing.Size(119, 17)
-        Me.picStatMC1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picStatMC1.TabIndex = 6
-        Me.picStatMC1.TabStop = False
-        Me.picStatMC1.Tag = "1"
-        '
-        'PicMC1
-        '
-        Me.PicMC1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PicMC1.Image = Global.SPSApp1.My.Resources.Resources.MiniDash2
-        Me.PicMC1.Location = New System.Drawing.Point(3, 16)
-        Me.PicMC1.Name = "PicMC1"
-        Me.PicMC1.Size = New System.Drawing.Size(242, 277)
-        Me.PicMC1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PicMC1.TabIndex = 4
-        Me.PicMC1.TabStop = False
-        Me.PicMC1.Tag = "1"
-        '
-        'picStatMC2
-        '
-        Me.picStatMC2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.picStatMC2.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.picStatMC2.Image = CType(resources.GetObject("picStatMC2.Image"), System.Drawing.Image)
-        Me.picStatMC2.Location = New System.Drawing.Point(57, 21)
-        Me.picStatMC2.Name = "picStatMC2"
-        Me.picStatMC2.Size = New System.Drawing.Size(119, 17)
-        Me.picStatMC2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picStatMC2.TabIndex = 7
-        Me.picStatMC2.TabStop = False
-        Me.picStatMC2.Tag = "2"
-        '
-        'btnCheckMC2
-        '
-        Me.btnCheckMC2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnCheckMC2.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.btnCheckMC2.IconColor = System.Drawing.Color.Black
-        Me.btnCheckMC2.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnCheckMC2.IconSize = 45
-        Me.btnCheckMC2.Location = New System.Drawing.Point(204, 15)
-        Me.btnCheckMC2.Name = "btnCheckMC2"
-        Me.btnCheckMC2.Size = New System.Drawing.Size(40, 40)
-        Me.btnCheckMC2.TabIndex = 2
-        Me.btnCheckMC2.Tag = "2"
-        Me.btnCheckMC2.UseVisualStyleBackColor = True
-        '
-        'picMC2
-        '
-        Me.picMC2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.picMC2.Image = Global.SPSApp1.My.Resources.Resources.MiniDash2
-        Me.picMC2.Location = New System.Drawing.Point(3, 16)
-        Me.picMC2.Name = "picMC2"
-        Me.picMC2.Size = New System.Drawing.Size(242, 277)
-        Me.picMC2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picMC2.TabIndex = 4
-        Me.picMC2.TabStop = False
-        Me.picMC2.Tag = "2"
-        '
-        'picStatMC3
-        '
-        Me.picStatMC3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.picStatMC3.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.picStatMC3.Image = Global.SPSApp1.My.Resources.Resources.LineNoPlan
-        Me.picStatMC3.Location = New System.Drawing.Point(57, 21)
-        Me.picStatMC3.Name = "picStatMC3"
-        Me.picStatMC3.Size = New System.Drawing.Size(119, 17)
-        Me.picStatMC3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picStatMC3.TabIndex = 7
-        Me.picStatMC3.TabStop = False
-        Me.picStatMC3.Tag = "3"
-        '
-        'btnCheckMC3
-        '
-        Me.btnCheckMC3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnCheckMC3.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.btnCheckMC3.IconColor = System.Drawing.Color.Black
-        Me.btnCheckMC3.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnCheckMC3.IconSize = 45
-        Me.btnCheckMC3.Location = New System.Drawing.Point(204, 15)
-        Me.btnCheckMC3.Name = "btnCheckMC3"
-        Me.btnCheckMC3.Size = New System.Drawing.Size(40, 40)
-        Me.btnCheckMC3.TabIndex = 3
-        Me.btnCheckMC3.Tag = "3"
-        Me.btnCheckMC3.UseVisualStyleBackColor = True
-        '
-        'picMC3
-        '
-        Me.picMC3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.picMC3.Image = CType(resources.GetObject("picMC3.Image"), System.Drawing.Image)
-        Me.picMC3.Location = New System.Drawing.Point(3, 16)
-        Me.picMC3.Name = "picMC3"
-        Me.picMC3.Size = New System.Drawing.Size(242, 277)
-        Me.picMC3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picMC3.TabIndex = 4
-        Me.picMC3.TabStop = False
-        Me.picMC3.Tag = "3"
-        '
-        'picStatMC7
-        '
-        Me.picStatMC7.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.picStatMC7.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.picStatMC7.Image = CType(resources.GetObject("picStatMC7.Image"), System.Drawing.Image)
-        Me.picStatMC7.Location = New System.Drawing.Point(57, 21)
-        Me.picStatMC7.Name = "picStatMC7"
-        Me.picStatMC7.Size = New System.Drawing.Size(114, 17)
-        Me.picStatMC7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picStatMC7.TabIndex = 8
-        Me.picStatMC7.TabStop = False
-        Me.picStatMC7.Tag = "7"
-        '
-        'btnCheckMC7
-        '
-        Me.btnCheckMC7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnCheckMC7.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.btnCheckMC7.IconColor = System.Drawing.Color.Black
-        Me.btnCheckMC7.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnCheckMC7.IconSize = 45
-        Me.btnCheckMC7.Location = New System.Drawing.Point(204, 15)
-        Me.btnCheckMC7.Name = "btnCheckMC7"
-        Me.btnCheckMC7.Size = New System.Drawing.Size(40, 40)
-        Me.btnCheckMC7.TabIndex = 7
-        Me.btnCheckMC7.Tag = "7"
-        Me.btnCheckMC7.UseVisualStyleBackColor = True
-        '
-        'picMC7
-        '
-        Me.picMC7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.picMC7.Image = CType(resources.GetObject("picMC7.Image"), System.Drawing.Image)
-        Me.picMC7.Location = New System.Drawing.Point(3, 16)
-        Me.picMC7.Name = "picMC7"
-        Me.picMC7.Size = New System.Drawing.Size(243, 277)
-        Me.picMC7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picMC7.TabIndex = 4
-        Me.picMC7.TabStop = False
-        Me.picMC7.Tag = "7"
-        '
-        'picStatMC13
-        '
-        Me.picStatMC13.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.picStatMC13.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.picStatMC13.Image = CType(resources.GetObject("picStatMC13.Image"), System.Drawing.Image)
-        Me.picStatMC13.Location = New System.Drawing.Point(57, 21)
-        Me.picStatMC13.Name = "picStatMC13"
-        Me.picStatMC13.Size = New System.Drawing.Size(119, 17)
-        Me.picStatMC13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picStatMC13.TabIndex = 14
-        Me.picStatMC13.TabStop = False
-        Me.picStatMC13.Tag = "13"
-        '
-        'btnCheckMC13
-        '
-        Me.btnCheckMC13.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnCheckMC13.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.btnCheckMC13.IconColor = System.Drawing.Color.Black
-        Me.btnCheckMC13.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnCheckMC13.IconSize = 45
-        Me.btnCheckMC13.Location = New System.Drawing.Point(204, 15)
-        Me.btnCheckMC13.Name = "btnCheckMC13"
-        Me.btnCheckMC13.Size = New System.Drawing.Size(40, 40)
-        Me.btnCheckMC13.TabIndex = 13
-        Me.btnCheckMC13.Tag = "13"
-        Me.btnCheckMC13.UseVisualStyleBackColor = True
-        '
-        'picMC13
-        '
-        Me.picMC13.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.picMC13.Image = CType(resources.GetObject("picMC13.Image"), System.Drawing.Image)
-        Me.picMC13.Location = New System.Drawing.Point(3, 16)
-        Me.picMC13.Name = "picMC13"
-        Me.picMC13.Size = New System.Drawing.Size(242, 277)
-        Me.picMC13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picMC13.TabIndex = 4
-        Me.picMC13.TabStop = False
-        Me.picMC13.Tag = "13"
-        '
-        'picStatMC17
-        '
-        Me.picStatMC17.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.picStatMC17.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.picStatMC17.Image = CType(resources.GetObject("picStatMC17.Image"), System.Drawing.Image)
-        Me.picStatMC17.Location = New System.Drawing.Point(57, 21)
-        Me.picStatMC17.Name = "picStatMC17"
-        Me.picStatMC17.Size = New System.Drawing.Size(119, 17)
-        Me.picStatMC17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picStatMC17.TabIndex = 11
-        Me.picStatMC17.TabStop = False
-        Me.picStatMC17.Tag = "17"
-        '
-        'btnCheckMC17
-        '
-        Me.btnCheckMC17.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnCheckMC17.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.btnCheckMC17.IconColor = System.Drawing.Color.Black
-        Me.btnCheckMC17.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnCheckMC17.IconSize = 45
-        Me.btnCheckMC17.Location = New System.Drawing.Point(204, 15)
-        Me.btnCheckMC17.Name = "btnCheckMC17"
-        Me.btnCheckMC17.Size = New System.Drawing.Size(40, 40)
-        Me.btnCheckMC17.TabIndex = 10
-        Me.btnCheckMC17.Tag = "17"
-        Me.btnCheckMC17.UseVisualStyleBackColor = True
-        '
-        'picMC17
-        '
-        Me.picMC17.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.picMC17.Image = CType(resources.GetObject("picMC17.Image"), System.Drawing.Image)
-        Me.picMC17.Location = New System.Drawing.Point(3, 16)
-        Me.picMC17.Name = "picMC17"
-        Me.picMC17.Size = New System.Drawing.Size(242, 278)
-        Me.picMC17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picMC17.TabIndex = 4
-        Me.picMC17.TabStop = False
-        Me.picMC17.Tag = "17"
-        '
-        'picStatMC14
-        '
-        Me.picStatMC14.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.picStatMC14.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.picStatMC14.Image = CType(resources.GetObject("picStatMC14.Image"), System.Drawing.Image)
-        Me.picStatMC14.Location = New System.Drawing.Point(57, 21)
-        Me.picStatMC14.Name = "picStatMC14"
-        Me.picStatMC14.Size = New System.Drawing.Size(114, 17)
-        Me.picStatMC14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picStatMC14.TabIndex = 15
-        Me.picStatMC14.TabStop = False
-        Me.picStatMC14.Tag = "14"
-        '
-        'btnCheckMC14
-        '
-        Me.btnCheckMC14.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnCheckMC14.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.btnCheckMC14.IconColor = System.Drawing.Color.Black
-        Me.btnCheckMC14.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnCheckMC14.IconSize = 45
-        Me.btnCheckMC14.Location = New System.Drawing.Point(204, 15)
-        Me.btnCheckMC14.Name = "btnCheckMC14"
-        Me.btnCheckMC14.Size = New System.Drawing.Size(40, 40)
-        Me.btnCheckMC14.TabIndex = 14
-        Me.btnCheckMC14.Tag = "14"
-        Me.btnCheckMC14.UseVisualStyleBackColor = True
-        '
-        'picMC14
-        '
-        Me.picMC14.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.picMC14.Image = CType(resources.GetObject("picMC14.Image"), System.Drawing.Image)
-        Me.picMC14.Location = New System.Drawing.Point(3, 16)
-        Me.picMC14.Name = "picMC14"
-        Me.picMC14.Size = New System.Drawing.Size(243, 277)
-        Me.picMC14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picMC14.TabIndex = 4
-        Me.picMC14.TabStop = False
-        Me.picMC14.Tag = "14"
-        '
-        'picStatMC12
-        '
-        Me.picStatMC12.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.picStatMC12.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.picStatMC12.Image = CType(resources.GetObject("picStatMC12.Image"), System.Drawing.Image)
-        Me.picStatMC12.Location = New System.Drawing.Point(57, 21)
-        Me.picStatMC12.Name = "picStatMC12"
-        Me.picStatMC12.Size = New System.Drawing.Size(119, 17)
-        Me.picStatMC12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picStatMC12.TabIndex = 13
-        Me.picStatMC12.TabStop = False
-        Me.picStatMC12.Tag = "12"
-        '
-        'btnCheckMC12
-        '
-        Me.btnCheckMC12.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnCheckMC12.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.btnCheckMC12.IconColor = System.Drawing.Color.Black
-        Me.btnCheckMC12.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnCheckMC12.IconSize = 45
-        Me.btnCheckMC12.Location = New System.Drawing.Point(204, 15)
-        Me.btnCheckMC12.Name = "btnCheckMC12"
-        Me.btnCheckMC12.Size = New System.Drawing.Size(40, 40)
-        Me.btnCheckMC12.TabIndex = 12
-        Me.btnCheckMC12.Tag = "12"
-        Me.btnCheckMC12.UseVisualStyleBackColor = True
-        '
-        'picMC12
-        '
-        Me.picMC12.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.picMC12.Image = CType(resources.GetObject("picMC12.Image"), System.Drawing.Image)
-        Me.picMC12.Location = New System.Drawing.Point(3, 16)
-        Me.picMC12.Name = "picMC12"
-        Me.picMC12.Size = New System.Drawing.Size(242, 277)
-        Me.picMC12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picMC12.TabIndex = 4
-        Me.picMC12.TabStop = False
-        Me.picMC12.Tag = "12"
-        '
-        'picStatMC11
-        '
-        Me.picStatMC11.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.picStatMC11.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.picStatMC11.Image = CType(resources.GetObject("picStatMC11.Image"), System.Drawing.Image)
-        Me.picStatMC11.Location = New System.Drawing.Point(57, 21)
-        Me.picStatMC11.Name = "picStatMC11"
-        Me.picStatMC11.Size = New System.Drawing.Size(119, 17)
-        Me.picStatMC11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picStatMC11.TabIndex = 12
-        Me.picStatMC11.TabStop = False
-        Me.picStatMC11.Tag = "picStatMC11"
-        '
-        'btnCheckMC11
-        '
-        Me.btnCheckMC11.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnCheckMC11.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.btnCheckMC11.IconColor = System.Drawing.Color.Black
-        Me.btnCheckMC11.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnCheckMC11.IconSize = 45
-        Me.btnCheckMC11.Location = New System.Drawing.Point(204, 15)
-        Me.btnCheckMC11.Name = "btnCheckMC11"
-        Me.btnCheckMC11.Size = New System.Drawing.Size(40, 40)
-        Me.btnCheckMC11.TabIndex = 11
-        Me.btnCheckMC11.Tag = "11"
-        Me.btnCheckMC11.UseVisualStyleBackColor = True
-        '
-        'picMC11
-        '
-        Me.picMC11.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.picMC11.Image = CType(resources.GetObject("picMC11.Image"), System.Drawing.Image)
-        Me.picMC11.Location = New System.Drawing.Point(3, 16)
-        Me.picMC11.Name = "picMC11"
-        Me.picMC11.Size = New System.Drawing.Size(242, 277)
-        Me.picMC11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picMC11.TabIndex = 4
-        Me.picMC11.TabStop = False
-        Me.picMC11.Tag = "11"
-        '
-        'picStatMC6
-        '
-        Me.picStatMC6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.picStatMC6.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.picStatMC6.Image = CType(resources.GetObject("picStatMC6.Image"), System.Drawing.Image)
-        Me.picStatMC6.Location = New System.Drawing.Point(57, 21)
-        Me.picStatMC6.Name = "picStatMC6"
-        Me.picStatMC6.Size = New System.Drawing.Size(119, 17)
-        Me.picStatMC6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picStatMC6.TabIndex = 7
-        Me.picStatMC6.TabStop = False
-        Me.picStatMC6.Tag = "6"
-        '
-        'btnCheckMC6
-        '
-        Me.btnCheckMC6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnCheckMC6.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.btnCheckMC6.IconColor = System.Drawing.Color.Black
-        Me.btnCheckMC6.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnCheckMC6.IconSize = 45
-        Me.btnCheckMC6.Location = New System.Drawing.Point(204, 15)
-        Me.btnCheckMC6.Name = "btnCheckMC6"
-        Me.btnCheckMC6.Size = New System.Drawing.Size(40, 40)
-        Me.btnCheckMC6.TabIndex = 6
-        Me.btnCheckMC6.Tag = "6"
-        Me.btnCheckMC6.UseVisualStyleBackColor = True
-        '
-        'picMC6
-        '
-        Me.picMC6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.picMC6.Image = CType(resources.GetObject("picMC6.Image"), System.Drawing.Image)
-        Me.picMC6.Location = New System.Drawing.Point(3, 16)
-        Me.picMC6.Name = "picMC6"
-        Me.picMC6.Size = New System.Drawing.Size(242, 277)
-        Me.picMC6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picMC6.TabIndex = 4
-        Me.picMC6.TabStop = False
-        Me.picMC6.Tag = "6"
-        '
-        'picStatMC4
-        '
-        Me.picStatMC4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.picStatMC4.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.picStatMC4.Image = CType(resources.GetObject("picStatMC4.Image"), System.Drawing.Image)
-        Me.picStatMC4.Location = New System.Drawing.Point(57, 21)
-        Me.picStatMC4.Name = "picStatMC4"
-        Me.picStatMC4.Size = New System.Drawing.Size(119, 17)
-        Me.picStatMC4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picStatMC4.TabIndex = 7
-        Me.picStatMC4.TabStop = False
-        Me.picStatMC4.Tag = "4"
-        '
-        'btnCheckMC4
-        '
-        Me.btnCheckMC4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnCheckMC4.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.btnCheckMC4.IconColor = System.Drawing.Color.Black
-        Me.btnCheckMC4.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnCheckMC4.IconSize = 45
-        Me.btnCheckMC4.Location = New System.Drawing.Point(204, 15)
-        Me.btnCheckMC4.Name = "btnCheckMC4"
-        Me.btnCheckMC4.Size = New System.Drawing.Size(40, 40)
-        Me.btnCheckMC4.TabIndex = 4
-        Me.btnCheckMC4.Tag = "4"
-        Me.btnCheckMC4.UseVisualStyleBackColor = True
-        '
-        'picMC4
-        '
-        Me.picMC4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.picMC4.Image = CType(resources.GetObject("picMC4.Image"), System.Drawing.Image)
-        Me.picMC4.Location = New System.Drawing.Point(3, 16)
-        Me.picMC4.Name = "picMC4"
-        Me.picMC4.Size = New System.Drawing.Size(242, 277)
-        Me.picMC4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picMC4.TabIndex = 4
-        Me.picMC4.TabStop = False
-        Me.picMC4.Tag = "4"
-        '
-        'picStatMC5
-        '
-        Me.picStatMC5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.picStatMC5.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.picStatMC5.Image = CType(resources.GetObject("picStatMC5.Image"), System.Drawing.Image)
-        Me.picStatMC5.Location = New System.Drawing.Point(57, 21)
-        Me.picStatMC5.Name = "picStatMC5"
-        Me.picStatMC5.Size = New System.Drawing.Size(119, 17)
-        Me.picStatMC5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picStatMC5.TabIndex = 7
-        Me.picStatMC5.TabStop = False
-        Me.picStatMC5.Tag = "5"
-        '
-        'btnCheckMC5
-        '
-        Me.btnCheckMC5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnCheckMC5.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.btnCheckMC5.IconColor = System.Drawing.Color.Black
-        Me.btnCheckMC5.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnCheckMC5.IconSize = 45
-        Me.btnCheckMC5.Location = New System.Drawing.Point(204, 15)
-        Me.btnCheckMC5.Name = "btnCheckMC5"
-        Me.btnCheckMC5.Size = New System.Drawing.Size(40, 40)
-        Me.btnCheckMC5.TabIndex = 5
-        Me.btnCheckMC5.Tag = "5"
-        Me.btnCheckMC5.UseVisualStyleBackColor = True
-        '
-        'picMC5
-        '
-        Me.picMC5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.picMC5.Image = CType(resources.GetObject("picMC5.Image"), System.Drawing.Image)
-        Me.picMC5.Location = New System.Drawing.Point(3, 16)
-        Me.picMC5.Name = "picMC5"
-        Me.picMC5.Size = New System.Drawing.Size(242, 277)
-        Me.picMC5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picMC5.TabIndex = 4
-        Me.picMC5.TabStop = False
-        Me.picMC5.Tag = "5"
-        '
-        'picStatMC18
-        '
-        Me.picStatMC18.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.picStatMC18.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.picStatMC18.Image = CType(resources.GetObject("picStatMC18.Image"), System.Drawing.Image)
-        Me.picStatMC18.Location = New System.Drawing.Point(57, 21)
-        Me.picStatMC18.Name = "picStatMC18"
-        Me.picStatMC18.Size = New System.Drawing.Size(119, 17)
-        Me.picStatMC18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picStatMC18.TabIndex = 12
-        Me.picStatMC18.TabStop = False
-        Me.picStatMC18.Tag = "18"
-        '
-        'btnCheckMC18
-        '
-        Me.btnCheckMC18.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnCheckMC18.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.btnCheckMC18.IconColor = System.Drawing.Color.Black
-        Me.btnCheckMC18.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnCheckMC18.IconSize = 45
-        Me.btnCheckMC18.Location = New System.Drawing.Point(204, 15)
-        Me.btnCheckMC18.Name = "btnCheckMC18"
-        Me.btnCheckMC18.Size = New System.Drawing.Size(40, 40)
-        Me.btnCheckMC18.TabIndex = 11
-        Me.btnCheckMC18.Tag = "18"
-        Me.btnCheckMC18.UseVisualStyleBackColor = True
-        '
-        'picMC18
-        '
-        Me.picMC18.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.picMC18.Image = CType(resources.GetObject("picMC18.Image"), System.Drawing.Image)
-        Me.picMC18.Location = New System.Drawing.Point(3, 16)
-        Me.picMC18.Name = "picMC18"
-        Me.picMC18.Size = New System.Drawing.Size(242, 278)
-        Me.picMC18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picMC18.TabIndex = 4
-        Me.picMC18.TabStop = False
-        Me.picMC18.Tag = "18"
-        '
-        'picStatMC19
-        '
-        Me.picStatMC19.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.picStatMC19.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.picStatMC19.Image = CType(resources.GetObject("picStatMC19.Image"), System.Drawing.Image)
-        Me.picStatMC19.Location = New System.Drawing.Point(57, 21)
-        Me.picStatMC19.Name = "picStatMC19"
-        Me.picStatMC19.Size = New System.Drawing.Size(119, 17)
-        Me.picStatMC19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picStatMC19.TabIndex = 13
-        Me.picStatMC19.TabStop = False
-        Me.picStatMC19.Tag = "19"
-        '
-        'btnCheckMC19
-        '
-        Me.btnCheckMC19.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnCheckMC19.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.btnCheckMC19.IconColor = System.Drawing.Color.Black
-        Me.btnCheckMC19.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnCheckMC19.IconSize = 45
-        Me.btnCheckMC19.Location = New System.Drawing.Point(204, 15)
-        Me.btnCheckMC19.Name = "btnCheckMC19"
-        Me.btnCheckMC19.Size = New System.Drawing.Size(40, 40)
-        Me.btnCheckMC19.TabIndex = 12
-        Me.btnCheckMC19.Tag = "19"
-        Me.btnCheckMC19.UseVisualStyleBackColor = True
-        '
-        'picMC19
-        '
-        Me.picMC19.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.picMC19.Image = CType(resources.GetObject("picMC19.Image"), System.Drawing.Image)
-        Me.picMC19.Location = New System.Drawing.Point(3, 16)
-        Me.picMC19.Name = "picMC19"
-        Me.picMC19.Size = New System.Drawing.Size(242, 278)
-        Me.picMC19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picMC19.TabIndex = 4
-        Me.picMC19.TabStop = False
-        Me.picMC19.Tag = "19"
-        '
         'btnMCSelect
         '
         Me.btnMCSelect.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -3891,28 +4088,843 @@ Partial Class frmHome
         Me.btnMCSelClear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnMCSelClear.UseVisualStyleBackColor = True
         '
-        'picComCheckOnOff
+        'PictureBox3
         '
-        Me.picComCheckOnOff.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.picComCheckOnOff.Image = Global.SPSApp1.My.Resources.Resources.indicator_green
-        Me.picComCheckOnOff.Location = New System.Drawing.Point(430, 3)
-        Me.picComCheckOnOff.Name = "picComCheckOnOff"
-        Me.picComCheckOnOff.Size = New System.Drawing.Size(28, 28)
-        Me.picComCheckOnOff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picComCheckOnOff.TabIndex = 3
-        Me.picComCheckOnOff.TabStop = False
+        Me.PictureBox3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox3.Image = Global.SPSApp1.My.Resources.Resources.Legend3
+        Me.PictureBox3.Location = New System.Drawing.Point(12, 982)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(603, 41)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 1
+        Me.PictureBox3.TabStop = False
         '
-        'PictureBox1
+        'PictureBox2
         '
-        Me.PictureBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox1.Image = Global.SPSApp1.My.Resources.Resources.proguard_logo
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(293, 56)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        Me.PictureBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox2.Image = Global.SPSApp1.My.Resources.Resources.Powered_by_SPS
+        Me.PictureBox2.Location = New System.Drawing.Point(2425, 994)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(143, 26)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 0
+        Me.PictureBox2.TabStop = False
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.BackColor = System.Drawing.Color.White
+        Me.Label16.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Location = New System.Drawing.Point(20, 252)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(39, 19)
+        Me.Label16.TabIndex = 8
+        Me.Label16.Text = "OEE:"
+        Me.ttpOEE.SetToolTip(Me.Label16, "OVERALL EQUIPMENT EFFECTIVENESS")
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.BackColor = System.Drawing.Color.White
+        Me.Label17.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(20, 225)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(33, 19)
+        Me.Label17.TabIndex = 9
+        Me.Label17.Text = "AO:"
+        Me.ttpAO.SetToolTip(Me.Label17, "ACTUAL OUTPUT")
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.BackColor = System.Drawing.Color.White
+        Me.Label18.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.Location = New System.Drawing.Point(20, 127)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(28, 19)
+        Me.Label18.TabIndex = 10
+        Me.Label18.Text = "JO:"
+        Me.ttpJO.SetToolTip(Me.Label18, "JOB ORDER CODE")
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.BackColor = System.Drawing.Color.White
+        Me.Label19.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.Location = New System.Drawing.Point(20, 198)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(31, 19)
+        Me.Label19.TabIndex = 11
+        Me.Label19.Text = "TO:"
+        Me.ttpTO.SetToolTip(Me.Label19, "TARGET OUTPUT")
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.BackColor = System.Drawing.Color.White
+        Me.Label21.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.Location = New System.Drawing.Point(20, 253)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(39, 19)
+        Me.Label21.TabIndex = 8
+        Me.Label21.Text = "OEE:"
+        Me.ttpOEE.SetToolTip(Me.Label21, "OVERALL EQUIPMENT EFFECTIVENESS")
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.BackColor = System.Drawing.Color.White
+        Me.Label25.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label25.Location = New System.Drawing.Point(20, 226)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(33, 19)
+        Me.Label25.TabIndex = 9
+        Me.Label25.Text = "AO:"
+        Me.ttpAO.SetToolTip(Me.Label25, "ACTUAL OUTPUT")
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.BackColor = System.Drawing.Color.White
+        Me.Label26.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label26.Location = New System.Drawing.Point(20, 128)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(28, 19)
+        Me.Label26.TabIndex = 10
+        Me.Label26.Text = "JO:"
+        Me.ttpJO.SetToolTip(Me.Label26, "JOB ORDER CODE")
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.BackColor = System.Drawing.Color.White
+        Me.Label27.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label27.Location = New System.Drawing.Point(20, 199)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(31, 19)
+        Me.Label27.TabIndex = 11
+        Me.Label27.Text = "TO:"
+        Me.ttpTO.SetToolTip(Me.Label27, "TARGET OUTPUT")
+        '
+        'Label28
+        '
+        Me.Label28.AutoSize = True
+        Me.Label28.BackColor = System.Drawing.Color.White
+        Me.Label28.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label28.Location = New System.Drawing.Point(20, 253)
+        Me.Label28.Name = "Label28"
+        Me.Label28.Size = New System.Drawing.Size(39, 19)
+        Me.Label28.TabIndex = 8
+        Me.Label28.Text = "OEE:"
+        Me.ttpOEE.SetToolTip(Me.Label28, "OVERALL EQUIPMENT EFFECTIVENESS")
+        '
+        'Label30
+        '
+        Me.Label30.AutoSize = True
+        Me.Label30.BackColor = System.Drawing.Color.White
+        Me.Label30.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label30.Location = New System.Drawing.Point(20, 226)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(33, 19)
+        Me.Label30.TabIndex = 9
+        Me.Label30.Text = "AO:"
+        Me.ttpAO.SetToolTip(Me.Label30, "ACTUAL OUTPUT")
+        '
+        'Label31
+        '
+        Me.Label31.AutoSize = True
+        Me.Label31.BackColor = System.Drawing.Color.White
+        Me.Label31.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label31.Location = New System.Drawing.Point(20, 128)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(28, 19)
+        Me.Label31.TabIndex = 10
+        Me.Label31.Text = "JO:"
+        Me.ttpJO.SetToolTip(Me.Label31, "JOB ORDER CODE")
+        '
+        'Label32
+        '
+        Me.Label32.AutoSize = True
+        Me.Label32.BackColor = System.Drawing.Color.White
+        Me.Label32.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label32.Location = New System.Drawing.Point(20, 199)
+        Me.Label32.Name = "Label32"
+        Me.Label32.Size = New System.Drawing.Size(31, 19)
+        Me.Label32.TabIndex = 11
+        Me.Label32.Text = "TO:"
+        Me.ttpTO.SetToolTip(Me.Label32, "TARGET OUTPUT")
+        '
+        'Label33
+        '
+        Me.Label33.AutoSize = True
+        Me.Label33.BackColor = System.Drawing.Color.White
+        Me.Label33.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label33.Location = New System.Drawing.Point(20, 253)
+        Me.Label33.Name = "Label33"
+        Me.Label33.Size = New System.Drawing.Size(39, 19)
+        Me.Label33.TabIndex = 8
+        Me.Label33.Text = "OEE:"
+        Me.ttpOEE.SetToolTip(Me.Label33, "OVERALL EQUIPMENT EFFECTIVENESS")
+        '
+        'Label34
+        '
+        Me.Label34.AutoSize = True
+        Me.Label34.BackColor = System.Drawing.Color.White
+        Me.Label34.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label34.Location = New System.Drawing.Point(20, 226)
+        Me.Label34.Name = "Label34"
+        Me.Label34.Size = New System.Drawing.Size(33, 19)
+        Me.Label34.TabIndex = 9
+        Me.Label34.Text = "AO:"
+        Me.ttpAO.SetToolTip(Me.Label34, "ACTUAL OUTPUT")
+        '
+        'Label36
+        '
+        Me.Label36.AutoSize = True
+        Me.Label36.BackColor = System.Drawing.Color.White
+        Me.Label36.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label36.Location = New System.Drawing.Point(20, 128)
+        Me.Label36.Name = "Label36"
+        Me.Label36.Size = New System.Drawing.Size(28, 19)
+        Me.Label36.TabIndex = 10
+        Me.Label36.Text = "JO:"
+        Me.ttpJO.SetToolTip(Me.Label36, "JOB ORDER CODE")
+        '
+        'Label37
+        '
+        Me.Label37.AutoSize = True
+        Me.Label37.BackColor = System.Drawing.Color.White
+        Me.Label37.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label37.Location = New System.Drawing.Point(20, 199)
+        Me.Label37.Name = "Label37"
+        Me.Label37.Size = New System.Drawing.Size(31, 19)
+        Me.Label37.TabIndex = 11
+        Me.Label37.Text = "TO:"
+        Me.ttpTO.SetToolTip(Me.Label37, "TARGET OUTPUT")
+        '
+        'Label38
+        '
+        Me.Label38.AutoSize = True
+        Me.Label38.BackColor = System.Drawing.Color.White
+        Me.Label38.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label38.Location = New System.Drawing.Point(20, 253)
+        Me.Label38.Name = "Label38"
+        Me.Label38.Size = New System.Drawing.Size(39, 19)
+        Me.Label38.TabIndex = 8
+        Me.Label38.Text = "OEE:"
+        Me.ttpOEE.SetToolTip(Me.Label38, "OVERALL EQUIPMENT EFFECTIVENESS")
+        '
+        'Label39
+        '
+        Me.Label39.AutoSize = True
+        Me.Label39.BackColor = System.Drawing.Color.White
+        Me.Label39.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label39.Location = New System.Drawing.Point(20, 226)
+        Me.Label39.Name = "Label39"
+        Me.Label39.Size = New System.Drawing.Size(33, 19)
+        Me.Label39.TabIndex = 9
+        Me.Label39.Text = "AO:"
+        Me.ttpAO.SetToolTip(Me.Label39, "ACTUAL OUTPUT")
+        '
+        'Label40
+        '
+        Me.Label40.AutoSize = True
+        Me.Label40.BackColor = System.Drawing.Color.White
+        Me.Label40.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label40.Location = New System.Drawing.Point(20, 128)
+        Me.Label40.Name = "Label40"
+        Me.Label40.Size = New System.Drawing.Size(28, 19)
+        Me.Label40.TabIndex = 10
+        Me.Label40.Text = "JO:"
+        Me.ttpJO.SetToolTip(Me.Label40, "JOB ORDER CODE")
+        '
+        'Label41
+        '
+        Me.Label41.AutoSize = True
+        Me.Label41.BackColor = System.Drawing.Color.White
+        Me.Label41.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label41.Location = New System.Drawing.Point(20, 199)
+        Me.Label41.Name = "Label41"
+        Me.Label41.Size = New System.Drawing.Size(31, 19)
+        Me.Label41.TabIndex = 11
+        Me.Label41.Text = "TO:"
+        Me.ttpTO.SetToolTip(Me.Label41, "TARGET OUTPUT")
+        '
+        'Label42
+        '
+        Me.Label42.AutoSize = True
+        Me.Label42.BackColor = System.Drawing.Color.White
+        Me.Label42.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label42.Location = New System.Drawing.Point(20, 253)
+        Me.Label42.Name = "Label42"
+        Me.Label42.Size = New System.Drawing.Size(39, 19)
+        Me.Label42.TabIndex = 9
+        Me.Label42.Text = "OEE:"
+        Me.ttpOEE.SetToolTip(Me.Label42, "OVERALL EQUIPMENT EFFECTIVENESS")
+        '
+        'Label43
+        '
+        Me.Label43.AutoSize = True
+        Me.Label43.BackColor = System.Drawing.Color.White
+        Me.Label43.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label43.Location = New System.Drawing.Point(20, 226)
+        Me.Label43.Name = "Label43"
+        Me.Label43.Size = New System.Drawing.Size(33, 19)
+        Me.Label43.TabIndex = 10
+        Me.Label43.Text = "AO:"
+        Me.ttpAO.SetToolTip(Me.Label43, "ACTUAL OUTPUT")
+        '
+        'Label44
+        '
+        Me.Label44.AutoSize = True
+        Me.Label44.BackColor = System.Drawing.Color.White
+        Me.Label44.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label44.Location = New System.Drawing.Point(20, 128)
+        Me.Label44.Name = "Label44"
+        Me.Label44.Size = New System.Drawing.Size(28, 19)
+        Me.Label44.TabIndex = 11
+        Me.Label44.Text = "JO:"
+        Me.ttpJO.SetToolTip(Me.Label44, "JOB ORDER CODE")
+        '
+        'Label45
+        '
+        Me.Label45.AutoSize = True
+        Me.Label45.BackColor = System.Drawing.Color.White
+        Me.Label45.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label45.Location = New System.Drawing.Point(20, 199)
+        Me.Label45.Name = "Label45"
+        Me.Label45.Size = New System.Drawing.Size(31, 19)
+        Me.Label45.TabIndex = 12
+        Me.Label45.Text = "TO:"
+        Me.ttpTO.SetToolTip(Me.Label45, "TARGET OUTPUT")
+        '
+        'Label46
+        '
+        Me.Label46.AutoSize = True
+        Me.Label46.BackColor = System.Drawing.Color.White
+        Me.Label46.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label46.Location = New System.Drawing.Point(20, 253)
+        Me.Label46.Name = "Label46"
+        Me.Label46.Size = New System.Drawing.Size(39, 19)
+        Me.Label46.TabIndex = 16
+        Me.Label46.Text = "OEE:"
+        Me.ttpOEE.SetToolTip(Me.Label46, "OVERALL EQUIPMENT EFFECTIVENESS")
+        '
+        'Label47
+        '
+        Me.Label47.AutoSize = True
+        Me.Label47.BackColor = System.Drawing.Color.White
+        Me.Label47.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label47.Location = New System.Drawing.Point(20, 226)
+        Me.Label47.Name = "Label47"
+        Me.Label47.Size = New System.Drawing.Size(33, 19)
+        Me.Label47.TabIndex = 17
+        Me.Label47.Text = "AO:"
+        Me.ttpAO.SetToolTip(Me.Label47, "ACTUAL OUTPUT")
+        '
+        'Label48
+        '
+        Me.Label48.AutoSize = True
+        Me.Label48.BackColor = System.Drawing.Color.White
+        Me.Label48.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label48.Location = New System.Drawing.Point(20, 128)
+        Me.Label48.Name = "Label48"
+        Me.Label48.Size = New System.Drawing.Size(28, 19)
+        Me.Label48.TabIndex = 18
+        Me.Label48.Text = "JO:"
+        Me.ttpJO.SetToolTip(Me.Label48, "JOB ORDER CODE")
+        '
+        'Label49
+        '
+        Me.Label49.AutoSize = True
+        Me.Label49.BackColor = System.Drawing.Color.White
+        Me.Label49.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label49.Location = New System.Drawing.Point(20, 199)
+        Me.Label49.Name = "Label49"
+        Me.Label49.Size = New System.Drawing.Size(31, 19)
+        Me.Label49.TabIndex = 19
+        Me.Label49.Text = "TO:"
+        Me.ttpTO.SetToolTip(Me.Label49, "TARGET OUTPUT")
+        '
+        'Label50
+        '
+        Me.Label50.AutoSize = True
+        Me.Label50.BackColor = System.Drawing.Color.White
+        Me.Label50.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label50.Location = New System.Drawing.Point(20, 253)
+        Me.Label50.Name = "Label50"
+        Me.Label50.Size = New System.Drawing.Size(39, 19)
+        Me.Label50.TabIndex = 15
+        Me.Label50.Text = "OEE:"
+        Me.ttpOEE.SetToolTip(Me.Label50, "OVERALL EQUIPMENT EFFECTIVENESS")
+        '
+        'Label51
+        '
+        Me.Label51.AutoSize = True
+        Me.Label51.BackColor = System.Drawing.Color.White
+        Me.Label51.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label51.Location = New System.Drawing.Point(20, 226)
+        Me.Label51.Name = "Label51"
+        Me.Label51.Size = New System.Drawing.Size(33, 19)
+        Me.Label51.TabIndex = 16
+        Me.Label51.Text = "AO:"
+        Me.ttpAO.SetToolTip(Me.Label51, "ACTUAL OUTPUT")
+        '
+        'Label52
+        '
+        Me.Label52.AutoSize = True
+        Me.Label52.BackColor = System.Drawing.Color.White
+        Me.Label52.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label52.Location = New System.Drawing.Point(20, 128)
+        Me.Label52.Name = "Label52"
+        Me.Label52.Size = New System.Drawing.Size(28, 19)
+        Me.Label52.TabIndex = 17
+        Me.Label52.Text = "JO:"
+        Me.ttpJO.SetToolTip(Me.Label52, "JOB ORDER CODE")
+        '
+        'Label53
+        '
+        Me.Label53.AutoSize = True
+        Me.Label53.BackColor = System.Drawing.Color.White
+        Me.Label53.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label53.Location = New System.Drawing.Point(20, 199)
+        Me.Label53.Name = "Label53"
+        Me.Label53.Size = New System.Drawing.Size(31, 19)
+        Me.Label53.TabIndex = 18
+        Me.Label53.Text = "TO:"
+        Me.ttpTO.SetToolTip(Me.Label53, "TARGET OUTPUT")
+        '
+        'Label54
+        '
+        Me.Label54.AutoSize = True
+        Me.Label54.BackColor = System.Drawing.Color.White
+        Me.Label54.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label54.Location = New System.Drawing.Point(20, 253)
+        Me.Label54.Name = "Label54"
+        Me.Label54.Size = New System.Drawing.Size(39, 19)
+        Me.Label54.TabIndex = 14
+        Me.Label54.Text = "OEE:"
+        Me.ttpOEE.SetToolTip(Me.Label54, "OVERALL EQUIPMENT EFFECTIVENESS")
+        '
+        'Label55
+        '
+        Me.Label55.AutoSize = True
+        Me.Label55.BackColor = System.Drawing.Color.White
+        Me.Label55.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label55.Location = New System.Drawing.Point(20, 226)
+        Me.Label55.Name = "Label55"
+        Me.Label55.Size = New System.Drawing.Size(33, 19)
+        Me.Label55.TabIndex = 15
+        Me.Label55.Text = "AO:"
+        Me.ttpAO.SetToolTip(Me.Label55, "ACTUAL OUTPUT")
+        '
+        'Label56
+        '
+        Me.Label56.AutoSize = True
+        Me.Label56.BackColor = System.Drawing.Color.White
+        Me.Label56.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label56.Location = New System.Drawing.Point(20, 128)
+        Me.Label56.Name = "Label56"
+        Me.Label56.Size = New System.Drawing.Size(28, 19)
+        Me.Label56.TabIndex = 16
+        Me.Label56.Text = "JO:"
+        Me.ttpJO.SetToolTip(Me.Label56, "JOB ORDER CODE")
+        '
+        'Label57
+        '
+        Me.Label57.AutoSize = True
+        Me.Label57.BackColor = System.Drawing.Color.White
+        Me.Label57.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label57.Location = New System.Drawing.Point(20, 199)
+        Me.Label57.Name = "Label57"
+        Me.Label57.Size = New System.Drawing.Size(31, 19)
+        Me.Label57.TabIndex = 17
+        Me.Label57.Text = "TO:"
+        Me.ttpTO.SetToolTip(Me.Label57, "TARGET OUTPUT")
+        '
+        'Label58
+        '
+        Me.Label58.AutoSize = True
+        Me.Label58.BackColor = System.Drawing.Color.White
+        Me.Label58.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label58.Location = New System.Drawing.Point(20, 253)
+        Me.Label58.Name = "Label58"
+        Me.Label58.Size = New System.Drawing.Size(39, 19)
+        Me.Label58.TabIndex = 14
+        Me.Label58.Text = "OEE:"
+        Me.ttpOEE.SetToolTip(Me.Label58, "OVERALL EQUIPMENT EFFECTIVENESS")
+        '
+        'Label59
+        '
+        Me.Label59.AutoSize = True
+        Me.Label59.BackColor = System.Drawing.Color.White
+        Me.Label59.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label59.Location = New System.Drawing.Point(20, 226)
+        Me.Label59.Name = "Label59"
+        Me.Label59.Size = New System.Drawing.Size(33, 19)
+        Me.Label59.TabIndex = 15
+        Me.Label59.Text = "AO:"
+        Me.ttpAO.SetToolTip(Me.Label59, "ACTUAL OUTPUT")
+        '
+        'Label60
+        '
+        Me.Label60.AutoSize = True
+        Me.Label60.BackColor = System.Drawing.Color.White
+        Me.Label60.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label60.Location = New System.Drawing.Point(20, 128)
+        Me.Label60.Name = "Label60"
+        Me.Label60.Size = New System.Drawing.Size(28, 19)
+        Me.Label60.TabIndex = 16
+        Me.Label60.Text = "JO:"
+        Me.ttpJO.SetToolTip(Me.Label60, "JOB ORDER CODE")
+        '
+        'Label61
+        '
+        Me.Label61.AutoSize = True
+        Me.Label61.BackColor = System.Drawing.Color.White
+        Me.Label61.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label61.Location = New System.Drawing.Point(20, 199)
+        Me.Label61.Name = "Label61"
+        Me.Label61.Size = New System.Drawing.Size(31, 19)
+        Me.Label61.TabIndex = 17
+        Me.Label61.Text = "TO:"
+        Me.ttpTO.SetToolTip(Me.Label61, "TARGET OUTPUT")
+        '
+        'Label62
+        '
+        Me.Label62.AutoSize = True
+        Me.Label62.BackColor = System.Drawing.Color.White
+        Me.Label62.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label62.Location = New System.Drawing.Point(20, 253)
+        Me.Label62.Name = "Label62"
+        Me.Label62.Size = New System.Drawing.Size(39, 19)
+        Me.Label62.TabIndex = 13
+        Me.Label62.Text = "OEE:"
+        Me.ttpOEE.SetToolTip(Me.Label62, "OVERALL EQUIPMENT EFFECTIVENESS")
+        '
+        'Label63
+        '
+        Me.Label63.AutoSize = True
+        Me.Label63.BackColor = System.Drawing.Color.White
+        Me.Label63.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label63.Location = New System.Drawing.Point(20, 226)
+        Me.Label63.Name = "Label63"
+        Me.Label63.Size = New System.Drawing.Size(33, 19)
+        Me.Label63.TabIndex = 14
+        Me.Label63.Text = "AO:"
+        Me.ttpAO.SetToolTip(Me.Label63, "ACTUAL OUTPUT")
+        '
+        'Label64
+        '
+        Me.Label64.AutoSize = True
+        Me.Label64.BackColor = System.Drawing.Color.White
+        Me.Label64.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label64.Location = New System.Drawing.Point(20, 128)
+        Me.Label64.Name = "Label64"
+        Me.Label64.Size = New System.Drawing.Size(28, 19)
+        Me.Label64.TabIndex = 15
+        Me.Label64.Text = "JO:"
+        Me.ttpJO.SetToolTip(Me.Label64, "JOB ORDER CODE")
+        '
+        'Label65
+        '
+        Me.Label65.AutoSize = True
+        Me.Label65.BackColor = System.Drawing.Color.White
+        Me.Label65.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label65.Location = New System.Drawing.Point(20, 199)
+        Me.Label65.Name = "Label65"
+        Me.Label65.Size = New System.Drawing.Size(31, 19)
+        Me.Label65.TabIndex = 16
+        Me.Label65.Text = "TO:"
+        Me.ttpTO.SetToolTip(Me.Label65, "TARGET OUTPUT")
+        '
+        'Label66
+        '
+        Me.Label66.AutoSize = True
+        Me.Label66.BackColor = System.Drawing.Color.White
+        Me.Label66.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label66.Location = New System.Drawing.Point(20, 254)
+        Me.Label66.Name = "Label66"
+        Me.Label66.Size = New System.Drawing.Size(39, 19)
+        Me.Label66.TabIndex = 13
+        Me.Label66.Text = "OEE:"
+        Me.ttpOEE.SetToolTip(Me.Label66, "OVERALL EQUIPMENT EFFECTIVENESS")
+        '
+        'Label67
+        '
+        Me.Label67.AutoSize = True
+        Me.Label67.BackColor = System.Drawing.Color.White
+        Me.Label67.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label67.Location = New System.Drawing.Point(20, 227)
+        Me.Label67.Name = "Label67"
+        Me.Label67.Size = New System.Drawing.Size(33, 19)
+        Me.Label67.TabIndex = 14
+        Me.Label67.Text = "AO:"
+        Me.ttpAO.SetToolTip(Me.Label67, "ACTUAL OUTPUT")
+        '
+        'Label68
+        '
+        Me.Label68.AutoSize = True
+        Me.Label68.BackColor = System.Drawing.Color.White
+        Me.Label68.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label68.Location = New System.Drawing.Point(20, 129)
+        Me.Label68.Name = "Label68"
+        Me.Label68.Size = New System.Drawing.Size(28, 19)
+        Me.Label68.TabIndex = 15
+        Me.Label68.Text = "JO:"
+        Me.ttpJO.SetToolTip(Me.Label68, "JOB ORDER CODE")
+        '
+        'Label69
+        '
+        Me.Label69.AutoSize = True
+        Me.Label69.BackColor = System.Drawing.Color.White
+        Me.Label69.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label69.Location = New System.Drawing.Point(20, 200)
+        Me.Label69.Name = "Label69"
+        Me.Label69.Size = New System.Drawing.Size(31, 19)
+        Me.Label69.TabIndex = 16
+        Me.Label69.Text = "TO:"
+        Me.ttpTO.SetToolTip(Me.Label69, "TARGET OUTPUT")
+        '
+        'Label70
+        '
+        Me.Label70.AutoSize = True
+        Me.Label70.BackColor = System.Drawing.Color.White
+        Me.Label70.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label70.Location = New System.Drawing.Point(20, 254)
+        Me.Label70.Name = "Label70"
+        Me.Label70.Size = New System.Drawing.Size(39, 19)
+        Me.Label70.TabIndex = 12
+        Me.Label70.Text = "OEE:"
+        Me.ttpOEE.SetToolTip(Me.Label70, "OVERALL EQUIPMENT EFFECTIVENESS")
+        '
+        'Label71
+        '
+        Me.Label71.AutoSize = True
+        Me.Label71.BackColor = System.Drawing.Color.White
+        Me.Label71.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label71.Location = New System.Drawing.Point(20, 227)
+        Me.Label71.Name = "Label71"
+        Me.Label71.Size = New System.Drawing.Size(33, 19)
+        Me.Label71.TabIndex = 13
+        Me.Label71.Text = "AO:"
+        Me.ttpAO.SetToolTip(Me.Label71, "ACTUAL OUTPUT")
+        '
+        'Label72
+        '
+        Me.Label72.AutoSize = True
+        Me.Label72.BackColor = System.Drawing.Color.White
+        Me.Label72.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label72.Location = New System.Drawing.Point(20, 129)
+        Me.Label72.Name = "Label72"
+        Me.Label72.Size = New System.Drawing.Size(28, 19)
+        Me.Label72.TabIndex = 14
+        Me.Label72.Text = "JO:"
+        Me.ttpJO.SetToolTip(Me.Label72, "JOB ORDER CODE")
+        '
+        'Label73
+        '
+        Me.Label73.AutoSize = True
+        Me.Label73.BackColor = System.Drawing.Color.White
+        Me.Label73.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label73.Location = New System.Drawing.Point(20, 200)
+        Me.Label73.Name = "Label73"
+        Me.Label73.Size = New System.Drawing.Size(31, 19)
+        Me.Label73.TabIndex = 15
+        Me.Label73.Text = "TO:"
+        Me.ttpTO.SetToolTip(Me.Label73, "TARGET OUTPUT")
+        '
+        'Label74
+        '
+        Me.Label74.AutoSize = True
+        Me.Label74.BackColor = System.Drawing.Color.White
+        Me.Label74.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label74.Location = New System.Drawing.Point(20, 253)
+        Me.Label74.Name = "Label74"
+        Me.Label74.Size = New System.Drawing.Size(39, 19)
+        Me.Label74.TabIndex = 11
+        Me.Label74.Text = "OEE:"
+        Me.ttpOEE.SetToolTip(Me.Label74, "OVERALL EQUIPMENT EFFECTIVENESS")
+        '
+        'Label75
+        '
+        Me.Label75.AutoSize = True
+        Me.Label75.BackColor = System.Drawing.Color.White
+        Me.Label75.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label75.Location = New System.Drawing.Point(20, 226)
+        Me.Label75.Name = "Label75"
+        Me.Label75.Size = New System.Drawing.Size(33, 19)
+        Me.Label75.TabIndex = 12
+        Me.Label75.Text = "AO:"
+        Me.ttpAO.SetToolTip(Me.Label75, "ACTUAL OUTPUT")
+        '
+        'Label76
+        '
+        Me.Label76.AutoSize = True
+        Me.Label76.BackColor = System.Drawing.Color.White
+        Me.Label76.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label76.Location = New System.Drawing.Point(20, 128)
+        Me.Label76.Name = "Label76"
+        Me.Label76.Size = New System.Drawing.Size(28, 19)
+        Me.Label76.TabIndex = 13
+        Me.Label76.Text = "JO:"
+        Me.ttpJO.SetToolTip(Me.Label76, "JOB ORDER CODE")
+        '
+        'Label77
+        '
+        Me.Label77.AutoSize = True
+        Me.Label77.BackColor = System.Drawing.Color.White
+        Me.Label77.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label77.Location = New System.Drawing.Point(20, 199)
+        Me.Label77.Name = "Label77"
+        Me.Label77.Size = New System.Drawing.Size(31, 19)
+        Me.Label77.TabIndex = 14
+        Me.Label77.Text = "TO:"
+        Me.ttpTO.SetToolTip(Me.Label77, "TARGET OUTPUT")
+        '
+        'Label78
+        '
+        Me.Label78.AutoSize = True
+        Me.Label78.BackColor = System.Drawing.Color.White
+        Me.Label78.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label78.Location = New System.Drawing.Point(20, 254)
+        Me.Label78.Name = "Label78"
+        Me.Label78.Size = New System.Drawing.Size(39, 19)
+        Me.Label78.TabIndex = 11
+        Me.Label78.Text = "OEE:"
+        Me.ttpOEE.SetToolTip(Me.Label78, "OVERALL EQUIPMENT EFFECTIVENESS")
+        '
+        'Label79
+        '
+        Me.Label79.AutoSize = True
+        Me.Label79.BackColor = System.Drawing.Color.White
+        Me.Label79.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label79.Location = New System.Drawing.Point(20, 227)
+        Me.Label79.Name = "Label79"
+        Me.Label79.Size = New System.Drawing.Size(33, 19)
+        Me.Label79.TabIndex = 12
+        Me.Label79.Text = "AO:"
+        Me.ttpAO.SetToolTip(Me.Label79, "ACTUAL OUTPUT")
+        '
+        'Label80
+        '
+        Me.Label80.AutoSize = True
+        Me.Label80.BackColor = System.Drawing.Color.White
+        Me.Label80.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label80.Location = New System.Drawing.Point(20, 129)
+        Me.Label80.Name = "Label80"
+        Me.Label80.Size = New System.Drawing.Size(28, 19)
+        Me.Label80.TabIndex = 13
+        Me.Label80.Text = "JO:"
+        Me.ttpJO.SetToolTip(Me.Label80, "JOB ORDER CODE")
+        '
+        'Label81
+        '
+        Me.Label81.AutoSize = True
+        Me.Label81.BackColor = System.Drawing.Color.White
+        Me.Label81.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label81.Location = New System.Drawing.Point(20, 200)
+        Me.Label81.Name = "Label81"
+        Me.Label81.Size = New System.Drawing.Size(31, 19)
+        Me.Label81.TabIndex = 14
+        Me.Label81.Text = "TO:"
+        Me.ttpTO.SetToolTip(Me.Label81, "TARGET OUTPUT")
+        '
+        'Label82
+        '
+        Me.Label82.AutoSize = True
+        Me.Label82.BackColor = System.Drawing.Color.White
+        Me.Label82.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label82.Location = New System.Drawing.Point(20, 253)
+        Me.Label82.Name = "Label82"
+        Me.Label82.Size = New System.Drawing.Size(39, 19)
+        Me.Label82.TabIndex = 10
+        Me.Label82.Text = "OEE:"
+        Me.ttpOEE.SetToolTip(Me.Label82, "OVERALL EQUIPMENT EFFECTIVENESS")
+        '
+        'Label83
+        '
+        Me.Label83.AutoSize = True
+        Me.Label83.BackColor = System.Drawing.Color.White
+        Me.Label83.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label83.Location = New System.Drawing.Point(20, 226)
+        Me.Label83.Name = "Label83"
+        Me.Label83.Size = New System.Drawing.Size(33, 19)
+        Me.Label83.TabIndex = 11
+        Me.Label83.Text = "AO:"
+        Me.ttpAO.SetToolTip(Me.Label83, "ACTUAL OUTPUT")
+        '
+        'Label84
+        '
+        Me.Label84.AutoSize = True
+        Me.Label84.BackColor = System.Drawing.Color.White
+        Me.Label84.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label84.Location = New System.Drawing.Point(20, 128)
+        Me.Label84.Name = "Label84"
+        Me.Label84.Size = New System.Drawing.Size(28, 19)
+        Me.Label84.TabIndex = 12
+        Me.Label84.Text = "JO:"
+        Me.ttpJO.SetToolTip(Me.Label84, "JOB ORDER CODE")
+        '
+        'Label85
+        '
+        Me.Label85.AutoSize = True
+        Me.Label85.BackColor = System.Drawing.Color.White
+        Me.Label85.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label85.Location = New System.Drawing.Point(20, 199)
+        Me.Label85.Name = "Label85"
+        Me.Label85.Size = New System.Drawing.Size(31, 19)
+        Me.Label85.TabIndex = 13
+        Me.Label85.Text = "TO:"
+        Me.ttpTO.SetToolTip(Me.Label85, "TARGET OUTPUT")
+        '
+        'Label86
+        '
+        Me.Label86.AutoSize = True
+        Me.Label86.BackColor = System.Drawing.Color.White
+        Me.Label86.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label86.Location = New System.Drawing.Point(20, 253)
+        Me.Label86.Name = "Label86"
+        Me.Label86.Size = New System.Drawing.Size(39, 19)
+        Me.Label86.TabIndex = 15
+        Me.Label86.Text = "OEE:"
+        Me.ttpOEE.SetToolTip(Me.Label86, "OVERALL EQUIPMENT EFFECTIVENESS")
+        '
+        'Label87
+        '
+        Me.Label87.AutoSize = True
+        Me.Label87.BackColor = System.Drawing.Color.White
+        Me.Label87.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label87.Location = New System.Drawing.Point(20, 226)
+        Me.Label87.Name = "Label87"
+        Me.Label87.Size = New System.Drawing.Size(33, 19)
+        Me.Label87.TabIndex = 16
+        Me.Label87.Text = "AO:"
+        Me.ttpAO.SetToolTip(Me.Label87, "ACTUAL OUTPUT")
+        '
+        'Label88
+        '
+        Me.Label88.AutoSize = True
+        Me.Label88.BackColor = System.Drawing.Color.White
+        Me.Label88.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label88.Location = New System.Drawing.Point(20, 128)
+        Me.Label88.Name = "Label88"
+        Me.Label88.Size = New System.Drawing.Size(28, 19)
+        Me.Label88.TabIndex = 17
+        Me.Label88.Text = "JO:"
+        Me.ttpJO.SetToolTip(Me.Label88, "JOB ORDER CODE")
+        '
+        'Label89
+        '
+        Me.Label89.AutoSize = True
+        Me.Label89.BackColor = System.Drawing.Color.White
+        Me.Label89.Font = New System.Drawing.Font("Gadugi", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label89.Location = New System.Drawing.Point(20, 199)
+        Me.Label89.Name = "Label89"
+        Me.Label89.Size = New System.Drawing.Size(31, 19)
+        Me.Label89.TabIndex = 18
+        Me.Label89.Text = "TO:"
+        Me.ttpTO.SetToolTip(Me.Label89, "TARGET OUTPUT")
         '
         'frmHome
         '
@@ -3930,44 +4942,84 @@ Partial Class frmHome
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
+        CType(Me.picComCheckOnOff, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.picStatMC1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PicMC1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        CType(Me.picStatMC2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picMC2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
+        CType(Me.picStatMC3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picMC3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox4.PerformLayout()
+        CType(Me.picStatMC4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picMC4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox5.ResumeLayout(False)
         Me.GroupBox5.PerformLayout()
+        CType(Me.picStatMC5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picMC5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox6.ResumeLayout(False)
         Me.GroupBox6.PerformLayout()
+        CType(Me.picStatMC6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picMC6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox7.ResumeLayout(False)
         Me.GroupBox7.PerformLayout()
+        CType(Me.picStatMC7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picMC7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox8.ResumeLayout(False)
         Me.GroupBox8.PerformLayout()
+        CType(Me.picStatMC8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picMC8, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox9.ResumeLayout(False)
         Me.GroupBox9.PerformLayout()
+        CType(Me.picStatMC11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picMC11, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox10.ResumeLayout(False)
         Me.GroupBox10.PerformLayout()
+        CType(Me.picStatMC9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picMC9, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox11.ResumeLayout(False)
         Me.GroupBox11.PerformLayout()
+        CType(Me.picStatMC12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picMC12, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox12.ResumeLayout(False)
         Me.GroupBox12.PerformLayout()
+        CType(Me.picStatMC10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picMC10, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox13.ResumeLayout(False)
         Me.GroupBox13.PerformLayout()
+        CType(Me.picStatMC13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picMC13, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox14.ResumeLayout(False)
         Me.GroupBox14.PerformLayout()
+        CType(Me.picStatMC14, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picMC14, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox15.ResumeLayout(False)
         Me.GroupBox15.PerformLayout()
+        CType(Me.picStatMC18, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picMC18, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox16.ResumeLayout(False)
         Me.GroupBox16.PerformLayout()
+        CType(Me.picStatMC15, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picMC15, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox17.ResumeLayout(False)
         Me.GroupBox17.PerformLayout()
+        CType(Me.picStatMC16, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picMC16, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox18.ResumeLayout(False)
         Me.GroupBox18.PerformLayout()
+        CType(Me.picStatMC19, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picMC19, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox19.ResumeLayout(False)
         Me.GroupBox19.PerformLayout()
+        CType(Me.picStatMC17, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picMC17, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox20.ResumeLayout(False)
         Me.GroupBox20.PerformLayout()
         Me.TableLayoutPanel1.ResumeLayout(False)
@@ -3975,46 +5027,6 @@ Partial Class frmHome
         Me.TableLayoutPanel3.ResumeLayout(False)
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picStatMC15, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picMC15, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picStatMC8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picMC8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picStatMC16, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picMC16, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picStatMC9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picMC9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picStatMC10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picMC10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picStatMC1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PicMC1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picStatMC2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picMC2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picStatMC3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picMC3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picStatMC7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picMC7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picStatMC13, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picMC13, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picStatMC17, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picMC17, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picStatMC14, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picMC14, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picStatMC12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picMC12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picStatMC11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picMC11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picStatMC6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picMC6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picStatMC4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picMC4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picStatMC5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picMC5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picStatMC18, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picMC18, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picStatMC19, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picMC19, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picComCheckOnOff, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -4311,4 +5323,80 @@ Partial Class frmHome
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
     Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label13 As Label
+    Friend WithEvents ttpOEE As ToolTip
+    Friend WithEvents Label12 As Label
+    Friend WithEvents ttpAO As ToolTip
+    Friend WithEvents Label15 As Label
+    Friend WithEvents ttpJO As ToolTip
+    Friend WithEvents ttpTO As ToolTip
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Label17 As Label
+    Friend WithEvents Label18 As Label
+    Friend WithEvents Label19 As Label
+    Friend WithEvents Label21 As Label
+    Friend WithEvents Label25 As Label
+    Friend WithEvents Label26 As Label
+    Friend WithEvents Label27 As Label
+    Friend WithEvents Label28 As Label
+    Friend WithEvents Label30 As Label
+    Friend WithEvents Label31 As Label
+    Friend WithEvents Label32 As Label
+    Friend WithEvents Label33 As Label
+    Friend WithEvents Label34 As Label
+    Friend WithEvents Label36 As Label
+    Friend WithEvents Label37 As Label
+    Friend WithEvents Label38 As Label
+    Friend WithEvents Label39 As Label
+    Friend WithEvents Label40 As Label
+    Friend WithEvents Label41 As Label
+    Friend WithEvents Label42 As Label
+    Friend WithEvents Label43 As Label
+    Friend WithEvents Label44 As Label
+    Friend WithEvents Label45 As Label
+    Friend WithEvents Label62 As Label
+    Friend WithEvents Label63 As Label
+    Friend WithEvents Label64 As Label
+    Friend WithEvents Label65 As Label
+    Friend WithEvents Label74 As Label
+    Friend WithEvents Label75 As Label
+    Friend WithEvents Label76 As Label
+    Friend WithEvents Label77 As Label
+    Friend WithEvents Label54 As Label
+    Friend WithEvents Label55 As Label
+    Friend WithEvents Label56 As Label
+    Friend WithEvents Label57 As Label
+    Friend WithEvents Label70 As Label
+    Friend WithEvents Label71 As Label
+    Friend WithEvents Label72 As Label
+    Friend WithEvents Label73 As Label
+    Friend WithEvents Label50 As Label
+    Friend WithEvents Label51 As Label
+    Friend WithEvents Label52 As Label
+    Friend WithEvents Label53 As Label
+    Friend WithEvents Label46 As Label
+    Friend WithEvents Label47 As Label
+    Friend WithEvents Label48 As Label
+    Friend WithEvents Label49 As Label
+    Friend WithEvents Label66 As Label
+    Friend WithEvents Label67 As Label
+    Friend WithEvents Label68 As Label
+    Friend WithEvents Label69 As Label
+    Friend WithEvents Label82 As Label
+    Friend WithEvents Label83 As Label
+    Friend WithEvents Label84 As Label
+    Friend WithEvents Label85 As Label
+    Friend WithEvents Label78 As Label
+    Friend WithEvents Label79 As Label
+    Friend WithEvents Label80 As Label
+    Friend WithEvents Label81 As Label
+    Friend WithEvents Label58 As Label
+    Friend WithEvents Label59 As Label
+    Friend WithEvents Label60 As Label
+    Friend WithEvents Label61 As Label
+    Friend WithEvents Label86 As Label
+    Friend WithEvents Label87 As Label
+    Friend WithEvents Label88 As Label
+    Friend WithEvents Label89 As Label
 End Class

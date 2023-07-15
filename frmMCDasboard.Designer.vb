@@ -41,7 +41,6 @@ Partial Class frmMCDasboard
         Me.lblJobOrderCode = New System.Windows.Forms.Label()
         Me.lblPartNo1 = New System.Windows.Forms.Label()
         Me.lblMoldNo = New System.Windows.Forms.Label()
-        Me.lblReminder = New System.Windows.Forms.Label()
         Me.RealtimeUpdate = New System.Windows.Forms.Timer(Me.components)
         Me.lblCavQtyP1 = New System.Windows.Forms.Label()
         Me.lblDateTimeStart = New System.Windows.Forms.Label()
@@ -50,12 +49,6 @@ Partial Class frmMCDasboard
         Me.lblPartNo2 = New System.Windows.Forms.Label()
         Me.lblCavQtyP2 = New System.Windows.Forms.Label()
         Me.lblOutputP2 = New System.Windows.Forms.Label()
-        Me.lblPartNo3 = New System.Windows.Forms.Label()
-        Me.lblCavQtyP3 = New System.Windows.Forms.Label()
-        Me.lblOutputP3 = New System.Windows.Forms.Label()
-        Me.lblPartNo4 = New System.Windows.Forms.Label()
-        Me.lblCavQtyP4 = New System.Windows.Forms.Label()
-        Me.lblOutputP4 = New System.Windows.Forms.Label()
         Me.lblOEE = New System.Windows.Forms.Label()
         Me.dgvStoppage = New System.Windows.Forms.DataGridView()
         Me.DTimeIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -80,22 +73,38 @@ Partial Class frmMCDasboard
         Me.cboShiftCode = New System.Windows.Forms.ComboBox()
         Me.btnShowAll = New System.Windows.Forms.Button()
         Me.lblQAInfoDetails = New System.Windows.Forms.Label()
+        Me.SPSDataSet = New SPSApp1.SPSDataSet()
+        Me.SPSDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DowntimeTableAdapter = New SPSApp1.SPSDataSet1TableAdapters.DowntimeTableAdapter()
+        Me.btnBypass = New FontAwesome.Sharp.IconButton()
         Me.lblQualityBtn = New FontAwesome.Sharp.IconButton()
         Me.btnUpdate = New FontAwesome.Sharp.IconButton()
         Me.btnFilter = New FontAwesome.Sharp.IconButton()
         Me.picMCStatus = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.btnBypass = New FontAwesome.Sharp.IconButton()
-        Me.SPSDataSet = New SPSApp1.SPSDataSet()
-        Me.SPSDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DowntimeTableAdapter = New SPSApp1.SPSDataSet1TableAdapters.DowntimeTableAdapter()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.IconButton1 = New FontAwesome.Sharp.IconButton()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.ttpPPT = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ttpART = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ttpUDT = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ttpPQTY = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ttpAQTY = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ttpRQTY = New System.Windows.Forms.ToolTip(Me.components)
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.ttpEraseMessage = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.dgvStoppage, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DowntimeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SPSDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picMCStatus, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SPSDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SPSDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picMCStatus, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblMCDasboard
@@ -316,18 +325,6 @@ Partial Class frmMCDasboard
         Me.lblMoldNo.Text = "-"
         Me.lblMoldNo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'lblReminder
-        '
-        Me.lblReminder.BackColor = System.Drawing.Color.White
-        Me.lblReminder.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblReminder.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblReminder.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lblReminder.Location = New System.Drawing.Point(310, 507)
-        Me.lblReminder.Name = "lblReminder"
-        Me.lblReminder.Size = New System.Drawing.Size(523, 60)
-        Me.lblReminder.TabIndex = 3
-        Me.lblReminder.Text = "-"
-        '
         'RealtimeUpdate
         '
         Me.RealtimeUpdate.Enabled = True
@@ -422,84 +419,6 @@ Partial Class frmMCDasboard
         Me.lblOutputP2.TabIndex = 3
         Me.lblOutputP2.Text = "0"
         Me.lblOutputP2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPartNo3
-        '
-        Me.lblPartNo3.BackColor = System.Drawing.Color.White
-        Me.lblPartNo3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblPartNo3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPartNo3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lblPartNo3.Location = New System.Drawing.Point(396, 361)
-        Me.lblPartNo3.Name = "lblPartNo3"
-        Me.lblPartNo3.Size = New System.Drawing.Size(253, 26)
-        Me.lblPartNo3.TabIndex = 3
-        Me.lblPartNo3.Text = "n/a"
-        Me.lblPartNo3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'lblCavQtyP3
-        '
-        Me.lblCavQtyP3.BackColor = System.Drawing.Color.White
-        Me.lblCavQtyP3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblCavQtyP3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCavQtyP3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lblCavQtyP3.Location = New System.Drawing.Point(665, 361)
-        Me.lblCavQtyP3.Name = "lblCavQtyP3"
-        Me.lblCavQtyP3.Size = New System.Drawing.Size(52, 26)
-        Me.lblCavQtyP3.TabIndex = 3
-        Me.lblCavQtyP3.Text = "n/a"
-        Me.lblCavQtyP3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblOutputP3
-        '
-        Me.lblOutputP3.BackColor = System.Drawing.Color.White
-        Me.lblOutputP3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblOutputP3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblOutputP3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lblOutputP3.Location = New System.Drawing.Point(729, 361)
-        Me.lblOutputP3.Name = "lblOutputP3"
-        Me.lblOutputP3.Size = New System.Drawing.Size(90, 26)
-        Me.lblOutputP3.TabIndex = 3
-        Me.lblOutputP3.Text = "n/a"
-        Me.lblOutputP3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPartNo4
-        '
-        Me.lblPartNo4.BackColor = System.Drawing.Color.White
-        Me.lblPartNo4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblPartNo4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPartNo4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lblPartNo4.Location = New System.Drawing.Point(396, 390)
-        Me.lblPartNo4.Name = "lblPartNo4"
-        Me.lblPartNo4.Size = New System.Drawing.Size(253, 26)
-        Me.lblPartNo4.TabIndex = 3
-        Me.lblPartNo4.Text = "n/a"
-        Me.lblPartNo4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'lblCavQtyP4
-        '
-        Me.lblCavQtyP4.BackColor = System.Drawing.Color.White
-        Me.lblCavQtyP4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblCavQtyP4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCavQtyP4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lblCavQtyP4.Location = New System.Drawing.Point(665, 390)
-        Me.lblCavQtyP4.Name = "lblCavQtyP4"
-        Me.lblCavQtyP4.Size = New System.Drawing.Size(52, 26)
-        Me.lblCavQtyP4.TabIndex = 3
-        Me.lblCavQtyP4.Text = "n/a"
-        Me.lblCavQtyP4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblOutputP4
-        '
-        Me.lblOutputP4.BackColor = System.Drawing.Color.White
-        Me.lblOutputP4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblOutputP4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblOutputP4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lblOutputP4.Location = New System.Drawing.Point(729, 390)
-        Me.lblOutputP4.Name = "lblOutputP4"
-        Me.lblOutputP4.Size = New System.Drawing.Size(90, 26)
-        Me.lblOutputP4.TabIndex = 3
-        Me.lblOutputP4.Text = "n/a"
-        Me.lblOutputP4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblOEE
         '
@@ -690,6 +609,38 @@ Partial Class frmMCDasboard
         Me.lblQAInfoDetails.TabIndex = 11
         Me.lblQAInfoDetails.Text = "PENDING FOR QA VERIFICATION!"
         '
+        'SPSDataSet
+        '
+        Me.SPSDataSet.DataSetName = "SPSDataSet"
+        Me.SPSDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'SPSDataSetBindingSource
+        '
+        Me.SPSDataSetBindingSource.DataSource = Me.SPSDataSet
+        Me.SPSDataSetBindingSource.Position = 0
+        '
+        'DowntimeTableAdapter
+        '
+        Me.DowntimeTableAdapter.ClearBeforeFill = True
+        '
+        'btnBypass
+        '
+        Me.btnBypass.BackColor = System.Drawing.Color.White
+        Me.btnBypass.FlatAppearance.BorderSize = 0
+        Me.btnBypass.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBypass.IconChar = FontAwesome.Sharp.IconChar.HandshakeAlt
+        Me.btnBypass.IconColor = System.Drawing.Color.Green
+        Me.btnBypass.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnBypass.IconSize = 60
+        Me.btnBypass.Location = New System.Drawing.Point(810, 807)
+        Me.btnBypass.Name = "btnBypass"
+        Me.btnBypass.Size = New System.Drawing.Size(268, 58)
+        Me.btnBypass.TabIndex = 12
+        Me.btnBypass.Text = "SYS BYPASS OFF"
+        Me.btnBypass.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnBypass.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnBypass.UseVisualStyleBackColor = False
+        '
         'lblQualityBtn
         '
         Me.lblQualityBtn.BackColor = System.Drawing.Color.White
@@ -742,7 +693,7 @@ Partial Class frmMCDasboard
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.SPSApp1.My.Resources.Resources.DASHBOARD_10
+        Me.PictureBox1.Image = Global.SPSApp1.My.Resources.Resources.DASHBOARD_11
         Me.PictureBox1.Location = New System.Drawing.Point(14, 32)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(836, 833)
@@ -750,43 +701,140 @@ Partial Class frmMCDasboard
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
-        'btnBypass
+        'TextBox1
         '
-        Me.btnBypass.BackColor = System.Drawing.Color.White
-        Me.btnBypass.FlatAppearance.BorderSize = 0
-        Me.btnBypass.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBypass.IconChar = FontAwesome.Sharp.IconChar.HandshakeAlt
-        Me.btnBypass.IconColor = System.Drawing.Color.Green
-        Me.btnBypass.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnBypass.IconSize = 60
-        Me.btnBypass.Location = New System.Drawing.Point(810, 807)
-        Me.btnBypass.Name = "btnBypass"
-        Me.btnBypass.Size = New System.Drawing.Size(268, 58)
-        Me.btnBypass.TabIndex = 12
-        Me.btnBypass.Text = "SYS BYPASS OFF"
-        Me.btnBypass.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnBypass.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnBypass.UseVisualStyleBackColor = False
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(308, 467)
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(528, 94)
+        Me.TextBox1.TabIndex = 13
         '
-        'SPSDataSet
+        'IconButton1
         '
-        Me.SPSDataSet.DataSetName = "SPSDataSet"
-        Me.SPSDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.Eraser
+        Me.IconButton1.IconColor = System.Drawing.Color.Black
+        Me.IconButton1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconButton1.IconSize = 30
+        Me.IconButton1.Location = New System.Drawing.Point(790, 422)
+        Me.IconButton1.Name = "IconButton1"
+        Me.IconButton1.Size = New System.Drawing.Size(48, 37)
+        Me.IconButton1.TabIndex = 14
+        Me.ttpEraseMessage.SetToolTip(Me.IconButton1, "Clear Message Box Below")
+        Me.IconButton1.UseVisualStyleBackColor = True
         '
-        'SPSDataSetBindingSource
+        'Label1
         '
-        Me.SPSDataSetBindingSource.DataSource = Me.SPSDataSet
-        Me.SPSDataSetBindingSource.Position = 0
+        Me.Label1.AllowDrop = True
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.White
+        Me.Label1.Font = New System.Drawing.Font("Franklin Gothic Medium", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.DimGray
+        Me.Label1.Location = New System.Drawing.Point(32, 244)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(46, 24)
+        Me.Label1.TabIndex = 15
+        Me.Label1.Text = "PPT:"
+        Me.ttpPPT.SetToolTip(Me.Label1, "PLAN PRODUCTION TIME")
         '
-        'DowntimeTableAdapter
+        'Label2
         '
-        Me.DowntimeTableAdapter.ClearBeforeFill = True
+        Me.Label2.AllowDrop = True
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.White
+        Me.Label2.Font = New System.Drawing.Font("Franklin Gothic Medium", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.DimGray
+        Me.Label2.Location = New System.Drawing.Point(32, 273)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(47, 24)
+        Me.Label2.TabIndex = 15
+        Me.Label2.Text = "ART:"
+        Me.ttpART.SetToolTip(Me.Label2, "ACTUAL RUN TIME")
+        '
+        'Label3
+        '
+        Me.Label3.AllowDrop = True
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.White
+        Me.Label3.Font = New System.Drawing.Font("Franklin Gothic Medium", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.DimGray
+        Me.Label3.Location = New System.Drawing.Point(32, 302)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(47, 24)
+        Me.Label3.TabIndex = 15
+        Me.Label3.Text = "UDT:"
+        Me.ttpUDT.SetToolTip(Me.Label3, "UNPLANNED DOWNTIME")
+        '
+        'Label4
+        '
+        Me.Label4.AllowDrop = True
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.White
+        Me.Label4.Font = New System.Drawing.Font("Franklin Gothic Medium", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.DimGray
+        Me.Label4.Location = New System.Drawing.Point(32, 507)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(57, 24)
+        Me.Label4.TabIndex = 15
+        Me.Label4.Text = "AQTY:"
+        Me.ttpAQTY.SetToolTip(Me.Label4, "ACTUAL QUANTITY")
+        '
+        'Label5
+        '
+        Me.Label5.AllowDrop = True
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.White
+        Me.Label5.Font = New System.Drawing.Font("Franklin Gothic Medium", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.DimGray
+        Me.Label5.Location = New System.Drawing.Point(32, 536)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(58, 24)
+        Me.Label5.TabIndex = 15
+        Me.Label5.Text = "RQTY:"
+        Me.ttpRQTY.SetToolTip(Me.Label5, "REJECT QUANTITY")
+        '
+        'Label6
+        '
+        Me.Label6.AllowDrop = True
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.White
+        Me.Label6.Font = New System.Drawing.Font("Franklin Gothic Medium", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.DimGray
+        Me.Label6.Location = New System.Drawing.Point(30, 392)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(57, 24)
+        Me.Label6.TabIndex = 15
+        Me.Label6.Text = "PQTY:"
+        Me.ttpPQTY.SetToolTip(Me.Label6, "PLAN QUANTITY")
+        '
+        'Label7
+        '
+        Me.Label7.AllowDrop = True
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.White
+        Me.Label7.Font = New System.Drawing.Font("Franklin Gothic Medium", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.DimGray
+        Me.Label7.Location = New System.Drawing.Point(30, 423)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(57, 24)
+        Me.Label7.TabIndex = 15
+        Me.Label7.Text = "AQTY:"
+        Me.ttpAQTY.SetToolTip(Me.Label7, "ACTUAL QUANTITY")
         '
         'frmMCDasboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1090, 877)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.IconButton1)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.btnBypass)
         Me.Controls.Add(Me.lblQAInfoDetails)
         Me.Controls.Add(Me.lblQualityBtn)
@@ -797,12 +845,8 @@ Partial Class frmMCDasboard
         Me.Controls.Add(Me.dgvStoppage)
         Me.Controls.Add(Me.lblCycleTime)
         Me.Controls.Add(Me.lblDateTimeStart)
-        Me.Controls.Add(Me.lblOutputP4)
-        Me.Controls.Add(Me.lblOutputP3)
         Me.Controls.Add(Me.lblOutputP2)
         Me.Controls.Add(Me.lblOutputP1)
-        Me.Controls.Add(Me.lblCavQtyP4)
-        Me.Controls.Add(Me.lblCavQtyP3)
         Me.Controls.Add(Me.lblCavQtyP2)
         Me.Controls.Add(Me.lblCavQtyP1)
         Me.Controls.Add(Me.lblMoldNo)
@@ -810,9 +854,6 @@ Partial Class frmMCDasboard
         Me.Controls.Add(Me.lblQuality)
         Me.Controls.Add(Me.lblPerformance)
         Me.Controls.Add(Me.lblRejectQty)
-        Me.Controls.Add(Me.lblReminder)
-        Me.Controls.Add(Me.lblPartNo4)
-        Me.Controls.Add(Me.lblPartNo3)
         Me.Controls.Add(Me.lblPartNo2)
         Me.Controls.Add(Me.lblPartNo1)
         Me.Controls.Add(Me.lblUserID)
@@ -837,10 +878,10 @@ Partial Class frmMCDasboard
         CType(Me.dgvStoppage, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DowntimeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SPSDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picMCStatus, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SPSDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SPSDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picMCStatus, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -864,7 +905,6 @@ Partial Class frmMCDasboard
     Friend WithEvents lblART As Label
     Friend WithEvents lblPPT As Label
     Friend WithEvents lblAvailability As Label
-    Friend WithEvents lblReminder As Label
     Friend WithEvents lblMoldNo As Label
     Friend WithEvents RealtimeUpdate As Timer
     Friend WithEvents lblCavQtyP1 As Label
@@ -874,12 +914,6 @@ Partial Class frmMCDasboard
     Friend WithEvents lblPartNo2 As Label
     Friend WithEvents lblCavQtyP2 As Label
     Friend WithEvents lblOutputP2 As Label
-    Friend WithEvents lblPartNo3 As Label
-    Friend WithEvents lblCavQtyP3 As Label
-    Friend WithEvents lblOutputP3 As Label
-    Friend WithEvents lblPartNo4 As Label
-    Friend WithEvents lblCavQtyP4 As Label
-    Friend WithEvents lblOutputP4 As Label
     Friend WithEvents lblOEE As Label
     Friend WithEvents dgvStoppage As DataGridView
     Friend WithEvents SPSDataSetBindingSource As BindingSource
@@ -911,4 +945,20 @@ Partial Class frmMCDasboard
     Friend WithEvents lblQualityBtn As FontAwesome.Sharp.IconButton
     Friend WithEvents lblQAInfoDetails As Label
     Friend WithEvents btnBypass As FontAwesome.Sharp.IconButton
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
+    Friend WithEvents Label1 As Label
+    Friend WithEvents ttpPPT As ToolTip
+    Friend WithEvents Label2 As Label
+    Friend WithEvents ttpART As ToolTip
+    Friend WithEvents Label3 As Label
+    Friend WithEvents ttpUDT As ToolTip
+    Friend WithEvents ttpPQTY As ToolTip
+    Friend WithEvents ttpAQTY As ToolTip
+    Friend WithEvents ttpRQTY As ToolTip
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents ttpEraseMessage As ToolTip
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label7 As Label
 End Class

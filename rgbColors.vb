@@ -24,4 +24,5 @@
     Public Shared rgb_BabyBlue As Color = Color.FromArgb(219, 245, 240)
     Public Shared rgb_Control As Color = Color.FromArgb(240, 240, 240)
     Public Shared rgb_MCpicBaseColor As Color = Color.FromArgb(37, 55, 77)
+    Public Shared rgb_OrangeProguard As Color = Color.FromArgb(254, 79, 0)
 End Class

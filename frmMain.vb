@@ -147,11 +147,11 @@ Public Class frmMain
     '// COLOR COMBINATION FOR INACTIVE BUTTONS
     Private Sub InactiveButton()
         If currentBtn IsNot Nothing Then
-            currentBtn.BackColor = Color.FromArgb(12, 97, 112)
+            currentBtn.BackColor = Color.FromArgb(254, 79, 0) 'original 12, 97, 112
             currentBtn.ForeColor = Color.White
             currentBtn.IconColor = Color.White
-            leftborderBtn.BackColor = Color.FromArgb(12, 97, 112)
-            leftborderBtn1.BackColor = Color.FromArgb(12, 97, 112)
+            leftborderBtn.BackColor = Color.FromArgb(254, 79, 0)
+            leftborderBtn1.BackColor = Color.FromArgb(254, 79, 0)
         End If
     End Sub
     '//
@@ -186,10 +186,10 @@ Public Class frmMain
     '// BUTTONS FOR SWITCHING FROM FORM TO FORM
     Private Sub btnHome_Click(sender As Object, e As EventArgs) Handles btnHome.Click
         If Not modCurrentOpenForm = "frmHome" Then
-            ActiveButton1(sender, rgbColors.rgb_BlueGreen)
+            ActiveButton1(sender, rgbColors.rgb_OrangeProguard)
             change_PanelContainerFrm("Home")
         Else
-            ActiveButton1(sender, rgbColors.rgb_BlueGreen)
+            ActiveButton1(sender, rgbColors.rgb_OrangeProguard)
         End If
         menuTabHome = True
         menuTabWorkOrder = False
@@ -200,10 +200,10 @@ Public Class frmMain
     End Sub
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         If Not modCurrentOpenForm = "frmHome" Then
-            ActiveButton2(sender, rgbColors.rgb_BlueGreen)
+            ActiveButton2(sender, rgbColors.rgb_OrangeProguard)
             change_PanelContainerFrm("Home")
         Else
-            ActiveButton2(sender, rgbColors.rgb_BlueGreen)
+            ActiveButton2(sender, rgbColors.rgb_OrangeProguard)
         End If
         menuTabLogin = True
         menuTabHome = False
@@ -214,10 +214,10 @@ Public Class frmMain
     End Sub
     Private Sub btnLogOut_Click(sender As Object, e As EventArgs) Handles btnLogOut.Click
         If Not modCurrentOpenForm = "frmHome" Then
-            ActiveButton2(sender, rgbColors.rgb_BlueGreen)
+            ActiveButton2(sender, rgbColors.rgb_OrangeProguard)
             change_PanelContainerFrm("Home")
         Else
-            ActiveButton2(sender, rgbColors.rgb_BlueGreen)
+            ActiveButton2(sender, rgbColors.rgb_OrangeProguard)
         End If
         menuTabLogout = True
         menuTabHome = False
@@ -233,7 +233,7 @@ Public Class frmMain
         frmWorkOrder.Close()
         menuTabLogin = False
         menuTabLogout = False
-        ActiveButton2(sender, rgbColors.rgb_BlueGreen)
+        ActiveButton2(sender, rgbColors.rgb_OrangeProguard)
         change_PanelContainerFrm("Setting")
         'frmSetting1.ShowDialog()
     End Sub
@@ -243,7 +243,7 @@ Public Class frmMain
         menuTabLogin = False
         menuTabSetting = False
         menuTabLogout = False
-        ActiveButton2(sender, rgbColors.rgb_BlueGreen)
+        ActiveButton2(sender, rgbColors.rgb_OrangeProguard)
         change_PanelContainerFrm("WorkOrder")
         'frmWorkOrder.ShowDialog()
     End Sub

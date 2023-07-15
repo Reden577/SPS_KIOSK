@@ -133,7 +133,7 @@ Partial Class frmMain
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(97, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(79, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
@@ -174,7 +174,7 @@ Partial Class frmMain
         '
         'SidePanel1
         '
-        Me.SidePanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(97, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.SidePanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(79, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.SidePanel1.Controls.Add(Me.SidePanel2)
         Me.SidePanel1.Controls.Add(Me.Panel7)
         Me.SidePanel1.Controls.Add(Me.btnHome)
@@ -201,7 +201,7 @@ Partial Class frmMain
         Me.btnWO.FlatAppearance.BorderSize = 0
         Me.btnWO.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnWO.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnWO.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnWO.ForeColor = System.Drawing.Color.White
         Me.btnWO.IconChar = FontAwesome.Sharp.IconChar.ListCheck
         Me.btnWO.IconColor = System.Drawing.Color.White
         Me.btnWO.IconFont = FontAwesome.Sharp.IconFont.[Auto]
@@ -221,7 +221,7 @@ Partial Class frmMain
         Me.btnSettings.FlatAppearance.BorderSize = 0
         Me.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSettings.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSettings.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnSettings.ForeColor = System.Drawing.Color.White
         Me.btnSettings.IconChar = FontAwesome.Sharp.IconChar.Gear
         Me.btnSettings.IconColor = System.Drawing.Color.White
         Me.btnSettings.IconFont = FontAwesome.Sharp.IconFont.[Auto]
@@ -241,7 +241,7 @@ Partial Class frmMain
         Me.btnLogOut.FlatAppearance.BorderSize = 0
         Me.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogOut.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLogOut.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnLogOut.ForeColor = System.Drawing.Color.White
         Me.btnLogOut.IconChar = FontAwesome.Sharp.IconChar.UserXmark
         Me.btnLogOut.IconColor = System.Drawing.Color.White
         Me.btnLogOut.IconFont = FontAwesome.Sharp.IconFont.[Auto]
@@ -262,7 +262,7 @@ Partial Class frmMain
         Me.btnLogin.FlatAppearance.BorderSize = 0
         Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLogin.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnLogin.ForeColor = System.Drawing.Color.White
         Me.btnLogin.IconChar = FontAwesome.Sharp.IconChar.UserCheck
         Me.btnLogin.IconColor = System.Drawing.Color.White
         Me.btnLogin.IconFont = FontAwesome.Sharp.IconFont.[Auto]
@@ -293,7 +293,7 @@ Partial Class frmMain
         Me.btnHome.FlatAppearance.BorderSize = 0
         Me.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnHome.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnHome.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnHome.ForeColor = System.Drawing.Color.White
         Me.btnHome.IconChar = FontAwesome.Sharp.IconChar.HomeLg
         Me.btnHome.IconColor = System.Drawing.Color.White
         Me.btnHome.IconFont = FontAwesome.Sharp.IconFont.[Auto]
