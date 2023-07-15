@@ -102,6 +102,7 @@
     <Compile Include="clsCheckExistingDowntime.vb" />
     <Compile Include="clsCheckQAVerification.vb" />
     <Compile Include="clsCountDTType_byDTStatusMCId.vb" />
+    <Compile Include="clsFeatures.vb" />
     <Compile Include="clsHomeMCStatusIndicator.vb" />
     <Compile Include="clsJOAPI.vb" />
     <Compile Include="clsLoadSettings.vb" />

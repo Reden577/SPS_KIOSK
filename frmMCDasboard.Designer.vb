@@ -58,15 +58,6 @@ Partial Class frmMCDasboard
         Me.lblOutputP4 = New System.Windows.Forms.Label()
         Me.lblOEE = New System.Windows.Forms.Label()
         Me.dgvStoppage = New System.Windows.Forms.DataGridView()
-        Me.cboShiftCode = New System.Windows.Forms.ComboBox()
-        Me.btnShowAll = New System.Windows.Forms.Button()
-        Me.lblQAInfoDetails = New System.Windows.Forms.Label()
-        Me.lblQualityBtn = New FontAwesome.Sharp.IconButton()
-        Me.btnUpdate = New FontAwesome.Sharp.IconButton()
-        Me.btnFilter = New FontAwesome.Sharp.IconButton()
-        Me.picMCStatus = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.btnBypass = New FontAwesome.Sharp.IconButton()
         Me.DTimeIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ShiftCodeFKDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.UserNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -86,14 +77,23 @@ Partial Class frmMCDasboard
         Me.DTStatusDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DowntimeBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.SPSDataSet1 = New SPSApp1.SPSDataSet1()
+        Me.cboShiftCode = New System.Windows.Forms.ComboBox()
+        Me.btnShowAll = New System.Windows.Forms.Button()
+        Me.lblQAInfoDetails = New System.Windows.Forms.Label()
+        Me.lblQualityBtn = New FontAwesome.Sharp.IconButton()
+        Me.btnUpdate = New FontAwesome.Sharp.IconButton()
+        Me.btnFilter = New FontAwesome.Sharp.IconButton()
+        Me.picMCStatus = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnBypass = New FontAwesome.Sharp.IconButton()
         Me.SPSDataSet = New SPSApp1.SPSDataSet()
         Me.SPSDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.DowntimeTableAdapter = New SPSApp1.SPSDataSet1TableAdapters.DowntimeTableAdapter()
         CType(Me.dgvStoppage, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picMCStatus, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DowntimeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SPSDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picMCStatus, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SPSDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SPSDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -531,114 +531,6 @@ Partial Class frmMCDasboard
         Me.dgvStoppage.Size = New System.Drawing.Size(820, 142)
         Me.dgvStoppage.TabIndex = 4
         '
-        'cboShiftCode
-        '
-        Me.cboShiftCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cboShiftCode.FormattingEnabled = True
-        Me.cboShiftCode.Location = New System.Drawing.Point(426, 586)
-        Me.cboShiftCode.Name = "cboShiftCode"
-        Me.cboShiftCode.Size = New System.Drawing.Size(134, 28)
-        Me.cboShiftCode.TabIndex = 7
-        '
-        'btnShowAll
-        '
-        Me.btnShowAll.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnShowAll.Location = New System.Drawing.Point(622, 587)
-        Me.btnShowAll.Name = "btnShowAll"
-        Me.btnShowAll.Size = New System.Drawing.Size(102, 26)
-        Me.btnShowAll.TabIndex = 8
-        Me.btnShowAll.Text = "Show All"
-        Me.btnShowAll.UseVisualStyleBackColor = True
-        '
-        'lblQAInfoDetails
-        '
-        Me.lblQAInfoDetails.AutoSize = True
-        Me.lblQAInfoDetails.BackColor = System.Drawing.Color.Yellow
-        Me.lblQAInfoDetails.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblQAInfoDetails.Location = New System.Drawing.Point(304, 4)
-        Me.lblQAInfoDetails.Name = "lblQAInfoDetails"
-        Me.lblQAInfoDetails.Size = New System.Drawing.Size(312, 24)
-        Me.lblQAInfoDetails.TabIndex = 11
-        Me.lblQAInfoDetails.Text = "PENDING FOR QA VERIFICATION!"
-        '
-        'lblQualityBtn
-        '
-        Me.lblQualityBtn.BackColor = System.Drawing.Color.White
-        Me.lblQualityBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblQualityBtn.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.lblQualityBtn.IconColor = System.Drawing.Color.Red
-        Me.lblQualityBtn.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.lblQualityBtn.Location = New System.Drawing.Point(875, 32)
-        Me.lblQualityBtn.Name = "lblQualityBtn"
-        Me.lblQualityBtn.Size = New System.Drawing.Size(193, 58)
-        Me.lblQualityBtn.TabIndex = 10
-        Me.lblQualityBtn.Text = "QUALITY"
-        Me.lblQualityBtn.UseVisualStyleBackColor = False
-        '
-        'btnUpdate
-        '
-        Me.btnUpdate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUpdate.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.btnUpdate.IconColor = System.Drawing.Color.Black
-        Me.btnUpdate.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnUpdate.Location = New System.Drawing.Point(730, 587)
-        Me.btnUpdate.Name = "btnUpdate"
-        Me.btnUpdate.Size = New System.Drawing.Size(102, 26)
-        Me.btnUpdate.TabIndex = 6
-        Me.btnUpdate.Text = "Update"
-        Me.btnUpdate.UseVisualStyleBackColor = True
-        '
-        'btnFilter
-        '
-        Me.btnFilter.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnFilter.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.btnFilter.IconColor = System.Drawing.Color.Black
-        Me.btnFilter.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnFilter.Location = New System.Drawing.Point(318, 587)
-        Me.btnFilter.Name = "btnFilter"
-        Me.btnFilter.Size = New System.Drawing.Size(102, 26)
-        Me.btnFilter.TabIndex = 6
-        Me.btnFilter.Text = "Filter"
-        Me.btnFilter.UseVisualStyleBackColor = True
-        '
-        'picMCStatus
-        '
-        Me.picMCStatus.Image = Global.SPSApp1.My.Resources.Resources.NOPLAN_SIGN_1
-        Me.picMCStatus.Location = New System.Drawing.Point(21, 77)
-        Me.picMCStatus.Name = "picMCStatus"
-        Me.picMCStatus.Size = New System.Drawing.Size(260, 50)
-        Me.picMCStatus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picMCStatus.TabIndex = 9
-        Me.picMCStatus.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.SPSApp1.My.Resources.Resources.DASHBOARD_10
-        Me.PictureBox1.Location = New System.Drawing.Point(14, 32)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(836, 833)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
-        '
-        'btnBypass
-        '
-        Me.btnBypass.BackColor = System.Drawing.Color.White
-        Me.btnBypass.FlatAppearance.BorderSize = 0
-        Me.btnBypass.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBypass.IconChar = FontAwesome.Sharp.IconChar.HandshakeAlt
-        Me.btnBypass.IconColor = System.Drawing.Color.Green
-        Me.btnBypass.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnBypass.IconSize = 60
-        Me.btnBypass.Location = New System.Drawing.Point(810, 807)
-        Me.btnBypass.Name = "btnBypass"
-        Me.btnBypass.Size = New System.Drawing.Size(268, 58)
-        Me.btnBypass.TabIndex = 12
-        Me.btnBypass.Text = "SYS BYPASS OFF"
-        Me.btnBypass.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnBypass.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnBypass.UseVisualStyleBackColor = False
-        '
         'DTimeIDDataGridViewTextBoxColumn
         '
         Me.DTimeIDDataGridViewTextBoxColumn.DataPropertyName = "DTime_ID"
@@ -768,6 +660,114 @@ Partial Class frmMCDasboard
         Me.SPSDataSet1.DataSetName = "SPSDataSet1"
         Me.SPSDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
+        'cboShiftCode
+        '
+        Me.cboShiftCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboShiftCode.FormattingEnabled = True
+        Me.cboShiftCode.Location = New System.Drawing.Point(426, 586)
+        Me.cboShiftCode.Name = "cboShiftCode"
+        Me.cboShiftCode.Size = New System.Drawing.Size(134, 28)
+        Me.cboShiftCode.TabIndex = 7
+        '
+        'btnShowAll
+        '
+        Me.btnShowAll.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnShowAll.Location = New System.Drawing.Point(622, 587)
+        Me.btnShowAll.Name = "btnShowAll"
+        Me.btnShowAll.Size = New System.Drawing.Size(102, 26)
+        Me.btnShowAll.TabIndex = 8
+        Me.btnShowAll.Text = "Show All"
+        Me.btnShowAll.UseVisualStyleBackColor = True
+        '
+        'lblQAInfoDetails
+        '
+        Me.lblQAInfoDetails.AutoSize = True
+        Me.lblQAInfoDetails.BackColor = System.Drawing.Color.Yellow
+        Me.lblQAInfoDetails.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblQAInfoDetails.Location = New System.Drawing.Point(304, 4)
+        Me.lblQAInfoDetails.Name = "lblQAInfoDetails"
+        Me.lblQAInfoDetails.Size = New System.Drawing.Size(312, 24)
+        Me.lblQAInfoDetails.TabIndex = 11
+        Me.lblQAInfoDetails.Text = "PENDING FOR QA VERIFICATION!"
+        '
+        'lblQualityBtn
+        '
+        Me.lblQualityBtn.BackColor = System.Drawing.Color.White
+        Me.lblQualityBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblQualityBtn.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.lblQualityBtn.IconColor = System.Drawing.Color.Red
+        Me.lblQualityBtn.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.lblQualityBtn.Location = New System.Drawing.Point(875, 32)
+        Me.lblQualityBtn.Name = "lblQualityBtn"
+        Me.lblQualityBtn.Size = New System.Drawing.Size(193, 58)
+        Me.lblQualityBtn.TabIndex = 10
+        Me.lblQualityBtn.Text = "QUALITY"
+        Me.lblQualityBtn.UseVisualStyleBackColor = False
+        '
+        'btnUpdate
+        '
+        Me.btnUpdate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUpdate.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.btnUpdate.IconColor = System.Drawing.Color.Black
+        Me.btnUpdate.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnUpdate.Location = New System.Drawing.Point(730, 587)
+        Me.btnUpdate.Name = "btnUpdate"
+        Me.btnUpdate.Size = New System.Drawing.Size(102, 26)
+        Me.btnUpdate.TabIndex = 6
+        Me.btnUpdate.Text = "Update"
+        Me.btnUpdate.UseVisualStyleBackColor = True
+        '
+        'btnFilter
+        '
+        Me.btnFilter.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnFilter.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.btnFilter.IconColor = System.Drawing.Color.Black
+        Me.btnFilter.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnFilter.Location = New System.Drawing.Point(318, 587)
+        Me.btnFilter.Name = "btnFilter"
+        Me.btnFilter.Size = New System.Drawing.Size(102, 26)
+        Me.btnFilter.TabIndex = 6
+        Me.btnFilter.Text = "Filter"
+        Me.btnFilter.UseVisualStyleBackColor = True
+        '
+        'picMCStatus
+        '
+        Me.picMCStatus.Image = Global.SPSApp1.My.Resources.Resources.NOPLAN_SIGN_1
+        Me.picMCStatus.Location = New System.Drawing.Point(21, 77)
+        Me.picMCStatus.Name = "picMCStatus"
+        Me.picMCStatus.Size = New System.Drawing.Size(260, 50)
+        Me.picMCStatus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picMCStatus.TabIndex = 9
+        Me.picMCStatus.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.SPSApp1.My.Resources.Resources.DASHBOARD_10
+        Me.PictureBox1.Location = New System.Drawing.Point(14, 32)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(836, 833)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 1
+        Me.PictureBox1.TabStop = False
+        '
+        'btnBypass
+        '
+        Me.btnBypass.BackColor = System.Drawing.Color.White
+        Me.btnBypass.FlatAppearance.BorderSize = 0
+        Me.btnBypass.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBypass.IconChar = FontAwesome.Sharp.IconChar.HandshakeAlt
+        Me.btnBypass.IconColor = System.Drawing.Color.Green
+        Me.btnBypass.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnBypass.IconSize = 60
+        Me.btnBypass.Location = New System.Drawing.Point(810, 807)
+        Me.btnBypass.Name = "btnBypass"
+        Me.btnBypass.Size = New System.Drawing.Size(268, 58)
+        Me.btnBypass.TabIndex = 12
+        Me.btnBypass.Text = "SYS BYPASS OFF"
+        Me.btnBypass.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnBypass.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnBypass.UseVisualStyleBackColor = False
+        '
         'SPSDataSet
         '
         Me.SPSDataSet.DataSetName = "SPSDataSet"
@@ -835,10 +835,10 @@ Partial Class frmMCDasboard
         Me.Name = "frmMCDasboard"
         Me.Text = "Machine Dashboard"
         CType(Me.dgvStoppage, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picMCStatus, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DowntimeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SPSDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picMCStatus, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SPSDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SPSDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
