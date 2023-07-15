@@ -5,6 +5,7 @@ Imports System.Data.SqlClient
 Public Class frmMCDasboard
     'Declaring virables for the listbox in a specific location
     Dim stStopDetails As String = "{0,-40}{1,-30}{2,-30}{3,-30}"
+
     Private Sub frmMCDasboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'SPSDataSet1.Downtime' table. You can move, or remove it, as needed.
         lblQAInfoDetails.Visible = False
@@ -145,12 +146,15 @@ Public Class frmMCDasboard
         Dim mcQAImage As New Bitmap(My.Resources.QASIGN__1)
         Dim mcNOPlanImage As New Bitmap(My.Resources.NOPLAN_SIGN_1)
         Dim mcPlanComplete As New Bitmap(My.Resources.PLANCOMPLETE)
+        Dim mcQAStoppage As New Bitmap(My.Resources.QASIGN)
 
 
         If bolMCDashboard1 = True And StartStopMC1 = True Then
             picMCStatus.Image = mcRunImage
         ElseIf bolMCDashboard1 = True And lblJobOrderCode.Text = "" Then
             picMCStatus.Image = mcNOPlanImage
+        ElseIf bolMCDashboard1 = True And modQA_DTStat_MC1 = True Then
+            picMCStatus.Image = mcQAStoppage
         ElseIf bolMCDashboard1 = True And RxPLCM14 = True Then
             picMCStatus.Image = mcPlanComplete
 
@@ -158,6 +162,8 @@ Public Class frmMCDasboard
             picMCStatus.Image = mcRunImage
         ElseIf bolMCDashboard2 = True And lblJobOrderCode.Text = "" Then
             picMCStatus.Image = mcNOPlanImage
+        ElseIf bolMCDashboard1 = True And modQA_DTStat_MC2 = True Then
+            picMCStatus.Image = mcQAStoppage
         ElseIf bolMCDashboard2 = True And RxPLCM15 = True Then
             picMCStatus.Image = mcPlanComplete
 
@@ -675,6 +681,7 @@ Public Class frmMCDasboard
         MachineDetails()
         MachineStatusImage()
         QAInfoDetailsDisplay()
+        RTCheckQAStoppage()
     End Sub
 
     '// 
@@ -735,8 +742,33 @@ Public Class frmMCDasboard
                 lblQAInfoDetails.Text = ""
             End If
         End If
-
     End Sub
-
     '//
+
+    '// CHECKING QA STOPPAGE 
+    Public Sub RTCheckQAStoppage()
+        'MC1
+        Dim qsMC1 As New clsCheckExistingDowntime
+        qsMC1.checkDT_stMCId = "MC1"
+        qsMC1.checkDT_stNewStoppage = "MC1NewStoppage"
+        qsMC1.checkExistingDT()
+        If qsMC1.checkDT_Result = "Quality" Then
+            modQA_DTStat_MC1 = True
+        End If
+        If RxPLCM0 = True Then
+            modQA_DTStat_MC1 = False
+        End If
+
+        'MC2
+        Dim qsMC2 As New clsCheckExistingDowntime
+        qsMC2.checkDT_stMCId = "MC2"
+        qsMC2.checkDT_stNewStoppage = "NewMC2Stoppage"
+        qsMC2.checkExistingDT()
+        If qsMC2.checkDT_Result = "Quality" Then
+            modQA_DTStat_MC2 = True
+        End If
+        If RxPLCM1 = True Then
+            modQA_DTStat_MC2 = False
+        End If
+    End Sub
 End Class

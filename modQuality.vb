@@ -26,4 +26,8 @@
     Public modQAStopMC19_isTrue As Boolean
 
     Public modInfrmQualityStoppage As Boolean
+
+    Public modQA_DTStat_MC1 As Boolean
+    Public modQA_DTStat_MC2 As Boolean
+
 End Module

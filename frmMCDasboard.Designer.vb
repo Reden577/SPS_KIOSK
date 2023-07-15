@@ -82,12 +82,12 @@ Partial Class frmMCDasboard
         Me.cboShiftCode = New System.Windows.Forms.ComboBox()
         Me.DowntimeTableAdapter = New SPSApp1.SPSDataSet1TableAdapters.DowntimeTableAdapter()
         Me.btnShowAll = New System.Windows.Forms.Button()
+        Me.lblQAInfoDetails = New System.Windows.Forms.Label()
         Me.lblQualityBtn = New FontAwesome.Sharp.IconButton()
         Me.btnUpdate = New FontAwesome.Sharp.IconButton()
         Me.btnFilter = New FontAwesome.Sharp.IconButton()
         Me.picMCStatus = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.lblQAInfoDetails = New System.Windows.Forms.Label()
         CType(Me.dgvStoppage, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DowntimeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SPSDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -692,6 +692,17 @@ Partial Class frmMCDasboard
         Me.btnShowAll.Text = "Show All"
         Me.btnShowAll.UseVisualStyleBackColor = True
         '
+        'lblQAInfoDetails
+        '
+        Me.lblQAInfoDetails.AutoSize = True
+        Me.lblQAInfoDetails.BackColor = System.Drawing.Color.Yellow
+        Me.lblQAInfoDetails.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblQAInfoDetails.Location = New System.Drawing.Point(304, 4)
+        Me.lblQAInfoDetails.Name = "lblQAInfoDetails"
+        Me.lblQAInfoDetails.Size = New System.Drawing.Size(312, 24)
+        Me.lblQAInfoDetails.TabIndex = 11
+        Me.lblQAInfoDetails.Text = "PENDING FOR QA VERIFICATION!"
+        '
         'lblQualityBtn
         '
         Me.lblQualityBtn.BackColor = System.Drawing.Color.White
@@ -751,17 +762,6 @@ Partial Class frmMCDasboard
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
-        '
-        'lblQAInfoDetails
-        '
-        Me.lblQAInfoDetails.AutoSize = True
-        Me.lblQAInfoDetails.BackColor = System.Drawing.Color.Yellow
-        Me.lblQAInfoDetails.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblQAInfoDetails.Location = New System.Drawing.Point(304, 4)
-        Me.lblQAInfoDetails.Name = "lblQAInfoDetails"
-        Me.lblQAInfoDetails.Size = New System.Drawing.Size(312, 24)
-        Me.lblQAInfoDetails.TabIndex = 11
-        Me.lblQAInfoDetails.Text = "PENDING FOR QA VERIFICATION!"
         '
         'frmMCDasboard
         '
