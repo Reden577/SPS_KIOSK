@@ -82,8 +82,8 @@ Partial Class frmMCDasboard
         Me.btnFilter = New FontAwesome.Sharp.IconButton()
         Me.picMCStatus = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.IconButton1 = New FontAwesome.Sharp.IconButton()
+        Me.txtMsgBox = New System.Windows.Forms.TextBox()
+        Me.btnClearMsg = New FontAwesome.Sharp.IconButton()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -91,13 +91,16 @@ Partial Class frmMCDasboard
         Me.ttpART = New System.Windows.Forms.ToolTip(Me.components)
         Me.ttpUDT = New System.Windows.Forms.ToolTip(Me.components)
         Me.ttpPQTY = New System.Windows.Forms.ToolTip(Me.components)
-        Me.ttpAQTY = New System.Windows.Forms.ToolTip(Me.components)
-        Me.ttpRQTY = New System.Windows.Forms.ToolTip(Me.components)
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.ttpAQTY = New System.Windows.Forms.ToolTip(Me.components)
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.ttpRQTY = New System.Windows.Forms.ToolTip(Me.components)
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.ttpEraseMessage = New System.Windows.Forms.ToolTip(Me.components)
+        Me.btnSaveMsg = New FontAwesome.Sharp.IconButton()
+        Me.ttpSaveMsg = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ttpMsgBox = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.dgvStoppage, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DowntimeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SPSDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -701,27 +704,28 @@ Partial Class frmMCDasboard
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
-        'TextBox1
+        'txtMsgBox
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(308, 467)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(528, 94)
-        Me.TextBox1.TabIndex = 13
+        Me.txtMsgBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtMsgBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(79, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.txtMsgBox.Location = New System.Drawing.Point(308, 467)
+        Me.txtMsgBox.Multiline = True
+        Me.txtMsgBox.Name = "txtMsgBox"
+        Me.txtMsgBox.Size = New System.Drawing.Size(478, 94)
+        Me.txtMsgBox.TabIndex = 13
         '
-        'IconButton1
+        'btnClearMsg
         '
-        Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.Eraser
-        Me.IconButton1.IconColor = System.Drawing.Color.Black
-        Me.IconButton1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconButton1.IconSize = 30
-        Me.IconButton1.Location = New System.Drawing.Point(790, 422)
-        Me.IconButton1.Name = "IconButton1"
-        Me.IconButton1.Size = New System.Drawing.Size(48, 37)
-        Me.IconButton1.TabIndex = 14
-        Me.ttpEraseMessage.SetToolTip(Me.IconButton1, "Clear Message Box Below")
-        Me.IconButton1.UseVisualStyleBackColor = True
+        Me.btnClearMsg.IconChar = FontAwesome.Sharp.IconChar.Eraser
+        Me.btnClearMsg.IconColor = System.Drawing.Color.Black
+        Me.btnClearMsg.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnClearMsg.IconSize = 30
+        Me.btnClearMsg.Location = New System.Drawing.Point(792, 507)
+        Me.btnClearMsg.Name = "btnClearMsg"
+        Me.btnClearMsg.Size = New System.Drawing.Size(48, 37)
+        Me.btnClearMsg.TabIndex = 14
+        Me.ttpEraseMessage.SetToolTip(Me.btnClearMsg, "Clear Message Box ")
+        Me.btnClearMsg.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -765,34 +769,6 @@ Partial Class frmMCDasboard
         Me.Label3.Text = "UDT:"
         Me.ttpUDT.SetToolTip(Me.Label3, "UNPLANNED DOWNTIME")
         '
-        'Label4
-        '
-        Me.Label4.AllowDrop = True
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.White
-        Me.Label4.Font = New System.Drawing.Font("Franklin Gothic Medium", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.DimGray
-        Me.Label4.Location = New System.Drawing.Point(32, 507)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(57, 24)
-        Me.Label4.TabIndex = 15
-        Me.Label4.Text = "AQTY:"
-        Me.ttpAQTY.SetToolTip(Me.Label4, "ACTUAL QUANTITY")
-        '
-        'Label5
-        '
-        Me.Label5.AllowDrop = True
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.White
-        Me.Label5.Font = New System.Drawing.Font("Franklin Gothic Medium", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.DimGray
-        Me.Label5.Location = New System.Drawing.Point(32, 536)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(58, 24)
-        Me.Label5.TabIndex = 15
-        Me.Label5.Text = "RQTY:"
-        Me.ttpRQTY.SetToolTip(Me.Label5, "REJECT QUANTITY")
-        '
         'Label6
         '
         Me.Label6.AllowDrop = True
@@ -806,6 +782,20 @@ Partial Class frmMCDasboard
         Me.Label6.TabIndex = 15
         Me.Label6.Text = "PQTY:"
         Me.ttpPQTY.SetToolTip(Me.Label6, "PLAN QUANTITY")
+        '
+        'Label4
+        '
+        Me.Label4.AllowDrop = True
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.White
+        Me.Label4.Font = New System.Drawing.Font("Franklin Gothic Medium", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.DimGray
+        Me.Label4.Location = New System.Drawing.Point(32, 507)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(57, 24)
+        Me.Label4.TabIndex = 15
+        Me.Label4.Text = "AQTY:"
+        Me.ttpAQTY.SetToolTip(Me.Label4, "ACTUAL QUANTITY")
         '
         'Label7
         '
@@ -821,6 +811,33 @@ Partial Class frmMCDasboard
         Me.Label7.Text = "AQTY:"
         Me.ttpAQTY.SetToolTip(Me.Label7, "ACTUAL QUANTITY")
         '
+        'Label5
+        '
+        Me.Label5.AllowDrop = True
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.White
+        Me.Label5.Font = New System.Drawing.Font("Franklin Gothic Medium", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.DimGray
+        Me.Label5.Location = New System.Drawing.Point(32, 536)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(58, 24)
+        Me.Label5.TabIndex = 15
+        Me.Label5.Text = "RQTY:"
+        Me.ttpRQTY.SetToolTip(Me.Label5, "REJECT QUANTITY")
+        '
+        'btnSaveMsg
+        '
+        Me.btnSaveMsg.IconChar = FontAwesome.Sharp.IconChar.Add
+        Me.btnSaveMsg.IconColor = System.Drawing.Color.Black
+        Me.btnSaveMsg.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnSaveMsg.IconSize = 30
+        Me.btnSaveMsg.Location = New System.Drawing.Point(792, 468)
+        Me.btnSaveMsg.Name = "btnSaveMsg"
+        Me.btnSaveMsg.Size = New System.Drawing.Size(48, 37)
+        Me.btnSaveMsg.TabIndex = 14
+        Me.ttpSaveMsg.SetToolTip(Me.btnSaveMsg, "SAVE MESSAGE")
+        Me.btnSaveMsg.UseVisualStyleBackColor = True
+        '
         'frmMCDasboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -833,8 +850,9 @@ Partial Class frmMCDasboard
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.IconButton1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.btnSaveMsg)
+        Me.Controls.Add(Me.btnClearMsg)
+        Me.Controls.Add(Me.txtMsgBox)
         Me.Controls.Add(Me.btnBypass)
         Me.Controls.Add(Me.lblQAInfoDetails)
         Me.Controls.Add(Me.lblQualityBtn)
@@ -945,8 +963,8 @@ Partial Class frmMCDasboard
     Friend WithEvents lblQualityBtn As FontAwesome.Sharp.IconButton
     Friend WithEvents lblQAInfoDetails As Label
     Friend WithEvents btnBypass As FontAwesome.Sharp.IconButton
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
+    Friend WithEvents txtMsgBox As TextBox
+    Friend WithEvents btnClearMsg As FontAwesome.Sharp.IconButton
     Friend WithEvents Label1 As Label
     Friend WithEvents ttpPPT As ToolTip
     Friend WithEvents Label2 As Label
@@ -961,4 +979,7 @@ Partial Class frmMCDasboard
     Friend WithEvents ttpEraseMessage As ToolTip
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
+    Friend WithEvents btnSaveMsg As FontAwesome.Sharp.IconButton
+    Friend WithEvents ttpSaveMsg As ToolTip
+    Friend WithEvents ttpMsgBox As ToolTip
 End Class

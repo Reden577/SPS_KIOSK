@@ -229,6 +229,7 @@
     <Compile Include="modLoginDetails.vb" />
     <Compile Include="modMySettingsValues.vb" />
     <Compile Include="modQuality.vb" />
+    <Compile Include="modReminderMsg.vb" />
     <Compile Include="modStoredValue_DTStoppage.vb" />
     <Compile Include="modSystemFlag.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />

@@ -17,96 +17,115 @@ Public Class frmMCDasboard
             modSetVal_MCID = modMC1_stMCId
             modSetVal_DTNewStoppage = modMC1_stNewStoppage
             modSetVal_JCode = stJOMC1
+            txtMsgBox.Text = My.Settings.MC1MsgReminder
         ElseIf bolMCDashboard2 = True Then
             lblMCDasboard.Text = "Machine 2"
             modSetVal_DTNewStoppage = modMC2_stNewStoppage
             modSetVal_MCID = modMC2_stMCId
             modSetVal_JCode = stJOMC2
+            txtMsgBox.Text = My.Settings.MC2MsgReminder
         ElseIf bolMCDashboard3 = True Then
             lblMCDasboard.Text = "Machine 3"
             modSetVal_DTNewStoppage = modMC3_stNewStoppage
             modSetVal_MCID = modMC3_stMCId
             modSetVal_JCode = stJOMC3
+            txtMsgBox.Text = My.Settings.MC3MsgReminder
         ElseIf bolMCDashboard4 = True Then
             lblMCDasboard.Text = "Machine 4"
             modSetVal_DTNewStoppage = modMC4_stNewStoppage
             modSetVal_MCID = modMC4_stMCId
             modSetVal_JCode = stJOMC4
+            txtMsgBox.Text = My.Settings.MC4MsgReminder
         ElseIf bolMCDashboard5 = True Then
             lblMCDasboard.Text = "Machine 5"
             modSetVal_DTNewStoppage = modMC5_stNewStoppage
             modSetVal_MCID = modMC5_stMCId
             modSetVal_JCode = stJOMC5
+            txtMsgBox.Text = My.Settings.MC5MsgReminder
         ElseIf bolMCDashboard6 = True Then
             lblMCDasboard.Text = "Machine 6"
             modSetVal_DTNewStoppage = modMC6_stNewStoppage
             modSetVal_MCID = modMC6_stMCId
             modSetVal_JCode = stJOMC6
+            txtMsgBox.Text = My.Settings.MC6MsgReminder
         ElseIf bolMCDashboard7 = True Then
             lblMCDasboard.Text = "Machine 7"
             modSetVal_DTNewStoppage = modMC7_stNewStoppage
             modSetVal_MCID = modMC7_stMCId
             modSetVal_JCode = stJOMC7
+            txtMsgBox.Text = My.Settings.MC7MsgReminder
         ElseIf bolMCDashboard8 = True Then
             lblMCDasboard.Text = "Machine 8"
             modSetVal_DTNewStoppage = modMC8_stNewStoppage
             modSetVal_MCID = modMC8_stMCId
             modSetVal_JCode = stJOMC8
+            txtMsgBox.Text = My.Settings.MC8MsgReminder
         ElseIf bolMCDashboard9 = True Then
             lblMCDasboard.Text = "Machine 9"
             modSetVal_DTNewStoppage = modMC9_stNewStoppage
             modSetVal_MCID = modMC9_stMCId
             modSetVal_JCode = stJOMC9
+            txtMsgBox.Text = My.Settings.MC9MsgReminder
         ElseIf bolMCDashboard10 = True Then
             lblMCDasboard.Text = "Machine 10"
             modSetVal_DTNewStoppage = modMC10_stNewStoppage
             modSetVal_MCID = modMC10_stMCId
             modSetVal_JCode = stJOMC10
+            txtMsgBox.Text = My.Settings.MC10MsgReminder
         ElseIf bolMCDashboard11 = True Then
             lblMCDasboard.Text = "Machine 11"
             modSetVal_DTNewStoppage = modMC11_stNewStoppage
             modSetVal_MCID = modMC11_stMCId
             modSetVal_JCode = stJOMC11
+            txtMsgBox.Text = My.Settings.MC11MsgReminder
         ElseIf bolMCDashboard12 = True Then
             lblMCDasboard.Text = "Machine 12"
             modSetVal_DTNewStoppage = modMC12_stNewStoppage
             modSetVal_MCID = modMC12_stMCId
             modSetVal_JCode = stJOMC12
+            txtMsgBox.Text = My.Settings.MC12MsgReminder
         ElseIf bolMCDashboard13 = True Then
             lblMCDasboard.Text = "Machine 13"
             modSetVal_DTNewStoppage = modMC13_stNewStoppage
             modSetVal_MCID = modMC13_stMCId
             modSetVal_JCode = stJOMC13
+            txtMsgBox.Text = My.Settings.MC13MsgReminder
         ElseIf bolMCDashboard14 = True Then
             lblMCDasboard.Text = "Machine 14"
             modSetVal_DTNewStoppage = modMC14_stNewStoppage
             modSetVal_MCID = modMC14_stMCId
             modSetVal_JCode = stJOMC14
+            txtMsgBox.Text = My.Settings.MC14MsgReminder
         ElseIf bolMCDashboard15 = True Then
             lblMCDasboard.Text = "Machine 15"
             modSetVal_DTNewStoppage = modMC15_stNewStoppage
             modSetVal_MCID = modMC15_stMCId
             modSetVal_JCode = stJOMC15
+            txtMsgBox.Text = My.Settings.MC15MsgReminder
         ElseIf bolMCDashboard16 = True Then
             lblMCDasboard.Text = "Machine 16"
             modSetVal_DTNewStoppage = modMC16_stNewStoppage
             modSetVal_MCID = modMC16_stMCId
             modSetVal_JCode = stJOMC16
+            txtMsgBox.Text = My.Settings.MC16MsgReminder
         ElseIf bolMCDashboard17 = True Then
             lblMCDasboard.Text = "Machine 17"
             modSetVal_DTNewStoppage = modMC17_stNewStoppage
             modSetVal_MCID = modMC17_stMCId
             modSetVal_JCode = stJOMC17
+            txtMsgBox.Text = My.Settings.MC17MsgReminder
         ElseIf bolMCDashboard18 = True Then
             lblMCDasboard.Text = "Machine 18"
             modSetVal_DTNewStoppage = modMC18_stNewStoppage
             modSetVal_MCID = modMC18_stMCId
             modSetVal_JCode = stJOMC18
+            txtMsgBox.Text = My.Settings.MC18MsgReminder
         ElseIf bolMCDashboard19 = True Then
             lblMCDasboard.Text = "Machine 19"
             modSetVal_DTNewStoppage = modMC19_stNewStoppage
             modSetVal_MCID = modMC19_stMCId
             modSetVal_JCode = stJOMC19
+            txtMsgBox.Text = My.Settings.MC19MsgReminder
         End If
 
         Me.DowntimeTableAdapter.FillByDTStatus(Me.SPSDataSet1.Downtime, "modSetVal_DTNewStoppage")
@@ -818,5 +837,146 @@ Public Class frmMCDasboard
             End If
         End If
 
+    End Sub
+
+    Private Sub IconButton1_Click_1(sender As Object, e As EventArgs) Handles btnSaveMsg.Click
+        If bolMCDashboard1 = True Then
+            My.Settings.MC1MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard2 = True Then
+            My.Settings.MC2MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard3 = True Then
+            My.Settings.MC3MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard4 = True Then
+            My.Settings.MC4MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard5 = True Then
+            My.Settings.MC5MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard6 = True Then
+            My.Settings.MC6MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard7 = True Then
+            My.Settings.MC7MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard8 = True Then
+            My.Settings.MC8MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard9 = True Then
+            My.Settings.MC9MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard10 = True Then
+            My.Settings.MC10MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard11 = True Then
+            My.Settings.MC11MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard12 = True Then
+            My.Settings.MC12MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard13 = True Then
+            My.Settings.MC13MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard14 = True Then
+            My.Settings.MC14MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard15 = True Then
+            My.Settings.MC15MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard16 = True Then
+            My.Settings.MC16MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard17 = True Then
+            My.Settings.MC17MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard18 = True Then
+            My.Settings.MC18MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard19 = True Then
+            My.Settings.MC19MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        End If
+    End Sub
+
+    Private Sub btnClearMsg_Click(sender As Object, e As EventArgs) Handles btnClearMsg.Click
+        If bolMCDashboard1 = True Then
+            txtMsgBox.Text = ""
+            My.Settings.MC1MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard2 = True Then
+            txtMsgBox.Text = ""
+            My.Settings.MC2MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard3 = True Then
+            txtMsgBox.Text = ""
+            My.Settings.MC3MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard4 = True Then
+            txtMsgBox.Text = ""
+            My.Settings.MC4MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard5 = True Then
+            txtMsgBox.Text = ""
+            My.Settings.MC5MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard6 = True Then
+            txtMsgBox.Text = ""
+            My.Settings.MC6MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard7 = True Then
+            txtMsgBox.Text = ""
+            My.Settings.MC7MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard8 = True Then
+            txtMsgBox.Text = ""
+            My.Settings.MC8MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard9 = True Then
+            txtMsgBox.Text = ""
+            My.Settings.MC9MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard10 = True Then
+            txtMsgBox.Text = ""
+            My.Settings.MC10MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard11 = True Then
+            txtMsgBox.Text = ""
+            My.Settings.MC11MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard12 = True Then
+            txtMsgBox.Text = ""
+            My.Settings.MC12MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard13 = True Then
+            txtMsgBox.Text = ""
+            My.Settings.MC13MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard14 = True Then
+            txtMsgBox.Text = ""
+            My.Settings.MC14MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard15 = True Then
+            txtMsgBox.Text = ""
+            My.Settings.MC15MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard16 = True Then
+            txtMsgBox.Text = ""
+            My.Settings.MC16MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard17 = True Then
+            txtMsgBox.Text = ""
+            My.Settings.MC17MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard18 = True Then
+            txtMsgBox.Text = ""
+            My.Settings.MC18MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        ElseIf bolMCDashboard19 = True Then
+            txtMsgBox.Text = ""
+            My.Settings.MC19MsgReminder = txtMsgBox.Text
+            My.Settings.Save()
+        End If
     End Sub
 End Class

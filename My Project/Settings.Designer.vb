@@ -4229,6 +4229,234 @@ Namespace My
                 Me("MC2Bypass") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property MC1MsgReminder() As String
+            Get
+                Return CType(Me("MC1MsgReminder"),String)
+            End Get
+            Set
+                Me("MC1MsgReminder") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property MC2MsgReminder() As String
+            Get
+                Return CType(Me("MC2MsgReminder"),String)
+            End Get
+            Set
+                Me("MC2MsgReminder") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property MC3MsgReminder() As String
+            Get
+                Return CType(Me("MC3MsgReminder"),String)
+            End Get
+            Set
+                Me("MC3MsgReminder") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property MC4MsgReminder() As String
+            Get
+                Return CType(Me("MC4MsgReminder"),String)
+            End Get
+            Set
+                Me("MC4MsgReminder") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property MC5MsgReminder() As String
+            Get
+                Return CType(Me("MC5MsgReminder"),String)
+            End Get
+            Set
+                Me("MC5MsgReminder") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property MC6MsgReminder() As String
+            Get
+                Return CType(Me("MC6MsgReminder"),String)
+            End Get
+            Set
+                Me("MC6MsgReminder") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property MC7MsgReminder() As String
+            Get
+                Return CType(Me("MC7MsgReminder"),String)
+            End Get
+            Set
+                Me("MC7MsgReminder") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property MC8MsgReminder() As String
+            Get
+                Return CType(Me("MC8MsgReminder"),String)
+            End Get
+            Set
+                Me("MC8MsgReminder") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property MC9MsgReminder() As String
+            Get
+                Return CType(Me("MC9MsgReminder"),String)
+            End Get
+            Set
+                Me("MC9MsgReminder") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property MC10MsgReminder() As String
+            Get
+                Return CType(Me("MC10MsgReminder"),String)
+            End Get
+            Set
+                Me("MC10MsgReminder") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property MC11MsgReminder() As String
+            Get
+                Return CType(Me("MC11MsgReminder"),String)
+            End Get
+            Set
+                Me("MC11MsgReminder") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property MC12MsgReminder() As String
+            Get
+                Return CType(Me("MC12MsgReminder"),String)
+            End Get
+            Set
+                Me("MC12MsgReminder") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property MC13MsgReminder() As String
+            Get
+                Return CType(Me("MC13MsgReminder"),String)
+            End Get
+            Set
+                Me("MC13MsgReminder") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property MC14MsgReminder() As String
+            Get
+                Return CType(Me("MC14MsgReminder"),String)
+            End Get
+            Set
+                Me("MC14MsgReminder") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property MC16MsgReminder() As String
+            Get
+                Return CType(Me("MC16MsgReminder"),String)
+            End Get
+            Set
+                Me("MC16MsgReminder") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property MC17MsgReminder() As String
+            Get
+                Return CType(Me("MC17MsgReminder"),String)
+            End Get
+            Set
+                Me("MC17MsgReminder") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property MC18MsgReminder() As String
+            Get
+                Return CType(Me("MC18MsgReminder"),String)
+            End Get
+            Set
+                Me("MC18MsgReminder") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property MC19MsgReminder() As String
+            Get
+                Return CType(Me("MC19MsgReminder"),String)
+            End Get
+            Set
+                Me("MC19MsgReminder") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property MC15MsgReminder() As String
+            Get
+                Return CType(Me("MC15MsgReminder"),String)
+            End Get
+            Set
+                Me("MC15MsgReminder") = value
+            End Set
+        End Property
     End Class
 End Namespace
 
